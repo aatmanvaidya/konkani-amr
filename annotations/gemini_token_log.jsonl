@@ -1,0 +1,3 @@
+{"timestamp_utc": "2026-02-23T15:56:08.312415+00:00", "file_name": "temp", "model": "gemini-2.5-pro", "prompt_tokens": 175, "output_tokens": 246, "total_tokens": 3035, "prompt_tokens_text": 175, "prompt_tokens_image": null}
+{"timestamp_utc": "2026-02-23T16:00:12.755263+00:00", "file_name": "temp", "model": "gemini-2.5-pro", "prompt_tokens": 192, "output_tokens": 248, "total_tokens": 3399, "prompt_tokens_text": 192, "prompt_tokens_image": null}
+{"timestamp_utc": "2026-02-23T16:02:36.054286+00:00", "file_name": "temp", "model": "gemini-2.5-pro", "prompt_tokens": 192, "output_tokens": 236, "total_tokens": 5297, "prompt_tokens_text": 192, "prompt_tokens_image": null}

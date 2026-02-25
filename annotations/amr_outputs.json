@@ -1,0 +1,9 @@
+[
+  {
+    "timestamp_utc": "2026-02-23T16:02:36.054055+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "हे लोक गोंयांत, महाराष्ट्राच्या कोंकण विभागांत, कर्नाटकांत तशेंच केरळातूय थोडेकडेन वसल्यात.",
+    "english_translation": "These people live in Goa, the Konkan division of Maharashtra, Karnataka, as well as in a few places in Kerala.",
+    "amr_penman": "(l / live-01\n   :ARG0 (p / person\n          :mod (t / this))\n   :ARG1 (a / and\n          :op1 (s1 / state :name (n1 / name :op1 \"Goa\"))\n          :op2 (d / division\n                  :name (n2 / name :op1 \"Konkan\")\n                  :part-of (s2 / state :name (n3 / name :op1 \"Maharashtra\")))\n          :op3 (s3 / state :name (n4 / name :op1 \"Karnataka\"))\n          :op4 (p2 / place\n                  :quant (f / few)\n                  :location (s4 / state :name (n5 / name :op1 \"Kerala\")))))"
+  }
+]
