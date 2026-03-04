@@ -1,0 +1,702 @@
+[
+  {
+    "timestamp_utc": "2026-02-26T13:00:35.453391+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "मुरगाव पालिकेच्या 239 लाखांच्या शिलकी अर्थसंकल्पाक मान्यताय",
+    "english_translation": "Approval for Murgaon municipality's 239 lakh surplus budget.",
+    "amr_penman": "(a / approve-01 :ARG1 (b / budget :poss (g / government-organization :name (n / name :op1 \"Murgaon\")) :topic (s / surplus :quant (m / monetary-quantity :quant 23900000))))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:00:52.972194+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "डिझेलाच्या दरांत प्रति लिटर 80 पयशांनी वाड जाल्या",
+    "english_translation": "The price of diesel has increased by 80 paise per liter.",
+    "amr_penman": "(i / increase-01\n   :ARG1 (p / price\n             :poss (d / diesel))\n   :ARG2 (m / monetary-quantity\n             :quant 80\n             :unit (p2 / paise)\n             :per (l / liter)))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:01:03.737122+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "पुराय देशभरांत हे दर वाडयल्यात",
+    "english_translation": "These rates have been increased across the entire country.",
+    "amr_penman": "(i / increase-01\n   :ARG1 (r / rate\n      :mod (t / this))\n   :location (c / country\n      :mod (e / entire)))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:01:18.122860+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "राजकी परिस्थिती खिणाखिणाक बदलत आसा",
+    "english_translation": "The political situation is changing every moment.",
+    "amr_penman": "(c / change-01\n   :ARG1 (s / situation\n             :mod (p / political))\n   :manner (c2 / constant))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:01:33.304775+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "वाडटे म्हारगाये आड काग्रेसीचें आंदोलन",
+    "english_translation": "Congress's protest against rising inflation.",
+    "amr_penman": "(p / protest-01\n   :ARG0 (c / political-party\n      :name (n / name :op1 \"Congress\"))\n   :ARG1 (r / rise-01\n      :ARG1 (i / inflation)))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:01:57.523735+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "नवी दिल्लीः सध्या देशांतली वाडटी म्हारगाय आनी इंधनाच्या वाडट्या दरांक लागून सर्वसामान्यांक व्हड फटको बसला",
+    "english_translation": "New Delhi: Currently, the common people have been hit hard due to the rising inflation in the country and the increasing prices of fuel.",
+    "amr_penman": "(h / hit-01\n   :ARG1 (p / person\n            :mod (c / common))\n   :cause (a / and\n            :op1 (g / grow-01\n                     :ARG1 (i / inflation\n                              :location (c2 / country)))\n            :op2 (g2 / grow-01\n                     :ARG1 (p2 / price\n                              :topic (f / fuel))))\n   :degree (h2 / high)\n   :time (n / now)\n   :location (c3 / city\n               :name (n2 / name\n                         :op1 \"New Delhi\")))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:02:10.626816+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "वाड्या म्हारगायेच्या मुद्या वयल्यान काँग्रेस बरीच आक्रमक जाल्या",
+    "english_translation": "The Congress has become very aggressive over the issue of rising inflation.",
+    "amr_penman": "(b / become-01\n   :ARG1 (p / political-party\n            :name (n / name :op1 \"Congress\"))\n   :ARG2 (a / aggressive\n            :degree (v / very))\n   :cause (i / issue-01\n             :topic (i2 / inflate-01)))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:02:35.333876+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "सध्या सीएनजी, पीएनजी गॅस तशेच खाद्यतेलाचे दर वाडल्यात",
+    "english_translation": "Currently, the prices of CNG, PNG gas, and edible oil have increased.",
+    "amr_penman": "(i / increase-01\n   :ARG1 (p / price\n            :topic (a / and\n                      :op1 (g / gas\n                             :name (n / name :op1 \"CNG\"))\n                      :op2 (g2 / gas\n                              :name (n2 / name :op1 \"PNG\"))\n                      :op3 (o / oil\n                              :mod (e / eat-01))))\n   :time (n3 / now))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:02:49.543537+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "एक एप्रीलाच्यान वखदांचेय दर वाडटले",
+    "english_translation": "The prices of medicines will also increase from April 1st.",
+    "amr_penman": "(a / also\n   :op1 (i / increase-01\n         :ARG1 (p / price\n               :domain (m / medicine))\n         :time (d / date-entity\n               :month 4\n               :day 1)))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:03:18.079410+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "वाडट्या म्हारगायेचो सर्वसामान्यांचे व्हड परिणाम जाल्ल्याचे दिसून येता",
+    "english_translation": "It is apparent that rising inflation has had a great effect on the common people.",
+    "amr_penman": "(a / apparent-01\n   :ARG1 (a2 / affect-01\n      :ARG0 (i / inflation\n         :ARG1-of (i2 / increase-01))\n      :ARG1 (p / public)\n      :degree (g / great)))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:03:41.470283+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "ह्या खासदारांच्या निवृत्तीन आमकां अणभवी साथीदारांचो उणाव जाणवतलो",
+    "english_translation": "With the retirement of these MPs, we will feel the lack of experienced colleagues.",
+    "amr_penman": "(f / feel-01\n   :ARG0 (w / we)\n   :ARG1 (l / lack-01\n             :ARG1 (c / colleague\n                       :mod (e / experienced)))\n   :cause (r / retire-01\n              :ARG0 (m / member-of-parliament\n                        :mod (t / this)))\n   :time (f2 / future))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:04:10.772682+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "आयच्यान खर अंमलबजावणी, धा पटीन चड आसतलो दंड",
+    "english_translation": "Strict enforcement from today; the fine will be ten times more.",
+    "amr_penman": "(a / and\n   :op1 (e / enforce-01\n      :manner (s / strict)\n      :time (t / today))\n   :op2 (f / fine\n      :degree (m / more\n         :quant (t2 / times :op1 10))))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:04:40.054442+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "ते प्रमाण बिरेस्तारा मध्यान रातीं 12 वरां पसून नेम लागू जाल्यात",
+    "english_translation": "Accordingly, the rules came into effect from 12 midnight on Thursday.",
+    "amr_penman": "(a / apply-01 :ARG1 (r / rule) :time (d / date-entity :weekday (w / thursday) :time \"T00:00\") :manner (a2 / according-to :ARG1 (t / that)))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:05:05.365359+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "हे विशीं नियाळ बसका घेतिल्ल्याचे राजन सातार्डकार हांणी सांगलें",
+    "english_translation": "Rajan Satardekar said that a review meeting was held on this matter.",
+    "amr_penman": "(s / say-01 :ARG0 (p / person :name (n / name :op1 \"Rajan\" :op2 \"Satardekar\")) :ARG1 (h / hold-04 :ARG1 (m / meeting :purpose (r / review-01 :ARG1 (t / this)))))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:05:23.924752+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "केंद्र सरकाराच्या आदेशा प्रमाण गोंयांत येरादारी नेमांची अंमलबजावणी करचीच पडटली",
+    "english_translation": "As per the central government's order, traffic rules will have to be implemented in Goa.",
+    "amr_penman": "(o / obligate-01\n   :ARG1 (i / implement-01\n            :ARG1 (r / rule\n                     :mod (t / traffic))\n            :location (s / state\n                         :name (n / name :op1 \"Goa\")))\n   :cause (o2 / order-01\n             :ARG0 (g / government\n                      :mod (c / center))))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:05:37.368453+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "गोंयांतल्या भोवतेक रस्त्यांची कामां जाल्यात",
+    "english_translation": "Work on most of the roads in Goa has been completed.",
+    "amr_penman": "(c / complete-01\n   :ARG1 (w / work-01\n            :ARG1 (r / road\n                     :degree (m / most)\n                     :location (s / state\n                                  :name (n / name\n                                           :op1 \"Goa\")))))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:05:56.848979+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "अर्थसंकल्पांत ते विशींची तजवीज केल्या, अशें तांणी म्हणलें",
+    "english_translation": "He said that a provision for it has been made in the budget.",
+    "amr_penman": "(s / say-01\n   :ARG0 (p / person)\n   :ARG1 (p2 / provide-01\n            :ARG1 (p3 / provision\n                     :topic (t / thing))\n            :location (b / budget)))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:06:08.326986+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "राज्यांनी बेगोबेग सुदारीत कायद्याची अंमलबजावणी केल्या",
+    "english_translation": "The states have quickly implemented the amended law.",
+    "amr_penman": "(i / implement-01\n   :ARG0 (s / state)\n   :ARG1 (l / law\n            :ARG1-of (a / amend-01))\n   :manner (q / quick))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:06:28.284736+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "आदले भाजप सरकारांतले येरादारी मंत्री मॉवीन गुदिन्हो हांणी सुदारीत कायदो लागू करपाचो यत्न केल्लो",
+    "english_translation": "Former BJP government's Transport Minister Mauvin Godinho had tried to implement the amended law.",
+    "amr_penman": "(t / try-01 :ARG0 (p / person :name (n / name :op1 \"Mauvin\" :op2 \"Godinho\") :ARG0-of (m / minister-01 :ARG1 (t2 / transport) :ARG2 (g / government :poss (o / organization :name (n2 / name :op1 \"BJP\")) :time (f / former)))) :ARG1 (i / implement-01 :ARG0 p :ARG1 (l / law :ARG1-of (a / amend-01))))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:06:47.350499+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "हजार चौखण मिटर मेरेन वाडयल्या",
+    "english_translation": "It has been increased to one thousand square meters.",
+    "amr_penman": "(i / increase-01\n   :ARG1 (t / thing)\n   :ARG4 (m / measure-entity\n            :quant 1000\n            :unit (s / square-meter)))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:07:01.352767+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "मुख्य सचीव पुनीत गोयल हांणी हे विशींचो आदेश जारी केलो",
+    "english_translation": "Chief Secretary Puneet Goyal issued an order regarding this matter.",
+    "amr_penman": "(i / issue-01\n   :ARG0 (p / person\n            :name (n / name :op1 \"Puneet\" :op2 \"Goyal\")\n            :title (s / secretary\n                      :mod (c / chief)))\n   :ARG1 (o / order-01\n            :topic (m / matter)))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:07:31.805953+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "ताका लागून मंत्रीपद मेळ्ळे उपरांत हे खातें मेळचें, अशें दरेकल्याक दिसता",
+    "english_translation": "Therefore, everyone feels that one should get this portfolio after receiving a ministerial post.",
+    "amr_penman": "(t / think-01 :ARG0 (p / person :quant all) :ARG1 (o / obligate-01 :ARG1 (r / receive-01 :ARG0 (p2 / person) :ARG1 (p3 / portfolio :mod (t2 / this)) :time (a / after :op1 (r2 / receive-01 :ARG0 p2 :ARG1 (p4 / post :mod (m / minister)))))) :cause (t3 / thing))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:07:56.787116+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "भोवतेक खेपे खात्याचे मंत्री अशा प्रकरणांत हस्तक्षेप करून नागरिकां",
+    "english_translation": "Often, the minister of the department intervenes in such matters for the citizens.",
+    "amr_penman": "(i / intervene-01\n   :ARG0 (m / minister\n      :poss (d / department))\n   :ARG1 (m2 / matter\n      :mod (s / such))\n   :beneficiary (c / citizen)\n   :frequency (o / often))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:08:21.612986+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "समितीचे मान्यताये उपरांत हे प्रस्ताव मंजुरी खातीर खात्याच्या मंत्र्या कडेन वताले",
+    "english_translation": "After the committee's approval, these proposals would go to the department minister for sanction.",
+    "amr_penman": "(g / go-01\n   :ARG1 (p / proposal)\n   :destination (m / minister\n                   :mod (d / department))\n   :time (a / approve-01\n            :ARG0 (c / committee)\n            :ARG1 p)\n   :purpose (s / sanction-01\n               :ARG0 m\n               :ARG1 p))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:08:45.759523+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "मजगतीं, मंत्रीमंडळ स्थापन जावन चार दीस जाले तरी अजुनूय खातें वांटप जावंक ना",
+    "english_translation": "Meanwhile, although four days have passed since the cabinet was formed, the portfolio allocation has not happened yet.",
+    "amr_penman": "(c / contrast-01\n   :op1 (p / pass-01\n      :ARG1 (d / day :quant 4)\n      :time (f / form-01\n         :ARG1 (c2 / cabinet)))\n   :op2 (h / happen-01\n      :polarity -\n      :ARG1 (a / allocate-01\n         :ARG1 (p2 / portfolio))\n      :time (n / now))\n   :time (m / meanwhile))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:09:03.255756+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "कामत हांची काँग्रेस कार्यकारी समितीचे कायम निमंत्रक म्हूण नेमणूक केल्या",
+    "english_translation": "Kamat has been appointed as the permanent invitee of the Congress Working Committee.",
+    "amr_penman": "(a / appoint-01 :ARG1 (p / person :name (n / name :op1 \"Kamat\")) :ARG2 (i / invitee :mod (p2 / permanent) :part-of (o / organization :name (n2 / name :op1 \"Congress\" :op2 \"Working\" :op3 \"Committee\"))))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:09:15.456352+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "कार्लुस फेरेरा हांची विधानसभेंतले मुख्य व्हीप म्हूण नेमणूक केल्या",
+    "english_translation": "Carlos Ferreira has been appointed as the Chief Whip of the Legislative Assembly.",
+    "amr_penman": "(a2 / appoint-01 :ARG1 (p / person :name (n / name :op1 \"Carlos\" :op2 \"Ferreira\")) :ARG2 (w / whip :mod (c / chief) :part-of (a / assembly :mod (l / legislative))))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:09:40.365816+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "रातीं उसरां दोनूय भुरग्यांच्या कुडीचेर थळाव्या मसुंडेंत निमाणे संस्कार जाले",
+    "english_translation": "The final rites for both children were performed late at night at the local crematorium.",
+    "amr_penman": "(p / perform-01\n   :ARG1 (r / rite\n      :mod (f / final))\n   :ARG2 (c / child\n      :quant 2)\n   :location (c2 / crematorium\n      :mod (l / local))\n   :time (n / night\n      :mod (l2 / late)))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:10:15.141528+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "हांणी सादर केल्ल्या अर्थसंकल्पांत निम्मे परस चड निधीची तजवीज पांच खात्यां खातीर आसा",
+    "english_translation": "In the budget they presented, more than half of the funds are provisioned for five departments.",
+    "amr_penman": "(p / provision-01\n   :ARG1 (f / fund\n      :quant (m / more\n         :op1 (h / half)))\n   :ARG2 (d / department\n      :quant 5)\n   :location (b / budget\n      :ARG1-of (p2 / present-01\n         :ARG0 (t / they))))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:10:36.933736+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "कसलीच शुल्कवाड करिनासतना शिलकी अर्थसंकल्प तांणी सादर",
+    "english_translation": "They presented a surplus budget without any fee hike.",
+    "amr_penman": "(p / present-01\n   :ARG0 (p2 / person)\n   :ARG1 (b / budget\n      :mod (s / surplus))\n   :manner (i / increase-01\n      :polarity -\n      :ARG0 p2\n      :ARG1 (f / fee)))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:10:57.620714+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "सरकारी शाळांची सुदारणा आनी दुरूस्ती खातीर 50 कोटींची तजवीज आसा",
+    "english_translation": "There is a provision of 50 crores for the improvement and repair of government schools.",
+    "amr_penman": "(p / provision-01 :ARG1 (m / monetary-quantity :quant 50 :unit (c / crore)) :purpose (a / and :op1 (i / improve-01 :ARG1 (s / school :mod (g / government))) :op2 (r / repair-01 :ARG1 s)))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:11:20.982445+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "ऑनलायन अभ्यासक्रम सुरू करपा खातीर 5 कोटींची तजवीज केल्या",
+    "english_translation": "A provision of 5 crores has been made to start online courses.",
+    "amr_penman": "(a / allocate-01\n   :ARG1 (m / monetary-quantity\n      :quant 50000000\n      :unit (r / rupee))\n   :ARG2 (s / start-01\n      :ARG1 (c / course\n         :mod (o / online))))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:11:40.140011+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "राज्य संशोधन फावंडेशन स्थापन करपा खातीर 650 कोटी रुपया तजवीज केल्या",
+    "english_translation": "A provision of 650 crore rupees has been made to establish the State Research Foundation.",
+    "amr_penman": "(p / provision-01\n   :ARG1 (m / monetary-quantity\n            :quant 6500000000\n            :unit (r / rupee))\n   :purpose (e / establish-01\n               :ARG1 (f / foundation\n                        :name (n / name\n                                 :op1 \"State\"\n                                 :op2 \"Research\"\n                                 :op3 \"Foundation\"))))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:12:07.332902+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "ते भायर डिजीटल टेक्नॉलॉजी केंद्रा , फार्मसी आनी वास्तुविशारद म्हाविद्यालय इमारती खातीर निधीची तजवीज आसा",
+    "english_translation": "Besides that, there is a provision of funds for the buildings of the Digital Technology Center, Pharmacy, and Architecture College.",
+    "amr_penman": "(p / provide-01 :mod (a / also) :ARG1 (f / fund) :ARG2 (b / building :poss (a2 / and :op1 (c / center :mod (t / technology :mod (d / digital))) :op2 (c2 / college :mod (p2 / pharmacy)) :op3 (c3 / college :mod (a3 / architecture)))))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:12:30.337884+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "35 खात्यांतल्यान 5 खात्यां खातीर  निम्मे परस चड तजवीज आसा",
+    "english_translation": "For 5 out of 35 departments, the provision is more than half.",
+    "amr_penman": "(p / provision\n   :value (m / more\n             :op1 (h / half))\n   :beneficiary (d / department\n                   :quant 5\n                   :part-of (d2 / department\n                               :quant 35)))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:12:46.799977+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "बांदकाम खात्या खातीर 299 कोटींची तजवीज भौशीक बांदकाम खात्या खातीर",
+    "english_translation": "A provision of 299 crore for the Public Works Department.",
+    "amr_penman": "(a / allocation-01\n   :ARG1 (m / monetary-quantity\n            :quant 299\n            :unit (c / crore))\n   :ARG2 (d / department\n            :name (n / name\n                     :op1 \"Public\"\n                     :op2 \"Works\"\n                     :op3 \"Department\")))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:13:01.879868+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "वीज खात्या खातीर लेगीत चड निधीची तजवीज केल्या",
+    "english_translation": "More funds have also been provided for the Electricity Department.",
+    "amr_penman": "(p / provide-01\n   :ARG1 (f / fund\n      :degree (m / more))\n   :beneficiary (d / department\n      :topic (e / electricity))\n   :mod (a / also))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:13:21.885108+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "गृह तर्शेच पुलीस : खात्या खातीर 118 कोटींची अर्थसंकल्पी तजवीज आसा",
+    "english_translation": "There is a budgetary provision of 118 crore for the Home as well as the Police Department.",
+    "amr_penman": "(p / provision-01\n   :mod (b / budget-01)\n   :quant (m / monetary-quantity\n      :quant 118\n      :unit (c / crore))\n   :beneficiary (a / and\n      :op1 (d / department\n         :topic (h / home))\n      :op2 (d2 / department\n         :mod (p2 / police))))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:13:44.161706+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "नवे प्रस्ताव, येवजण्यो वा उपक्रमांचो मात | अर्थसंकल्पात उल्लेख ना",
+    "english_translation": "There is no mention of new proposals, plans, or initiatives in the budget.",
+    "amr_penman": "(m / mention-01 :polarity - :location (b / budget) :ARG1 (o / or :op1 (p / propose-01 :mod (n / new-04)) :op2 (p2 / plan-01 :mod n) :op3 (i / initiate-01 :mod n)))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:14:04.779078+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "बिरेस्तारा दनपारां 2 वराच्या सुमाराक दीपक नायक जेवपाक घरा आयलो",
+    "english_translation": "On Thursday afternoon, around 2 o'clock, Deepak Nayak came home to eat.",
+    "amr_penman": "(c / come-01\n   :ARG0 (p / person\n      :name (n / name\n         :op1 \"Deepak\"\n         :op2 \"Nayak\"))\n   :destination (h / house)\n   :purpose (e / eat-01\n      :ARG0 p)\n   :time (d / date-entity\n      :weekday (w / thursday)\n      :time-of-day (a / afternoon)\n      :hour 2\n      :mod (a2 / approximate-01)))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:14:26.879763+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "तेन्ना दोनूय भुरगीं घरांत नाशिल्ल्यान तांणी आपल्या भावाक फोन करून भुरग्यांची चवकशी केली",
+    "english_translation": "At that time, because both children were not at home, they called their brother and inquired about the children.",
+    "amr_penman": "(a / and :op1 (c2 / call-01 :ARG0 (p / person) :ARG1 (b / brother :poss p)) :op2 (i / inquire-01 :ARG0 p :ARG1 (c / child :quant 2)) :time (t / then) :cause (b2 / be-located-at-91 :polarity - :ARG1 c :ARG2 (h / home)))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:14:56.614753+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "पूण थंय दोतोरांनी तपासणी उपरांत दोगांय भुरग्यांक मरण आयिल्ल्याचे सांगले",
+    "english_translation": "But there, after an examination, the doctors said that both the children had died.",
+    "amr_penman": "(c / contrast-01 :op1 (a / amr-unintelligible) :op2 (s / say-01 :ARG0 (d / doctor) :ARG1 (d2 / die-01 :ARG1 (c2 / child :quant 2)) :location (t / there) :time (a2 / after :op1 (e / examine-01 :ARG0 d :ARG1 c2))))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:15:39.366398+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "रातीं उसरां दोनूय भुरग्यांच्या कुडींचेर थळावे मसुंडेत निमाणे संस्कार जाले",
+    "english_translation": "Late at night, the final rites were performed on the bodies of both children at the local crematorium.",
+    "amr_penman": "(o / occur-01 :ARG1 (r / rite :mod (f / final)) :location (b / body :quant 2 :poss (c / child :quant 2) :location (c2 / crematorium :mod (l / local))) :time (n / night :mod (l2 / late)))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:16:07.391317+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "मात दूदाच्या दरांत प्रति लिटर 2 ते 3 रुपया वाड जावपाची शक्यताय आसा",
+    "english_translation": "There is a possibility of a 2 to 3 rupee per liter increase in the price of milk.",
+    "amr_penman": "(p / possible-01\n   :ARG1 (i / increase-01\n      :ARG1 (p2 / price\n         :topic (m / milk))\n      :ARG2 (m2 / monetary-quantity\n         :quant (a / and\n            :op1 2\n            :op2 3)\n         :unit (r / rupee)\n         :per (l / liter))))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:16:50.280918+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "दूद उत्पादकांक प्रति लिटर 2 रुपयांची वाड दिवपाचो निर्णय बसकेंत घेतला",
+    "english_translation": "A decision was taken in the meeting to give milk producers a hike of 2 rupees per liter.",
+    "amr_penman": "(d / decide-01 :location (m / meeting) :ARG1 (i / increase-01 :beneficiary (p / producer :mod (m2 / milk)) :ARG2 (m3 / monetary-quantity :quant 2 :unit (r / rupee) :per (l / liter))))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:17:04.834939+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "दूद विक्रीची वाड निश्चीत करूंक ना",
+    "english_translation": "The increase in milk sales has not been confirmed.",
+    "amr_penman": "(c / confirm-01 :polarity - :ARG1 (i / increase-01 :ARG1 (s / sell-01 :ARG1 (m / milk))))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:17:34.779503+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "तशेंच गोवा डेरीची वसुंकों साबार बसका 27 एप्रीलाक कुर्टीतल्या सहकार भवन सभाघरांत घेवपाचो निर्णय बसकेंत घेतलो",
+    "english_translation": "Also, a decision was taken in the meeting to hold several meetings on April 27th at the Sahakar Bhavan hall in Curti to recover dues from Goa Dairy.",
+    "amr_penman": "(d / decide-01\n   :ARG1 (h / hold-03\n      :ARG1 (m2 / meet-01\n         :quant (s / several))\n      :time (d2 / date-entity\n         :day 27\n         :month 4)\n      :location (h2 / hall\n         :name (n / name\n            :op1 \"Sahakar\"\n            :op2 \"Bhavan\")\n         :location (c / city\n            :name (n2 / name\n               :op1 \"Curti\")))\n      :purpose (r / recover-01\n         :ARG1 (d3 / due)\n         :ARG2 (g / organization\n            :name (n3 / name\n               :op1 \"Goa\"\n               :op2 \"Dairy\"))))\n   :location (m / meet-01))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:18:12.732272+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "म्हापशें: म्हापशें न्हंये वयल्या नव्या तार पुलाचें बांदकाम नेटान चालू आसा",
+    "english_translation": "Mapusa: The construction of a new cable bridge over the Mapusa river is proceeding rapidly.",
+    "amr_penman": "(p / proceed-01\n   :ARG1 (c / construct-01\n            :ARG1 (b / bridge\n                     :mod (n / new)\n                     :mod (c2 / cable))\n            :location (o / over\n                         :op1 (r / river\n                                 :name (n2 / name :op1 \"Mapusa\"))))\n   :manner (r2 / rapid))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:18:34.194240+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "आमदार डिसोझान सांगलें, ह्या पुलाचें बांदकाम सध्या खूब गतीन चालू आसा",
+    "english_translation": "MLA D'Souza said that the construction of this bridge is currently proceeding at a great speed.",
+    "amr_penman": "(s / say-01 :ARG0 (p / person :name (n / name :op1 \"D'Souza\") :title \"MLA\") :ARG1 (p2 / proceed-01 :ARG1 (c / construct-01 :ARG1 (b / bridge :mod (t / this))) :time (n2 / now) :manner (s2 / speed-01 :degree (v / very))))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:18:50.642639+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "निमणे मुजती आदीं तो पुराय जातलो असो अदमास आसा",
+    "english_translation": "It is estimated that it will be completed before the final deadline.",
+    "amr_penman": "(e / estimate-01 :ARG1 (c / complete-01 :ARG1 (t / thing) :time (b / before :op1 (d / deadline :mod (f / final)))))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:19:11.597895+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "पदाचो गैरवापर करून घरच्यांक फायदो केल्ल्याचो आरोप",
+    "english_translation": "Allegation of misusing the post to benefit family members.",
+    "amr_penman": "(a / accusation-01 :ARG1 (m / misuse-01 :ARG0 (p / person) :ARG1 (p2 / post) :purpose (b / benefit-01 :ARG0 p :ARG1 (f / family-member :poss p))))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:19:38.256607+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "पदाच्या लावाचो फायदो घेतिल्ल्या प्रकरणांत एकादो पंच अपात्र जावपाची ही गोंयांतली पयलीच घडणूक",
+    "english_translation": "This is the first incident in Goa where a panch has been disqualified for taking advantage of their post.",
+    "amr_penman": "(i / incident :ARG1 (d / disqualify-01 :ARG1 (p / panch) :cause (t / take-advantage-of-91 :ARG0 p :ARG1 (b / benefit :poss (p2 / post)))) :location (g / state :name (n / name :op1 \"Goa\")) :mod (o / ordinal-entity :value 1))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:19:59.119133+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "खाला ही अपात्रतायेची कारवाय केल्या",
+    "english_translation": "This disqualification proceeding has been carried out below.",
+    "amr_penman": "(c / carry-out-01 :ARG1 (p / proceeding-01 :topic (d / disqualify-01)) :location (b / below))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:20:20.243087+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "ह्या प्रस्तावाक अनुमोदन लेगीत तिणेंच दिलें आनी पंचायत मंडळान थाराव पारीत केलो",
+    "english_translation": "She herself also approved this proposal, and the panchayat board passed the resolution.",
+    "amr_penman": "(a / and\n   :op1 (a2 / approve-01\n      :ARG0 (s / she)\n      :ARG1 (p / proposal\n         :mod (t / this))\n      :mod (a3 / also))\n   :op2 (p2 / pass-04\n      :ARG0 (b / board\n         :mod (p3 / panchayat))\n      :ARG1 (r / resolution)))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:20:53.400799+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "सावयकाराक पंच वांगडी म्हूण कामकाज हाताळपाक मनाय केल्या",
+    "english_translation": "The moneylender has been prohibited from functioning as a panch member.",
+    "amr_penman": "(p / prohibit-01\n   :ARG1 (f / function-01\n            :ARG0 (m / moneylender)\n            :role (p2 / panch-member))\n   :ARG2 m)"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:21:06.227342+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "नाटकाचें दिग्दर्शन कमलाकर परबान केलां",
+    "english_translation": "Kamlakar Parab has directed the play.",
+    "amr_penman": "(d / direct-01\n   :ARG0 (p / person\n      :name (n / name :op1 \"Kamlakar\" :op2 \"Parab\")\n      :wiki \"Kamlakar_Parab\")\n   :ARG1 (p2 / play-02))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:21:27.090441+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "दुबावीत सिद्धीकीचेर जमीन घोटाळाचे खूबशे गुन्यांव आसात",
+    "english_translation": "There are many land scam crimes against the suspect Siddiki.",
+    "amr_penman": "(h / have-03\n   :ARG0 (p / person\n      :name (n / name :op1 \"Siddiki\")\n      :mod (s / suspect-01))\n   :ARG1 (c / crime\n      :quant (m / many)\n      :topic (s2 / scam-01\n         :ARG1 (l / land))))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:21:52.395927+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "ह्या प्रकरणांतूय लोकांची फटवणूक जाल्ल्याची शक्यताय पुलिसांनी उक्तायल्या",
+    "english_translation": "Police have expressed the possibility that people were also deceived in this case.",
+    "amr_penman": "(e / express-01\n   :ARG0 (p / police)\n   :ARG1 (p2 / possible-01\n             :ARG1 (d / deceive-01\n                       :ARG1 (p3 / person)\n                       :location (c / case\n                                     :mod (t / this)\n                                     :mod (a / also)))))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:22:08.487737+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "सिद्धीकी उर्फ सुलेमान खान हाचे आड म्हापशें पुलिसांनी लुकआवट नोटीस जारी केल्या",
+    "english_translation": "The Mapusa police have issued a lookout notice against Siddiqui alias Suleman Khan.",
+    "amr_penman": "(i / issue-01\n   :ARG0 (p / police\n            :location (c / city\n                         :name (n / name :op1 \"Mapusa\")))\n   :ARG1 (n2 / notice\n            :mod (l / lookout))\n   :ARG2 (p2 / person\n            :name (n3 / name :op1 \"Siddiqui\")\n            :name (n4 / name :op1 \"Suleman\" :op2 \"Khan\")))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:22:34.776658+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "हो प्रकार कळटाच तेन्नाचो उपनिबंधक आर्जुन शेट्ये हाणें अज्ञात आड म्हापशें पुलिसेंत कागाळ दाखल केल्ली",
+    "english_translation": "Upon learning of this incident, the then Sub-Registrar, Arjun Shetye, filed a complaint with the Mapusa police against an unknown person.",
+    "amr_penman": "(f / file-01\n   :ARG0 (p / person\n            :name (n / name :op1 \"Arjun\" :op2 \"Shetye\")\n            :title (s / sub-registrar\n                      :time (t / then)))\n   :ARG1 (c / complaint)\n   :ARG2 (p2 / person\n            :mod (u / unknown-01))\n   :destination (p3 / police\n                   :name (n2 / name :op1 \"Mapusa\"))\n   :time (l / learn-01\n            :ARG0 p\n            :ARG1 (i / incident\n                     :mod (t2 / this))))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:23:01.603553+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "हो पूल उक्तो जाले उपरांत थंय आदीं जावपी येरादारेची कोंयडी जावची ना, अशें आमदार डिसोझान सांगलें",
+    "english_translation": "MLA D'Souza said that after this bridge opens, the traffic congestion that previously occurred there will not happen.",
+    "amr_penman": "(s / say-01 :ARG0 (p / person :name (n / name :op1 \"D'Souza\") :title \"MLA\") :ARG1 (h / happen-01 :polarity - :ARG1 (c / traffic-congestion :ARG1-of (h2 / happen-01 :location (t / there) :time (p2 / previous))) :time (a / after :op1 (o / open-01 :ARG1 (b / bridge :mod (t2 / this))))))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:23:19.526784+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "प्रमोद सावंत हाणें विधानसबेत राज्याचो अर्थसंकल्प सादर केलो",
+    "english_translation": "Pramod Sawant presented the state's budget in the Legislative Assembly.",
+    "amr_penman": "(t / table-02\n   :ARG0 (p / person\n      :name (n / name :op1 \"Pramod\" :op2 \"Sawant\")\n      :wiki \"Pramod_Sawant\")\n   :ARG1 (b / budget\n      :poss (s / state))\n   :ARG2 (a / legislative-assembly))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:23:34.305117+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "ताका लागून थंय इल्ली इल्ली कोयराची रास वाडटा",
+    "english_translation": "As a result, a pile of garbage gradually grows there.",
+    "amr_penman": "(g / grow-01\n   :ARG1 (p / pile\n            :mod (g2 / garbage))\n   :cause (t / that)\n   :location (t2 / there)\n   :manner (g3 / gradual))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:23:47.810657+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "हाका लागून हो पुराय वाठार बुरसो दिसता",
+    "english_translation": "Because of this, the entire area looks dirty.",
+    "amr_penman": "(a / appear-01 :ARG1 (a2 / area :mod (t / this) :mod (e / entire)) :ARG2 (d / dirty) :cause (t2 / this))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:24:04.719375+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "कोयर उडोवप्यांचेर पंचायतीन खर कारवाय करची, अशी थळाव्या लोकांचें म्हणणें आसा",
+    "english_translation": "The local people demand that the Panchayat should take strict action against those who dump garbage.",
+    "amr_penman": "(d / demand-01\n   :ARG0 (p / person\n            :mod (l / local))\n   :ARG1 (o / obligate-01\n            :ARG2 (a / act-02\n                     :ARG0 (p2 / panchayat)\n                     :ARG1 (p3 / person\n                              :ARG0-of (d2 / dump-01\n                                          :ARG1 (g / garbage)))\n                     :manner (s / strict))))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:24:23.439651+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "बसोवचे, अशीय तांची मागणी आसा",
+    "english_translation": "They also demand that it be installed.",
+    "amr_penman": "(d / demand-01\n   :ARG0 (p / person)\n   :ARG1 (i / install-01\n      :ARG1 (t / thing))\n   :mod (a / also))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:24:50.574085+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "इंद्रदेव शुक्ला सेवा निवृत्त पुलीस अधिक्षक सेराफीन डायस हाचे सयत 12 कर्मचारी निवृत्त",
+    "english_translation": "Indradev Shukla, along with Police Superintendent Serafin Dias and 12 employees, retired.",
+    "amr_penman": "(r / retire-01\n   :ARG0 (a / and\n            :op1 (p1 / person\n                   :name (n1 / name\n                             :op1 \"Indradev\"\n                             :op2 \"Shukla\"))\n            :op2 (p2 / person\n                   :name (n2 / name\n                             :op1 \"Serafin\"\n                             :op2 \"Dias\")\n                   :title (s / superintendent\n                             :mod (p3 / police)))\n            :op3 (e / employee\n                   :quant 12)))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:25:16.647020+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "ताची गोंय पुलीस सेवेंत थेट उपअधिक्षक पदाचेर बदली जाल्ली",
+    "english_translation": "He was directly transferred to the post of Deputy Superintendent in the Goa Police service.",
+    "amr_penman": "(t / transfer-01 :ARG1 (p / person) :ARG4 (p2 / position :name (n / name :op1 \"Deputy\" :op2 \"Superintendent\") :part-of (s / service :poss (o / police-force :name (n2 / name :op1 \"Goa\" :op2 \"Police\")))) :manner (d / direct))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:25:36.042105+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "त्या वेळार ताचे कडेन पुलीस प्रशिक्षण केंद्राचो प्राचार्य म्हूण पयलीं नेमणूक केली",
+    "english_translation": "At that time, he was first appointed as the principal of the police training center.",
+    "amr_penman": "(a / appoint-01\n   :ARG1 (p / person)\n   :ARG2 (p2 / principal\n             :part-of (c / center\n                         :purpose (t / train-01\n                                     :ARG1 (p3 / police))))\n   :time (t2 / time\n             :mod (t3 / that))\n   :sequence (o / ordinal-entity\n                 :value 1))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:25:53.677161+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "ताणें गोंयांतल्या विवीध पुलीस स्टेशनांचेर, पुलीस उपविभागीय पुलीस अधिकारी म्हूण सेवा केल्या",
+    "english_translation": "He has served as a Sub-Divisional Police Officer at various police stations in Goa.",
+    "amr_penman": "(s / serve-01\n   :ARG0 (p / person)\n   :ARG2 (o / officer\n      :mod (s2 / sub-divisional)\n      :mod (p2 / police))\n   :location (s3 / station\n      :mod p2\n      :quant (m / multiple)\n      :part-of (s4 / state\n         :name (n / name\n            :op1 \"Goa\"))))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:26:09.433799+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "हरमलकार, हवालदार दनरंथ म्हाडेळकार आनी फोरमॅन उमेश पालकार निवृत्त जाल्यात",
+    "english_translation": "Harmalkar, Havaldar Dnyananth Mhadelkar and Foreman Umesh Palkar have retired.",
+    "amr_penman": "(r / retire-01\n   :ARG0 (a / and\n      :op1 (p / person\n         :name (n / name :op1 \"Harmalkar\"))\n      :op2 (p2 / person\n         :name (n2 / name :op1 \"Dnyananth\" :op2 \"Mhadelkar\")\n         :title \"Havaldar\")\n      :op3 (p3 / person\n         :name (n3 / name :op1 \"Umesh\" :op2 \"Palkar\")\n         :title \"Foreman\")))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:26:32.903515+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "मुरगांवः मुरगांवच्या उपनगराध्यक्षपदाचेर अमेय चोपडेंकाराची बिनविरोध निवड जाली",
+    "english_translation": "Mormugao: Amey Chopdenkar was elected unopposed to the post of Deputy Mayor of Mormugao.",
+    "amr_penman": "(e / elect-01 :ARG1 (p / person :name (n / name :op1 \"Amey\" :op2 \"Chopdenkar\")) :ARG2 (p2 / post-02 :ARG1 (d / deputy-mayor :part-of (c / city :name (n2 / name :op1 \"Mormugao\")))) :manner (u / unopposed) :location c)"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:26:58.500905+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "उपनगराध्यक्षपदाचेर निवड जाल्ल्याचें जाहीर केलें",
+    "english_translation": "The election for the post of vice-chairman was announced.",
+    "amr_penman": "(a / announce-01 :ARG1 (e / elect-01 :ARG2 (p / post :topic (v / vice-chairman))))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:27:22.825906+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "प्रभाग 18 चो नगरसेवक चोपडेंकाराचो अर्ज सादर",
+    "english_translation": "Ward 18 Corporator Chopdenkar's application submitted.",
+    "amr_penman": "(s / submit-01 :ARG0 (c / corporator :name (n / name :op1 \"Chopdenkar\") :ARG0-of (r / represent-01 :ARG1 (w / ward :name (n2 / name :op1 \"18\")))) :ARG1 (a / application :poss c))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:28:00.777327+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "करपाच्या निमण्या दिसा 28 मार्चाक एकूच अर्ज दाखल जाल्ल्यान ताची बिनविरोध निवड जातली, हें निश्चीत आशिल्ले",
+    "english_translation": "It was certain that he would be elected unopposed, as only one nomination was filed on the last day, March 28.",
+    "amr_penman": "(c / certain-01\n   :ARG1 (e / elect-01\n      :ARG1 (p / person)\n      :manner (u / unopposed))\n   :cause (f / file-01\n      :ARG1 (n / nominate-01\n         :quant 1\n         :mod (o / only))\n      :time (a / and\n         :op1 (d / date-entity\n            :day 28\n            :month 3)\n         :op2 (d2 / day\n            :mod (l / last)))))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:28:19.510973+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "श्रद्धा महालेन 15 मार्चाक मुरगांवच्या उपनगराध्यक्षपदाचो राजिनामो दिल्ल्यान ही सुवात रिती जाल्ली",
+    "english_translation": "This post became vacant as Shraddha Mahale resigned from the post of Vice-Chairperson of Mormugao on March 15.",
+    "amr_penman": "(b / become-01 :ARG1 (p / post :mod (t / this) :role (v / vice-chairperson :part-of (m / municipality :name (n2 / name :op1 \"Mormugao\")))) :ARG2 (v2 / vacant) :cause (r / resign-01 :ARG0 (p2 / person :name (n / name :op1 \"Shraddha\" :op2 \"Mahale\")) :ARG1 p :time (d / date-entity :month 3 :day 15)))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:28:41.696011+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "गांवस हाच्या स्वेच्छानिवृत्ती निमतान आयोजीत केल्ल्या कार्यावळींत पेंगीणकार उलयताली",
+    "english_translation": "Penginkar was speaking at a function organized on the occasion of Gauns's voluntary retirement.",
+    "amr_penman": "(s / speak-01\n   :ARG0 (p / person\n      :name (n / name :op1 \"Penginkar\"))\n   :location (f / function\n      :ARG1-of (o / organize-01\n         :purpose (r / retire-01\n            :ARG0 (p2 / person\n               :name (n2 / name :op1 \"Gauns\"))\n            :manner (v / voluntary)))))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:29:16.936781+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "दा विद्यालया वतीन आयोजीत केल्ल्या भोवमान सुवाळ्यांत भोवमान केल्ले मानेस्त लक्ष्मण च्यारी, गुरुदास गांवस हांचे",
+    "english_translation": "Respected Laxman Chari and Gurudas Gauns were felicitated at a felicitation ceremony organized by the school.",
+    "amr_penman": "(f / felicitate-01 :ARG1 (a / and :op1 (p / person :name (n / name :op1 \"Laxman\" :op2 \"Chari\") :mod (r / respect-01)) :op2 (p2 / person :name (n2 / name :op1 \"Gurudas\" :op2 \"Gauns\") :mod (r2 / respect-01))) :location (c / ceremony :mod (f2 / felicitate-01) :ARG1-of (o / organize-01 :ARG0 (s / school))))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:29:56.540614+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "हांची  वागडा पेंगीणकार लक्ष्मण च्यारी हांची बदली जाल्ल्यान : वांगडा मुख्याध्यापिका रोशन पेंगीणकार आनी हेर",
+    "english_translation": "Because Penginkar Laxman Chari was transferred, Headmistress Roshan Penginkar and others were with him.",
+    "amr_penman": "(a / accompany-01 :ARG0 (a2 / and :op1 (p2 / person :name (n2 / name :op1 \"Roshan\" :op2 \"Penginkar\") :title \"headmistress\") :op2 (p3 / person :mod (o / other))) :ARG1 (p / person :name (n / name :op1 \"Penginkar\" :op2 \"Laxman\" :op3 \"Chari\")) :cause (t / transfer-01 :ARG1 p))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:30:14.807044+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "हाका लागून खूब खेपे शिक्षकांक खूब मेहनत करची पडटा",
+    "english_translation": "Because of this, teachers often have to work very hard.",
+    "amr_penman": "(o / obligate-01\n   :ARG1 (t / teacher)\n   :ARG2 (w / work-01\n      :ARG0 t\n      :manner (h / hard\n         :degree (v / very)))\n   :cause (t2 / this)\n   :frequency (o2 / often))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:30:37.186801+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "कार्यावळीची सुरवात : विद्यार्थ्यांनी सादर केल्ल्या येवकार",
+    "english_translation": "The start of the program: a welcome presented by the students.",
+    "amr_penman": "(s / start-01 :ARG1 (p / program) :ARG2 (w / welcome :ARG1-of (p2 / present-01 :ARG0 (s2 / student))))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:31:15.518577+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "जाल्ल्याचें सत्रय चोपडेकारान बापूय आदलो नगरसेवक अनिल चोपडेंकार आनी आवय आदली उपनगराध्यक्ष अनिता चोपडेंकार हांकां दिलें",
+    "english_translation": "Chopdekar gave the credit for the victory to his father, former corporator Anil Chopdenkar, and his mother, former vice-chairperson Anita Chopdenkar.",
+    "amr_penman": "(g / give-01 :ARG0 (c / person :name (n / name :op1 \"Chopdekar\")) :ARG1 (c2 / credit-01 :topic (w / win-01)) :ARG2 (a / and :op1 (p / person :name (n2 / name :op1 \"Anil\" :op2 \"Chopdenkar\") :domain (a2 / and :op1 (f / father :poss c) :op2 (c3 / corporator :time (b / before :op1 (n4 / now))))) :op2 (p2 / person :name (n3 / name :op1 \"Anita\" :op2 \"Chopdenkar\") :domain (a3 / and :op1 (m / mother :poss c) :op2 (v / vice-chairperson :time (b2 / before :op1 n4))))))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:31:27.490539+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "समाज सेवेंतल्यान आपूण नगरसेवक जालों",
+    "english_translation": "He became a corporator through social service.",
+    "amr_penman": "(b / become-01\n   :ARG1 (p / person)\n   :ARG2 (c / corporator)\n   :cause (s / serve-01\n             :ARG2 (s2 / society)))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:31:48.968749+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "जारी केल्ल्या आदेशा प्रमाण आनीक 35 जाणांच्यो बदल्यो केल्यात",
+    "english_translation": "According to the issued order, 35 more people have been transferred.",
+    "amr_penman": "(t / transfer-01 :ARG1 (p / person :quant 35 :mod (a2 / another)) :manner (a / accord-01 :ARG2 (o / order-01 :ARG1-of (i / issue-01))))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:32:11.403889+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "मुरगांव पालिकेच्या 2.39 कोटींच्या शिलकी अर्थसंकल्पाक मान्यताय",
+    "english_translation": "Mormugao Municipality's ₹2.39 crore surplus budget approved.",
+    "amr_penman": "(a / approve-01\n   :ARG1 (b / budget\n            :mod (s / surplus)\n            :poss (m / municipality\n                     :name (n / name\n                              :op1 \"Mormugao\"))\n            :quant (m2 / monetary-quantity\n                       :quant 2.39\n                       :unit (c / crore))))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:32:29.140664+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "मुरगांव पालिका मंडळाची बुधवारा बसका जाली आनी हे बसकेंत अर्थसंकल्प सादर केलो",
+    "english_translation": "A meeting of the Mormugao Municipal Council was held on Wednesday, and the budget was presented in this meeting.",
+    "amr_penman": "(a / and :op1 (h / hold-04 :ARG0 (c / council :name (n / name :op1 \"Mormugao Municipal Council\")) :ARG1 (m / meet-03) :time (w / wednesday)) :op2 (p / present-01 :ARG1 (b / budget) :location m))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:32:43.961455+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "मोबायल टॉवर भाडें घेवपा विशीं चर्चा केली",
+    "english_translation": "A discussion was held about renting a mobile tower.",
+    "amr_penman": "(d / discuss-01\n   :ARG1 (r / rent-01\n      :ARG1 (t / tower\n         :mod (m / mobile))))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:32:54.938075+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "ह्या अर्थसंकल्पांत 15 व्या वित्त",
+    "english_translation": "15th finance in this budget",
+    "amr_penman": "(f / finance\n   :ord (o / ordinal-entity :value 15)\n   :location (b / budget\n                :mod (t / this)))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:33:11.973583+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "हें पयलेच फावट जाल्ल्यान हेत्रिक्स हांणी कांय प्रस्न उपस्थित केले",
+    "english_translation": "Since this was the first time, Hetrix raised some questions.",
+    "amr_penman": "(p2 / pose-01 :ARG0 (p / person :name (n / name :op1 \"Hetrix\")) :ARG1 (q / question) :cause (h / happen-01 :time (t / time :ord (o / ordinal-entity :value 1))))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:33:36.125455+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "पूण लेखा परिक्षण अधिकारिणीन गोंयांतल्यो हेर पालिका अशे तरेनअनुदान येणावळींत दाखयतात अशें स्पश्ट केलें",
+    "english_translation": "But the audit authority clarified that other municipalities in Goa show grants in their revenue in this way.",
+    "amr_penman": "(c / contrast-01 :op2 (c2 / clarify-01 :ARG0 (a / authority :mod (a2 / audit-01)) :ARG1 (s / show-01 :ARG0 (m / municipality :mod (o / other) :location (s2 / state :name (n / name :op1 \"Goa\") :wiki \"Goa\")) :ARG1 (g / grant) :location (r / revenue) :manner (w / way :mod (t / this)))))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:33:48.193701+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "आसा अशें हेत्रिक्स हांणी सांगलें",
+    "english_translation": "Hetrix said so.",
+    "amr_penman": "(s / say-01 :ARG0 (p / person :name (n / name :op1 \"Hetrix\")) :ARG1 (b / be-03))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:34:26.171171+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "करिनासतना ती घरपट्टीत नितळसाण कराच्या रुपान घेवपा विशीं चर्चा केली",
+    "english_translation": "She discussed with Karina about undertaking the cleaning of the house.",
+    "amr_penman": "(d / discuss-01\n   :ARG0 (s / she)\n   :ARG2 (p / person :name (n / name :op1 \"Karina\"))\n   :ARG1 (c / clean-01\n            :ARG1 (h / house)))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:34:54.053607+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "हो सुवाळो संवसार पाडव्याच्या शूभ दिसा आयोजीत करपाचेंय मुरगांव हिंदू समाजाचे आमसभेत निश्चीत केल्लें",
+    "english_translation": "The Murgaon Hindu Samaj, in its general meeting, also decided to organize this festival on the auspicious day of Sansar Padvo.",
+    "amr_penman": "(d / decide-01\n   :ARG0 (s / organization\n            :name (n / name\n                     :op1 \"Murgaon\"\n                     :op2 \"Hindu\"\n                     :op3 \"Samaj\"))\n   :ARG1 (o / organize-01\n            :ARG0 s\n            :ARG1 (f / festival\n                     :mod (t / this))\n            :time (d2 / day\n                     :name (n2 / name\n                              :op1 \"Sansar Padvo\")\n                     :mod (a / auspicious)))\n   :location (m / meet-03\n                :mod (g / general)\n                :poss s)\n   :mod (a2 / also))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:35:10.712504+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "ताका लागून देवीक भांगराचे हार अर्पण करपाचो सुवाळो फुडें धुकल्ला",
+    "english_translation": "Therefore, the ceremony of offering a golden garland to the goddess has been postponed.",
+    "amr_penman": "(p / postpone-01 :ARG1 (c / ceremony :purpose (o / offer-01 :ARG1 (g / garland :made-of (g2 / gold)) :ARG2 (d / goddess))) :cause (t / that))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:35:27.275904+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "नवी तारीख आनी वेळ रोखडोच जाहीर करतले अशें जाळवणदारांनी कळीत केलां",
+    "english_translation": "The organizers have informed that the new date and time will be announced soon.",
+    "amr_penman": "(i / inform-01\n   :ARG0 (o / organizer)\n   :ARG1 (a / announce-01\n            :ARG1 (a2 / and\n                     :op1 (d / date-entity\n                             :mod (n / new))\n                     :op2 (t / time-entity))\n            :time (s / soon)))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:35:41.640037+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "तीन दीस विंगडविंगड कार्यावळी जाल्यो",
+    "english_translation": "Various programs took place for three days.",
+    "amr_penman": "(h / happen-01\n   :ARG1 (p / program\n            :mod (v / various))\n   :duration (t / temporal-quantity\n                :quant 3\n                :unit (d / day)))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:36:25.879641+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "बुधवारा श्री देवी सातिरीच्या कलशाचें दिंडी सयत श्री देवी सांतेरी मंदिरा कडेन प्रयाण जालें",
+    "english_translation": "On Wednesday, a Dindi procession with the Kalash of Shri Devi Satiri proceeded towards the Shri Devi Santeri temple.",
+    "amr_penman": "(p / proceed-01 :ARG0 (d2 / dindi) :ARG1 (k / kalash :poss (d / deity :name (n / name :op1 \"Shri\" :op2 \"Devi\" :op3 \"Satiri\"))) :destination (t / temple :name (n2 / name :op1 \"Shri\" :op2 \"Devi\" :op3 \"Santeri\")) :time (w / wednesday))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:36:46.212837+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "ह्या वेळार सत्पुरूष बाल कलाकारांचे वतीन पारंपारिक नाच सादर केले",
+    "english_translation": "On this occasion, the Satpurush child artists presented a traditional dance.",
+    "amr_penman": "(p / present-01\n   :ARG0 (a / artist\n      :mod (c / child)\n      :mod (s / name :op1 \"Satpurush\"))\n   :ARG1 (d / dance-01\n      :mod (t / traditional))\n   :time (o / occasion\n      :mod this))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:37:08.429742+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "धोल-ताशांच्या गजरांत ही कार्यावळ जाली",
+    "english_translation": "This event took place amidst the sound of dhol-tashas.",
+    "amr_penman": "(h / happen-01\n   :ARG1 (e / event\n      :mod (t / this))\n   :location (s / sound\n      :mod (l / loud)\n      :source (a / and\n         :op1 (i / musical-instrument\n            :name (n / name :op1 \"dhol\"))\n         :op2 (i2 / musical-instrument\n            :name (n2 / name :op1 \"tasha\")))))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T13:37:29.000859+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "खातीर प्रशिक्षण घेतात तांचे खातीर ही तजवीज केल्या",
+    "english_translation": "This provision has been made for those who undergo training.",
+    "amr_penman": "(p / provide-01 :ARG1 (p2 / provision :mod (t / this)) :ARG2 (p3 / person :ARG0-of (u / undergo-01 :ARG1 (t2 / training))))"
+  }
+]

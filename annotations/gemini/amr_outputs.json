@@ -775,5 +775,75 @@
     "sentence": "खातीर प्रशिक्षण घेतात तांचे खातीर ही तजवीज केल्या",
     "english_translation": "This provision has been made for those who take training.",
     "amr_penman": "(p / provide-01\n   :ARG1 (p2 / provision\n            :domain this)\n   :ARG2 (p3 / person\n            :ARG1-of (t / train-01)))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T12:49:50.809426+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "मुरगाव पालिकेच्या 239 लाखांच्या शिलकी अर्थसंकल्पाक मान्यताय",
+    "english_translation": "Mormugao Municipality's 239 lakh surplus budget approved.",
+    "amr_penman": "(a / approve-01\n   :ARG1 (b / budget\n            :mod (s / surplus)\n            :poss (m / municipality\n                     :name (n / name :op1 \"Mormugao\")\n                     :wiki \"Mormugao\")\n            :quant (q / monetary-quantity\n                      :quant 239\n                      :unit (l / lakh))))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T12:50:04.773734+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "डिझेलाच्या दरांत प्रति लिटर 80 पयशांनी वाड जाल्या",
+    "english_translation": "The price of diesel has increased by 80 paise per liter.",
+    "amr_penman": "(i / increase-01\n   :ARG1 (p / price\n             :poss (d / diesel))\n   :ARG2 (m / monetary-quantity\n             :quant 80\n             :unit (p2 / paise)\n             :per (l / liter)))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T12:50:15.304283+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "पुराय देशभरांत हे दर वाडयल्यात",
+    "english_translation": "These rates have been increased across the entire country.",
+    "amr_penman": "(i / increase-01\n   :ARG1 (r / rate\n      :mod (t / this))\n   :location (c / country\n      :mod (e / entire)))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T12:50:42.059631+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "राजकी परिस्थिती खिणाखिणाक बदलत आसा",
+    "english_translation": "The political situation is changing every moment.",
+    "amr_penman": "(c / change-01\n   :ARG1 (s / situation\n      :mod (p / political))\n   :manner (c2 / continuous))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T12:50:52.950344+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "वाडटे म्हारगाये आड काग्रेसीचें आंदोलन",
+    "english_translation": "Congress's protest against rising inflation.",
+    "amr_penman": "(p / protest-01\n   :ARG0 (c / political-party\n      :name (n / name :op1 \"Congress\"))\n   :ARG1 (i / increase-01\n      :ARG1 (i2 / inflation)))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T12:51:16.087470+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "नवी दिल्लीः सध्या देशांतली वाडटी म्हारगाय आनी इंधनाच्या वाडट्या दरांक लागून सर्वसामान्यांक व्हड फटको बसला",
+    "english_translation": "New Delhi: Currently, the common people have been hit hard due to the rising inflation in the country and the increasing prices of fuel.",
+    "amr_penman": "(h / hit-01\n   :ARG1 (p / person\n            :mod (c / common))\n   :cause (a / and\n            :op1 (g / grow-01\n                     :ARG1 (i / inflation\n                              :location (c2 / country)))\n            :op2 (g2 / grow-01\n                     :ARG1 (p2 / price\n                              :topic (f / fuel))))\n   :degree (h2 / high)\n   :time (n / now)\n   :location (c3 / city\n               :name (n2 / name\n                         :op1 \"New Delhi\")))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T12:51:35.735324+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "वाड्या म्हारगायेच्या मुद्या वयल्यान काँग्रेस बरीच आक्रमक जाल्या",
+    "english_translation": "The Congress has become very aggressive over the issue of inflation.",
+    "amr_penman": "(b / become-01 :ARG1 (p / political-party :name (n / name :op1 \"Congress\")) :ARG2 (a / aggressive :degree (v / very)) :cause (i / issue-01 :topic (i2 / inflate-01)))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T12:51:57.552194+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "सध्या सीएनजी, पीएनजी गॅस तशेच खाद्यतेलाचे दर वाडल्यात",
+    "english_translation": "Currently, the prices of CNG, PNG gas, and edible oil have increased.",
+    "amr_penman": "(i / increase-01\n   :ARG1 (p / price\n            :topic (a / and\n                      :op1 (g / gas\n                             :name (n / name :op1 \"CNG\"))\n                      :op2 (g2 / gas\n                              :name (n2 / name :op1 \"PNG\"))\n                      :op3 (o / oil\n                              :mod (e / eat-01))))\n   :time (n3 / now))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T12:52:15.706729+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "एक एप्रीलाच्यान वखदांचेय दर वाडटले",
+    "english_translation": "The prices of medicines will also increase from April 1st.",
+    "amr_penman": "(i / increase-01 :ARG1 (p / price :domain (m / medicine)) :time (d / date-entity :month 4 :day 1) :mod (a / also))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T12:52:35.467853+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "वाडट्या म्हारगायेचो सर्वसामान्यांचे व्हड परिणाम जाल्ल्याचे दिसून येता",
+    "english_translation": "It is apparent that rising inflation has a major impact on the common people.",
+    "amr_penman": "(a / appear-01\n   :ARG1 (i / impact-01\n            :ARG0 (i2 / inflation\n                     :ARG1-of (r / rise-01))\n            :ARG1 (p / person\n                     :mod (c / common))\n            :degree (l / large)))"
   }
 ]

@@ -1,0 +1,72 @@
+[
+  {
+    "timestamp_utc": "2026-02-26T12:53:37.534191+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "मुरगाव पालिकेच्या 239 लाखांच्या शिलकी अर्थसंकल्पाक मान्यताय",
+    "english_translation": "Approval for Mormugao Municipality's 239 lakh surplus budget.",
+    "amr_penman": "(a / approve-01\n   :ARG1 (b / budget\n            :mod (s / surplus)\n            :poss (m / municipality\n                     :name (n / name\n                              :op1 \"Mormugao\"))\n            :cost (m2 / monetary-quantity\n                     :quant 239\n                     :unit (l / lakh))))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T12:53:54.490180+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "डिझेलाच्या दरांत प्रति लिटर 80 पयशांनी वाड जाल्या",
+    "english_translation": "The price of diesel has increased by 80 paise per liter.",
+    "amr_penman": "(i / increase-01\n   :ARG1 (p / price\n             :topic (d / diesel))\n   :ARG2 (m / monetary-quantity\n             :quant 80\n             :unit (p2 / paise)\n             :per (l / liter)))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T12:54:05.638155+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "पुराय देशभरांत हे दर वाडयल्यात",
+    "english_translation": "These rates have been increased across the entire country.",
+    "amr_penman": "(i / increase-01\n   :ARG1 (r / rate\n      :mod (t / this))\n   :location (c / country\n      :mod (e / entire)))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T12:54:28.346124+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "राजकी परिस्थिती खिणाखिणाक बदलत आसा",
+    "english_translation": "The political situation is changing every moment.",
+    "amr_penman": "(c / change-01\n   :ARG1 (s / situation\n             :mod (p / political))\n   :frequency (m / moment))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T12:54:39.415759+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "वाडटे म्हारगाये आड काग्रेसीचें आंदोलन",
+    "english_translation": "Congress's protest against rising inflation.",
+    "amr_penman": "(p / protest-01\n   :ARG0 (c / political-party\n      :name (n / name :op1 \"Congress\"))\n   :ARG1 (i / increase-01\n      :ARG1 (i2 / inflation)))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T12:55:03.596386+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "नवी दिल्लीः सध्या देशांतली वाडटी म्हारगाय आनी इंधनाच्या वाडट्या दरांक लागून सर्वसामान्यांक व्हड फटको बसला",
+    "english_translation": "New Delhi: Currently, the common people have been hit hard due to the rising inflation in the country and the increasing prices of fuel.",
+    "amr_penman": "(h / hit-01\n   :ARG1 (p / person\n            :mod (c / common))\n   :cause (a / and\n            :op1 (g / grow-01\n                     :ARG1 (i / inflation\n                              :location (c2 / country)))\n            :op2 (g2 / grow-01\n                     :ARG1 (p2 / price\n                              :topic (f / fuel))))\n   :degree (h2 / high)\n   :time (n / now)\n   :location (c3 / city\n               :name (n2 / name\n                         :op1 \"New Delhi\")))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T12:55:17.075147+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "वाड्या म्हारगायेच्या मुद्या वयल्यान काँग्रेस बरीच आक्रमक जाल्या",
+    "english_translation": "The Congress has become very aggressive over the issue of rising inflation.",
+    "amr_penman": "(b / become-01\n   :ARG1 (p / political-party\n            :name (n / name :op1 \"Congress\"))\n   :ARG2 (a / aggressive\n            :degree (v / very))\n   :cause (i / issue-01\n             :topic (i2 / inflate-01)))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T12:55:36.766939+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "सध्या सीएनजी, पीएनजी गॅस तशेच खाद्यतेलाचे दर वाडल्यात",
+    "english_translation": "Currently, the prices of CNG, PNG gas, and edible oil have increased.",
+    "amr_penman": "(i / increase-01 :ARG1 (p / price :ARG1-of (a / and :op1 (g / gas :name (n / name :op1 \"CNG\")) :op2 (g2 / gas :name (n2 / name :op1 \"PNG\")) :op3 (o / oil :mod (e / edible)))) :time (n3 / now))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T12:55:53.038524+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "एक एप्रीलाच्यान वखदांचेय दर वाडटले",
+    "english_translation": "The prices of medicines will also increase from April 1st.",
+    "amr_penman": "(i / increase-01\n   :ARG1 (p / price\n      :topic (m / medicine))\n   :time (d / date-entity\n      :month 4\n      :day 1)\n   :mod (a / also))"
+  },
+  {
+    "timestamp_utc": "2026-02-26T12:56:14.882910+00:00",
+    "model": "gemini-2.5-pro",
+    "sentence": "वाडट्या म्हारगायेचो सर्वसामान्यांचे व्हड परिणाम जाल्ल्याचे दिसून येता",
+    "english_translation": "The great effect of rising inflation on the common people is evident.",
+    "amr_penman": "(s / see-01\n   :ARG1 (a / affect-01\n      :ARG0 (i / inflation\n         :ARG1-of (r / rise-01))\n      :ARG1 (p / public)\n      :degree (g / great)))"
+  }
+]
