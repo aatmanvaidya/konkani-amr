@@ -5,8 +5,10 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
+    "datasets>=4.8.2",
     "fastapi>=0.133.1",
     "google-genai",
+    "hf>=1.7.1",
     "python-dotenv",
     "ruff",
     "tqdm>=4.67.3",
