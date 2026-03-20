@@ -1,18 +1,21 @@
 import json
 import os
 from datetime import datetime, timezone
-from tqdm import tqdm
 
+import pandas as pd
 from dotenv import load_dotenv
 from google import genai
+from tqdm import tqdm
 
 load_dotenv()
 client = genai.Client(api_key=os.getenv("KIRAN_GEMINI_KEY"))
 
 MODEL = "gemini-2.5-pro"
+CSV_FILENAME = "wiki_sample"
 token_log_file = "gemini_token_log.jsonl"
-output_file = "amr_outputs_100.json"
-input_txt_file = r"data/clean_konkani_sentences.txt"
+error_log_file = "gemini_error_log.jsonl"
+output_file = rf"output_train/amr_outputs_{CSV_FILENAME}.json"
+input_csv_file = rf"/home/aatman/Aatman/Study/Semantic Parsing/konkani-amr/training_data/{CSV_FILENAME}.csv"
 
 amr_rules = """
 AMR RULES (PENMAN notation):
@@ -92,6 +95,20 @@ def clean_model_output(text: str) -> str:
     return text
 
 
+def log_error(sentence_id: str, sentence: str, error_type: str, error_msg: str):
+    """Log errors to a separate error log file"""
+    error_entry = {
+        "timestamp_utc": datetime.now(timezone.utc).isoformat(),
+        "sentence_id": sentence_id,
+        "sentence": sentence,
+        "error_type": error_type,
+        "error_message": error_msg,
+    }
+    with open(error_log_file, "a", encoding="utf-8") as f:
+        f.write(json.dumps(error_entry, ensure_ascii=False) + "\n")
+
+
+# Load existing output if it exists
 if os.path.exists(output_file):
     try:
         with open(output_file, "r", encoding="utf-8") as f:
@@ -103,69 +120,171 @@ if os.path.exists(output_file):
 else:
     existing_data = []
 
-with open(input_txt_file, "r", encoding="utf-8") as f:
-    sentences = [line.strip() for line in f if line.strip()]
+# Create a set of already processed IDs for fast lookup
+processed_ids = {entry.get("id") for entry in existing_data if entry.get("id")}
+print(f"Found {len(processed_ids)} already processed entries")
 
-for sentence in tqdm(sentences, desc="Proc Sentences"):
-    prompt = AMR_PROMPT_TEMPLATE.format(amr_rules=amr_rules, sentence=sentence)
-    response = client.models.generate_content(
-        model=MODEL,
-        contents=[prompt],
-        config={"temperature": 0},
-    )
-    response_text = response.text.strip()
-    cleaned_text = clean_model_output(response_text)
+# Read CSV file
+df = pd.read_csv(input_csv_file)
+
+# Count how many will be skipped
+total_rows = len(df)
+rows_to_skip = sum(1 for _, row in df.iterrows() if row["id"] in processed_ids)
+rows_to_process = total_rows - rows_to_skip
+
+print(f"Total entries in CSV: {total_rows}")
+print(f"Already processed: {rows_to_skip}")
+print(f"To be processed: {rows_to_process}")
+
+# Process each row
+for idx, row in tqdm(df.iterrows(), total=len(df), desc="Processing Sentences"):
+    sentence_id = row["id"]
+    sentence = row["text"]
+
+    # Skip if already processed
+    if sentence_id in processed_ids:
+        continue
+
     try:
-        parsed = json.loads(cleaned_text)
-        english_translation = parsed.get("english_translation")
-        amr_penman = parsed.get("amr_penman")
-    except json.JSONDecodeError:
-        print("Failed to parse JSON for sentence:", sentence)
-        english_translation = None
-        amr_penman = None
+        prompt = AMR_PROMPT_TEMPLATE.format(amr_rules=amr_rules, sentence=sentence)
+        response = client.models.generate_content(
+            model=MODEL,
+            contents=[prompt],
+            config={"temperature": 0},
+        )
 
-    output_entry = {
-        "timestamp_utc": datetime.now(timezone.utc).isoformat(),
-        "model": MODEL,
-        "sentence": sentence,
-        "english_translation": english_translation,
-        "amr_penman": amr_penman,
-    }
+        # Check if response has text attribute
+        if not hasattr(response, "text") or response.text is None:
+            error_msg = f"API returned None response. Response object: {response}"
+            print(f"\n❌ Error for sentence ID {sentence_id}")
+            print(f"   Sentence: {sentence[:100]}...")
+            print(f"   Error: {error_msg}")
 
-    existing_data.append(output_entry)
+            # Check for candidates and finish_reason
+            if hasattr(response, "candidates") and response.candidates:
+                finish_reason = (
+                    response.candidates[0].finish_reason
+                    if response.candidates
+                    else "unknown"
+                )
+                print(f"   Finish reason: {finish_reason}")
+                error_msg += f" | Finish reason: {finish_reason}"
 
-    with open(output_file, "w", encoding="utf-8") as f:
-        json.dump(existing_data, f, ensure_ascii=False, indent=2)
+            log_error(sentence_id, sentence, "API_RESPONSE_NONE", error_msg)
 
-    usage = response.usage_metadata
-    timestamp_utc = datetime.now(timezone.utc).isoformat()
+            # Save entry with None values
+            output_entry = {
+                "id": sentence_id,
+                "timestamp_utc": datetime.now(timezone.utc).isoformat(),
+                "model": MODEL,
+                "sentence": sentence,
+                "english_translation": None,
+                "amr_penman": None,
+                "error": "API returned None response",
+            }
+            existing_data.append(output_entry)
+            processed_ids.add(sentence_id)
 
-    token_log_entry = {
-        "timestamp_utc": timestamp_utc,
-        "file_name": input_txt_file,
-        "model": MODEL,
-        "prompt_tokens": usage.prompt_token_count,
-        "output_tokens": usage.candidates_token_count,
-        "total_tokens": usage.total_token_count,
-        "prompt_tokens_text": next(
-            (
-                d.token_count
-                for d in usage.prompt_tokens_details
-                if d.modality.name == "TEXT"
-            ),
-            None,
-        ),
-        "prompt_tokens_image": next(
-            (
-                d.token_count
-                for d in usage.prompt_tokens_details
-                if d.modality.name == "IMAGE"
-            ),
-            None,
-        ),
-    }
+            with open(output_file, "w", encoding="utf-8") as f:
+                json.dump(existing_data, f, ensure_ascii=False, indent=2)
 
-    with open(token_log_file, "a", encoding="utf-8") as f:
-        f.write(json.dumps(token_log_entry) + "\n")
+            continue
 
-print("Processing complete")
+        response_text = response.text.strip()
+        cleaned_text = clean_model_output(response_text)
+
+        try:
+            parsed = json.loads(cleaned_text)
+            english_translation = parsed.get("english_translation")
+            amr_penman = parsed.get("amr_penman")
+        except json.JSONDecodeError as e:
+            print(
+                f"\n⚠️  JSON parse error for sentence ID {sentence_id}: {sentence[:100]}..."
+            )
+            print(f"   Error: {str(e)}")
+            print(f"   Response text: {cleaned_text[:200]}...")
+            log_error(
+                sentence_id,
+                sentence,
+                "JSON_PARSE_ERROR",
+                f"{str(e)} | Response: {cleaned_text[:500]}",
+            )
+            english_translation = None
+            amr_penman = None
+
+        output_entry = {
+            "id": sentence_id,
+            "timestamp_utc": datetime.now(timezone.utc).isoformat(),
+            "model": MODEL,
+            "sentence": sentence,
+            "english_translation": english_translation,
+            "amr_penman": amr_penman,
+        }
+
+        existing_data.append(output_entry)
+        processed_ids.add(sentence_id)
+
+        with open(output_file, "w", encoding="utf-8") as f:
+            json.dump(existing_data, f, ensure_ascii=False, indent=2)
+
+        # Log token usage if available
+        if hasattr(response, "usage_metadata") and response.usage_metadata:
+            usage = response.usage_metadata
+            timestamp_utc = datetime.now(timezone.utc).isoformat()
+
+            token_log_entry = {
+                "timestamp_utc": timestamp_utc,
+                "file_name": input_csv_file,
+                "model": MODEL,
+                "sentence_id": sentence_id,
+                "prompt_tokens": usage.prompt_token_count,
+                "output_tokens": usage.candidates_token_count,
+                "total_tokens": usage.total_token_count,
+                "prompt_tokens_text": next(
+                    (
+                        d.token_count
+                        for d in usage.prompt_tokens_details
+                        if d.modality.name == "TEXT"
+                    ),
+                    None,
+                ),
+                "prompt_tokens_image": next(
+                    (
+                        d.token_count
+                        for d in usage.prompt_tokens_details
+                        if d.modality.name == "IMAGE"
+                    ),
+                    None,
+                ),
+            }
+
+            with open(token_log_file, "a", encoding="utf-8") as f:
+                f.write(json.dumps(token_log_entry) + "\n")
+
+    except Exception as e:
+        # Catch any other unexpected errors
+        error_msg = f"Unexpected error: {type(e).__name__}: {str(e)}"
+        print(f"\n❌ Unexpected error for sentence ID {sentence_id}")
+        print(f"   Sentence: {sentence[:100]}...")
+        print(f"   Error: {error_msg}")
+        log_error(sentence_id, sentence, "UNEXPECTED_ERROR", error_msg)
+
+        # Save entry with None values and error info
+        output_entry = {
+            "id": sentence_id,
+            "timestamp_utc": datetime.now(timezone.utc).isoformat(),
+            "model": MODEL,
+            "sentence": sentence,
+            "english_translation": None,
+            "amr_penman": None,
+            "error": error_msg,
+        }
+        existing_data.append(output_entry)
+        processed_ids.add(sentence_id)
+
+        with open(output_file, "w", encoding="utf-8") as f:
+            json.dump(existing_data, f, ensure_ascii=False, indent=2)
+
+print("\nProcessing complete")
+print(f"Total entries in output file: {len(existing_data)}")
+print(f"Check '{error_log_file}' for any errors that occurred")
