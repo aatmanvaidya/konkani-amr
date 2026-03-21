@@ -38,23 +38,24 @@ else
 fi
 
 # Navigate to the script directory
-cd $PROJECT_ROOT/experiments/transfer_learning/finetune || exit 1
+cd $PROJECT_ROOT/experiments/baseline || exit 1
 echo "Working directory: $(pwd)"
 
 # Create logs directory if it doesn't exist
 mkdir -p logs
+mkdir -p results
 
 # 4. Run baseline evaluation
-python "experiments/baseline/calculate_baseline_smatch.py" \
+uv run calculate_baseline_smatch.py \
     --model_name "BramVanroy/mbart-large-cc25-ft-amr30-en" \
-    --data_csv "annotations/gemini/output_train/data.csv" \
+    --data_csv "./data.csv" \
     --text_column "sentence" \
     --amr_column "amr_penman" \
-    --src_lang "en_XX" \
+    --src_lang "hi_IN" \
     --batch_size 4 \
     --num_beams 5 \
-    --max_new_tokens 900 \
-    --output_dir "experiments/baseline/results"
+    --max_new_tokens 512 \
+    --output_dir "./results"
 
 EXIT_CODE=$?
 
