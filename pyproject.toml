@@ -9,8 +9,7 @@ dependencies = [
     "datasets>=4.8.2",
     "fastapi>=0.133.1",
     "google-genai",
-    # "hf>=1.7.1",
-	"hf>=1.0",
+    "hf>=1.7.1",
     "pandas>=2.3.3",
     "penman>=1.3.1",
     "python-dotenv",
@@ -19,6 +18,5 @@ dependencies = [
     "smatchpp>=1.8.0",
     "torch>=2.10.0",
     "tqdm>=4.67.3",
-    "transformers==4.33.1",
     "uvicorn>=0.41.0",
 ]
