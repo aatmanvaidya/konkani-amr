@@ -1,0 +1,11 @@
+{
+  "metrics": {
+    "Smatch Precision": 0.1599,
+    "Smatch Recall": 0.2563,
+    "Smatch Fscore": 0.197,
+    "Smatch Unparsable": 34.91,
+    "Smatch Unparsable Count": 384,
+    "Conversion Success Rate": 100.0,
+    "Num Examples": 1100
+  }
+}

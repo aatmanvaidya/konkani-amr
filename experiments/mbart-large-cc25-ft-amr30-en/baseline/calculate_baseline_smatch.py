@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 import argparse
 import json
 from pathlib import Path
@@ -12,7 +11,9 @@ from transformers import AutoTokenizer, MBartForConditionalGeneration
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Simple baseline: run mbart inference and print SMATCH.")
+    parser = argparse.ArgumentParser(
+        description="Simple baseline: run mbart inference and print SMATCH."
+    )
     parser.add_argument(
         "--model_name",
         type=str,
@@ -25,19 +26,42 @@ def parse_args() -> argparse.Namespace:
         default="annotations/gemini/output_train/data.csv",
         help="CSV with sentence + gold AMR (Penman).",
     )
-    parser.add_argument("--text_column", type=str, default="sentence", help="CSV column containing source text.")
-    parser.add_argument("--amr_column", type=str, default="amr_penman", help="CSV column containing gold Penman AMRs.")
-    parser.add_argument("--src_lang", type=str, default="en_XX", help="mbart source language code.")
-    parser.add_argument("--batch_size", type=int, default=4, help="Batch size for inference.")
-    parser.add_argument("--num_beams", type=int, default=5, help="Beam size for generation.")
-    parser.add_argument("--max_new_tokens", type=int, default=512, help="Max new tokens.")
+    parser.add_argument(
+        "--text_column",
+        type=str,
+        default="sentence",
+        help="CSV column containing source text.",
+    )
+    parser.add_argument(
+        "--amr_column",
+        type=str,
+        default="amr_penman",
+        help="CSV column containing gold Penman AMRs.",
+    )
+    parser.add_argument(
+        "--src_lang", type=str, default="hi_IN", help="mbart source language code."
+    )
+    parser.add_argument(
+        "--batch_size", type=int, default=4, help="Batch size for inference."
+    )
+    parser.add_argument(
+        "--num_beams", type=int, default=5, help="Beam size for generation."
+    )
+    parser.add_argument(
+        "--max_new_tokens", type=int, default=512, help="Max new tokens."
+    )
     parser.add_argument(
         "--output_dir",
         type=str,
         default="experiments/baseline/results",
         help="Directory for predictions + metrics.",
     )
-    parser.add_argument("--forced_bos_token_id", type=int, default=250181, help="AMR BOS token id from your notebook.")
+    parser.add_argument(
+        "--forced_bos_token_id",
+        type=int,
+        default=250181,
+        help="AMR BOS token id from your notebook.",
+    )
     parser.add_argument("--seed", type=int, default=42, help="Random seed.")
     return parser.parse_args()
 
@@ -126,7 +150,9 @@ def main() -> None:
     print(f"Dataset size: {len(texts)}")
 
     preds: List[str] = []
-    for start in tqdm(range(0, len(texts), args.batch_size), desc="Inference", unit="batch"):
+    for start in tqdm(
+        range(0, len(texts), args.batch_size), desc="Inference", unit="batch"
+    ):
         batch_texts = texts[start : start + args.batch_size]
         batch_preds = batch_translate(
             texts=batch_texts,
