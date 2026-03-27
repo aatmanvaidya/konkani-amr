@@ -1,7 +1,8 @@
 import csv
+
 import torch
-from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 from IndicTransToolkit.processor import IndicProcessor
+from transformers import AutoModelForSeq2SeqLM, AutoTokenizer
 
 DEVICE = "cuda" if torch.cuda.is_available() else "cpu"
 
@@ -31,7 +32,7 @@ with open(output_csv_file, "w", encoding="utf-8", newline="") as csvfile:
     writer.writerow(["konkani_text", "english_translation"])
 
     for i in range(0, len(sentences), batch_size):
-        batch_sentences = sentences[i:i + batch_size]
+        batch_sentences = sentences[i : i + batch_size]
 
         processed_batch = ip.preprocess_batch(
             batch_sentences,

@@ -8,7 +8,6 @@ from penman import Graph
 from penman.models.noop import model as noop_model
 from penman.tree import _default_variable_prefix
 
-
 BACKOFF = penman.Graph(
     [
         penman.Triple("d2", ":instance", "dog"),
@@ -28,7 +27,7 @@ def connect_graph_if_not_connected(graph: penman.Graph):
     try:
         _ = penman.encode(graph)
         return graph, ParsedStatus.OK
-    except:
+    except Exception:
         pass
 
     nxgraph = nx.MultiGraph()
@@ -61,7 +60,11 @@ def fix_and_make_graph(nodes, verbose: bool = False) -> Graph:
     nodes_ = []
     for n in nodes:
         if isinstance(n, str):
-            if n.startswith("<") and n.endswith(">") and (not n.startswith(("<pointer:"))):
+            if (
+                n.startswith("<")
+                and n.endswith(">")
+                and (not n.startswith(("<pointer:")))
+            ):
                 pass
             else:
                 nodes_.append(n)
@@ -96,15 +99,21 @@ def fix_and_make_graph(nodes, verbose: bool = False) -> Graph:
     pointer_map = {}
     varname_counter = Counter()
     while i < len(nodes) - 2:
-        open_rel_token = nodes[i] if i > -1 else "("  # So we can match if the pointer token is the FIRST token
+        open_rel_token = (
+            nodes[i] if i > -1 else "("
+        )  # So we can match if the pointer token is the FIRST token
         pointer_token = nodes[i + 1]
         token = nodes[i + 2]
 
-        if open_rel_token.strip() == "(" and pointer_token.strip().startswith("<pointer:"):
+        if open_rel_token.strip() == "(" and pointer_token.strip().startswith(
+            "<pointer:"
+        ):
             varname = _default_variable_prefix(token)
             varname_counter[varname] += 1
             pointer_map[pointer_token] = (
-                varname if varname_counter[varname] < 2 else f"{varname}{varname_counter[varname]}"
+                varname
+                if varname_counter[varname] < 2
+                else f"{varname}{varname_counter[varname]}"
             )
         i += 1
     if verbose:
@@ -183,7 +192,12 @@ def fix_and_make_graph(nodes, verbose: bool = False) -> Graph:
             variables.add(last)
             nodes_.append(next)
 
-        elif _classify(next) == "VAR" and next in remap and (i < len(nodes) - 1) and nodes[i + 1] != "/":
+        elif (
+            _classify(next) == "VAR"
+            and next in remap
+            and (i < len(nodes) - 1)
+            and nodes[i + 1] != "/"
+        ):
             next = remap[next]
             nodes_.append(next)
 
@@ -218,14 +232,20 @@ def fix_and_make_graph(nodes, verbose: bool = False) -> Graph:
             pieces.append("(")
         else:
             piece = str(piece)
-            if piece.startswith('"') or piece.startswith('"') or '"' in piece.strip('"'):
+            if (
+                piece.startswith('"')
+                or piece.startswith('"')
+                or '"' in piece.strip('"')
+            ):
                 piece = '"' + piece.replace('"', "") + '"'
 
             prev = _classify(pieces[-1])
             next = _classify(piece)
 
             # Do not wrap foating numbers in double quotes. E.g. :quant 303.3
-            piece_is_number = all([c == "." or c.isdigit() for c in piece]) and piece.count(".") < 2
+            piece_is_number = (
+                all([c == "." or c.isdigit() for c in piece]) and piece.count(".") < 2
+            )
 
             if next == "CONST":
                 quote = False
@@ -406,7 +426,7 @@ def token_processing(tok):
     elif tok.isdigit():
         try:
             return eval(tok)
-        except:
+        except Exception:
             return tok
     elif tok.startswith('"') and (not tok.endswith('"')):
         return tok + '"'

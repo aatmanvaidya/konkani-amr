@@ -55,7 +55,11 @@ def postprocess_str_after_linearization(linearized: str, verbose: bool = False) 
     def replace_rel(match):
         return "<rel>" if match.group() == "(" else "</rel>"
 
-    linearized = re.sub(r"(?<!<lit>)\((?![^<]*<\/lit>)|(?<!<lit>)\)(?![^<]*<\/lit>)", replace_rel, linearized)
+    linearized = re.sub(
+        r"(?<!<lit>)\((?![^<]*<\/lit>)|(?<!<lit>)\)(?![^<]*<\/lit>)",
+        replace_rel,
+        linearized,
+    )
     if verbose:
         print("after repl rel", linearized)
 
@@ -71,7 +75,9 @@ def postprocess_str_after_linearization(linearized: str, verbose: bool = False) 
     # Do not do it when the previous token is quant, because that may lead to issues where `:quant -70` -> `:quant-70`
     # because -70 is a special token too. Probably other classes like `:op` should be included in the
     # negative lookbehind  too (but not easy because neg lookbehind must be fixed width)
-    linearized = re.sub(rf"\s+(?<!:quant )({'|'.join(get_added_vocabulary())})", r"\1", linearized)
+    linearized = re.sub(
+        rf"\s+(?<!:quant )({'|'.join(get_added_vocabulary())})", r"\1", linearized
+    )
 
     if verbose:
         print("after remove space before special tokens", linearized)
@@ -93,10 +99,14 @@ def postprocess_str_after_delinearization(delinearized: str) -> str:
     # Include `-` for e.g. :prep-with
     # But not when in a literal!
     # E.g. do not split `:value <lit> http://online.wsj.com/article/NA_WSJ_PUB:SB123258358706104403.html </lit>`
-    delinearized = re.sub(r"(?<!<lit>)\s+(\S+?)\s*(:[a-zA-Z][a-zA-Z0-9-]+)", r" \1 \2 ", delinearized)
+    delinearized = re.sub(
+        r"(?<!<lit>)\s+(\S+?)\s*(:[a-zA-Z][a-zA-Z0-9-]+)", r" \1 \2 ", delinearized
+    )
 
     # Glue role digits together, e.g. ':op1 0 <rel>' -> :op10 <rel>
-    delinearized = re.sub(r"(:[a-zA-Z][a-zA-Z0-9]+)\s+(\d+)\s*<(rel|lit)>", r"\1\2 <\3>", delinearized)
+    delinearized = re.sub(
+        r"(:[a-zA-Z][a-zA-Z0-9]+)\s+(\d+)\s*<(rel|lit)>", r"\1\2 <\3>", delinearized
+    )
 
     # Glue -of back to a role
     delinearized = re.sub(r"\s+-of\s*<rel>", r"-of <rel>", delinearized)
@@ -127,12 +137,20 @@ def postprocess_str_after_delinearization(delinearized: str) -> str:
                 # content results in an url, filename or email. If so, keep it like that.
                 # This is not always perfect because URLs are sometimes (incorrectly) written with spaces in the corpus
                 merged_content = content.replace(" ", "")
-                if _is_url(merged_content) or _is_filename(merged_content) or _is_email(merged_content):
+                if (
+                    _is_url(merged_content)
+                    or _is_filename(merged_content)
+                    or _is_email(merged_content)
+                ):
                     content = merged_content
 
         return f' {prev_item} :{rel} "{content}" '
 
-    delinearized = re.sub(r"(\S+)?\s*:([a-zA-Z][a-zA-Z0-9]+)\s*<lit>([^<]*?)</lit>", reverse_literal, delinearized)
+    delinearized = re.sub(
+        r"(\S+)?\s*:([a-zA-Z][a-zA-Z0-9]+)\s*<lit>([^<]*?)</lit>",
+        reverse_literal,
+        delinearized,
+    )
 
     # In case the regex above does not exactly matches, try to get rid of <lit> with simple replace
     # Useful for invalid graphs
@@ -141,7 +159,9 @@ def postprocess_str_after_delinearization(delinearized: str) -> str:
     # Glue numbers back together, e.g. ':quant -54 7' -> ':quant -547'
     # but should not trigger for literal values, like ':value "34 61 09 91 12 135"'
     # Should not consider glueing things back to roles (like `:op1 12 "hello"` -> `:op112`); that is dealt with earlier
-    delinearized = re.sub(r"(?<![\"\D])(-?\d+\.?\d*)\s+(\d+)(?!\s*[\d\"<])", r"\1\2", delinearized)
+    delinearized = re.sub(
+        r"(?<![\"\D])(-?\d+\.?\d*)\s+(\d+)(?!\s*[\d\"<])", r"\1\2", delinearized
+    )
 
     # Add -of back to utterances for regular words (NOT for -of roles)
     # E.g., `:mod <rel> <pointer:4> first-of -all </rel>` -> `first-of-all </rel>`
@@ -157,7 +177,9 @@ def postprocess_str_after_delinearization(delinearized: str) -> str:
 
         return f"{pointer} {content} "
 
-    delinearized = re.sub(r"(<pointer:\d+>)\s*([-a-z\d\s]+)\s*(?=[<:])", fix_dashes, delinearized)
+    delinearized = re.sub(
+        r"(<pointer:\d+>)\s*([-a-z\d\s]+)\s*(?=[<:])", fix_dashes, delinearized
+    )
 
     # Ensure spaces around pointers
     delinearized = re.sub(r"\s*(<pointer:\d+>)\s*", r" \1 ", delinearized)
@@ -165,9 +187,15 @@ def postprocess_str_after_delinearization(delinearized: str) -> str:
     delinearized = delinearized.replace("<rel>", " ( ")
     delinearized = delinearized.replace("</rel>", " ) ")
 
-    non_dash_number_added = [t for t in get_added_vocabulary() if t.startswith(":") or t in SPECIAL_ADDITIONS]
-    delinearized = re.sub(rf"({'|'.join(non_dash_number_added)})\s*(-?\d*.?\d+)", r"\1 \2 ", delinearized)
-    delinearized = re.sub(rf"({'|'.join(non_dash_number_added)})\s*(-?\d*.?\d+)", r"\1 \2 ", delinearized)
+    non_dash_number_added = [
+        t for t in get_added_vocabulary() if t.startswith(":") or t in SPECIAL_ADDITIONS
+    ]
+    delinearized = re.sub(
+        rf"({'|'.join(non_dash_number_added)})\s*(-?\d*.?\d+)", r"\1 \2 ", delinearized
+    )
+    delinearized = re.sub(
+        rf"({'|'.join(non_dash_number_added)})\s*(-?\d*.?\d+)", r"\1 \2 ", delinearized
+    )
 
     # Remove duplicate spaces
     delinearized = " ".join(delinearized.split())

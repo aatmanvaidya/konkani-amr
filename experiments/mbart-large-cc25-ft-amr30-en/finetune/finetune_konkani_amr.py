@@ -23,17 +23,17 @@ from torch.utils.data import Dataset
 from tqdm import tqdm
 from transformers import (
     AutoTokenizer,
+    DataCollatorForSeq2Seq,
+    EarlyStoppingCallback,
     MBartForConditionalGeneration,
     Seq2SeqTrainer,
     Seq2SeqTrainingArguments,
-    DataCollatorForSeq2Seq,
-    EarlyStoppingCallback,
 )
-
 
 # ---------------------------------------------------------------------------
 # CLI
 # ---------------------------------------------------------------------------
+
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
@@ -43,7 +43,9 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--data_csv", type=str, default="data.csv")
     parser.add_argument("--text_column", type=str, default="sentence")
     parser.add_argument("--amr_column", type=str, default="amr_penman")
-    parser.add_argument("--test_size", type=float, default=0.2, help="Fraction held out for testing.")
+    parser.add_argument(
+        "--test_size", type=float, default=0.2, help="Fraction held out for testing."
+    )
 
     # Model
     parser.add_argument(
@@ -51,27 +53,42 @@ def parse_args() -> argparse.Namespace:
         type=str,
         default="BramVanroy/mbart-large-cc25-ft-amr30-en",
     )
-    parser.add_argument("--src_lang", type=str, default="hi_IN",
-                        help="mBART language code closest to Konkani (Devanagari).")
-    parser.add_argument("--forced_bos_token_id", type=int, default=250181,
-                        help="AMR BOS token id.")
+    parser.add_argument(
+        "--src_lang",
+        type=str,
+        default="hi_IN",
+        help="mBART language code closest to Konkani (Devanagari).",
+    )
+    parser.add_argument(
+        "--forced_bos_token_id", type=int, default=250181, help="AMR BOS token id."
+    )
 
     # Training hyper-params
     parser.add_argument("--num_train_epochs", type=int, default=10)
     parser.add_argument("--learning_rate", type=float, default=5e-5)
     parser.add_argument("--per_device_train_batch_size", type=int, default=4)
     parser.add_argument("--per_device_eval_batch_size", type=int, default=4)
-    parser.add_argument("--gradient_accumulation_steps", type=int, default=4,
-                        help="Effective batch = per_device × grad_accum.")
+    parser.add_argument(
+        "--gradient_accumulation_steps",
+        type=int,
+        default=4,
+        help="Effective batch = per_device × grad_accum.",
+    )
     parser.add_argument("--warmup_ratio", type=float, default=0.1)
     parser.add_argument("--weight_decay", type=float, default=0.01)
     parser.add_argument("--max_source_length", type=int, default=128)
     parser.add_argument("--max_target_length", type=int, default=512)
     parser.add_argument("--early_stopping_patience", type=int, default=3)
-    parser.add_argument("--fp16", action="store_true",
-                        help="Enable mixed-precision training (A100 supports bf16).")
-    parser.add_argument("--bf16", action="store_true",
-                        help="Enable bfloat16 training (preferred on A100).")
+    parser.add_argument(
+        "--fp16",
+        action="store_true",
+        help="Enable mixed-precision training (A100 supports bf16).",
+    )
+    parser.add_argument(
+        "--bf16",
+        action="store_true",
+        help="Enable bfloat16 training (preferred on A100).",
+    )
 
     # Generation (for inference after training)
     parser.add_argument("--num_beams", type=int, default=5)
@@ -79,8 +96,12 @@ def parse_args() -> argparse.Namespace:
 
     # Paths
     parser.add_argument("--output_dir", type=str, default="./results_finetune")
-    parser.add_argument("--checkpoint_dir", type=str, default="./checkpoints",
-                        help="Where HF Trainer saves model checkpoints.")
+    parser.add_argument(
+        "--checkpoint_dir",
+        type=str,
+        default="./checkpoints",
+        help="Where HF Trainer saves model checkpoints.",
+    )
 
     parser.add_argument("--seed", type=int, default=42)
     return parser.parse_args()
@@ -89,6 +110,7 @@ def parse_args() -> argparse.Namespace:
 # ---------------------------------------------------------------------------
 # Reproducibility
 # ---------------------------------------------------------------------------
+
 
 def setup_seed(seed: int) -> None:
     random.seed(seed)
@@ -102,6 +124,7 @@ def setup_seed(seed: int) -> None:
 # ---------------------------------------------------------------------------
 # Dataset
 # ---------------------------------------------------------------------------
+
 
 class AMRDataset(Dataset):
     """Tokenises sentence→AMR pairs for Seq2Seq training."""
@@ -151,6 +174,7 @@ class AMRDataset(Dataset):
 # Data helpers
 # ---------------------------------------------------------------------------
 
+
 def load_and_split(
     csv_path: str,
     text_col: str,
@@ -187,6 +211,7 @@ def load_and_split(
 # Inference
 # ---------------------------------------------------------------------------
 
+
 def batch_generate(
     texts: List[str],
     model: MBartForConditionalGeneration,
@@ -200,7 +225,9 @@ def batch_generate(
     tokenizer.src_lang = src_lang
     preds: List[str] = []
 
-    for start in tqdm(range(0, len(texts), batch_size), desc="Generating", unit="batch"):
+    for start in tqdm(
+        range(0, len(texts), batch_size), desc="Generating", unit="batch"
+    ):
         batch = texts[start : start + batch_size]
         encoded = tokenizer(
             batch,
@@ -227,6 +254,7 @@ def batch_generate(
 # SMATCH
 # ---------------------------------------------------------------------------
 
+
 def compute_smatch(
     golds: List[str], preds: List[str]
 ) -> Tuple[float, float, float, int]:
@@ -249,6 +277,7 @@ def compute_smatch(
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
+
 
 def main() -> None:
     args = parse_args()
@@ -314,7 +343,7 @@ def main() -> None:
         weight_decay=args.weight_decay,
         fp16=args.fp16,
         bf16=args.bf16,
-        predict_with_generate=False,   # We do generation manually for SMATCH
+        predict_with_generate=False,  # We do generation manually for SMATCH
         evaluation_strategy="epoch",
         save_strategy="epoch",
         load_best_model_at_end=True,
@@ -323,7 +352,7 @@ def main() -> None:
         logging_dir=str(out_dir / "logs"),
         logging_steps=10,
         save_total_limit=2,
-        report_to="none",              # Change to "wandb" if you want W&B logging
+        report_to="none",  # Change to "wandb" if you want W&B logging
         seed=args.seed,
         dataloader_num_workers=4,
     )
@@ -335,7 +364,9 @@ def main() -> None:
         eval_dataset=eval_dataset,
         tokenizer=tokenizer,
         data_collator=data_collator,
-        callbacks=[EarlyStoppingCallback(early_stopping_patience=args.early_stopping_patience)],
+        callbacks=[
+            EarlyStoppingCallback(early_stopping_patience=args.early_stopping_patience)
+        ],
     )
 
     # ── Fine-tune ──────────────────────────────────────────────────────────

@@ -1,6 +1,7 @@
-import pandas as pd
-import uuid
 import os
+import uuid
+
+import pandas as pd
 
 # Fixed seed for reproducibility
 SEED = 42
@@ -15,12 +16,14 @@ bpcc_path = os.path.join(base_path, "bpcc-seed-latest/gom_Deva.tsv")
 # Global UUID set to guarantee uniqueness across BOTH files
 used_ids = set()
 
+
 def generate_unique_uuid():
     while True:
         uid = str(uuid.uuid4())
         if uid not in used_ids:
             used_ids.add(uid)
             return uid
+
 
 def process_file(input_path, output_csv):
     # Load TSV
@@ -38,14 +41,17 @@ def process_file(input_path, output_csv):
     sampled = df.sample(n=SAMPLE_SIZE, random_state=SEED)
 
     # Create output dataframe
-    out_df = pd.DataFrame({
-        "id": [generate_unique_uuid() for _ in range(len(sampled))],
-        "text": sampled["tgt"].values
-    })
+    out_df = pd.DataFrame(
+        {
+            "id": [generate_unique_uuid() for _ in range(len(sampled))],
+            "text": sampled["tgt"].values,
+        }
+    )
 
     # Save CSV
     out_df.to_csv(output_csv, index=False)
     print(f"Saved {output_csv}")
+
 
 # Run for both datasets
 process_file(wiki_path, "wiki_sample.csv")

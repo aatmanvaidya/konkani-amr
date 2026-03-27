@@ -1,8 +1,12 @@
-import json
 import csv
+import json
 
 # Your JSON files
-files = [r"../output_train/amr_outputs_100.json", r"../output_train/amr_outputs_bpcc_latest_sample.json", r"../output_train/amr_outputs_wiki_sample.json"]
+files = [
+    r"../output_train/amr_outputs_100.json",
+    r"../output_train/amr_outputs_bpcc_latest_sample.json",
+    r"../output_train/amr_outputs_wiki_sample.json",
+]
 
 merged = []
 
@@ -15,10 +19,10 @@ for file in files:
 # Write CSV
 with open(r"../output_train/data.csv", "w", newline="", encoding="utf-8") as csvfile:
     writer = csv.writer(csvfile)
-    
+
     # header
     writer.writerow(["sentence", "amr_penman"])
-    
+
     # rows
     for item in merged:
         sentence = item.get("sentence", "")

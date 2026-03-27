@@ -1,17 +1,22 @@
 #!/usr/bin/env python3
 import argparse
 import json
-import sys
 from pathlib import Path
 from typing import Any
 
 import penman
-from smatchpp import eval_statistics, preprocess, solvers
-
-from postprocessing_graph import BACKOFF, ParsedStatus, connect_graph_if_not_connected, fix_and_make_graph
-from postprocessing_str import postprocess_str_after_delinearization, tokenize_except_quotes_and_angles
 from backoff_smatch import BackOffSmatchpp
-
+from postprocessing_graph import (
+    BACKOFF,
+    ParsedStatus,
+    connect_graph_if_not_connected,
+    fix_and_make_graph,
+)
+from postprocessing_str import (
+    postprocess_str_after_delinearization,
+    tokenize_except_quotes_and_angles,
+)
+from smatchpp import eval_statistics, preprocess, solvers
 
 # def _setup_imports() -> None:
 #     repo_root = Path(__file__).resolve().parents[3]
@@ -21,6 +26,7 @@ from backoff_smatch import BackOffSmatchpp
 
 
 # _setup_imports()
+
 
 def linearized_to_penman(linearized: str) -> tuple[str, str]:
     try:
@@ -56,19 +62,27 @@ def load_predictions(path: Path) -> list[dict[str, Any]]:
 #         "smatch_backoff_pairs": len(backoff_idxs),
 #     }
 
+
 def compute_smatch(refs: list[str], preds: list[str]) -> dict[str, float]:
     ilp = solvers.ILP()
-    printer = eval_statistics.ResultPrinter(score_type="micro", do_bootstrap=True, output_format="json")
+    printer = eval_statistics.ResultPrinter(
+        score_type="micro", do_bootstrap=True, output_format="json"
+    )
 
     # smatchpp API changed across versions — AMRStandardizer moved or was renamed
     try:
         # Newer smatchpp versions
         from smatchpp import standardize
-        graph_standardizer = standardize.AMRStandardizer(syntactic_standardization="dereify")
+
+        graph_standardizer = standardize.AMRStandardizer(
+            syntactic_standardization="dereify"
+        )
     except (ImportError, AttributeError):
         try:
             # Older API
-            graph_standardizer = preprocess.AMRStandardizer(syntactic_standardization="dereify")
+            graph_standardizer = preprocess.AMRStandardizer(
+                syntactic_standardization="dereify"
+            )
         except AttributeError:
             # Fall back to no standardizer
             graph_standardizer = None
@@ -92,7 +106,9 @@ def compute_smatch(refs: list[str], preds: list[str]) -> dict[str, float]:
     }
 
 
-def build_results(rows: list[dict[str, Any]]) -> tuple[list[str], list[str], list[dict[str, Any]]]:
+def build_results(
+    rows: list[dict[str, Any]],
+) -> tuple[list[str], list[str], list[dict[str, Any]]]:
     refs: list[str] = []
     preds: list[str] = []
     detailed_rows: list[dict[str, Any]] = []
@@ -126,7 +142,9 @@ def build_results(rows: list[dict[str, Any]]) -> tuple[list[str], list[str], lis
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Compute Smatch for Konkani AMR predictions.")
+    parser = argparse.ArgumentParser(
+        description="Compute Smatch for Konkani AMR predictions."
+    )
     parser.add_argument(
         "--predictions-json",
         type=Path,
@@ -150,14 +168,20 @@ def main() -> None:
     rows = load_predictions(args.predictions_json)
     refs, preds, detailed_rows = build_results(rows)
     if not refs:
-        raise ValueError("No valid rows found. Ensure gold_amr and model_output_linearized exist.")
+        raise ValueError(
+            "No valid rows found. Ensure gold_amr and model_output_linearized exist."
+        )
 
     metrics = compute_smatch(refs, preds)
     metrics["num_examples_scored"] = len(refs)
     metrics["num_examples_total"] = len(rows)
 
-    args.output_json.write_text(json.dumps(metrics, indent=2, ensure_ascii=False), encoding="utf-8")
-    args.output_detailed_json.write_text(json.dumps(detailed_rows, indent=2, ensure_ascii=False), encoding="utf-8")
+    args.output_json.write_text(
+        json.dumps(metrics, indent=2, ensure_ascii=False), encoding="utf-8"
+    )
+    args.output_detailed_json.write_text(
+        json.dumps(detailed_rows, indent=2, ensure_ascii=False), encoding="utf-8"
+    )
 
     print(json.dumps(metrics, indent=2, ensure_ascii=False))
     print(f"\nWrote metrics to: {args.output_json}")

@@ -1,6 +1,6 @@
+import penman
 from postprocessing_graph import BACKOFF
 from smatchpp import Smatchpp, util
-import penman
 
 
 class BackOffSmatchpp(Smatchpp):
@@ -12,7 +12,7 @@ class BackOffSmatchpp(Smatchpp):
         for i, a in enumerate(amrs):
             try:
                 match, tmpstatus, _ = self.process_pair(a, amrs2[i])
-            except Exception as exc:
+            except Exception:
                 back_offed_idxs.append(i)
                 match, tmpstatus, _ = self.process_pair(a, penman.encode(BACKOFF))
             status.append(tmpstatus)
