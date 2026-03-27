@@ -183,13 +183,20 @@ class KonkaniAMRDataset(Dataset):
             padding=False,
         )
 
-        with self.tokenizer.as_target_tokenizer():
-            labels = self.tokenizer(
-                tgt,
-                max_length=MAX_TGT_LEN,
-                truncation=True,
-                padding=False,
-            )
+        # with self.tokenizer.as_target_tokenizer():
+        #     labels = self.tokenizer(
+        #         tgt,
+        #         max_length=MAX_TGT_LEN,
+        #         truncation=True,
+        #         padding=False,
+        #     )
+        # Change this:
+        labels = self.tokenizer(
+            text_target=tgt,
+            max_length=MAX_TGT_LEN,
+            truncation=True,
+            padding=False,
+        )
 
         model_inputs["labels"] = labels["input_ids"]
         return model_inputs
@@ -429,6 +436,7 @@ def main():
     )
 
     # ── 4. Training arguments ─────────────────────────────────────────────
+    model.generation_config.forced_bos_token_id = tokenizer.lang_code_to_id[TGT_LANG]
     training_args = Seq2SeqTrainingArguments(
         output_dir=str(output_dir / "checkpoints"),
         num_train_epochs=args.epochs,
@@ -438,7 +446,7 @@ def main():
         learning_rate=args.lr,
         warmup_steps=args.warmup_steps,
         weight_decay=0.01,
-        evaluation_strategy="epoch",
+        eval_strategy="epoch",
         save_strategy="epoch",
         load_best_model_at_end=True,
         metric_for_best_model="eval_loss",
@@ -450,8 +458,6 @@ def main():
         save_total_limit=2,
         report_to="none",
         seed=args.seed,
-        # Needed for mBART – ensures labels have the correct lang token
-        forced_bos_token_id=tokenizer.lang_code_to_id[TGT_LANG],
     )
 
     # ── 5. Train ──────────────────────────────────────────────────────────
@@ -460,7 +466,8 @@ def main():
         args=training_args,
         train_dataset=train_dataset,
         eval_dataset=val_dataset,
-        tokenizer=tokenizer,
+        # tokenizer=tokenizer,
+        processing_class=tokenizer,
         data_collator=data_collator,
     )
 
