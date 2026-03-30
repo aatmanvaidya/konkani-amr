@@ -15,3 +15,5 @@ bpcc_konkani/
 
 **.ipynb_checkpoints/
 uv.lock
+experiments/mbart-large-cc25-ft-amr30-en/finetune/konkani_amr_finetuned/checkpoints/
+experiments/mbart-large-cc25-ft-amr30-en/finetune/konkani_amr_finetuned/best_model/
