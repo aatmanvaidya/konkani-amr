@@ -1,0 +1,1260 @@
+sentence,amr_penman
+जपानी आक्रमणा उपरांत 1939 मेरेन तिचे आवयन तिका थंयच वाडयली.,"(r / raise-02 :ARG0 (m / mother :poss (p / person)) :ARG1 p :location (t / there) :time (a / and :op1 (a2 / after :op1 (i / invade-01 :ARG0 (c / country :name (n / name :op1 ""Japan"")))) :op2 (b / before :op1 (d / date-entity :year 1940))))"
+"फवाऱ्याच्या झोताक लागून उरिल्ली  पोकळी, जी हिमालयाचे दक्षिणेक आशिल्ल्या मार्गावयल्यान तिबेटाचे उत्तरेक वचपी मार्गार मोडण घेता, मागीर उश्ण आनी दमट हवेक आकर्शीत करता.","(a3 / attract-01 :ARG0 (v / vacuum :ARG1-of (l / leave-01 :ARG0 (j / stream :mod (j2 / jet))) :ARG0-of (b / bend-01 :source (p / path :location (s / south :part-of (c / country :name (n / name :op1 ""Himalayas"") :wiki ""Himalayas""))) :destination (p2 / path :ARG0-of (g / go-01 :destination (n2 / north :part-of (c2 / country :name (n3 / name :op1 ""Tibet"") :wiki ""Tibet"")))))) :ARG1 (a / air :mod (a4 / and :op1 (h / hot) :op2 (h2 / humid))) :time (a2 / after :op1 b))"
+क्योतोंतली व्हडली परेड ही त्या सणाचें मुखेल आकर्शण.,"(a / attract-01
+   :ARG0 (p / parade
+             :mod (b / big)
+             :location (c / city
+                           :name (n / name :op1 ""Kyoto"")
+                           :wiki ""Kyoto""))
+   :mod (m / main)
+   :part-of (f / festival))"
+ड्रायव्हिंग सिम्युलेटराचें प्रशिक्षण दिल्यार प्रशिक्षण घेतले उपरांत रस्त्याचीं चिन्नां वळखुपाक कामगिरींत सुदारणा जातली हाचे मर्यादीत पुरावे मेळ्ळ्यात.,"(f / find-01
+   :ARG1 (e / evidence
+            :mod (l / limited)
+            :topic (i / improve-01
+                      :ARG0 (t / train-01
+                               :instrument (s2 / simulator
+                                               :mod (d / drive-01)))
+                      :ARG1 (p / perform-01
+                               :topic (r / recognize-01
+                                         :ARG1 (s / sign
+                                                  :mod (r2 / road)))))))"
+अन्नांत रसायनां मिस्तूर जाल्ल्यान खुबशें फावटी दूशीत पदार्थ तयार जातात जे मनशाक घातक थारूं येता आनी हीं उत्पादनां गळपाची दाट शक्यताय आसता.,"(a / and
+   :op1 (c2 / create-01
+           :ARG1 (s / substance
+                     :mod (t / toxic)
+                     :ARG1-of (f / fatal-01
+                                 :ARG2 (h / human)
+                                 :mod (p / possible-01)))
+           :frequency (o / often)
+           :cause (m / mix-01
+                     :ARG1 (c / chemical)
+                     :ARG2 (f2 / food)))
+   :op2 (p2 / probable-01
+           :degree (h2 / high)
+           :ARG1 (l / leak-01
+                     :ARG1 s)))"
+अकबरान सुरू केल्लीं उदारमतवादी धोरणां पयस करपा खातीर ताच्या काळाक वळखतात.,"(k / know-01 :ARG0 (p / person) :ARG1 (r / reign-01 :ARG0 (p2 / person)) :purpose (r2 / reverse-01 :ARG0 p2 :ARG1 (p3 / policy :mod (l / liberal) :ARG1-of (i / initiate-01 :ARG0 (p4 / person :name (n / name :op1 ""Akbar"") :wiki ""Akbar"")))))"
+ताळो हें मनशाच्या आनी हेर सस्तन प्राण्यांच्या तोंडांतलें पाखें.,"(p / palate
+   :domain (r / roof
+      :location (m / mouth
+         :poss (a / and
+            :op1 (h / human)
+            :op2 (m2 / mammal
+               :mod (o / other))))))"
+"हे घडणुकेंत कसलेंच लुकसाण वा कोणूय जखमी जाल्ली खबर मेळूंक ना, आनी पुलीसांनी पळोवप्यांक आडायले तरीय कुशीक आशिल्ल्या एकल्यान घडणुकेचो व्हिडियो काडलो.",(a / and :op1 (r / report-01 :polarity - :ARG1 (o / or :op1 (d / damage-01) :op2 (i / injure-01 :ARG1 (p / person))) :location (i2 / incident :mod (t / this))) :op2 (r2 / record-01 :ARG0 (p2 / person :location (s / side)) :ARG1 (v / video :topic i2) :concession (s2 / stop-01 :ARG0 (p3 / police) :ARG1 (o2 / onlooker))))
+गिमाळ्यांत पुराय उत्तर प्रदेशांत लू हें उश्ण वारें व्हांवता.,"(b / blow-01
+   :ARG1 (w / wind
+      :mod (h / hot)
+      :name (n / name :op1 ""Loo""))
+   :location (s / state
+      :name (n2 / name :op1 ""Uttar Pradesh"")
+      :wiki ""Uttar_Pradesh""
+      :mod (e / entire))
+   :time (s2 / summer))"
+तें दवरपाक शीतपेटी वा वार्ताफलक ही एक बरी सुवात.,"(g / good-02
+   :ARG1 (o / or
+            :op1 (r / refrigerator)
+            :op2 (n / notice-board))
+   :ARG2 (k / keep-01
+            :ARG1 (t / that)
+            :location o))"
+ताणें 110 वयर चित्रपट आनी 500 वयर प्रसारीत टॅलिव्हिजन सिरियल्साच्यो एपिसोड केल्यो.,"(d / do-02
+   :ARG0 (p / person)
+   :ARG1 (a / and
+      :op1 (f / film
+         :quant (m / more
+            :op1 110))
+      :op2 (e / episode
+         :quant (m2 / more
+            :op1 500)
+         :part-of (s / serial
+            :medium (t / television)
+            :ARG1-of (b / broadcast-01)))))"
+वेल्लोर आनी ताच्या लागसारच्या गांवांनी शेंकड्यांनी चामडें आनी चामोद्योगाचें कारखाने आसात.,"(h / have-03 :ARG1 (f / factory :quant (h2 / hundred) :mod (a / and :op1 (l / leather) :op2 (i / industry :mod l))) :location (a2 / and :op1 (c / city :name (n / name :op1 ""Vellore"") :wiki ""Vellore"") :op2 (v / village :mod (n2 / nearby) :poss c)))"
+"इम्फाल रेल्वे स्थानक, हें मणिपूरची राजधानी इम्फाळांत बांदकाम सुरू आशिल्लें रेल्वे स्थानक आसा.","(b / build-01 :ARG1 (s / station :mod (r / railway) :name (n / name :op1 ""Imphal"")) :location (i / city :name (n2 / name :op1 ""Imphal"") :ARG1-of (c / capital-01 :ARG2 (s2 / state :name (n3 / name :op1 ""Manipur"")))))"
+"खाजगी तपासकाम चडशें म्हारग आसता, पूण मनशाक सोदून काडपाचेंच अशें थारायलां जाल्यार वेवसायीक सेवेचेर पयशे मोडप मोलादीक.","(c / contrast-01
+   :op1 (t / tend-01
+           :ARG1 (e / expensive-01
+                    :ARG1 (i / investigate-01
+                             :mod (p / private-01))))
+   :op2 (w / worthwhile-01
+           :ARG1 (s / spend-01
+                    :ARG0 (p2 / person)
+                    :ARG1 (m / money)
+                    :ARG2 (s2 / service-01
+                             :mod (p3 / professional-01)))
+           :condition (d / decide-01
+                         :ARG0 p2
+                         :ARG1 (f / find-01
+                                  :ARG0 p2
+                                  :ARG1 (p4 / person)))))"
+बाजारांत तुमच्या उत्पादाची म्हायती पावोवपाक तुमी मोख दवरिल्ल्या आयकुप्यांक कशें आवाहन करतले हाचें वर्णन करात.,"(d / describe-01
+   :mode imperative
+   :ARG0 (y / you)
+   :ARG1 (a / appeal-01
+            :ARG0 y
+            :ARG2 (a2 / audience
+                     :poss y
+                     :ARG1-of (t / target-01
+                                 :ARG0 y))
+            :manner (a3 / amr-unknown)
+            :purpose (c / convey-01
+                        :ARG0 y
+                        :ARG1 (i / information
+                                 :topic (p / product
+                                           :poss y))
+                        :location (m / market))))"
+"2000 वर्सा, गेट्सान, आपले बायले वांगडा, द बिल अँड मेलिंडा गेट्स फावंडेशनाची थापणूक केली.","(f / found-01 :ARG0 (a / and :op1 (p / person :name (n / name :op1 ""Gates"") :wiki ""Bill_Gates"") :op2 (w / wife :poss p)) :ARG1 (o / organization :name (n2 / name :op1 ""The"" :op2 ""Bill"" :op3 ""and"" :op4 ""Melinda"" :op5 ""Gates"" :op6 ""Foundation"") :wiki ""Bill_&_Melinda_Gates_Foundation"") :time (d / date-entity :year 2000))"
+आदि शंकर आपल्या गुरू गोविंद भागवतपादाक नर्मदा न्हंयचे देगेर भेटलो.,"(m / meet-03
+   :ARG0 (p / person
+            :name (n / name :op1 ""Adi"" :op2 ""Shankara"")
+            :wiki ""Adi_Shankara"")
+   :ARG1 (g / guru
+            :name (n2 / name :op1 ""Govinda"" :op2 ""Bhagavatpada"")
+            :wiki ""Govinda_Bhagavatpada""
+            :poss p)
+   :location (b / bank-03
+                :part-of (r / river
+                            :name (n3 / name :op1 ""Narmada"")
+                            :wiki ""Narmada_River"")))"
+मुरगांव पालिका मंडळाची बुधवारा बसका जाली आनी हे बसकेंत अर्थसंकल्प सादर केलो,"(a / and :op1 (h / hold-04 :ARG0 (c / council :name (n / name :op1 ""Mormugao Municipal Council"")) :ARG1 (m / meet-03) :time (w / wednesday)) :op2 (p / present-01 :ARG1 (b / budget) :location m))"
+"शिपिंग खर्च बॉक्साच्या आकाराचेर आनी वजनाचेर, नियोजीत देशाचेर आनी डिलिव्हरीचे गतीचेर आदारून आसता.","(d / depend-on-01
+   :ARG1 (c / cost
+            :mod (s / ship-01))
+   :ARG2 (a / and
+            :op1 (a2 / and
+                    :op1 (s2 / size
+                           :poss (b / box))
+                    :op2 (w / weight
+                           :poss b))
+            :op2 (c2 / country
+                    :destination-of s)
+            :op3 (s3 / speed
+                    :poss s)))"
+कलाकार जेन्ना केन्ना सर्जनशीलताय दाखयता तेन्ना श्रोते ताळयो मारून पावती दितात.,"(a / acknowledge-01
+   :ARG0 (a2 / audience)
+   :manner (c / clap-01
+             :ARG0 a2)
+   :time (s / show-01
+            :ARG0 (a3 / artist)
+            :ARG1 (c2 / creativity)))"
+"कुमुडलाल गांगुलीक आतां अशोक कुमार म्हणटाले, ताणें आपली अभिनय कारकीर्द खोशये भायर सुरू केली.","(s / start-01 :ARG0 (p / person :name (n / name :op1 ""Kumudlal"" :op2 ""Ganguly"") :ARG1-of (c / call-01 :ARG0 (p2 / person) :ARG2 (n2 / name :op1 ""Ashok"" :op2 ""Kumar"") :time (n3 / now))) :ARG1 (c2 / career :poss p :mod (a / act-01)) :manner (u / unwillingly))"
+"पगार, बोनस, भाडें आनी वेवसायीक उत्पन्ना सयत तुमची सगळी येणावळ जोडात.","(a / add-02
+   :mode imperative
+   :ARG0 (y / you)
+   :ARG1 (i / income
+            :quant all
+            :poss y
+            :ARG1-of (i2 / include-01
+                        :ARG2 (a2 / and
+                                 :op1 (s / salary)
+                                 :op2 (b / bonus)
+                                 :op3 (r / rent)
+                                 :op4 (i3 / income
+                                         :source (b2 / business))))))"
+"दक्षीण इंडियाना, उत्तर अलाबामा आनी कँटुकी आनी टेनेस्सीच्या कांय वाठारांचेर सगळ्यांत चड परिणाम जालो.","(a / affect-01
+   :degree (m / most)
+   :ARG1 (a2 / and
+             :op1 (s / state
+                    :name (n / name :op1 ""Indiana"")
+                    :wiki ""Indiana""
+                    :mod (s2 / south))
+             :op2 (s3 / state
+                    :name (n2 / name :op1 ""Alabama"")
+                    :wiki ""Alabama""
+                    :mod (n3 / north))
+             :op3 (r / region
+                    :quant (q / some)
+                    :part-of (a3 / and
+                               :op1 (s4 / state
+                                      :name (n4 / name :op1 ""Kentucky"")
+                                      :wiki ""Kentucky"")
+                               :op2 (s5 / state
+                                      :name (n5 / name :op1 ""Tennessee"")
+                                      :wiki ""Tennessee"")))))"
+बांदकाम खात्या खातीर 299 कोटींची तजवीज भौशीक बांदकाम खात्या खातीर,"(a / allocation-01
+   :ARG1 (m / monetary-quantity
+            :quant 299
+            :unit (c / crore))
+   :ARG2 (d / department
+            :name (n / name
+                     :op1 ""Public""
+                     :op2 ""Works""
+                     :op3 ""Department"")))"
+ताका आपल्या पुस्तकांच्या वेश्टणारय आपलो फोटू नाका आशिल्लो.,(w / want-01 :polarity - :ARG0 (p / person) :ARG1 (l / be-located-at-91 :ARG1 (p2 / photo :poss p) :ARG2 (c / cover-01 :part-of (b / book :poss p) :mod (e / even))))
+उपरांत ताणें 26 फेब्रुवारी 1988 मेरेन मानव्हेल नॉरिएगाच्या फुडारपणाखाला अध्यक्ष म्हुणून काम केलें.,"(w / work-01 :ARG0 (h / he) :ARG1 (p / president) :time (a / afterward) :time (d / date-entity :year 1988 :month 2 :day 26) :condition (l / lead-02 :ARG0 (p2 / person :name (n / name :op1 ""Manuel"" :op2 ""Noriega"")) :ARG1 h))"
+"१२९६ त अलाउद्दीनान देवगिरीचेर आक्रमण केलें, आनी जलालुद्दीना आड यशस्वी बंड करपाखातीर लुटमार ताब्यांत घेतली.","(a / and
+   :op1 (a1 / attack-01
+      :ARG0 (p / person :name (n / name :op1 ""Alauddin""))
+      :ARG1 (c / city :name (n2 / name :op1 ""Devagiri""))
+      :time (d / date-entity :year 1296))
+   :op2 (s / seize-01
+      :ARG0 p
+      :ARG1 (p2 / plunder-01)
+      :purpose (r / rebel-01
+         :ARG0 p
+         :ARG1 (p3 / person :name (n3 / name :op1 ""Jalaluddin""))
+         :mod (s2 / successful))))"
+आयज लेगीत सिरुवणी धरणाची भेट चडशी वेगळी ना.,"(d / different-01
+   :polarity -
+   :ARG1 (v / visit-01
+            :ARG1 (d2 / dam
+                     :name (n / name :op1 ""Siruvani"")))
+   :degree (m / much)
+   :time (t / today))"
+"राजस्थानाचो सगळ्यांत उदेंतेक आशिल्लो मेवाट प्रदेश, हरियाणा आनी उत्तर प्रदेश शीमेक जोडून आसा.","(a / adjacent-to-01 :ARG1 (r / region :name (n / name :op1 ""Mewat"") :wiki ""Mewat"" :part-of (s3 / state :name (n4 / name :op1 ""Rajasthan"") :wiki ""Rajasthan"") :location (e / east :degree (s / superlative))) :ARG2 (c / and :op1 (b1 / border :part-of (s1 / state :name (n2 / name :op1 ""Haryana"") :wiki ""Haryana"")) :op2 (b2 / border :part-of (s2 / state :name (n3 / name :op1 ""Uttar Pradesh"") :wiki ""Uttar_Pradesh""))))"
+आमी सगळ्यांनी तें इंटरनॅटाचेर पळयलां.,"(w / watch-01
+   :ARG0 (p / person
+      :person 1
+      :number pl
+      :quant (a / all))
+   :ARG1 (t / thing)
+   :location (i / internet))"
+संघ ही दक्षिण भारतांतली एक म्हत्वाची संस्था आशिल्ली आनी वेपारी स्वताक संघांनी संघटीत करताले.,"(a / and
+   :op1 (b / be-02
+           :ARG1 (g / guild)
+           :ARG2 (i / institution
+                     :mod (i2 / important)
+                     :location (c / country-region
+                                   :name (n / name
+                                             :op1 ""South""
+                                             :op2 ""India""))))
+   :op2 (o / organize-01
+           :ARG0 (m / merchant)
+           :ARG1 m
+           :ARG2 (g2 / guild)))"
+"थळाव्या वा शारी सरकाराच्या पांवड्यार, थळाव्या वेवसायां विशीं म्हायती एकठांय करपी वेगवेगळ्यो एजन्सी आसात.","(e / exist-01
+   :ARG1 (a / agency
+      :mod (v / various)
+      :ARG0-of (c / collect-01
+         :ARG1 (i / information
+            :topic (b / business
+               :mod (l3 / local)))))
+   :location (l / level
+      :poss (g / government
+         :mod (o / or
+            :op1 (l2 / local)
+            :op2 (u / urban)))))"
+"थळाव्या मुखेल कारागिरीं मदीं लांकडी नकशीकाम आसा, जें उत्तराखंडांतल्या अलंकृत सजयल्ल्या देवळांनी चड करून दिसता.","(c / carve-01 :ARG1 (w / wood) :domain (c2 / craft :mod (m / main) :mod (l / local)) :ARG1-of (s / see-01 :frequency (o / often) :location (t / temple :ARG1-of (d / decorate-01 :manner (o2 / ornate)) :location (s2 / state :name (n / name :op1 ""Uttarakhand"") :wiki ""Uttarakhand""))))"
+तीन दीस विंगडविंगड कार्यावळी जाल्यो,"(h / happen-01
+   :ARG1 (p / program
+            :mod (v / various))
+   :duration (t / temporal-quantity
+                :quant 3
+                :unit (d / day)))"
+"आदले रातीक ""उरुका"" आसता, तेन्ना लोक होळये भोंवतणी एकठांय जातात, रातचें जेवण रांदतात आनी मजा करतात.","(a / and :op1 (g / gather-01 :ARG0 (p / person) :location (b / bonfire)) :op2 (c / cook-01 :ARG0 p :ARG1 (d / dinner)) :op3 (f / have-fun-01 :ARG0 p) :time (n / night :mod (p2 / previous) :name (n2 / name :op1 ""Uruka"")))"
+"फॅक्सॉन, ओक्लहोमा  फॅक्सॉन हें अमेरिकेंतल्या ओक्लहोमाचें एक शार.","(c / city
+   :wiki ""Q5438643""
+   :name (n / name :op1 ""Faxon"")
+   :location (s / state
+               :wiki ""Q1649""
+               :name (n2 / name :op1 ""Oklahoma"")
+               :part-of (c2 / country
+                          :wiki ""Q30""
+                          :name (n3 / name :op1 ""America""))))"
+"म्हणून, जशे नियामकांची संख्या वाडटा, नियमीत तर्काची शक्य संख्या फुटता.",(e / explode-01 :ARG1 (n / number :part-of (l / logic :ARG1-of (r / regulate-01) :mod (p / possible-01))) :cause (i / increase-01 :ARG1 (n2 / number :part-of (r2 / regulator))))
+"आणीबाणीच्या काळांत ताणें आपल्या इश्टां वांगडा, खास करून बंसीलाला वांगडा भारत वास्तवीक पणान राज्य चलयलें अशें म्हण्टाले.","(s / say-01
+   :ARG0 (p / person)
+   :ARG1 (r / rule-01
+            :ARG0 (h / person)
+            :ARG1 (c / country :name (n / name :op1 ""India"") :wiki ""India"")
+            :manner (a / actual)
+            :time (p2 / period :name (n2 / name :op1 ""Emergency"") :wiki ""The_Emergency_(India)"")
+            :accompanier (a2 / and
+                           :op1 (f / friend :poss h)
+                           :op2 (p3 / person :name (n3 / name :op1 ""Bansi"" :op2 ""Lal"") :wiki ""Bansi_Lal""
+                                  :mod (e / especially)))))"
+"देखीक, तुमच्या व्यायामाची तीव्रता पळोवपा खातीर काळजाची गती निरिक्षण आशिल्लें मॉडेल तुमकां जाय आसतलें.","(e2 / example
+   :op1 (n / need-01
+      :ARG0 (y / you)
+      :ARG1 (m / model
+         :ARG0-of (m2 / monitor-01
+            :ARG1 (r / rate
+               :poss (h / heart))))
+      :purpose (c / check-01
+         :ARG0 y
+         :ARG1 (i / intensity
+            :poss (e / exercise-01
+               :ARG0 y)))))"
+"1988 सावन ऑलिंपिक खेळ आनी 2002 सावन राष्ट्रकुल खेळां सयत, एकोडे आनी दोट्टी अशे दोनूय खेळ आंतरराश्ट्रीय सर्तिंनी खेळटात.","(p / play-01 :ARG1 (a / and :op1 (g / game :mod (s / single)) :op2 (g2 / game :mod (d / double))) :location (c / compete-01 :mod (i / international)) :concession (a2 / and :op1 (p2 / play-01 :ARG1 a :location (g3 / game :name (n / name :op1 ""Olympic"" :op2 ""Games"") :wiki ""Olympic_Games"") :time (s / start-01 :time (d / date-entity :year 1988))) :op2 (p3 / play-01 :ARG1 a :location (g4 / game :name (n2 / name :op1 ""Commonwealth"" :op2 ""Games"") :wiki ""Commonwealth_Games"") :time (s2 / start-01 :time (d2 / date-entity :year 2002)))))"
+"दुसरें, खात्यांत चक्रवाड व्याज जमता जाल्यार, मुद्दल आनी परत गुंतवणूक केल्ली व्याज फारीकणी वापरून व्याजाचो हिशोब करतले.","(c / calculate-01
+   :ord (o / ordinal-entity :value 2)
+   :ARG1 (i / interest)
+   :instrument (a / and
+      :op1 (p / principal)
+      :op2 (i2 / interest
+         :ARG1-of (i3 / invest-01
+            :mod (a2 / again))))
+   :condition (a3 / accrue-01
+      :ARG1 (i4 / interest
+         :mod (c2 / compound))
+      :location (a4 / account)))"
+तुमचो खर्च तुमच्या खरेदीच्या मर्यादे परस चड आसल्यार तुमकां तो कमी करपाक सुवाती सोदच्यो पडटल्यो.,"(o / obligate-01
+   :ARG1 (y / you)
+   :ARG2 (f / find-01
+            :ARG0 y
+            :ARG1 (w / way
+                     :purpose (r / reduce-01
+                                 :ARG0 y
+                                 :ARG1 (e / expense-01
+                                          :poss y))))
+   :condition (m / more
+                 :op1 e
+                 :op2 (l / limit-01
+                         :poss y
+                         :mod (s / shop-01))))"
+चड करून एका रागम तनम पल्लवींत ताचो दुसरो भाग म्हूण आस्पाव जाता.,"(t2 / tend-01
+   :ARG1 (c / constitute-01
+      :ARG1 (t / tanam)
+      :ARG2 (p2 / part
+         :poss (p / pallavi)
+         :ord (o / ordinal-entity
+            :value 2))
+      :location (r / raga)))"
+एक कार्यकारी येवजण तुमी कातीची जतनाय घेवपाचीं उत्पादनां कशीं तयार करतले आनी विकतले हाचे येवजणेचो हवालो दिता .,(o / outline-01 :ARG0 (p / plan-01 :mod (b / business)) :ARG1 (a / and :op1 (c / create-01 :ARG0 (y / you) :ARG1 (p2 / product :purpose (t / take-care-01 :ARG1 (s / skin))) :manner (u / amr-unknown)) :op2 (s2 / sell-01 :ARG0 y :ARG1 p2 :manner u)))
+"खतखत्यांत उण्यांत उणे पांच भाज्यो, ताजे नाल्ल, आनी गोंयचे खाशेले मसाले आसतात जे घमधम वाडयता.","(c / contain-01 :ARG0 (f / food :name (n / name :op1 ""Khatkhate"")) :ARG1 (a / and :op1 (v / vegetable :quant (q / quantity :value 5 :mod (a2 / at-least))) :op2 (c2 / coconut :mod (f2 / fresh)) :op3 (s / spice :mod (s2 / special) :source (c3 / country :name (n2 / name :op1 ""Goa"")) :ARG0-of (i / increase-01 :ARG1 (a3 / aroma)))))"
+"देखीक, तुकां जाय आशिल्लो ब्रँड नासलो तरी त्या व्हॅक्यूमाचेर तुकां फायदेशीर सौदो मेळूं येता.","(e / exemplify-01
+   :ARG1 (p / possible-01
+      :ARG1 (g / get-01
+         :ARG0 (y / you)
+         :ARG1 (d / deal-01
+            :mod (b / benefit-01))
+         :topic (v / vacuum-cleaner))
+      :concession (a / available-01
+         :polarity -
+         :ARG1 (b2 / brand
+            :ARG1-of (w / want-01
+               :ARG0 y)))))"
+"दुसऱ्या  उतरांनी  मर्याद ऑर्डर वेपाराच्या मोलाची वा ताचे परस बरी हमी दिता, पूण वेपार जातलो हाची न्हय.","(r / rephrase-01
+   :ARG1 (c / contrast-01
+      :op1 (g / guarantee-01
+         :ARG0 (o / order
+            :mod (l / limit-01))
+         :ARG1 (o2 / or
+            :op1 (p / price
+               :part-of (t / trade-01))
+            :op2 (p2 / price
+               :degree (b / good
+                  :degree (m / more)))))
+      :op2 (g2 / guarantee-01
+         :polarity -
+         :ARG0 o
+         :ARG1 (e / execute-01
+            :ARG1 t))))"
+कसोटींत ताणें केल्ल्या कामगिरीक लागून डग वॉल्टर्स उपरांत त्याच मॅचींत शतक आनी दोट्टी शतक करपी तो दुसरो खेळगडो जालो आनी हो पराक्रम साध्य करपी आयज मेरेन तो एकमेव भारतीय उरला.,"(a / and
+   :op1 (b / become-01
+         :ARG1 (p / person)
+         :ARG2 (p2 / player
+               :ord (o / ordinal-entity :value 2)
+               :ARG0-of (s / score-01
+                     :ARG1 (a2 / and
+                           :op1 (c / century)
+                           :op2 (c2 / century :quant 2))
+                     :location m)
+               :sequence (a3 / after
+                     :op1 (p4 / person
+                           :name (n / name :op1 ""Doug"" :op2 ""Walters"")
+                           :wiki ""Doug_Walters"")))
+         :cause (p3 / perform-01
+               :ARG0 p
+               :location (m / match
+                     :type (t / test-match))))
+   :op2 (r / remain-01
+         :ARG1 p
+         :ARG3 (p5 / person
+               :mod (o2 / only)
+               :nationality (c3 / country :name (n2 / name :op1 ""India""))
+               :ARG0-of s)
+         :duration (u / until
+               :op1 (n3 / now))))"
+"गाडी सुटसुटीत गती घेता, आनी तुमकां कसलोच ठणठण वा करकर आवाज आयकूंक येना हाची खात्री करात.",(e / ensure-01 :mode imperative :ARG0 (p / person) :ARG1 (a / and :op1 (a2 / accelerate-01 :ARG0 (c / car) :manner (s / smooth)) :op2 (h / hear-01 :polarity - :ARG0 p :ARG1 (s2 / sound :ARG0-of (o / or :op1 (r / rattle-01) :op2 (c2 / creak-01))))))
+"दुसरे वटेन घोडदळाचो भालो चड लांब, लांकडाचो आसतालो आनी विरोधकाचें रगत दांड्यार पातळुंक दिवचें न्हय म्हूण तांबडें लुगट पात्यालागीं जोडटाले.",(c / contrast-01 :op2 (a / and :op1 (s / spear :poss (c2 / cavalry) :mod (l / long :degree (v / very)) :material (w / wood)) :op2 (a2 / attach-01 :ARG0 (p / person) :ARG1 (c3 / cloth :color (r / red)) :ARG2 s :location (n / near :op1 (b / blade :part-of s)) :purpose (p2 / prevent-01 :ARG1 (s2 / spread-01 :ARG1 (b2 / blood :poss (o / opponent)) :location (s3 / shaft :part-of s))))))
+1946 वर्सा चॅम्पियनशिपांतल्यान निवृत्त जायमेरेन डॅव्हिसान सगळ्यो पंदरा सर्ती जिखल्यो.,"(w / win-01 :ARG0 (d / person :name (n / name :op1 ""Davis"")) :ARG1 (c / competition :quant 15) :time (b / before :op1 (r / retire-01 :ARG0 d :ARG1 (c2 / championship) :time (d2 / date-entity :year 1946))))"
+"10 नोव्हेंबर 2009 दिसा, पिरायेच्या 51 व्या वर्सा अंधेरी, मुंबयच्या एका हॉस्पिटलांत तिका मरण आयलें.","(d / die-01 :ARG1 (p / person :age 51) :time (d2 / date-entity :day 10 :month 11 :year 2009) :location (h / hospital :location (c / city :name (n / name :op1 ""Andheri"") :part-of (c2 / city :name (n2 / name :op1 ""Mumbai"")))))"
+हिरानगर तालुक्यांतलो धगवाल गांवाक  मकर संक्रांती आनी जन्माष्टमीच्या जात्रे खातीर वळखतात.,"(k / know-01
+   :ARG1 (v / village
+            :name (n / name :op1 ""Dhagwal"")
+            :location (t / taluka
+                         :name (n2 / name :op1 ""Hiranagar"")))
+   :ARG2 (f / fair
+            :topic (a / and
+                      :op1 (f2 / festival
+                               :name (n3 / name :op1 ""Makar Sankranti""))
+                      :op2 (f3 / festival
+                               :name (n4 / name :op1 ""Janmashtami"")))))"
+वाडटे म्हारगाये आड काग्रेसीचें आंदोलन,"(p / protest-01
+   :ARG0 (c / political-party
+      :name (n / name :op1 ""Congress""))
+   :ARG1 (r / rise-01
+      :ARG1 (i / inflation)))"
+पोर्टान जामीनाचेर आसतना कोवरी आनी व्हिटवर्थाचो खून केलो.,"(m / murder-01 :ARG0 (p / person :name (n / name :op1 ""Porta"")) :ARG1 (a / and :op1 (p2 / person :name (n2 / name :op1 ""Cowrie"")) :op2 (p3 / person :name (n3 / name :op1 ""Whitworth""))) :time (b / be-on-bail-91 :ARG0 p))"
+हाका लागून इतिहासीक म्हायती खातीर तांचेर अवलंबून रावतना जतनाय घेवप गरजेचें थारता.,(c / cause-01 :ARG0 (t / this) :ARG1 (n / necessary-01 :ARG1 (c2 / careful-01 :time (r / rely-01 :ARG1 (p / person :plural +) :purpose (i / information :mod (h / history))))))
+"ब्रेकावेळार चार शून्य अशी गोलसंख्या जावंक शकताली, पूण 36 मिण्टांनी क्रॅस्पो ऑफसायडींतल्यान यत्न करतालो तें कळ्ळें.","(c / contrast-01
+   :op1 (p / possible-01
+           :domain (b / become-01
+                      :ARG1 (s / score-entity)
+                      :ARG2 ""4-0""
+                      :time (b2 / break-01)))
+   :op2 (r / realize-01
+           :ARG1 (a / attempt-01
+                    :ARG0 (p2 / person :name (n / name :op1 ""Crespo""))
+                    :source (p3 / position-02
+                               :mod (o / offside)))
+           :time (t / temporal-quantity :quant 36 :unit (m / minute))))"
+शोले ह्या सिनेमांत जेलर म्हणून ताणें केल्ल्या भुमिके खातीर आनी १९७२ ते १९९१ ह्या काळांत राजेश खन्नान मुखेल भुमिकेंत घेवन ताणें २५ चित्रपटांनी केल्ल्या पात्रां खातीर ताची चड नामना आसा.,"(f / famous-01
+    :ARG1 (p / person)
+    :degree (m / more)
+    :cause (a / and
+        :op1 (p2 / play-02
+            :ARG0 p
+            :ARG1 (r / role
+                :ARG1-of (h / have-role-91
+                    :ARG2 (j / jailer)))
+            :location (m2 / movie
+                :name (n / name :op1 ""Sholay"")))
+        :op2 (p3 / play-02
+            :ARG0 p
+            :ARG1 (c / character)
+            :location (f2 / film
+                :quant 25
+                :ARG1-of (s / star-01
+                    :ARG0 (p4 / person
+                        :name (n2 / name :op1 ""Rajesh"" :op2 ""Khanna""))
+                    :ARG2 (r2 / role
+                        :mod (l / lead-02))))
+            :time (i / date-interval
+                :start-entity (d / date-entity :year 1972)
+                :end-entity (d2 / date-entity :year 1991)))))"
+"अर्थ, आनंद आनी उद्देश दिवपी नोकरी फकत पगार दिवपी नोकरे परस श्रेश्ठ आसता.","(b / better-01
+   :ARG1 (j / job
+            :ARG0-of (g / give-01
+                        :ARG1 (a / and
+                                 :op1 (m / mean-01)
+                                 :op2 (j2 / joy)
+                                 :op3 (p / purpose))))
+   :ARG2 (j3 / job
+            :ARG0-of (g2 / give-01
+                        :ARG1 (s / salary)
+                        :mod (o / only-01))))"
+"केरळांतलें सगळ्यांत म्हत्वाचें क्रिस्तांव यात्रेकार केंद्रां मदले एक, हें पवित्र देवस्थान फकत केरळांतल्यान न्हय तर शेजारच्या राज्यांतल्यान लेगीत खूब व्हड प्रमाणांत भक्तांक आकर्शीत करता.","(a / attract-01 :ARG0 (s / shrine :mod (h / holy) :domain (c / center :mod (p / pilgrimage) :mod (c2 / christian) :location (k / state :name (n / name :op1 ""Kerala"")) :mod (i / important :degree (s2 / superlative)))) :ARG1 (d / devotee :quant (l / large :degree (v / very))) :source (a2 / and :op1 k :op2 (s3 / state :mod (n2 / neighbor-01))))"
+तुमकां प्रमाणपत्राची छापपाक योग्य डिजिटल प्रत धाडटले.,(s / send-01 :ARG0 (p / person) :ARG1 (c / copy-01 :ARG1 (c2 / certificate) :mod (d / digital) :ARG1-of (s2 / suit-01 :ARG2 (p3 / print-01 :ARG1 c))) :ARG2 (y / you))
+पिराये प्रमाणें लोक चड विसरतात हें सभावीक.,"(n / natural-01
+   :ARG1 (f / forget-01
+      :ARG0 (p / person)
+      :degree (m / more)
+      :cause (a / age-01
+         :ARG1 p)))"
+"1978-79 च्या काळांत, बंडखोरांआड मोहिमेंत ऱ्होडेशियेच्या सरकारान गोरवां आनी मनशांआड एंथ्रॅक्साचो उपेग केलो.","(u / use-01
+   :ARG0 (g / government
+            :part-of (c / country
+                        :name (n / name :op1 ""Rhodesia"")))
+   :ARG1 (a / anthrax)
+   :ARG2 (a2 / and
+            :op1 (c2 / cattle)
+            :op2 (p / person))
+   :location (c3 / campaign-01
+                :ARG1 (r / rebel))
+   :time (i / interval
+            :start-point (d / date-entity :year 1978)
+            :end-point (d2 / date-entity :year 1979)))"
+"ट्विटराचेर, तुमच्या प्रतिस्पर्ध्यांनी पोस्ट केल्ल्या ट्विटांचेर खेळीमेळीची टिप्पणी करप हो तुमच्या कंपनीचें प्रोफायल तयार करपाचो एक सामान्य मार्ग.","(w / way
+   :mod (c2 / common)
+   :domain (c / comment-01
+              :ARG0 (y / you)
+              :ARG1 (t / tweet
+                       :ARG1-of (p / post-01
+                                   :ARG0 (c3 / competitor
+                                            :poss y)))
+              :manner (p2 / playful)
+              :location (p3 / platform
+                           :name (n / name :op1 ""Twitter"")))
+   :purpose (b / build-01
+               :ARG0 y
+               :ARG1 (p4 / profile
+                        :poss (c4 / company
+                                 :poss y))))"
+"एका कायदेशीर निर्णयांत ताच्या प्रयोगीक बॅलेच्या खंयच्याय भौशीक सादरीकरणाचेर ""यक्षगाण"" अशें बिल दिवपाचेर लेगीत बंदी घाली.","(b / ban-01 :ARG1 (b2 / bill-02 :ARG1 (p / perform-01 :ARG1 (b3 / ballet :mod (e / experimental) :poss (h / he)) :mod (p2 / public)) :ARG2 (t / thing :name (n / name :op1 ""Yakshagana""))) :medium (d / decide-01 :mod (l / legal)) :mod (a / also))"
+"घडये तुमी खरेदी करपाक आवडटा अशे प्रकारचे न्हय, वा वर्सभर नाताळाच्यो भेटवस्तू ब्राउझ करपाक तुमकां वेळ ना.","(o / or :op1 (p / possible-01 :ARG1 (l / like-01 :ARG0 (y / you) :ARG1 (s / shop-01 :ARG0 y) :polarity -)) :op2 (h / have-03 :ARG0 y :ARG1 (t / time :purpose (b / browse-01 :ARG0 y :ARG1 (g / gift :mod (h2 / holiday :name (n / name :op1 ""Christmas""))) :mod (y2 / year-round))) :polarity -))"
+धोल-ताशांच्या गजरांत ही कार्यावळ जाली,"(h / happen-01
+   :ARG1 (e / event
+      :mod (t / this))
+   :location (s / sound
+      :mod (l / loud)
+      :source (a / and
+         :op1 (i / musical-instrument
+            :name (n / name :op1 ""dhol""))
+         :op2 (i2 / musical-instrument
+            :name (n2 / name :op1 ""tasha"")))))"
+"जर तूंं स्वता वचून खरेदी करता, तर खरेदी वांगडा डिलिव्हरी आस्पावीत आसा जाल्यार दुकानांत विचार.",(a / ask-01 :mode imperative :ARG0 (y / you) :location (s / store) :ARG1 (i / include-01 :polarity ? :ARG1 (d / deliver-01) :ARG2 b) :condition (a2 / and :op1 (g / go-01 :ARG0 y :destination s) :op2 (b / buy-01 :ARG0 y)))
+"देखीक, तुमी दर सप्तकांत 100 डॉलर चेक रोख करतात अशें गृहीत धरात, आनी चेक नगदी सेवा चेकाचे 5% घेता.",(e / exemplify-01 :ARG1 (a / and :op1 (a2 / assume-01 :ARG0 (p / person) :ARG1 (c / cash-01 :ARG0 p :ARG1 (c2 / check-01 :cost (m / monetary-quantity :quant 100 :unit (d / dollar))) :frequency (t / temporal-quantity :quant 1 :unit (w / week))) :mode imperative) :op2 (t2 / take-01 :ARG0 (s / check-cashing-service) :ARG1 (p2 / percentage-entity :value 5 :part-of c2))))
+ग्रेट हॉलमेरेन उगडपी खूब व्हड गेटी लेगीत आशिल्ल्यो.,"(e / exist-01
+   :ARG1 (g / gate
+            :mod (b / big
+                    :degree (v / very))
+            :ARG0-of (o / open-01
+                        :destination (h / hall
+                                        :name (n / name
+                                                 :op1 ""Great""
+                                                 :op2 ""Hall""))))
+   :mod (a / also))"
+98 टक्क्यांपरस चड रोलर डर्बी सर्ती डब्ल्यू.ऍफ.टी.डी.ए. नेमांखाला जाल्यो असो दावो मार्च 2010 त डर्बी न्यूज नेटवर्कान केलो.,"(c / claim-01
+   :ARG0 (o / organization
+            :name (n / name :op1 ""Derby"" :op2 ""News"" :op3 ""Network""))
+   :ARG1 (h / hold-04
+            :ARG1 (c2 / competition
+                     :mod (r / roller-derby)
+                     :quant (p / percentage-entity
+                               :value 98
+                               :degree (m / more)))
+            :manner (a / accord-02
+                       :ARG1 (r2 / rule
+                                :poss (o2 / organization
+                                         :name (n2 / name :op1 ""WFTDA"")))))
+   :time (d / date-entity
+            :year 2010
+            :month 3))"
+सार्ना हो स्वीडनांतल्या दालर्ना कावंटींतल्या अल्त्सालन नगरपालिकेचो एक वाठार.,"(l / locality
+   :name (n / name :op1 ""Särna"")
+   :part-of (m / municipality
+      :name (n2 / name :op1 ""Älvdalen"")
+      :part-of (c / county
+         :name (n3 / name :op1 ""Dalarna"")
+         :part-of (c2 / country
+            :name (n4 / name :op1 ""Sweden"")))))"
+म्हापशें: म्हापशें न्हंये वयल्या नव्या तार पुलाचें बांदकाम नेटान चालू आसा,"(p / proceed-01
+   :ARG1 (c / construct-01
+            :ARG1 (b / bridge
+                     :mod (n / new)
+                     :mod (c2 / cable))
+            :location (o / over
+                         :op1 (r / river
+                                 :name (n2 / name :op1 ""Mapusa""))))
+   :manner (r2 / rapid))"
+राज्य संशोधन फावंडेशन स्थापन करपा खातीर 650 कोटी रुपया तजवीज केल्या,"(p / provision-01
+   :ARG1 (m / monetary-quantity
+            :quant 6500000000
+            :unit (r / rupee))
+   :purpose (e / establish-01
+               :ARG1 (f / foundation
+                        :name (n / name
+                                 :op1 ""State""
+                                 :op2 ""Research""
+                                 :op3 ""Foundation""))))"
+मुळाव्या स्वरुपाच्या यॉजासारकी कातीची परिस्थिती दाखोवपी संसर्ग हिमोफिलस ड्युक्रेयीक लागून जावंक शकता.,"(p / possible-01
+   :ARG1 (c / cause-01
+            :ARG0 (o / organism
+                     :name (n / name
+                              :op1 ""Haemophilus""
+                              :op2 ""ducreyi""))
+            :ARG1 (i / infect-01
+                     :ARG1-of (p2 / present-02
+                                 :ARG2 (c2 / condition
+                                          :domain (s / skin)
+                                          :mod (p3 / primary-01)
+                                          :ARG1-of (r / resemble-01
+                                                      :ARG2 (u / ulcer)))))))"
+पूण सर्वीस चालू आसल्यार ती कायदेशीर सर्वीस मानतात.,(c / consider-01 :ARG1 s :ARG2 (s2 / service :mod (l / legal)) :condition (b / be-02 :ARG1 (s / service) :ARG2 (a / active)))
+बापायची बदली महाराजाच्या कॉलेज हायस्कुलांत जाली तेन्ना नारायण आपल्या कुटुंबा वांगडा रावपाक म्हैसूरांत गेलो.,"(g / go-01
+   :ARG0 (n / person :name (n2 / name :op1 ""Narayan""))
+   :destination (c / city :name (n3 / name :op1 ""Mysore""))
+   :purpose (l / live-01
+               :ARG0 n
+               :accompanier (f / family :poss n))
+   :time (t / transfer-01
+            :ARG1 (f2 / father :poss n)
+            :ARG3 (s / school
+                     :name (n4 / name :op1 ""Maharaja's College High School""))))"
+संस्था म्हणल्यार एक थिंक टँक आनी पाखो घेवपी गट.,(s / organization :domain (a / and :op1 (t / think-tank) :op2 (g / group :ARG0-of (a2 / advocate-01))))
+वेळ वता तसो काळजाच्या स्नायूंक लुकसाण जावपाचो धोको वाडटा.,"(i / increase-01
+   :ARG1 (r / risk-01
+             :ARG1 (d / damage-01
+                       :ARG1 (m / muscle
+                                 :part-of (h / heart))))
+   :condition (p / pass-01
+                  :ARG1 (t / time)))"
+रातीं उसरां दोनूय भुरग्यांच्या कुडीचेर थळाव्या मसुंडेंत निमाणे संस्कार जाले,"(p / perform-01
+   :ARG1 (r / rite
+      :mod (f / final))
+   :ARG2 (c / child
+      :quant 2)
+   :location (c2 / crematorium
+      :mod (l / local))
+   :time (n / night
+      :mod (l2 / late)))"
+तेन्ना दोनूय भुरगीं घरांत नाशिल्ल्यान तांणी आपल्या भावाक फोन करून भुरग्यांची चवकशी केली,(a / and :op1 (c2 / call-01 :ARG0 (p / person) :ARG1 (b / brother :poss p)) :op2 (i / inquire-01 :ARG0 p :ARG1 (c / child :quant 2)) :time (t / then) :cause (b2 / be-located-at-91 :polarity - :ARG1 c :ARG2 (h / home)))
+कोव्हिड-19 म्हामारीवांगडा हो अदमास खरो थारलो.,"(p / prove-01
+   :ARG1 (e / estimate-01)
+   :ARG2 (t / true)
+   :time (p2 / pandemic
+             :name (n / name :op1 ""COVID-19"")))"
+ब्रिशकेतु देबबर्मा ब्रिशकेतु देबबर्मा हे बाराव्या त्रिपुरा विधानसभेचो वांगडी आसा.,"(h / have-role-91
+   :ARG0 (p / person
+      :name (n / name :op1 ""Brisketu"" :op2 ""Debbarma""))
+   :ARG1 (m / member
+      :part-of (a / legislative-assembly
+         :name (n2 / name :op1 ""Tripura"" :op2 ""Legislative"" :op3 ""Assembly"")
+         :wiki ""Tripura_Legislative_Assembly""
+         :mod (o / ordinal-entity :value 12))))"
+फ्रीस्टायल कुस्तीगीर विरोधकाची दोनूय स्कापुला शेंदरेक धरून क्षणांतच मॅच जिखूंक शकता.,(p / possible-01 :ARG1 (w / win-01 :ARG0 (w2 / wrestler :mod (f / freestyle)) :ARG1 (m / match) :instrument (h / hold-01 :ARG0 w2 :ARG1 (s / scapula :quant 2 :poss (o / opponent)) :destination (m2 / mat)) :time (i / instant)))
+"ऑंकटिल सामको वेळार फाटीं उरलो, जायत्या जाणांक ताका कोणूच हारोवंक शकना अशें दिशिल्लें.","(c / contrast-01 :op1 (w / withdraw-01 :ARG0 (p / person :name (n / name :op1 ""Anktil"")) :manner (p2 / punctual :degree (j / just))) :op2 (s / seem-01 :ARG1 (p3 / possible-01 :polarity - :ARG1 (d / defeat-01 :ARG0 (a / anyone) :ARG1 p)) :ARG2 (p4 / person :quant (m / many))))"
+2021 वर्सा भारतांतल्या निवळ शारांमदीं चंडीगढ 66व्या क्रमांकाचेर देंवलो.,"(d / drop-01
+   :ARG1 (c / city
+            :name (n / name :op1 ""Chandigarh"")
+            :wiki ""Chandigarh"")
+   :ARG4 (r / rank-01
+            :mod (o / ordinal-entity :value 66))
+   :location (c2 / city
+                  :mod (c3 / clean-01)
+                  :part-of (c4 / country
+                                :name (n2 / name :op1 ""India"")
+                                :wiki ""India""))
+   :time (d2 / date-entity :year 2021))"
+"थंय 800 स्टॉल्सआसात आनी बाजार सप्तकांत 1,00,000 वयर लोकांक आकृश्ट करता.",(a / and :op1 (e / exist-01 :ARG1 (s / stall :quant 800) :location (t / there)) :op2 (a2 / attract-01 :ARG0 (b / market) :ARG1 (p / person :quant (m / more :op1 100000)) :frequency (t2 / temporal-quantity :unit (w / week) :quant 1)))
+ह्या न्हयकाराक लागून अकबरान एक औपचारीक फर्मान जारी करून शहजादा सलीम हाका प्रस्तावीत मोहिमेच्या हुकुमाचेर नेमणूक करपाक सुरवात केली.,"(b / begin-01
+   :ARG0 (a / person :name (n / name :op1 ""Akbar""))
+   :ARG1 (a2 / appoint-01
+            :ARG0 a
+            :ARG1 (s / person
+                     :name (n2 / name :op1 ""Salim"")
+                     :title ""prince"")
+            :ARG2 (c / command
+                     :topic (c2 / campaign
+                               :ARG1-of (p / propose-01))))
+   :cause (r / refuse-01)
+   :manner (i / issue-01
+              :ARG0 a
+              :ARG1 (d / decree
+                       :mod (f / formal))))"
+एके सामान्य व्यक्तीकडेन लग्न केलें म्हूण जपानी कायद्याप्रमाण तिका राजघराण्यांतल्यान काडून उडयली.,"(e / expel-01 :ARG1 (s / she) :ARG2 (f / family :mod (r / royal)) :manner (l / law :mod (c / country :name (n / name :op1 ""Japan""))) :cause (m / marry-01 :ARG0 s :ARG1 (p / person :mod (c2 / common))))"
+19 व्या शेंकड्यांत मॅजी पुनर्स्थापनेमेरेन जपानी सामान्य लोकांचीं आडनांवां नासतालीं.,"(h / have-03
+   :polarity -
+   :ARG0 (p / person
+            :mod (c / common)
+            :mod (c2 / country :name (n / name :op1 ""Japan"")))
+   :ARG1 (s / surname)
+   :time (b / before
+            :op1 (r / restoration
+                    :wiki ""Meiji_Restoration""
+                    :name (n2 / name :op1 ""Meiji"")
+                    :time (d / date-entity
+                             :century 19))))"
+पुजारी अथर्ववेदांतलो एक मंत्र म्हणटा.,"(r / recite-01
+   :ARG0 (p / priest)
+   :ARG1 (m / mantra
+      :source (b / book
+         :name (n / name :op1 ""Atharvaveda"")
+         :wiki ""Atharvaveda"")))"
+ह्या कबलातींत सात वर्सांचें 7 टक्के समर्पण शुल्क आसा (जें शून्या मेरेन पावसर वर्सुकी 1 टक्क्यान देंवता).,(i / include-01 :ARG1 (c / contract :mod (t / this)) :ARG2 (c2 / charge :topic (s / surrender-01) :quant (p / percentage-entity :value 7) :duration (d / temporal-quantity :quant 7 :unit (y / year)) :ARG1-of (d2 / decrease-01 :ARG2 (p2 / percentage-entity :value 1) :frequency (a / annual) :time (r / reach-01 :ARG0 c2 :ARG1 (z / zero)))))
+"कोयर उडोवप्यांचेर पंचायतीन खर कारवाय करची, अशी थळाव्या लोकांचें म्हणणें आसा","(d / demand-01
+   :ARG0 (p / person
+            :mod (l / local))
+   :ARG1 (o / obligate-01
+            :ARG2 (a / act-02
+                     :ARG0 (p2 / panchayat)
+                     :ARG1 (p3 / person
+                              :ARG0-of (d2 / dump-01
+                                          :ARG1 (g / garbage)))
+                     :manner (s / strict))))"
+केंद्र सरकाराच्या आदेशा प्रमाण गोंयांत येरादारी नेमांची अंमलबजावणी करचीच पडटली,"(o / obligate-01
+   :ARG1 (i / implement-01
+            :ARG1 (r / rule
+                     :mod (t / traffic))
+            :location (s / state
+                         :name (n / name :op1 ""Goa"")))
+   :cause (o2 / order-01
+             :ARG0 (g / government
+                      :mod (c / center))))"
+"गांधीन दांडी मीठ मार्चांक सुरवात करतना, पटेलाक रास गांवांत अटक करून ताचेर साक्षीदार नासतना खटलो चलोवपाक लागले, खंयच्याच वकीलाक वा पत्रकारांक हाजीर रावपाक मेळनाशिल्लें.","(c / and :op1 (a / arrest-01 :ARG1 (p / person :wiki ""Vallabhbhai_Patel"" :name (n / name :op1 ""Patel"")) :location (v / village :name (n2 / name :op1 ""Ras""))) :op2 (t / try-01 :ARG1 p :accompanier (w / witness :polarity -)) :op3 (p2 / permit-01 :polarity - :ARG1 (p3 / present-01 :ARG0 (p4 / person :role (o / or :op1 (l / lawyer) :op2 (j / journalist))))) :time (s / start-01 :ARG0 (g / person :wiki ""Mahatma_Gandhi"" :name (n3 / name :op1 ""Gandhi"")) :ARG1 (m / march-01 :wiki ""Salt_March"" :name (n4 / name :op1 ""Dandi"" :op2 ""Salt"" :op3 ""March""))))"
+2008 वर्सा घेतकीर तो क्लब संवसारांतलो  सगळ्यांत गिरेस्त जालो.,"(b / become-01
+   :ARG1 (c / club)
+   :ARG2 (r / rich
+            :degree (s / superlative
+                       :domain (w / world)))
+   :time (a / after
+            :op1 (t / take-over-01
+                     :ARG1 c
+                     :time (d / date-entity :year 2008))))"
+"एक धंय वडो सुबेज मागतालो तो भुरगो रातच्या जेवणाक, पूण दिलें ना त्या बाबड्याक.",(c / contrast-01 :op1 (r / request-01 :ARG0 (b / boy :mod (p / poor)) :ARG1 (d / dahi-vada :quant 1) :purpose (d2 / dinner) :degree (a / a-lot)) :op2 (g / give-01 :polarity - :ARG1 d :ARG2 b))
+"आदीं, भुरग्यांचे सुरक्षेविशीं खूब जागृत आसात हें दाखोवपाखातीर वाहन चालकांनी दीसभर गाडयेच्यो लायटी पेटोवन दवरच्यो असो आवंडो आसतालो.","(r / recommend-01
+   :time (p / past)
+   :ARG1 (o / obligate-01
+            :ARG1 (d / driver
+                     :mod (v / vehicle))
+            :ARG2 (k / keep-01
+                     :ARG0 d
+                     :ARG1 (l / light
+                              :poss v)
+                     :ARG2 (o2 / on)
+                     :duration (d2 / day))
+            :purpose (s / show-01
+                        :ARG0 d
+                        :ARG1 (a / aware-01
+                                 :ARG0 d
+                                 :ARG1 (s2 / safe-01
+                                          :ARG1 (c / child))
+                                 :degree (v2 / very)))))"
+पुनर्रचणूक 31 ऑक्टोबर 2019 सावन लागू जाली.,(t / take-effect-01 :ARG1 (r / reorganize-01) :time (d / date-entity :day 31 :month 10 :year 2019))
+एकुणिसाव्या शेंकड्याच्या पयल्या अर्दांत ऑस्ट्रेलियांतल्या वेगवेगळ्या वाठारांनी ‘फुट-बॉल’ खेळ खेळटाले हाचे अभिलेखीय पुरावे मेळ्ळ्यात.,"(f / find-01
+      :ARG1 (e / evidence
+            :mod (a / archive-01)
+            :topic (p / play-01
+                  :ARG0 (p2 / person)
+                  :ARG1 (g / game
+                        :name (n / name :op1 ""foot-ball""))
+                  :location (r / region
+                        :mod (v / vary-01)
+                        :part-of (c / country
+                              :name (n2 / name :op1 ""Australia"")))
+                  :time (h / half
+                        :mod (o / order-01
+                              :value 1)
+                        :part-of (c2 / century
+                              :value 19)))))"
+"मरणाचें कारण अजून निश्चीत ना, पूण आयज जाता तितले बेगीन शवचिकित्सा जावं येता अशें अधिकाऱ्यांनी सांगलें.","(c3 / contrast-01
+   :op1 (d2 / determine-01
+           :polarity -
+           :ARG1 (c / cause-01
+                    :ARG1 (d / die-01))
+           :time (y / yet))
+   :op2 (s / say-01
+           :ARG0 (o / official)
+           :ARG1 (p / possible-01
+                    :ARG1 (p2 / perform-01
+                             :ARG1 (a / autopsy)
+                             :time (t / today)
+                             :manner (s2 / soon
+                                        :degree (s3 / superlative))))))"
+अमेरिकेच्या पुराय इतिहासांत फाशी दिवपाच्या वेगवेगळ्या पद्दतींचो उपेग जाला.,"(u / use-01 :ARG1 (m / method :mod (d / different) :purpose (e / execute-01)) :location (h / history :mod (e2 / entire) :poss (c / country :name (n / name :op1 ""United States"") :wiki ""United_States"")))"
+"त्याच वर्सा पयलीं प्रदर्शीत जाल्ल्या येन्नवळे ह्या सिनेमांतल्यान तिणें तमिळ चित्रपटांत पदार्पण केलें, थंय तिणें आर. माधवनाची जोडिदार म्हूण अभिनय केलो.","(d / debut-01
+   :ARG0 (s / she)
+   :ARG1 (c / cinema
+             :mod (t / thing
+                      :name (n / name :op1 ""Tamil"")))
+   :time (y / year
+             :mod (s2 / same))
+   :medium (f / film
+               :name (n2 / name :op1 ""Yennavale"")
+               :ARG1-of (r / release-01
+                          :time (b / before :op1 d))
+               :location-of (a / act-01
+                              :ARG0 s
+                              :ARG1 (p2 / partner
+                                        :poss (p / person
+                                                  :name (n3 / name :op1 ""R."" :op2 ""Madhavan""))))))"
+बॅर्न  बॅर्न ही उत्तर फ्रान्साच्या नॉर्डांतली  एक गांवसंस्था.,"(c / commune
+   :name (n / name :op1 ""Bairn Bairn"")
+   :location (d / department
+                 :name (n2 / name :op1 ""Nord"")
+                 :part-of (r / region
+                              :name (n3 / name :op1 ""North France""))))"
+वेवस्थापन विधानांचे पुनरिक्षण स्वतंत्र सी.पी.ए. कडल्यान जायना.,"(r / review-01
+   :polarity -
+   :ARG0 (c / cpa
+      :mod (i / independent))
+   :ARG1 (s / statement
+      :mod (m / manage-01)))"
+ह्या विमानाचो वापर हवाई तळांतल्यान वा विमानवाहक  झुजा-तारवांतल्यान करूंक मेळटा.,"(p / possible-01
+   :ARG1 (u / use-01
+      :ARG1 (a / airplane
+         :mod (t / this))
+      :source (o / or
+         :op1 (a2 / airport)
+         :op2 (c / aircraft-carrier))))"
+"रिणा दिवपी तुकां पयशे दिता आनी तुमी ते फारीक करपाचे तारखे मेरेन वा व्याजा वांगडा फारीक करपाची अपेक्षा दवरता, जी एक जोड टक्केवारी आसता, हेंच रीण अशें स्पश्ट कर.","(c / clarify-01
+   :mode imperative
+   :ARG0 (y / you)
+   :ARG1 (a / and
+      :op1 (g / give-01
+         :ARG0 (l / lender)
+         :ARG1 (m / money)
+         :ARG2 (p / person))
+      :op2 (e / expect-01
+         :ARG0 l
+         :ARG1 (r / repay-01
+            :ARG0 p
+            :ARG1 m
+            :time (t / before
+               :op1 (d / date-entity
+                  :name (n / name
+                     :op1 ""repayment""
+                     :op2 ""date"")))
+            :accompanier (i / interest
+               :ARG1-of (b / be-01
+                  :ARG2 (p2 / percentage-entity
+                     :mod (a / add-02)))))))
+   :ARG2 (l2 / loan))"
+सादारणपणान हें घडटा कारण ही रचणूक अजूनय वाडत आसा आनी तयार जायत आसा अशें मानतात.,"(h / happen-01
+   :ARG1 (t / this)
+   :manner (g / general)
+   :cause (b / believe-01
+             :ARG1 (a / and
+                      :time (s2 / still)
+                      :op1 (g2 / grow-01
+                              :ARG1 (s / structure))
+                      :op2 (f / form-01
+                              :ARG1 s))))"
+आदीं थंड हवामान आसून लेगीत ऑस्ट्रेलियांतल्या न्यू सावथ वेल्सांत उश्ण ल्हारांची परिस्थिती परतून सुरू जावपाची शक्यताय आसा.,"(p / possible-01
+   :ARG1 (s / start-01
+             :ARG1 (s2 / situation
+                         :mod (w / wave
+                                  :mod (h / heat-01)))
+             :mod (a / again)
+             :location (s3 / state :wiki ""New_South_Wales""
+                           :name (n / name :op1 ""New"" :op2 ""South"" :op3 ""Wales"")
+                           :part-of (c / country :wiki ""Australia""
+                                        :name (n2 / name :op1 ""Australia""))))
+   :concession (e / exist-01
+                   :ARG1 (w2 / weather
+                               :mod (c2 / cold-01))
+                   :time (b / before
+                             :op1 (n3 / now))))"
+एम्ट्रॅक एम्ट्रॅक ही अमेरिकेंतली एक प्रवासी रेल्वे कंपनी आसा.,"(c / company :name (n / name :op1 ""Amtrak"") :wiki ""Amtrak"" :location (c2 / country :name (n2 / name :op1 ""America"") :wiki ""United_States"") :ARG0-of (t / transport-01 :ARG1 (p / passenger) :medium (r / railway)))"
+ह्या समुदायाचे नांव फ्रेंच जनरल फ्रँकोइस अचिले बाझाईन हांच्या नांवा वेल्यान दवरिल्ले.,"(d / derive-01 :ARG1 (n / name :poss (c / community :mod (t / this))) :ARG2 (n2 / name :poss (p / person :wiki ""François_Achille_Bazaine"" :name (n3 / name :op1 ""François"" :op2 ""Achille"" :op3 ""Bazaine"") :title (g / general) :mod (f / french))))"
+वास्तव जिणेंत मरण आडावपी मनशाक पड्ड्याचेर मारप अयोग्य आसतलें अशें देसायक दिसलें.,"(t / think-01
+   :ARG0 (p / person :name (n / name :op1 ""Desai""))
+   :ARG1 (i / inappropriate-01
+            :mode hypothetical
+            :ARG1 (k / kill-01
+                     :ARG1 (p2 / person
+                               :ARG0-of (p3 / prevent-01
+                                          :ARG1 (d / death)
+                                          :location (l / life
+                                                       :mod (r / real-01))))
+                     :location (s / screen))))"
+पावसाक लागून रस्तो आनी कुशींच्यो वंयो दोनूय एरिस न्हंयेंत कोसळ्ळीं.,"(c / collapse-01 :ARG1 (a / and :op1 (r / road) :op2 (w / wall :mod (s / side))) :cause (r2 / rain-01) :destination (r3 / river :name (n / name :op1 ""Eris"")))"
+ताका वैजकी पर्यटनाचो एक प्रकार म्हूण मानूं येता.,"(p / possible-01
+   :ARG1 (c / consider-01
+            :ARG1 (t / thing)
+            :ARG2 (t2 / type
+                     :quant 1
+                     :part-of (t3 / tourism
+                                 :mod (m / medicine)))))"
+"ताचे फुडें वचून, तूं तुजीं अर्थीक कागदां तपास  आनी तुजो निश्चीत स्वरुपाचो खर्च, वा गरजेचो आशिल्लो आनी म्हयन्या म्हयन्याक चडसो बदलना त्या खर्चाची नोंद कर.",(a / and :time (a2 / after :op1 (t / that)) :op1 (r / review-01 :ARG0 (y / you) :ARG1 (d / document :poss y :mod (f / financial)) :mode imperative) :op2 (r2 / record-01 :ARG0 y :ARG1 (e / expense :poss y :ARG1-of (o / or :op1 (f2 / fix-01) :op2 (a3 / and :op1 (n / necessary) :op2 (c / change-01 :polarity - :degree (m / most) :frequency (m2 / month))))) :mode imperative))
+"तशें आसल्यार, हे तुजे खरेदीचे भावनीक कळ आसूं येतात.",(p / possible-01 :ARG1 (i / be-03 :ARG1 (t / this) :ARG2 (t2 / trigger-01 :mod (e / emotional) :ARG0-of (c / cause-01 :ARG1 (p2 / purchase-01 :ARG0 (y / you))))) :condition (b / be-02 :ARG1 (t3 / that)))
+आंध्र प्रदेश राज्यांतल्यान ही न्हंय बेल्लारी जिल्ल्यांत भीतर सरता.,"(e / enter-01
+   :ARG0 (r / river)
+   :ARG1 (d / district
+             :name (n / name :op1 ""Bellary""))
+   :source (s / state
+             :name (n2 / name :op1 ""Andhra"" :op2 ""Pradesh"")))"
+उदकाची पातळी 40 सेंटीमीटरांसकयल आशिल्ल्या खाजनाचे भोंवतणीं फ्लेमिंगोंची गर्दी  चड आसता.,(c / crowd-01 :ARG0 (f / flamingo) :degree (m / more) :location (a / around :op1 (w / wetland :part (w2 / water :poss (l / level :ARG1-of (c2 / compare-01 :ARG2 (q / quantity :quant 40 :unit (c3 / centimeter)) :degree (l2 / less-than)))))))
+35 खात्यांतल्यान 5 खात्यां खातीर  निम्मे परस चड तजवीज आसा,"(p / provision
+   :value (m / more
+             :op1 (h / half))
+   :beneficiary (d / department
+                   :quant 5
+                   :part-of (d2 / department
+                               :quant 35)))"
+वेगवेगळ्या संस्कृतायांनी धनुर्धराचे उजवे वा उजवे वटेनच्यान बाण सोडटात आनी हाचो परिणाम धनुष्याच्या हाताच्या धरपाचेर आनी स्थितीचेर जाता.,(a / and :op1 (r / release-01 :ARG0 (c / culture :mod (d / different)) :ARG1 (a2 / arrow) :source (s / side :mod (r2 / right) :part-of (a3 / archer))) :op2 (a4 / affect-01 :ARG0 r :ARG1 (a5 / and :op1 (g / grip-01 :ARG0 (h / hand :ARG0-of (h2 / hold-01 :ARG1 (b / bow)))) :op2 (p / position :domain h))))
+"ते खरेंच अर्थाचें आसल्यार, त्या खर्चापासत तजवीज कर पूण हेर गजालींचेर मोडपाचें टाळ.","(c / contrast-01
+   :op1 (a / arrange-01
+           :ARG0 (y / you)
+           :ARG1 (e / expense)
+           :mode imperative)
+   :op2 (a2 / avoid-01
+           :ARG0 y
+           :ARG1 (s / spend-01
+                    :ARG0 y
+                    :ARG2 (t / thing
+                             :mod (o / other)))
+           :mode imperative)
+   :condition (w / worthwhile-01
+                 :ARG1 e
+                 :degree (t2 / true-01)))"
+सप्टेंबर 2014 वर्सा हो चित्रपट प्रदर्शीत जावपाचो आशिल्लो.,"(s / schedule-01
+   :ARG1 (r / release-01
+      :ARG1 (f / film)
+      :time (d / date-entity
+         :month 9
+         :year 2014)))"
+करिनासतना ती घरपट्टीत नितळसाण कराच्या रुपान घेवपा विशीं चर्चा केली,"(d / discuss-01
+   :ARG0 (s / she)
+   :ARG2 (p / person :name (n / name :op1 ""Karina""))
+   :ARG1 (c / clean-01
+            :ARG1 (h / house)))"
+तुजें लायब्ररी कार्ड घे आनी पयशें फारीक करिनासतना पुस्तकां आनी डी.व्ही.डी. वापरून पळय.,(a / and :op1 (g / get-01 :ARG0 (y / you) :ARG1 (c / card :mod (l / library) :poss y)) :op2 (t / try-01 :ARG0 y :ARG1 (u / use-01 :ARG0 y :ARG1 (a2 / and :op1 (b / book) :op2 (d / dvd)) :accompanier (p / pay-01 :ARG0 y :ARG1 (m / money) :polarity -))) :mode imperative)
+"एक इराणी, खास करून शक, मुळाकय विद्वानांनी कांय प्रमाणांत तेंको दिला.","(s / support-01
+   :ARG0 (s2 / scholar)
+   :ARG1 (p / person
+             :mod (i / Iranian)
+             :mod (s3 / Saka))
+   :degree (e / extent
+               :mod (s4 / some))
+   :manner (e2 / especial)
+   :time (o / original)
+   :mod (a / also))"
+"कितलिशींच वरां उटंगाराचो पावस पडलो, ताका लागून उदक भरलें आनी येरादारेची कोयंडी जाली, पूण हालिंच्या खर आनी उश्ण हवामानांतल्यानय सुटका मेळ्ळी.","(c / contrast-01
+   :op1 (c2 / cause-01
+           :ARG0 (r / rain-01
+                     :manner (h / heavy)
+                     :duration (h2 / hour
+                                 :quant (s / several)))
+           :ARG1 (a / and
+                     :op1 (f / fill-01
+                              :ARG1 (w / water))
+                     :op2 (c3 / congest-01
+                              :ARG1 (t / traffic))))
+   :op2 (r2 / relieve-01
+           :ARG0 r
+           :ARG2 (w2 / weather
+                     :mod (r3 / recent)
+                     :mod (a2 / and
+                               :op1 (h3 / harsh)
+                               :op2 (h4 / hot)))
+           :mod (a3 / also)))"
+ह्या उपक्रमाक व्हड फरकान समर्थन मेळटालें अशें मतदानांतल्यान कळ्ळें.,"(k / know-01
+   :source (v / vote-01)
+   :ARG1 (r / receive-01
+            :ARG0 (i / initiative
+                     :mod (t / this))
+            :ARG1 (s / support-01)
+            :manner (m / margin
+                       :mod (l / large))))"
+हे विशीं नियाळ बसका घेतिल्ल्याचे राजन सातार्डकार हांणी सांगलें,"(s / say-01 :ARG0 (p / person :name (n / name :op1 ""Rajan"" :op2 ""Satardekar"")) :ARG1 (h / hold-04 :ARG1 (m / meeting :purpose (r / review-01 :ARG1 (t / this)))))"
+मलाबार बंडांत मलाबारच्या मोपला मुसलमानांनी ब्रिटीश शासना आड बंड केलें.,"(r / rebel-01 :name (n / name :op1 ""Malabar"" :op2 ""Rebellion"") :ARG0 (p / person :mod (m / Muslim) :mod (m2 / Moplah) :location (l / location :name (n2 / name :op1 ""Malabar""))) :ARG1 (r2 / rule-01 :ARG0 (g / government :mod (c / country :wiki ""United_Kingdom"" :name (n3 / name :op1 ""British"")))))"
+आजीविका नास्तिक आशिल्ले आनी तांणी वेदांचो अधिकार तशेंच बौध्द कल्पना न्हयकारल्यो.,"(a / and
+   :op1 (a2 / atheist
+         :name (n / name :op1 ""Ajivika"")
+         :wiki ""Ājīvika"")
+   :op2 (r / reject-01
+         :ARG0 a2
+         :ARG1 (a3 / and
+               :op1 (a4 / authority
+                     :poss (b / book
+                           :name (n2 / name :op1 ""Vedas"")
+                           :wiki ""Vedas""))
+               :op2 (c / concept
+                     :mod (r2 / religion
+                           :name (n3 / name :op1 ""Buddhist"")
+                           :wiki ""Buddhism"")))))"
+"हे खातीर तो तर्कवादाचो पुरस्कर्तो जालो, आनी जातीवेवस्था, धर्म आनी अंधश्रध्देआड ताणें प्रचार केलो.","(c / and
+   :op1 (b / become-01
+           :ARG1 (p / person)
+           :ARG2 (p2 / proponent
+                     :ARG1-of (a / advocate-01
+                                 :ARG1 (r / rationalism))))
+   :op2 (o / oppose-01
+           :ARG0 p
+           :ARG1 (a2 / and
+                     :op1 (s / system
+                             :mod (c2 / caste))
+                     :op2 (r2 / religion)
+                     :op3 (s2 / superstition))
+           :manner (c3 / campaign-01))
+   :cause (t / thing))"
+हांवें ह्यो तिकेटी ब्लॅकान मोलाच्या तीन पटीन विकत्यो घेतल्यो देखून हांव सामको बेजार जालां.,"(u / upset-01
+   :ARG0 (i / i)
+   :degree (v / very)
+   :cause (b / buy-01
+      :ARG0 i
+      :ARG1 (t / ticket
+         :mod (d / this))
+      :source (m / market
+         :mod (b2 / black))
+      :ARG3 (m2 / multiply-01
+         :ARG1 3
+         :ARG2 (p / price
+            :poss t))))"
+फेब्रुवारी 2005 त पश्चीमी तुफानाक लागून राज्यांतल्या कांय वाठारांनी 2 मिटर मेरेन बर्फ पडलो आनी चार दिसांनी 200 परस चड लोक सोंपलें.,(a / and :op1 (f / fall-01 :ARG1 (s / snow) :time (d / date-entity :year 2005 :month 2) :cause (s2 / storm :mod (w / west)) :location (a2 / area :quant (s3 / some) :part-of (s4 / state)) :extent (q / quantity :quant 2 :unit (m / meter) :mod (u / up-to-91))) :op2 (d2 / die-01 :ARG1 (p / person :quant (m2 / more-than :op1 200)) :duration (t / temporal-quantity :quant 4 :unit (d3 / day))))
+मुख्य सचीव पुनीत गोयल हांणी हे विशींचो आदेश जारी केलो,"(i / issue-01
+   :ARG0 (p / person
+            :name (n / name :op1 ""Puneet"" :op2 ""Goyal"")
+            :title (s / secretary
+                      :mod (c / chief)))
+   :ARG1 (o / order-01
+            :topic (m / matter)))"
+"हें अदभूत प्रकारचें देवूळ आशिल्ल्यान, एकंदर अणभव रोमांचक आनी साहसी आसूं येता.","(p / possible-01
+   :ARG1 (e / experience
+      :mod (o / overall)
+      :mod (a / and
+         :op1 (t / thrilling)
+         :op2 (a2 / adventurous))
+      :cause (b / be-03
+         :ARG1 (t2 / temple)
+         :ARG2 (w / wonderful))))"
+"उदयपूरचो आनी मेवाडचो महाराणा फतेह सिंगाच्या नांवान हें एक कृत्रीम तळें, उदयपूरचे वायव्येक, पिचोला तळ्याचे उत्तरेक १६८० त बांदिल्लें.","(l / lake
+   :mod (a / artificial)
+   :ARG1-of (b / build-01
+               :time (d / date-entity :year 1680))
+   :ARG1-of (n / name-01
+               :ARG2 (p / person
+                          :name (n2 / name :op1 ""Fateh"" :op2 ""Singh"")
+                          :title ""Maharana""
+                          :poss (a2 / and
+                                     :op1 (c / city
+                                             :name (n3 / name :op1 ""Udaipur""))
+                                     :op2 (r / region
+                                             :name (n4 / name :op1 ""Mewad"")))))
+   :location (l2 / location
+                  :direction northwest
+                  :op1 (c2 / city
+                           :name (n5 / name :op1 ""Udaipur"")))
+   :location (l3 / location
+                  :direction north
+                  :op1 (l4 / lake
+                           :name (n6 / name :op1 ""Pichola""))))"
+अरुण जेटली स्टेडियम (सादारणपणान कोटला ह्या नांवान वळखतात) हें भारतांतलें एक पोरणें क्रिकेट मैदान आनी आंतरराश्ट्रीय क्रिकेट मॅचीचें थळ.,"(i / be-01 :ARG1 (s / stadium :name (n / name :op1 ""Arun"" :op2 ""Jaitley"" :op3 ""Stadium"") :wiki ""Arun_Jaitley_Stadium"" :ARG1-of (k / know-01 :manner (c / common) :ARG2 (n2 / name :op1 ""Kotla""))) :ARG2 (a / and :op1 (g / ground :mod (cr / cricket) :mod (o / old) :location (co / country :name (n3 / name :op1 ""India"") :wiki ""India"")) :op2 (v / venue :purpose (m / match :mod (cr2 / cricket) :mod (in / international)))))"
+"आपणाक रस ना अशें तुवें म्हाल विकपी मनशाक सांगलें, तरीकय तुका फोन येत रावले, जाल्यार आपणाक 'फोन करनाका वळेरेंत' घाल म्हूण सांगप.","(s / say-01
+   :mode imperative
+   :ARG0 (y / you)
+   :ARG1 (p / put-01
+      :ARG0 (p2 / person
+         :ARG0-of (s2 / sell-01
+            :ARG1 (g / goods)))
+      :ARG1 y
+      :destination (l / list
+         :name (c / call-01
+            :polarity -)))
+   :condition (c2 / continue-01
+      :ARG1 (r / receive-01
+         :ARG0 y
+         :ARG1 (c3 / call-01))
+      :concession (s3 / say-01
+         :ARG0 y
+         :ARG1 (i / interest-01
+            :polarity -
+            :ARG0 y)
+         :ARG2 p2)))"
+2022 वर्सा प्रदर्शीत जावपाचें आशिल्ल्या त्रिशा स्टारर फिल्म ‘रांगी’ ह्या सिनेमान अनसवारान तमिळ चित्रपट उद्देगांत प्रवेश केलो.,"(e / enter-01 :ARG0 (p / person :name (n / name :op1 ""Anaswara"")) :ARG1 (i / industry :name (n2 / name :op1 ""Tamil"" :op2 ""film"" :op3 ""industry"")) :instrument (f / film :name (n3 / name :op1 ""Raangi"") :ARG0-of (s / star-01 :ARG0 (p2 / person :name (n4 / name :op1 ""Trisha""))) :ARG1-of (r / release-01 :ARG1-of (s2 / schedule-01) :time (d / date-entity :year 2022))))"
+तें मदुरै शारासावन सुमार 7 किलोमीटर पयस आसा आनी ग्रेटर मदुरै शाराच्या दक्षीण पश्चीम वाठाराचो एक भाग.,"(a / and :op1 (h / have-distance-91 :ARG1 (t / thing) :ARG2 (d / distance-quantity :quant 7 :unit (k / kilometer) :mod (a2 / approximate-01)) :source (c / city :name (n / name :op1 ""Madurai""))) :op2 (t :part-of (r / region :direction (s / south-west) :part-of (c2 / city :name (n2 / name :op1 ""Greater"" :op2 ""Madurai"")))))"
+क्युबाचे लागींलागीं पुराय कावंटीक तें बादिल्ल्यान इकेन 7 जाणांक मारले.,"(k / kill-01
+   :ARG0 (h / hurricane :name (n / name :op1 ""Ike""))
+   :ARG1 (p / person :quant 7)
+   :cause (a / affect-01
+      :ARG0 h
+      :ARG1 (c / county
+         :part-of (c2 / country :name (n2 / name :op1 ""Cuba""))
+         :mod (e / entire
+            :degree (a2 / approximate-01)))))"
+जैन धर्माचो 23वो तीर्थंकार पार्श्वनाथान केवल ज्ञान प्राप्त केलें अशें अहिच्छत्रांत मानतात.,"(b / believe-01
+   :ARG0 (p / person)
+   :ARG1 (a / attain-01
+            :ARG0 (p2 / person
+                     :name (n / name :op1 ""Parshvanatha"")
+                     :wiki ""Parshvanatha""
+                     :domain (t / tirthankara
+                                :ord (o / ordinal-entity :value 23)
+                                :domain (j / jainism
+                                           :name (n2 / name :op1 ""Jainism"")
+                                           :wiki ""Jainism"")))
+            :ARG1 (k / knowledge
+                     :name (n3 / name :op1 ""Kevala"" :op2 ""Jnana"")
+                     :wiki ""Kevala_Jnana""))
+   :location (c / city
+                :name (n4 / name :op1 ""Ahichhatra"")
+                :wiki ""Ahichhatra""))"
+कॅरिबियन स्पिनरांचेर भारतीयांनी वळोवपी ट्रॅकाचेर प्रभुत्व मेळयिल्ल्यान अस्तंत भारतीय कर्णधार क्लायव्ह लॉयडानान फुडल्या कसोटी सर्तींत फकत गतीचेर आदारून रावपाची प्रतिज्ञा केली अशें सांगतात.,"(s / say-01 :ARG1 (v / vow-01 :ARG0 (p / person :name (n / name :op1 ""Clive"" :op2 ""Lloyd"") :wiki ""Clive_Lloyd"" :ARG0-of (c / captain :ARG1 (t / team :name (n2 / name :op1 ""West"" :op2 ""Indies"") :wiki ""West_Indies_cricket_team""))) :ARG1 (r / rely-on-01 :ARG0 p :ARG1 (p2 / pace) :mod (o / only-01)) :time (m / match :mod (t2 / test-01) :mod (n3 / next)) :cause (d / dominate-01 :ARG0 (p3 / Indian) :ARG1 (s2 / spinner :mod (c2 / Caribbean)) :location (t3 / track :mod (t4 / turn-01)))))"
+नूर्दिन आनी पिकॉकाक 1996 च्या नोव्हेंबरांत बुकर ग्रुपान हाडलें.,"(b / bring-01 :ARG0 (o / organization :name (n / name :op1 ""Booker"" :op2 ""Group"")) :ARG1 (a / and :op1 (p / person :name (n2 / name :op1 ""Nurdin"")) :op2 (p2 / person :name (n3 / name :op1 ""Picock""))) :time (d / date-entity :year 1996 :month 11))"
+"ऑगस्ट 2016 त अस्तंत बंगाल विधानसभेन अस्तंत बंगालाचें नांव इंग्लीशींत ""बंगाल"" आनी बंगालींत ""बांग्ला"" अशें बदलपाचो आनीक एक प्रस्ताव संमत केलो.","(p / pass-01
+   :ARG0 (a / assembly
+            :name (n / name :op1 ""West"" :op2 ""Bengal"" :op3 ""Legislative"" :op4 ""Assembly"")
+            :wiki ""West_Bengal_Legislative_Assembly"")
+   :ARG1 (p2 / proposal
+            :mod (a2 / another)
+            :purpose (c / change-01
+                         :ARG1 (n2 / name
+                                  :poss (s / state
+                                           :name (n3 / name :op1 ""West"" :op2 ""Bengal"")
+                                           :wiki ""West_Bengal""))
+                         :ARG2 (a3 / and
+                                  :op1 (n4 / name
+                                          :op1 ""Bengal""
+                                          :medium (l / language
+                                                     :name (n5 / name :op1 ""English"")
+                                                     :wiki ""English_language""))
+                                  :op2 (n6 / name
+                                          :op1 ""Bangla""
+                                          :medium (l2 / language
+                                                      :name (n7 / name :op1 ""Bengali"")
+                                                      :wiki ""Bengali_language"")))))
+   :time (d / date-entity
+            :year 2016
+            :month 8))"
+"पूण वर्साक 7,200 अमेरिकी डॉलर खर्च केल्यार तुमची बचत 144 अमेरिकी डॉलर आसा.","(c / contrast-01
+   :op2 (s / save-01
+          :ARG0 (y / you)
+          :ARG1 (m / monetary-quantity
+                  :quant 144
+                  :unit (d / dollar
+                          :name (n / name :op1 ""US"")))
+          :condition (s2 / spend-01
+                       :ARG0 y
+                       :ARG1 (m2 / monetary-quantity
+                               :quant 7200
+                               :unit (d2 / dollar
+                                       :name (n2 / name :op1 ""US"")))
+                       :frequency (t / temporal-quantity
+                                    :quant 1
+                                    :unit (y2 / year)))))"
+रतन सेना पद्मावतीचो कितलो मोग करता हाची परिक्षा घेवपाचें लच्छमीन थारायलें.,"(d / decide-01
+   :ARG0 (p / person :name (n / name :op1 ""Lakshmi""))
+   :ARG1 (t / test-01
+            :ARG0 p
+            :ARG1 (l / love-01
+                     :ARG0 (p2 / person :name (n2 / name :op1 ""Ratan"" :op2 ""Sen""))
+                     :ARG1 (p3 / person :name (n3 / name :op1 ""Padmavati""))
+                     :degree (a / amr-unknown))))"
+संधूच्या घरांतल्यान भायर सरतनाच बिल्लू जस्सीक मारून उडयतलो.,"(k / kill-01
+   :ARG0 (b / person
+      :name (n / name :op1 ""Billu""))
+   :ARG1 (j / person
+      :name (n2 / name :op1 ""Jassi""))
+   :time (e / exit-01
+      :ARG0 j
+      :source (h / house
+         :poss (s / person
+            :name (n3 / name :op1 ""Sandhu"")))))"
+"ताका लागून मंत्रीपद मेळ्ळे उपरांत हे खातें मेळचें, अशें दरेकल्याक दिसता",(t / think-01 :ARG0 (p / person :quant all) :ARG1 (o / obligate-01 :ARG1 (r / receive-01 :ARG0 (p2 / person) :ARG1 (p3 / portfolio :mod (t2 / this)) :time (a / after :op1 (r2 / receive-01 :ARG0 p2 :ARG1 (p4 / post :mod (m / minister)))))) :cause (t3 / thing))
+"तुमकां अतिथींची अपेक्षा आसा ते दरेक मुखेल सुटये खातीर कार्यावळी नियोजीत करपाचो यत्न करा, आनी तुमच्या संकेतथळार तांचो प्रचार करा.","(a / and
+   :op1 (t / try-01
+          :ARG0 (y / you)
+          :ARG1 (p / plan-01
+                   :ARG0 y
+                   :ARG1 (e / event))
+          :mode imperative)
+   :op2 (p2 / promote-01
+           :ARG0 y
+           :ARG1 e
+           :location (w / website
+                        :poss y)
+           :mode imperative)
+   :purpose (h / holiday
+               :quant (e2 / every)
+               :mod (m / major)
+               :time-of (e3 / expect-01
+                           :ARG0 y
+                           :ARG1 (g / guest))))"
+उरिल्ल्या उत्तर आयर्लंडांत आनीक 45 टपालाचीं शारां आसात.,"(e / exist-01
+   :ARG1 (t / town
+            :quant 45
+            :mod (a / additional)
+            :mod (p / post-01))
+   :location (r / rest-02
+                :ARG1 (c / country
+                         :name (n / name
+                              :op1 ""Northern""
+                              :op2 ""Ireland"")
+                         :wiki ""Northern_Ireland"")))"
+मरणा उपरांत 1983 वर्सा भारत रत्न हो पुरस्कार दिवन ताका सन्मानीत केलो.,"(a / award-01
+   :ARG0 (c / country :wiki ""India""
+      :name (n / name :op1 ""India""))
+   :ARG1 (p / award :wiki ""Bharat_Ratna""
+      :name (n2 / name :op1 ""Bharat"" :op2 ""Ratna""))
+   :ARG2 (p2 / person)
+   :time (d / date-entity :year 1983)
+   :mod (p3 / posthumous))"
+"कांय सुवातींनी, ते धान्य आनी गोडासारकिले जिनस एकठांय करून विकतात आनी विक्रेची येणावळ गटांनीं वांटून घेतात.","(a / and
+   :op1 (s / sell-01
+      :ARG0 (p / person)
+      :ARG1 (a2 / and
+         :op1 (g / grain)
+         :op2 (i / item
+            :mod (s2 / sweet)))
+      :manner (c / collectively))
+   :op2 (d / divide-01
+      :ARG0 p
+      :ARG1 (r / revenue
+         :source s)
+      :ARG2 (g2 / group))
+   :location (p2 / place
+      :quant (s3 / some)))"
+ध्रुपद संगीत विशय आनी आशयांत मुखेलपणांत भक्ती स्वरुपाचें आसता.,"(b / be-01
+   :ARG1 (m / music
+             :name (n / name :op1 ""Dhrupad""))
+   :ARG2 (d / devotional)
+   :degree (p / predominant)
+   :domain (a / and
+               :op1 (s / subject)
+               :op2 (c / content)))"
+जॉन हुशार आनी कश्ट करपी आशिल्लो आनी ताका लोहार म्हूण सहज काम मेळ्ळें.,"(a2 / and
+   :op1 (b / be-01
+      :ARG1 (p / person
+         :name (n / name :op1 ""John""))
+      :ARG2 (a / and
+         :op1 (s / smart)
+         :op2 (h / hard-working)))
+   :op2 (g / get-01
+      :ARG0 p
+      :ARG1 (w / work-01
+         :role (b2 / blacksmith))
+      :manner (e / easy)))"
+"ताणें जायत्यो इमारती उबारल्यो, तातूंत मशिदी, खानकाह (मठ), दरगाह (प्रभावशाली लोकांचीं तीर्थां वा थडग्यो) आनी तीर्थयात्रिकां खातीर जलाशय (हवज) उबारले.","(b / build-01
+   :ARG0 (h / he)
+   :ARG1 (a / and
+            :quant (m / many)
+            :op1 (m2 / mosque)
+            :op2 (k / khanqah
+                   :mod (m3 / monastery))
+            :op3 (d / dargah
+                   :mod (o / or
+                          :op1 (s / shrine
+                                 :poss (p / person
+                                         :mod (i / influential)))
+                          :op2 (t / tomb
+                                 :poss p)))
+            :op4 (r / reservoir
+                   :beneficiary (p2 / pilgrim)
+                   :mod (h2 / hauz))))"
+"पूण तुर्कस्तानांत उंटाचो बळी दिवप सामकें चुक्कून, आनी ही प्रचलीत चाल न्हय.","(a / and :op1 (w / wrong-02 :ARG1 (s / sacrifice-01 :ARG1 (c / camel) :location (c2 / country :name (n / name :op1 ""Turkey"") :wiki ""Turkey"")) :degree (c3 / complete-01)) :op2 (p / practice-02 :polarity - :ARG1 s :mod (c4 / common-01)))"
+भारताचो चडसो भाग एकवटीत करपी पयल्या राज्याची बुन्याद घालपी चंद्रगुप्त मौर्य हो भारताच्या इतिहासांतलो म्हत्वाचो व्यक्ती आशिल्लो.,"(i / important-01
+   :ARG1 (p / person
+      :name (n / name
+         :op1 ""Chandragupta""
+         :op2 ""Maurya"")
+      :wiki ""Chandragupta_Maurya""
+      :ARG0-of (f / found-01
+         :ARG1 (e / empire
+            :ord (o / ordinal-entity
+               :value 1)
+            :ARG0-of (u / unify-01
+               :ARG1 (p2 / part
+                  :degree (m / most)
+                  :part-of (c / country
+                     :name (n2 / name
+                        :op1 ""India"")
+                     :wiki ""India""))))))
+   :location (h / history
+      :poss c))"
+ह्या अर्थसंकल्पांत 15 व्या वित्त,"(f / finance
+   :ord (o / ordinal-entity :value 15)
+   :location (b / budget
+                :mod (t / this)))"
+कॅमेरामॅनाक ऍबटाची खबर दिवप हें एकुच काम आशिल्लें.,"(j / job
+   :poss (c / cameraman)
+   :quant 1
+   :mod (o / only-01)
+   :ARG1 (g / give-01
+            :ARG0 c
+            :ARG1 (n / news
+                     :topic (a / abbot))))"
+अमिसाचो जल्म 17 जून 1922 दिसा इंग्लंडांत लंडनांतल्या  डुल्विच हांगा  जालो.,"(b / bear-01 :ARG1 (p / person :name (n / name :op1 ""Amis"")) :time (d / date-entity :day 17 :month 6 :year 1922) :location (c / city :name (n2 / name :op1 ""Dulwich"") :part-of (c2 / city :name (n3 / name :op1 ""London"") :part-of (c3 / country :name (n4 / name :op1 ""England"")))))"
+ला ब्रिया टार पिट्स आतां नोंदणीकृत राश्ट्रीय सैमीक भूंयखूण जाल्या.,"(b / become-01
+   :ARG1 (p / place
+            :name (n / name
+                     :op1 ""La""
+                     :op2 ""Brea""
+                     :op3 ""Tar""
+                     :op4 ""Pits"")
+            :wiki ""La_Brea_Tar_Pits"")
+   :ARG2 (l / landmark
+            :ARG1-of (r / register-01)
+            :mod (n2 / national)
+            :mod (n3 / natural))
+   :time (n4 / now))"
+"तें घडये अशें दिसतलें: ""तुमचें नांव, रस्त्याचो पत्तो, शार, पिन कोड, राज्य, बदलपी चिन्न""","(p / possible-01
+   :ARG1 (l / look-02
+      :ARG0 (t / thing)
+      :ARG1 (a / and
+         :op1 (n / name
+            :poss (y / you))
+         :op2 (a2 / address
+            :mod (s / street))
+         :op3 (c / city)
+         :op4 (p2 / pin-code)
+         :op5 (s2 / state)
+         :op6 (s3 / symbol
+            :mod (v / variable-01)))))"
+खरेदीदारांनी सेगीत साबार बॅच न्हयकारिल्ले इंस्टाकार्टाक आवडना.,"(l / like-01 :polarity - :ARG0 (c / company :name (n / name :op1 ""Instacart"")) :ARG1 (r / reject-01 :ARG0 (s / shopper) :ARG1 (b / batch :quant (m / multiple)) :manner (c2 / consecutive)))"
+"तातूंत उल्लेख करपा सारको वरंगल किल्लो आसा, जी काकतीय राजवंशाची राजधानी आशिल्ली.","(i / include-01 :ARG0 (t / thing) :ARG1 (f / fort :name (n / name :op1 ""Warangal"" :op2 ""Fort"") :wiki ""Warangal_Fort"" :ARG1-of (w / worthy-01 :ARG2 (m / mention-01)) :ARG0-of (h / have-role-91 :ARG1 (c / capital :poss (d / dynasty :name (n2 / name :op1 ""Kakatiya"") :wiki ""Kakatiya_dynasty"")))))"
