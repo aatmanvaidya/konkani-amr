@@ -21,3 +21,5 @@ experiments/mbart-large-cc25-ft-amr30-en/pretrain/konkani_amr_finetuned_v2/
 experiments/mbart-large-cc25-ft-amr30-en/pretrain/konkani_pretrained/
 
 **merged_konkani.csv
+
+**.claude/

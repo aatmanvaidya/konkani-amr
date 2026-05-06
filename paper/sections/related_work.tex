@@ -1,0 +1,31 @@
+%% sections/related_work.tex
+\section{Related Work}
+\label{sec:related}
+
+\subsection{AMR Parsing}
+
+AMR parsing—the task of mapping a natural language sentence to its AMR graph—has evolved through several paradigms since the formalism was introduced by \citet{banarescu2013abstract}.
+
+\textbf{Transition- and graph-based parsers.} Early systems framed AMR parsing as a structured prediction problem. \citet{flanigan2014discriminative} introduced the first AMR parser using a two-stage pipeline: concept identification followed by relation classification. Subsequent work proposed graph-to-sequence and graph-transduction approaches \cite{lyu2018amr, zhang2019amr}, leveraging dependency trees and co-reference as auxiliary signals.
+
+\textbf{Sequence-to-sequence parsers.} The dominant paradigm today treats AMR parsing as a sequence-to-sequence task, in which the input is a token sequence and the output is a linearised AMR graph. \citet{xu2020improving} and \citet{bevilacqua2021one} (SPRING) demonstrated that pre-trained language models such as BART \cite{lewis2020bart} can learn this linearised representation effectively. SPRING achieves state-of-the-art English parsing by training BART with a symmetrical objective covering both parsing and generation. The model used in the present work, \texttt{BramVanroy/mbart-large-cc25-ft-amr30-en}, follows this paradigm: it fine-tunes mBART-large on AMR 3.0 using the SPRING linearisation format with pointer tokens (\texttt{<pointer:N>}) and relation markers (\texttt{<rel>}, \texttt{</rel>}).
+
+\textbf{Evaluation metric.} Smatch \cite{cai2013smatch} is the standard metric for AMR evaluation. It computes precision, recall, and F1 over the set of AMR triples (variable, relation, value) by finding the maximum overlap between two graphs via a hill-climbing search.
+
+\subsection{Multilingual and Cross-Lingual AMR Parsing}
+
+Extending AMR parsing to non-English languages has received growing attention. \citet{damonte2017cross} proposed cross-lingual AMR parsing by translating input sentences to English before parsing, establishing a straightforward pipeline baseline. \citet{blloshmi2020xl} (XL-AMR) developed a multilingual AMR dataset covering Italian, Spanish, German, and Chinese, and trained cross-lingual parsers that operate directly on the source language. \citet{sheng2021one} proposed a unified multilingual AMR framework using mBART as the backbone.
+
+Critically for our work, all existing multilingual AMR datasets target European or East Asian languages with large linguistic communities. No prior work addresses AMR for any Indic language, let alone a low-resource Indic language such as Konkani.
+
+\subsection{Language-Adaptive Pre-training}
+
+Pre-training large language models on domain- or language-specific data before task-specific fine-tuning is a well-established technique for improving performance on low-resource tasks \cite{gururangan2020dont}. For cross-lingual settings, continued pre-training on target-language text has been shown to improve both understanding and generation \cite{chau2020parsing, pfeiffer2021unks}.
+
+For seq2seq models in particular, \citet{liu2020multilingual} (mBART) demonstrated that denoising autoencoding pre-training on 25 languages simultaneously yields strong multilingual translation models. The denoising objective—where input text is corrupted by token masking, deletion, and sentence permutation—teaches the model to reconstruct the original sequence, thereby acquiring syntactic and semantic knowledge from raw text.
+
+In our work, we continue pre-training mBART on Konkani text from BPCC using a reconstruction objective (Section~\ref{sec:methodology}). This is motivated by the observation that mBART's original vocabulary and pre-training data do not include Konkani, and that exposure to in-domain Konkani text may improve the model's encoding of Konkani morphology before AMR fine-tuning.
+
+\subsection{Silver-Standard Annotation with Large Language Models}
+
+The use of large language models (LLMs) as automatic annotators to bootstrap training data for low-resource tasks has gained traction. \citet{wang2023selfinstruct} demonstrate that LLMs can generate instruction-following data of reasonable quality. More relevant to our setting, several studies have explored LLM-generated structured annotations—including dependency parses, semantic role labels, and event structures—as silver-standard training data for downstream models, often achieving results competitive with human-annotated data in low-resource scenarios. We adopt this paradigm by using Gemini 2.5 Pro to generate Penman-notation AMR graphs, followed by human verification, substantially reducing the cost of annotation compared to fully manual annotation.

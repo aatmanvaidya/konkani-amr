@@ -1,0 +1,120 @@
+\documentclass[11pt]{article}
+
+% Change "review" to "final" to generate the camera-ready version.
+\usepackage[final]{acl}
+
+% Standard packages
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{microtype}
+\usepackage{inconsolata}
+\usepackage{graphicx}
+\usepackage{booktabs}     % for \toprule, \midrule, \bottomrule
+\usepackage{multirow}
+\usepackage{amsmath}
+
+% Devanagari / Konkani text (requires XeLaTeX or LuaLaTeX for full support;
+% with pdflatex the Konkani text will appear as-is if the font supports it)
+\usepackage[utf8]{inputenc}
+
+\title{KonkaniAMR: Building the First Abstract Meaning Representation Dataset\\
+       for a Low-Resource Indic Language}
+
+\author{Glen Fernandes \quad Aatman Vaidya \\
+  \texttt{aatmanvaidya@gmail.com}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Abstract Meaning Representation (AMR) provides a language-agnostic, graph-based
+encoding of sentence meaning that enables high-level semantic processing for
+downstream NLP tasks. Despite growing multilingual AMR research, virtually all
+existing datasets and parsers target high-resource languages. We introduce
+\textbf{KonkaniAMR}, the first AMR dataset for Konkani—the official language of
+Goa, India, with approximately 2.3 million speakers and no prior semantic NLP
+resources. The dataset contains 1,100 sentence–graph pairs annotated in Penman
+notation using Gemini 2.5 Pro as a silver-standard annotator and verified by a
+human expert with a 97\% acceptance rate. We benchmark three parsing strategies:
+zero-shot transfer from a multilingual AMR model, supervised fine-tuning on
+KonkaniAMR, and language-adaptive pretraining on 189,332 Konkani sentences
+followed by AMR fine-tuning. Fine-tuning on KonkaniAMR more than doubles the
+zero-shot Smatch F1 (0.12 $\to$ 0.27) and halves the rate of structurally invalid
+predictions. We analyse why the pretraining stage fails and provide guidance for
+future low-resource semantic parsing work. Dataset and code are released publicly.
+\end{abstract}
+
+\input{sections/introduction}
+\input{sections/background}
+\input{sections/related_work}
+\input{sections/dataset}
+\input{sections/methodology}
+\input{sections/results}
+\input{sections/discussion}
+
+\section*{Acknowledgements}
+% Add acknowledgements here before camera-ready submission.
+
+\bibliography{custom}
+
+\appendix
+
+\section{Dataset Examples}
+\label{sec:appendix_examples}
+
+Table~\ref{tab:appendix_examples} shows additional KonkaniAMR sentence–graph
+pairs illustrating the range of semantic phenomena covered.
+
+\begin{table*}[h]
+\centering
+\small
+\begin{tabular}{p{0.35\linewidth} p{0.58\linewidth}}
+\toprule
+\textbf{Konkani Sentence} & \textbf{AMR Graph (Penman)} \\
+\midrule
+वाडटे म्हारगाये आड काग्रेसीचें आंदोलन &
+\texttt{(p / protest-01 :ARG0 (c / political-party :name (n / name :op1 "Congress")) :ARG1 (r / rise-01 :ARG1 (i / inflation)))} \\
+\midrule
+पुराय देशभरांत हे दर वाडयल्यात &
+\texttt{(i / increase-01 :ARG1 (r / rate :mod (t / this)) :location (c / country :mod (e / entire)))} \\
+\midrule
+राजकी परिस्थिती खिणाखिणाक बदलत आसा &
+\texttt{(c / change-01 :ARG1 (s / situation :mod (p / political)) :manner (c2 / constant))} \\
+\bottomrule
+\end{tabular}
+\caption{Additional KonkaniAMR examples. Left: Konkani source sentence. Right: gold AMR in Penman notation.}
+\label{tab:appendix_examples}
+\end{table*}
+
+\section{Training Curve}
+\label{sec:appendix_training}
+
+Table~\ref{tab:training_curve} shows representative training and validation
+losses from the supervised fine-tuning run (System 2). The model converges
+around epoch 4--5 as measured by validation loss; subsequent epochs exhibit
+slight overfitting.
+
+\begin{table}[h]
+\centering
+\small
+\begin{tabular}{rcc}
+\toprule
+\textbf{Epoch} & \textbf{Train Loss} & \textbf{Val Loss} \\
+\midrule
+1  & 5.727 & 2.486 \\
+2  & 2.206 & 1.785 \\
+3  & 1.623 & 1.588 \\
+4  & 1.032 & 1.533 \\
+5  & 0.858 & 1.548 \\
+10 & 0.590 & 1.671 \\
+15 & 0.281 & 1.941 \\
+20 & 0.201 & 2.022 \\
+\bottomrule
+\end{tabular}
+\caption{Training and validation loss per epoch for System 2 (supervised fine-tuning). Best checkpoint was selected at epoch 4 (lowest validation loss = 1.533).}
+\label{tab:training_curve}
+\end{table}
+
+\end{document}

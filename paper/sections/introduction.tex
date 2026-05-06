@@ -1,0 +1,25 @@
+%% sections/introduction.tex
+\section{Introduction}
+\label{sec:introduction}
+
+Abstract Meaning Representation (AMR) \cite{banarescu2013abstract} is a graph-based semantic formalism that encodes the meaning of a sentence as a rooted, directed, acyclic graph. Nodes represent concepts (words or WordNet-style senses), while edges encode semantic relations such as predicate-argument structure, modifiers, and named entities. AMR has become an important resource for downstream tasks including question answering, machine translation, and information extraction, because it captures \emph{who did what to whom} in a language-agnostic way that abstracts over surface syntactic variation.
+
+Despite the progress in AMR research, virtually all existing datasets and parsers target a small set of high-resource languages—primarily English, with recent extensions to Chinese, Spanish, German, and a handful of other well-resourced tongues. The world's roughly 7,000 languages include hundreds spoken by millions of people for whom meaning-representation resources are entirely absent. Developing AMR for such languages is not merely an academic exercise: it is a prerequisite for building the kind of high-quality NLP infrastructure that enables real-world applications in education, healthcare, and governance for underserved communities.
+
+Konkani presents a compelling and underexplored case. It is the official language of the Indian state of Goa, spoken by approximately 2.3 million people across the Konkan coast of western India. Despite its official constitutional status, Konkani is severely under-resourced in NLP: it lacks large annotated corpora, robust parsers, or any semantic bank, and existing models for neighbouring languages such as Hindi or Marathi do not transfer well because of Konkani's distinct morphology and lexicon (see Section~\ref{sec:background}).
+
+This paper makes the following contributions:
+
+\begin{itemize}
+    \item \textbf{KonkaniAMR}: the first AMR dataset for Konkani, comprising 1,100 sentences drawn from a parallel translation corpus and a local Konkani newspaper, annotated with Penman-notation AMR graphs. Annotations were generated using Gemini 2.5 Pro as a silver-standard annotator and subsequently verified by a human expert with 97\% acceptance rate.
+
+    \item \textbf{Pretraining corpus}: a large Konkani-language corpus of 189,332 sentences derived from the AI4Bharat BPCC dataset \cite{gala2023indictrans2}, used for continued language-adaptive pre-training.
+
+    \item \textbf{Empirical study}: a systematic comparison of three parsing pipelines—zero-shot multilingual AMR parsing, supervised fine-tuning on our dataset, and language-adaptive pretraining followed by AMR fine-tuning—establishing the first Smatch benchmarks for Konkani.
+
+    \item \textbf{Insights}: analysis of what succeeds and what fails when adapting multilingual pre-trained sequence-to-sequence models to an extremely low-resource, morphologically rich language for structured prediction.
+\end{itemize}
+
+Our fine-tuned system achieves an average Smatch F1 of 0.33 on the test set, more than doubling the zero-shot baseline of 0.12, demonstrating that even a modest silver-annotated dataset of 1,100 sentences provides a strong signal for training an AMR parser in this low-resource setting. We release the dataset and all experimental code to facilitate reproducibility and further research.\footnote{Code and data available at: \texttt{[repository link]}}
+
+The remainder of the paper is organised as follows. Section~\ref{sec:background} situates Konkani as a low-resource language and surveys existing linguistic resources. Section~\ref{sec:related} reviews prior work on AMR parsing and language-adaptive pre-training. Section~\ref{sec:dataset} describes the construction and quality of our dataset. Section~\ref{sec:methodology} presents our three experimental pipelines. Section~\ref{sec:results} reports results. Section~\ref{sec:discussion} discusses findings, limitations, and future directions.

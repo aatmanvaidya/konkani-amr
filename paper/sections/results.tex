@@ -1,0 +1,60 @@
+%% sections/results.tex
+\section{Results}
+\label{sec:results}
+
+\subsection{Main Results}
+
+Table~\ref{tab:main_results} reports Smatch scores for all three systems. We discuss each in turn.
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lrrrrrr}
+\toprule
+\textbf{System} & \textbf{N} & \textbf{Parsed} & \textbf{Skip\%} & \textbf{P} & \textbf{R} & \textbf{F1\textsubscript{all}} \\
+\midrule
+Zero-shot baseline     & 1100 & 642 & 41.6 & 0.174 & 0.282 & 0.121 \\
+Fine-tuned (Sys.\ 2)   & 165  & 135 & 18.2 & 0.329 & 0.351 & \textbf{0.271} \\
+Pretrain + FT (Sys.\ 3)& 165  & 7   & 95.8 & 0.500 & 0.426 & 0.019 \\
+\bottomrule
+\end{tabular}
+\caption{Smatch scores on the test set. \textbf{N} = number of sentences evaluated; \textbf{Parsed} = number of parseable predictions; \textbf{Skip\%} = percentage of predictions that could not be parsed; F1\textsubscript{all} treats unparseable predictions as F1 = 0. P and R are averaged over parseable examples only. Note that the baseline was evaluated on all 1,100 examples before splitting; Systems 2 and 3 use only the 165-sentence held-out test split.}
+\label{tab:main_results}
+\end{table}
+
+\textbf{Zero-shot baseline (System 1).}
+When applied directly to Konkani without any adaptation, the multilingual AMR model achieves an average Smatch F1 of 0.121 (F1\textsubscript{all}) across all 1,100 sentences. The model succeeds in producing parseable output for 642 of 1,100 sentences (58.4\%), and those parseable predictions score an average F1 of 0.207. The high skip rate of 41.6\% reflects the challenge of applying a model that has never seen Konkani to a language with distinct morphology and a different script register. Among the best zero-shot results, the model achieves F1 scores as high as 0.62 on shorter, syntactically simpler sentences (e.g., sentences describing dates and named-entity-heavy reorganisation events), suggesting that the multilingual representations do capture some cross-lingual transfer signal for structured concepts.
+
+\textbf{Supervised fine-tuning (System 2).}
+Fine-tuning the model on 880 Konkani AMR training pairs produces a large and consistent improvement. The Smatch F1\textsubscript{all} rises to 0.271—more than double the zero-shot baseline—and the skip rate drops from 41.6\% to 18.2\%, indicating that fine-tuning substantially improves output structural validity. Among parseable predictions, average F1 is 0.332. The top-performing predictions reach F1 scores of 0.78, 0.68, and 0.67 for individual sentences, showing that the fine-tuned model can produce near-perfect graphs for simpler sentences. The improvement confirms that even a small silver-annotated dataset of approximately 900 training examples can provide a strong learning signal for AMR parsing in a low-resource language.
+
+\textbf{Language-adaptive pre-training + fine-tuning (System 3).}
+Despite the intuitive appeal of first adapting the model to Konkani text and then fine-tuning for AMR, System 3 performs dramatically worse in terms of overall reliability: only 7 of 165 test sentences (4.2\%) yield parseable predictions, producing an F1\textsubscript{all} of just 0.019. Paradoxically, the 7 parseable predictions score an average F1 of 0.437—higher than either of the other systems on parseable examples—but this cannot compensate for the near-total failure to generate structurally valid graphs. We analyse the causes of this failure in Section~\ref{sec:discussion}.
+
+\subsection{Parsability Analysis}
+
+A key observation is that the skip rate (proportion of predictions that fail to parse as valid Penman) is a strong differentiator across systems. System 3's near-total parsing failure (95.8\% skip rate) suggests that the pretraining stage fundamentally altered the model's output distribution in a way that is incompatible with the SPRING AMR linearisation format. In contrast, System 2 achieves a reasonable skip rate of 18.2\%, indicating that 880 AMR training examples are sufficient to teach the decoder to respect the linearisation format.
+
+\subsection{Qualitative Analysis}
+
+Table~\ref{tab:qualitative} shows representative examples from System 2 on the test set.
+
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{p{0.47\linewidth}r}
+\toprule
+\textbf{Sentence (Konkani)} & \textbf{F1} \\
+\midrule
+पुनर्रचणूक 31 ऑक्टोबर 2019 सावन लागू जाली. & 0.78 \\
+नूर्दिन आनी पिकॉकाक 1996 च्या नोव्हेंबरांत बुकर ग्रुपान हाडलें. & 0.68 \\
+सप्टेंबर 2014 वर्सा हो चित्रपट प्रदर्शीत जावपाचो आशिल्लो. & 0.67 \\
+\midrule
+केंद्र सरकाराच्या आदेशा प्रमाण गोंयांत येरादारी... & 0.42 \\
+\bottomrule
+\end{tabular}
+\caption{Sample predictions from the fine-tuned system (System 2). Higher-scoring examples tend to involve dates, named entities, and simple events.}
+\label{tab:qualitative}
+\end{table}
+
+Sentences with high F1 tend to share common characteristics: they involve dated events, named entities (person or organisation names that map cleanly to \texttt{:name} subgraphs), and single-predicate event structures. Sentences that score lower typically involve complex nested argument structures, aspectual or modal nuances, or Konkani-specific constructions with no direct English analogue.

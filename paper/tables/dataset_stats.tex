@@ -1,0 +1,34 @@
+% tables/dataset_stats.tex
+\begin{table}[t]
+\centering
+\small
+\begin{tabular}{lr}
+\toprule
+\textbf{Statistic} & \textbf{Value} \\
+\midrule
+\multicolumn{2}{l}{\textit{Corpus size}} \\
+\quad Total sentence--graph pairs & 1,100 \\
+\quad Training set & 880 \\
+\quad Validation set & 55 \\
+\quad Test set & 165 \\
+\midrule
+\multicolumn{2}{l}{\textit{Sources}} \\
+\quad AI4Bharat BPCC (random sample) & 1,000 \\
+\quad Konkani newspaper & 100 \\
+\midrule
+\multicolumn{2}{l}{\textit{Sentence statistics}} \\
+\quad Avg.\ sentence length (tokens) & 13.4 \\
+\quad Min / Max sentence length & 4 / 36 \\
+\midrule
+\multicolumn{2}{l}{\textit{AMR graph statistics}} \\
+\quad Avg.\ nodes per graph & 10.8 \\
+\quad Avg.\ edges per graph & 13.8 \\
+\midrule
+\multicolumn{2}{l}{\textit{Annotation}} \\
+\quad Annotator & Gemini 2.5 Pro \\
+\quad Human verification acceptance rate & 97\% \\
+\bottomrule
+\end{tabular}
+\caption{KonkaniAMR dataset statistics.}
+\label{tab:dataset_stats}
+\end{table}
