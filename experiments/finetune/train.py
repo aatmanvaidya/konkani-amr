@@ -356,12 +356,12 @@ def parse_args():
     p = argparse.ArgumentParser(description="Fine-tune mBART for Konkani AMR parsing")
     p.add_argument(
         "--data_csv",
-        default="../baseline/data.csv",
-        help="Path to data.csv with columns: sentence, amr_penman",
+        default="../../data/konkani_amr.csv",
+        help="Path to data CSV with columns: sentence, amr_penman",
     )
     p.add_argument(
         "--output_dir",
-        default="./konkani_amr_finetuned",
+        default="./outputs",
         help="Directory for model checkpoints and outputs",
     )
     p.add_argument("--epochs", type=int, default=10)

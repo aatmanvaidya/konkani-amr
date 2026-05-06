@@ -1,4 +1,4 @@
-# Python-generated files
+# Python
 __pycache__/
 *.py[oc]
 build/
@@ -9,18 +9,25 @@ wheels/
 # Virtual environments
 .venv
 *.env
-**.txt
 
+# Raw/large data (not tracked)
 bpcc_konkani/
+data/pretraining_corpus.csv
+scripts/wiki_sample.csv
+scripts/bpcc_sample.csv
 
-**.ipynb_checkpoints/
+# Notebook checkpoints
+**/.ipynb_checkpoints/
+
+# uv
 uv.lock
-experiments/mbart-large-cc25-ft-amr30-en/finetune/konkani_amr_finetuned/checkpoints/
-experiments/mbart-large-cc25-ft-amr30-en/finetune/konkani_amr_finetuned/best_model/
-experiments/mbart-large-cc25-ft-amr30-en/pretrain/konkani_amr_finetuned_v2/best_model/
-experiments/mbart-large-cc25-ft-amr30-en/pretrain/konkani_amr_finetuned_v2/checkpoints/
-experiments/mbart-large-cc25-ft-amr30-en/pretrain/konkani_pretrained/
 
-**merged_konkani.csv
+# Model checkpoints and outputs
+experiments/finetune/outputs/checkpoints/
+experiments/finetune/outputs/best_model/
+experiments/pretrain_finetune/outputs/pretrained/
+experiments/pretrain_finetune/outputs/finetuned/best_model/
+experiments/pretrain_finetune/outputs/finetuned/checkpoints/
 
-**.claude/
+# Claude
+.claude/

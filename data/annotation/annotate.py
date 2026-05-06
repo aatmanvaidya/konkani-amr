@@ -8,14 +8,14 @@ from google import genai
 from tqdm import tqdm
 
 load_dotenv()
-client = genai.Client(api_key=os.getenv("KIRAN_GEMINI_KEY"))
+client = genai.Client(api_key=os.getenv("GEMINI_KEY"))
 
 MODEL = "gemini-2.5-pro"
 CSV_FILENAME = "wiki_sample"
-token_log_file = "gemini_token_log.jsonl"
-error_log_file = "gemini_error_log.jsonl"
-output_file = rf"output_train/amr_outputs_{CSV_FILENAME}.json"
-input_csv_file = rf"/home/aatman/Aatman/Study/Semantic Parsing/konkani-amr/training_data/{CSV_FILENAME}.csv"
+token_log_file = "annotation_token_log.jsonl"
+error_log_file = "annotation_error_log.jsonl"
+output_file = rf"raw/amr_outputs_{CSV_FILENAME}.json"
+input_csv_file = rf"../../scripts/{CSV_FILENAME}.csv"
 
 amr_rules = """
 AMR RULES (PENMAN notation):
@@ -96,7 +96,6 @@ def clean_model_output(text: str) -> str:
 
 
 def log_error(sentence_id: str, sentence: str, error_type: str, error_msg: str):
-    """Log errors to a separate error log file"""
     error_entry = {
         "timestamp_utc": datetime.now(timezone.utc).isoformat(),
         "sentence_id": sentence_id,
@@ -120,14 +119,11 @@ if os.path.exists(output_file):
 else:
     existing_data = []
 
-# Create a set of already processed IDs for fast lookup
 processed_ids = {entry.get("id") for entry in existing_data if entry.get("id")}
 print(f"Found {len(processed_ids)} already processed entries")
 
-# Read CSV file
 df = pd.read_csv(input_csv_file)
 
-# Count how many will be skipped
 total_rows = len(df)
 rows_to_skip = sum(1 for _, row in df.iterrows() if row["id"] in processed_ids)
 rows_to_process = total_rows - rows_to_skip
@@ -136,12 +132,10 @@ print(f"Total entries in CSV: {total_rows}")
 print(f"Already processed: {rows_to_skip}")
 print(f"To be processed: {rows_to_process}")
 
-# Process each row
 for idx, row in tqdm(df.iterrows(), total=len(df), desc="Processing Sentences"):
     sentence_id = row["id"]
     sentence = row["text"]
 
-    # Skip if already processed
     if sentence_id in processed_ids:
         continue
 
@@ -153,14 +147,12 @@ for idx, row in tqdm(df.iterrows(), total=len(df), desc="Processing Sentences"):
             config={"temperature": 0},
         )
 
-        # Check if response has text attribute
         if not hasattr(response, "text") or response.text is None:
             error_msg = f"API returned None response. Response object: {response}"
             print(f"\n❌ Error for sentence ID {sentence_id}")
             print(f"   Sentence: {sentence[:100]}...")
             print(f"   Error: {error_msg}")
 
-            # Check for candidates and finish_reason
             if hasattr(response, "candidates") and response.candidates:
                 finish_reason = (
                     response.candidates[0].finish_reason
@@ -172,7 +164,6 @@ for idx, row in tqdm(df.iterrows(), total=len(df), desc="Processing Sentences"):
 
             log_error(sentence_id, sentence, "API_RESPONSE_NONE", error_msg)
 
-            # Save entry with None values
             output_entry = {
                 "id": sentence_id,
                 "timestamp_utc": datetime.now(timezone.utc).isoformat(),
@@ -227,7 +218,6 @@ for idx, row in tqdm(df.iterrows(), total=len(df), desc="Processing Sentences"):
         with open(output_file, "w", encoding="utf-8") as f:
             json.dump(existing_data, f, ensure_ascii=False, indent=2)
 
-        # Log token usage if available
         if hasattr(response, "usage_metadata") and response.usage_metadata:
             usage = response.usage_metadata
             timestamp_utc = datetime.now(timezone.utc).isoformat()
@@ -262,14 +252,12 @@ for idx, row in tqdm(df.iterrows(), total=len(df), desc="Processing Sentences"):
                 f.write(json.dumps(token_log_entry) + "\n")
 
     except Exception as e:
-        # Catch any other unexpected errors
         error_msg = f"Unexpected error: {type(e).__name__}: {str(e)}"
         print(f"\n❌ Unexpected error for sentence ID {sentence_id}")
         print(f"   Sentence: {sentence[:100]}...")
         print(f"   Error: {error_msg}")
         log_error(sentence_id, sentence, "UNEXPECTED_ERROR", error_msg)
 
-        # Save entry with None values and error info
         output_entry = {
             "id": sentence_id,
             "timestamp_utc": datetime.now(timezone.utc).isoformat(),

@@ -1,3 +1,4 @@
+"""Compute smatch scores for zero-shot baseline predictions."""
 import csv
 import json
 import os
@@ -8,7 +9,10 @@ import tempfile
 
 import penman
 
-with open("../find_smatch/konkani_amr_predictions.json", encoding="utf-8") as f:
+PREDICTIONS_FILE = "utils/konkani_amr_predictions.json"
+OUTPUT_CSV = "smatch_scores.csv"
+
+with open(PREDICTIONS_FILE, encoding="utf-8") as f:
     data = json.load(f)
 
 
@@ -53,7 +57,6 @@ def smatch_score(gold_str, pred_str):
             pf.write(pred_norm + "\n\n")
             pred_path = pf.name
         result = subprocess.run(
-            # ["python3", "-m", "smatch", "--pr", "-f", pred_path, gold_path],
             [sys.executable, "-m", "smatch", "--pr", "-f", pred_path, gold_path],
             capture_output=True,
             text=True,
@@ -88,29 +91,11 @@ for i, item in enumerate(data):
     score = smatch_score(item["gold_amr"], pred_cleaned)
     if score is None:
         skipped += 1
-        results_out.append(
-            {
-                "idx": i,
-                "sentence": item["sentence"],
-                "P": "",
-                "R": "",
-                "F1": "",
-                "status": "SKIP",
-            }
-        )
+        results_out.append({"idx": i, "sentence": item["sentence"], "P": "", "R": "", "F1": "", "status": "SKIP"})
     else:
         p, r, f1 = score
         scored += 1
-        results_out.append(
-            {
-                "idx": i,
-                "sentence": item["sentence"],
-                "P": p,
-                "R": r,
-                "F1": f1,
-                "status": "OK",
-            }
-        )
+        results_out.append({"idx": i, "sentence": item["sentence"], "P": p, "R": r, "F1": f1, "status": "OK"})
 
 ok_results = [r for r in results_out if r["status"] == "OK"]
 f1_vals = [r["F1"] for r in ok_results]
@@ -125,44 +110,15 @@ print(f"\n--- Scores on {scored} parseable pairs ---")
 print(f"Avg Precision   : {sum(p_vals) / len(p_vals):.4f}")
 print(f"Avg Recall      : {sum(r_vals) / len(r_vals):.4f}")
 print(f"Avg F1          : {sum(f1_vals) / len(f1_vals):.4f}")
-print(f"\n--- Treating skipped as F1=0 (n={len(data)}) ---")
 all_f1 = f1_vals + [0.0] * skipped
+print(f"\n--- Treating skipped as F1=0 (n={len(data)}) ---")
 print(f"Avg F1 (all)    : {sum(all_f1) / len(all_f1):.4f}")
 print("\nTop-10 F1:")
 for r in sorted(ok_results, key=lambda x: -x["F1"])[:10]:
     print(f"  [{r['idx']:04d}] F1={r['F1']:.3f}  {r['sentence'][:55]}")
 
-with open(r"smatch_scores.csv", "w", newline="", encoding="utf-8") as f:
+with open(OUTPUT_CSV, "w", newline="", encoding="utf-8") as f:
     w = csv.DictWriter(f, fieldnames=["idx", "sentence", "P", "R", "F1", "status"])
     w.writeheader()
     w.writerows(results_out)
-print("\nSaved → smatch_scores.csv")
-
-"""
-=======================================================
-Total examples  : 1100
-Scored (parsed) : 642
-Skipped         : 458
-
---- Scores on 642 parseable pairs ---
-Avg Precision   : 0.1744
-Avg Recall      : 0.2822
-Avg F1          : 0.2069
-
---- Treating skipped as F1=0 (n=1100) ---
-Avg F1 (all)    : 0.1207
-
-Top-10 F1:
-  [0369] F1=0.620  बिटॉनीचो जन्म  1934 वर्सा किआराव्हाल्य, आंकोन्या जालो.
-  [0216] F1=0.600  पुनर्रचणूक 31 ऑक्टोबर 2019 सावन लागू जाली.
-  [0202] F1=0.560  बेंगळुरू, मुंबय, अहमदाबाद आनी दिल्ली निदर्शनां जालीं.
-  [0856] F1=0.560  पूण वर्साक 7,200 अमेरिकी डॉलर खर्च केल्यार तुमची बचत 14
-  [0749] F1=0.490  1967 वर्सा भैरो सिंग शेखावताच्या फुडारपणाखाला जन संघान 
-  [0761] F1=0.470  सरगुरच्यान उत्तरेक सुमार 12 किलोमीटर पयस एच.डी. कोटे वस
-  [0115] F1=0.420  ती किंताना रु राज्याची राजधानी.
-  [0250] F1=0.420  रुबेन दारिओ, अर्नस्टो कार्डिनॅल आनी जायकॉण्डो बॅली हे क
-  [0355] F1=0.420  20 फेब्रुवारी 2008 दिसा नॅशनल हॉकी लीगांत 6 खेळ जाल्ले.
-  [0453] F1=0.420  सिरियांत आनी इराकांत सुमार 500 विदेशी  झुजारी बेल्जियन 
-
-Saved → smatch_scores.csv
-"""
+print(f"\nSaved → {OUTPUT_CSV}")

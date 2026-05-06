@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=AMR_Finetune_Konkani
+#SBATCH --job-name=konkani_amr_finetune
 #SBATCH --partition=gpu_a100_il
 #SBATCH --nodes=1
 #SBATCH --ntasks=1
@@ -13,13 +13,11 @@
 
 module load devel/cuda/12.8
 module load devel/python/3.13.3-llvm-19.1
+
 echo "CUDA device(s):"
 nvidia-smi --query-gpu=name,memory.total --format=csv,noheader
 echo ""
 
-# ---------------------------------------------------------------------------
-# 2. Project environment
-# ---------------------------------------------------------------------------
 echo "--- Setting up project environment ---"
 PROJECT_ROOT=/home/tu/tu_tu/tu_zxord71/konkani-amr
 
@@ -30,15 +28,15 @@ else
     source .venv/bin/activate
 fi
 
-EXPERIMENT_DIR="$PROJECT_ROOT/experiments/mbart-large-cc25-ft-amr30-en/finetune"
+EXPERIMENT_DIR="$PROJECT_ROOT/experiments/finetune"
 cd "$EXPERIMENT_DIR" || { echo "ERROR: cannot cd to $EXPERIMENT_DIR"; exit 1; }
 echo "Working dir : $(pwd)"
 
-mkdir -p logs konkani_amr_finetuned
+mkdir -p logs outputs
 
-uv run finetune_konkani_amr.py \
-    --data_csv ./data.csv \
-    --output_dir ./konkani_amr_finetuned \
+uv run train.py \
+    --data_csv ../../data/konkani_amr.csv \
+    --output_dir ./outputs \
     --epochs 15 \
     --batch_size 4 \
     --grad_accum 4 \
@@ -46,9 +44,6 @@ uv run finetune_konkani_amr.py \
 
 EXIT_CODE=$?
 
-# ---------------------------------------------------------------------------
-# 5. Summary
-# ---------------------------------------------------------------------------
 echo ""
 echo "=========================================="
 echo "Fine-tuning job finished"
@@ -58,10 +53,9 @@ echo "End time   : $(date)"
 echo ""
 
 if [ $EXIT_CODE -eq 0 ]; then
-    echo "✓ Fine-tuning completed successfully."
-
+    echo "Fine-tuning completed successfully."
 else
-    echo "✗ Fine-tuning failed (exit code $EXIT_CODE)."
+    echo "Fine-tuning failed (exit code $EXIT_CODE)."
     echo "Check error logs: logs/${SLURM_JOB_NAME}_${SLURM_JOB_ID}.err"
 fi
 
