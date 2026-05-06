@@ -1,0 +1,992 @@
+[
+  {
+    "sentence": "जपानी आक्रमणा उपरांत 1939 मेरेन तिचे आवयन तिका थंयच वाडयली.",
+    "gold_amr": "(r / raise-02 :ARG0 (m / mother :poss (p / person)) :ARG1 p :location (t / there) :time (a / and :op1 (a2 / after :op1 (i / invade-01 :ARG0 (c / country :name (n / name :op1 \"Japan\")))) :op2 (b / before :op1 (d / date-entity :year 1940))))",
+    "model_output_linearized": "<AMR> ( (o /obtain-01:ARG0 (p / person):ARG1 (t / thing):time (a / after:op1 (d /attack-01:ARG0 (p2 / person:name (n / name:op1 \"Jpah\"):wiki \"Jpah\")):time (a2 / after:op1 d):time (d2 /date-entity:year 1939)))",
+    "model_output_penman": "( (o /obtain-01:ARG0 (p / person):ARG1 (t / thing):time (a / after:op1 (d /attack-01:ARG0 (p2 / person:name (n / name:op1 \"Jpah\"):wiki \"Jpah\")):time (a2 / after:op1 d):time (d2 /date-entity:year 1939))))"
+  },
+  {
+    "sentence": "फवाऱ्याच्या झोताक लागून उरिल्ली  पोकळी, जी हिमालयाचे दक्षिणेक आशिल्ल्या मार्गावयल्यान तिबेटाचे उत्तरेक वचपी मार्गार मोडण घेता, मागीर उश्ण आनी दमट हवेक आकर्शीत करता.",
+    "gold_amr": "(a3 / attract-01 :ARG0 (v / vacuum :ARG1-of (l / leave-01 :ARG0 (j / stream :mod (j2 / jet))) :ARG0-of (b / bend-01 :source (p / path :location (s / south :part-of (c / country :name (n / name :op1 \"Himalayas\") :wiki \"Himalayas\"))) :destination (p2 / path :ARG0-of (g / go-01 :destination (n2 / north :part-of (c2 / country :name (n3 / name :op1 \"Tibet\") :wiki \"Tibet\")))))) :ARG1 (a / air :mod (a4 / and :op1 (h / hot) :op2 (h2 / humid))) :time (a2 / after :op1 b))",
+    "model_output_linearized": "<AMR> ( (a / and:op1 (s /see-01:ARG0 (p / person):ARG1 (p2 / place:name (n / name:op1 \"Urilly\"):wiki \"Urilly\":name (n2 / name:op1 \"Urilly\":op2 \"Pokeana\"):location (c / country-region:name (n3 / name:op1 \"Bangladesh\"):wiki \"Bangladesh\":name (n4 / name:op1 \"Bangladesh\"):wiki \"Bangladesh\":mod (n5 / north)):location (s2 / south:part-of (c2 / country-region:name (n6 / name:op1 \"Bangladesh\"):wiki \"Bangladesh\":name (n7 / name:op1 \"Bangladesh\"):wiki \"Bangladesh\":part-of (c3 / country-region:name (n8 / name:op1 \"Fahradau\"):wiki \"Fahradau\":name (n9 / name:op1 \"Fahradau\"):wiki \"Fahradau\":mod (n10 / country-region:name (n11 / name:op1 \"Uzbek\"):wiki \"Uzbek\"))):ARG2 (p3 / place:name (n12 / name:op1 \"Uzbek\"))):op2 (p4 /propose-01:ARG0 p:ARG1 (a2 / and:op1 (r /reach-01:ARG0 p:ARG1 (l / road:name (n11 / name:op1 \"Nizam\"):wiki \"Nizam\"):op2 (p5 /reach-01:ARG0 p:ARG1 (l2 / road:name (n12 / name:op1 \"Nizam\"):wiki \"Nizam\")))))",
+    "model_output_penman": "( (a / and:op1 (s /see-01:ARG0 (p / person):ARG1 (p2 / place:name (n / name:op1 \"Urilly\"):wiki \"Urilly\":name (n2 / name:op1 \"Urilly\":op2 \"Pokeana\"):location (c / country-region:name (n3 / name:op1 \"Bangladesh\"):wiki \"Bangladesh\":name (n4 / name:op1 \"Bangladesh\"):wiki \"Bangladesh\":mod (n5 / north)):location (s2 / south:part-of (c2 / country-region:name (n6 / name:op1 \"Bangladesh\"):wiki \"Bangladesh\":name (n7 / name:op1 \"Bangladesh\"):wiki \"Bangladesh\":part-of (c3 / country-region:name (n8 / name:op1 \"Fahradau\"):wiki \"Fahradau\":name (n9 / name:op1 \"Fahradau\"):wiki \"Fahradau\":mod (n10 / country-region:name (n11 / name:op1 \"Uzbek\"):wiki \"Uzbek\"))):ARG2 (p3 / place:name (n12 / name:op1 \"Uzbek\"))):op2 (p4 /propose-01:ARG0 p:ARG1 (a2 / and:op1 (r /reach-01:ARG0 p:ARG1 (l / road:name (n11 / name:op1 \"Nizam\"):wiki \"Nizam\"):op2 (p5 /reach-01:ARG0 p:ARG1 (l2 / road:name (n12 / name:op1 \"Nizam\"):wiki \"Nizam\")))))))))"
+  },
+  {
+    "sentence": "क्योतोंतली व्हडली परेड ही त्या सणाचें मुखेल आकर्शण.",
+    "gold_amr": "(a / attract-01\n   :ARG0 (p / parade\n             :mod (b / big)\n             :location (c / city\n                           :name (n / name :op1 \"Kyoto\")\n                           :wiki \"Kyoto\"))\n   :mod (m / main)\n   :part-of (f / festival))",
+    "model_output_linearized": "<AMR> ( (c /compose-01:ARG0 (p / plaster:mod (w / wide):part-of (p2 / plateau:mod (w2 / wind)))))",
+    "model_output_penman": "( (c /compose-01:ARG0 (p / plaster:mod (w / wide):part-of (p2 / plateau:mod (w2 / wind)))))"
+  },
+  {
+    "sentence": "ड्रायव्हिंग सिम्युलेटराचें प्रशिक्षण दिल्यार प्रशिक्षण घेतले उपरांत रस्त्याचीं चिन्नां वळखुपाक कामगिरींत सुदारणा जातली हाचे मर्यादीत पुरावे मेळ्ळ्यात.",
+    "gold_amr": "(f / find-01\n   :ARG1 (e / evidence\n            :mod (l / limited)\n            :topic (i / improve-01\n                      :ARG0 (t / train-01\n                               :instrument (s2 / simulator\n                                               :mod (d / drive-01)))\n                      :ARG1 (p / perform-01\n                               :topic (r / recognize-01\n                                         :ARG1 (s / sign\n                                                  :mod (r2 / road)))))))",
+    "model_output_linearized": "<AMR> ( (p /possible-01:ARG1 (e /experience-01:ARG0 (p2 / person):ARG1 (p3 / program:name (n / name:op1 \"Dloyd\":op2 \"Senior\"):wiki \"Dloyd_Seniority\"))):time (a / after:op1 (u /u2 /use-01:ARG1 (p4 / training:mod (s / software:name (n2 / name:op1 \"Dloyd\":op2 \"Seniority\"):wiki \"Dloyd_Seniority\"))))",
+    "model_output_penman": "( (p /possible-01:ARG1 (e /experience-01:ARG0 (p2 / person):ARG1 (p3 / program:name (n / name:op1 \"Dloyd\":op2 \"Senior\"):wiki \"Dloyd_Seniority\"))):time (a / after:op1 (u /u2 /use-01:ARG1 (p4 / training:mod (s / software:name (n2 / name:op1 \"Dloyd\":op2 \"Seniority\"):wiki \"Dloyd_Seniority\")))))"
+  },
+  {
+    "sentence": "अन्नांत रसायनां मिस्तूर जाल्ल्यान खुबशें फावटी दूशीत पदार्थ तयार जातात जे मनशाक घातक थारूं येता आनी हीं उत्पादनां गळपाची दाट शक्यताय आसता.",
+    "gold_amr": "(a / and\n   :op1 (c2 / create-01\n           :ARG1 (s / substance\n                     :mod (t / toxic)\n                     :ARG1-of (f / fatal-01\n                                 :ARG2 (h / human)\n                                 :mod (p / possible-01)))\n           :frequency (o / often)\n           :cause (m / mix-01\n                     :ARG1 (c / chemical)\n                     :ARG2 (f2 / food)))\n   :op2 (p2 / probable-01\n           :degree (h2 / high)\n           :ARG1 (l / leak-01\n                     :ARG1 s)))",
+    "model_output_linearized": "<AMR> ( (a / and:op1 (a2 / and:op1 (p /possible-01:ARG1 (d /develop-01:ARG1 (p2 / chemical):ARG2 (p3 / particle:ARG0-of (d2 /develop-01:ARG1 (p4 / particle:name (n / name:op1 \"Morganism\")):ARG2 (p5 / particle:name (n2 / name:op1 \"Morganism\")):location (a3 / and:op1 (p5 / panchayat):op2 (p6 / particle:name (n3 / name:op1 \"Norganism\"))))):op2 (p7 /possible-01:ARG1 (d3 /develop-01:ARG1 (p8 / product:mod (t / this)):ARG2 p2)))",
+    "model_output_penman": "( (a / and:op1 (a2 / and:op1 (p /possible-01:ARG1 (d /develop-01:ARG1 (p2 / chemical):ARG2 (p3 / particle:ARG0-of (d2 /develop-01:ARG1 (p4 / particle:name (n / name:op1 \"Morganism\")):ARG2 (p5 / particle:name (n2 / name:op1 \"Morganism\")):location (a3 / and:op1 (p5 / panchayat):op2 (p6 / particle:name (n3 / name:op1 \"Norganism\"))))):op2 (p7 /possible-01:ARG1 (d3 /develop-01:ARG1 (p8 / product:mod (t / this)):ARG2 p2)))))))"
+  },
+  {
+    "sentence": "अकबरान सुरू केल्लीं उदारमतवादी धोरणां पयस करपा खातीर ताच्या काळाक वळखतात.",
+    "gold_amr": "(k / know-01 :ARG0 (p / person) :ARG1 (r / reign-01 :ARG0 (p2 / person)) :purpose (r2 / reverse-01 :ARG0 p2 :ARG1 (p3 / policy :mod (l / liberal) :ARG1-of (i / initiate-01 :ARG0 (p4 / person :name (n / name :op1 \"Akbar\") :wiki \"Akbar\")))))",
+    "model_output_linearized": "<AMR> ( (s /start-01:ARG0 (p / person:name (n / name:op1 \"Ahmed\":op2 \"Amara\"):wiki \"Ahmed_Amara\"):ARG1 (s2 / stage:mod (l / left-02):time (n2 /temporal-quantity:quant 1:unit (h / hour):mod (o /ordinal-entity:value 1))))",
+    "model_output_penman": "( (s /start-01:ARG0 (p / person:name (n / name:op1 \"Ahmed\":op2 \"Amara\"):wiki \"Ahmed_Amara\"):ARG1 (s2 / stage:mod (l / left-02):time (n2 /temporal-quantity:quant 1:unit (h / hour):mod (o /ordinal-entity:value 1)))))"
+  },
+  {
+    "sentence": "ताळो हें मनशाच्या आनी हेर सस्तन प्राण्यांच्या तोंडांतलें पाखें.",
+    "gold_amr": "(p / palate\n   :domain (r / roof\n      :location (m / mouth\n         :poss (a / and\n            :op1 (h / human)\n            :op2 (m2 / mammal\n               :mod (o / other))))))",
+    "model_output_linearized": "<AMR> ( (s /see-01:ARG0 (p / person):ARG1 (p2 / particle:mod (o / other):ARG1-of (b /bear-01:ARG0 (p3 / person):location (a / and:op1 (p4 / place:name (n / name:op1 \"Manchayat\"):wiki \"Manchayat\"):op2 (p5 / place:name (n2 / name:op1 \"Husain\"):wiki \"Husain\")))))",
+    "model_output_penman": "( (s /see-01:ARG0 (p / person):ARG1 (p2 / particle:mod (o / other):ARG1-of (b /bear-01:ARG0 (p3 / person):location (a / and:op1 (p4 / place:name (n / name:op1 \"Manchayat\"):wiki \"Manchayat\"):op2 (p5 / place:name (n2 / name:op1 \"Husain\"):wiki \"Husain\"))))))"
+  },
+  {
+    "sentence": "हे घडणुकेंत कसलेंच लुकसाण वा कोणूय जखमी जाल्ली खबर मेळूंक ना, आनी पुलीसांनी पळोवप्यांक आडायले तरीय कुशीक आशिल्ल्या एकल्यान घडणुकेचो व्हिडियो काडलो.",
+    "gold_amr": "(a / and :op1 (r / report-01 :polarity - :ARG1 (o / or :op1 (d / damage-01) :op2 (i / injure-01 :ARG1 (p / person))) :location (i2 / incident :mod (t / this))) :op2 (r2 / record-01 :ARG0 (p2 / person :location (s / side)) :ARG1 (v / video :topic i2) :concession (s2 / stop-01 :ARG0 (p3 / police) :ARG1 (o2 / onlooker))))",
+    "model_output_linearized": "<AMR> ( (a / and:op1 (a2 / and:op1 (w /know-01:polarity -:ARG0 (p / police):ARG1 (o / or:op1 (h /appear-01:ARG1 (p2 / person):location (c / city:name (n / name:op1 \"Chauhanki\"):mod (h2 / this))):op2 (h3 /have-03:polarity -:ARG0 p2:ARG1 (o2 / or:op1 (p3 / person:name (n2 / name:op1 \"Kama\")):op2 (p4 / person:name (n3 / name:op1 \"Chauhanki\")):op3 (p5 / person:name (n4 / name:op1 \"Kama\")):op4 (p6 / person:name (n5 / name:op1 \"Parvati\")):op5 (p7 / person:name (n6 / name:op1 \"Parvati\")) :title (p8 / person:name (n7 / name:op1 \"Parvati\")) :title (p9 / person:name (n8 / name:op1 \"Kama\")) :title (p10 / person:name (n9 / name:op1 \"Kama\")) :title (p11 / person:name (n10 / name:op1 \"Kama\")) :title (p11 / person:name (n11 / name:op1 \"Kama\")) :title (p12 / person:name (n12 / name:op1 \"Kama\")) :title (p11 / person:name (n11 / name:op1 \"Kama\")) :title (p12 / person:name (n12 / name:op1 \"Kama\"))",
+    "model_output_penman": "( (a / and:op1 (a2 / and:op1 (w /know-01:polarity -:ARG0 (p / police):ARG1 (o / or:op1 (h /appear-01:ARG1 (p2 / person):location (c / city:name (n / name:op1 \"Chauhanki\"):mod (h2 / this))):op2 (h3 /have-03:polarity -:ARG0 p2:ARG1 (o2 / or:op1 (p3 / person:name (n2 / name:op1 \"Kama\")):op2 (p4 / person:name (n3 / name:op1 \"Chauhanki\")):op3 (p5 / person:name (n4 / name:op1 \"Kama\")):op4 (p6 / person:name (n5 / name:op1 \"Parvati\")):op5 (p7 / person:name (n6 / name:op1 \"Parvati\")) :title (p8 / person:name (n7 / name:op1 \"Parvati\")) :title (p9 / person:name (n8 / name:op1 \"Kama\")) :title (p10 / person:name (n9 / name:op1 \"Kama\")) :title (p11 / person:name (n10 / name:op1 \"Kama\")) :title (p11 / person:name (n11 / name:op1 \"Kama\")) :title (p12 / person:name (n12 / name:op1 \"Kama\")) :title (p11 / person:name (n11 / name:op1 \"Kama\")) :title (p12 / person:name (n12 / name:op1 \"Kama\")))))))))"
+  },
+  {
+    "sentence": "गिमाळ्यांत पुराय उत्तर प्रदेशांत लू हें उश्ण वारें व्हांवता.",
+    "gold_amr": "(b / blow-01\n   :ARG1 (w / wind\n      :mod (h / hot)\n      :name (n / name :op1 \"Loo\"))\n   :location (s / state\n      :name (n2 / name :op1 \"Uttar Pradesh\")\n      :wiki \"Uttar_Pradesh\"\n      :mod (e / entire))\n   :time (s2 / summer))",
+    "model_output_linearized": "<AMR> ( (w / waterfall:name (n / name:op1 \"L\"):location (r / river:name (n2 / name:op1 \"L\")):location (r2 / river:name (n3 / name:op1 \"L\")):location (r3 / river:name (n4 / name:op1 \"L\")):location (r4 / river:name (n5 / name:op1 \"L\")):mod (e / entire):location (r4 / region:name (n6 / name:op1 \"North\":op2 \"Pradesh\"))))",
+    "model_output_penman": "( (w / waterfall:name (n / name:op1 \"L\"):location (r / river:name (n2 / name:op1 \"L\")):location (r2 / river:name (n3 / name:op1 \"L\")):location (r3 / river:name (n4 / name:op1 \"L\")):location (r4 / river:name (n5 / name:op1 \"L\")):mod (e / entire):location (r4 / region:name (n6 / name:op1 \"North\":op2 \"Pradesh\"))))"
+  },
+  {
+    "sentence": "तें दवरपाक शीतपेटी वा वार्ताफलक ही एक बरी सुवात.",
+    "gold_amr": "(g / good-02\n   :ARG1 (o / or\n            :op1 (r / refrigerator)\n            :op2 (n / notice-board))\n   :ARG2 (k / keep-01\n            :ARG1 (t / that)\n            :location o))",
+    "model_output_linearized": "<AMR> ( (h / have-role-91:ARG0 (p / person):ARG1 (o / or:op1 (p2 / place:name (n / name:op1 \"Skype\")):op2 (p3 / place:name (n2 / name:op1 \"Skype\")):location-of (h2 /discuss-01:ARG0 p)):ARG2 (p4 / pleasant-02:degree (m / most)))",
+    "model_output_penman": "( (h / have-role-91:ARG0 (p / person):ARG1 (o / or:op1 (p2 / place:name (n / name:op1 \"Skype\")):op2 (p3 / place:name (n2 / name:op1 \"Skype\")):location-of (h2 /discuss-01:ARG0 p)):ARG2 (p4 / pleasant-02:degree (m / most))))"
+  },
+  {
+    "sentence": "ताणें 110 वयर चित्रपट आनी 500 वयर प्रसारीत टॅलिव्हिजन सिरियल्साच्यो एपिसोड केल्यो.",
+    "gold_amr": "(d / do-02\n   :ARG0 (p / person)\n   :ARG1 (a / and\n      :op1 (f / film\n         :quant (m / more\n            :op1 110))\n      :op2 (e / episode\n         :quant (m2 / more\n            :op1 500)\n         :part-of (s / serial\n            :medium (t / television)\n            :ARG1-of (b / broadcast-01)))))",
+    "model_output_linearized": "<AMR> ( (r /release-01:ARG0 (p / person):ARG1 (a / episode:mod (s / series):mod (s2 / television):part-of (a2 / and:op1 (f / film:quant 110):op2 (f2 / film:quant 500)):ARG1-of (p2 /broadcast-01:frequency (a3 / again)))))",
+    "model_output_penman": "( (r /release-01:ARG0 (p / person):ARG1 (a / episode:mod (s / series):mod (s2 / television):part-of (a2 / and:op1 (f / film:quant 110):op2 (f2 / film:quant 500)):ARG1-of (p2 /broadcast-01:frequency (a3 / again)))))"
+  },
+  {
+    "sentence": "वेल्लोर आनी ताच्या लागसारच्या गांवांनी शेंकड्यांनी चामडें आनी चामोद्योगाचें कारखाने आसात.",
+    "gold_amr": "(h / have-03 :ARG1 (f / factory :quant (h2 / hundred) :mod (a / and :op1 (l / leather) :op2 (i / industry :mod l))) :location (a2 / and :op1 (c / city :name (n / name :op1 \"Vellore\") :wiki \"Vellore\") :op2 (v / village :mod (n2 / nearby) :poss c)))",
+    "model_output_linearized": "<AMR> ( (a / and:op1 (c /cook-01:ARG0 (p / person):ARG1 (a2 / and:op1 (t / tea):op2 (c2 / sugarcane)):location (a3 / and:op1 (v / village:name (n / name:op1 \"Selokar\")):op2 (v2 / village:name (n2 / name:op1 \"Tiszapati\")):location (c3 / city:name (n3 / name:op1 \"Tiszapati\")))))",
+    "model_output_penman": "( (a / and:op1 (c /cook-01:ARG0 (p / person):ARG1 (a2 / and:op1 (t / tea):op2 (c2 / sugarcane)):location (a3 / and:op1 (v / village:name (n / name:op1 \"Selokar\")):op2 (v2 / village:name (n2 / name:op1 \"Tiszapati\")):location (c3 / city:name (n3 / name:op1 \"Tiszapati\"))))))"
+  },
+  {
+    "sentence": "इम्फाल रेल्वे स्थानक, हें मणिपूरची राजधानी इम्फाळांत बांदकाम सुरू आशिल्लें रेल्वे स्थानक आसा.",
+    "gold_amr": "(b / build-01 :ARG1 (s / station :mod (r / railway) :name (n / name :op1 \"Imphal\")) :location (i / city :name (n2 / name :op1 \"Imphal\") :ARG1-of (c / capital-01 :ARG2 (s2 / state :name (n3 / name :op1 \"Manipur\")))))",
+    "model_output_linearized": "<AMR> ( (c / city:wiki \"England\":name (n / name:op1 \"England\"):name (n2 / name:op1 \"England\":op2 \"Road\"):wiki \"England_Road\"):location (c2 / city:wiki \"Bijarat\":name (n3 / name:op1 \"Bijarat\"):wiki \"Bijarat\":name (n4 / name:op1 \"Bijarat\"):location (c3 / capital:part-of (s / state:wiki \"Manipur\":name (n5 / name:op1 \"Manipur\":name (n6 / name:op1 \"Manipur\"):wiki \"Manipur\":name (n7 / name:op1 \"Uttarakhand\"):wiki \"Uttarakhand\")))",
+    "model_output_penman": "( (c / city:wiki \"England\":name (n / name:op1 \"England\"):name (n2 / name:op1 \"England\":op2 \"Road\"):wiki \"England_Road\"):location (c2 / city:wiki \"Bijarat\":name (n3 / name:op1 \"Bijarat\"):wiki \"Bijarat\":name (n4 / name:op1 \"Bijarat\"):location (c3 / capital:part-of (s / state:wiki \"Manipur\":name (n5 / name:op1 \"Manipur\":name (n6 / name:op1 \"Manipur\"):wiki \"Manipur\":name (n7 / name:op1 \"Uttarakhand\"):wiki \"Uttarakhand\")))))"
+  },
+  {
+    "sentence": "खाजगी तपासकाम चडशें म्हारग आसता, पूण मनशाक सोदून काडपाचेंच अशें थारायलां जाल्यार वेवसायीक सेवेचेर पयशे मोडप मोलादीक.",
+    "gold_amr": "(c / contrast-01\n   :op1 (t / tend-01\n           :ARG1 (e / expensive-01\n                    :ARG1 (i / investigate-01\n                             :mod (p / private-01))))\n   :op2 (w / worthwhile-01\n           :ARG1 (s / spend-01\n                    :ARG0 (p2 / person)\n                    :ARG1 (m / money)\n                    :ARG2 (s2 / service-01\n                             :mod (p3 / professional-01)))\n           :condition (d / decide-01\n                         :ARG0 p2\n                         :ARG1 (f / find-01\n                                  :ARG0 p2\n                                  :ARG1 (p4 / person)))))",
+    "model_output_linearized": "<AMR> ( (c /contrast-01:op1 (h /have-03:ARG0 (p / person):ARG1 (m / money):degree (m2 / more):location (b / bank)):op2 (p2 /possible-01:ARG1 (b2 /become-01:ARG1 (p3 / person:name (n / name:op1 \"Manhattan\")):ARG2 (p4 / person:name (n2 / name:op1 \"Sambhai\"):ARG0-of (h2 /have-03:ARG1 (m / money):degree (m3 / more):location (b4 / bank)))))",
+    "model_output_penman": "( (c /contrast-01:op1 (h /have-03:ARG0 (p / person):ARG1 (m / money):degree (m2 / more):location (b / bank)):op2 (p2 /possible-01:ARG1 (b2 /become-01:ARG1 (p3 / person:name (n / name:op1 \"Manhattan\")):ARG2 (p4 / person:name (n2 / name:op1 \"Sambhai\"):ARG0-of (h2 /have-03:ARG1 (m / money):degree (m3 / more):location (b4 / bank)))))))"
+  },
+  {
+    "sentence": "बाजारांत तुमच्या उत्पादाची म्हायती पावोवपाक तुमी मोख दवरिल्ल्या आयकुप्यांक कशें आवाहन करतले हाचें वर्णन करात.",
+    "gold_amr": "(d / describe-01\n   :mode imperative\n   :ARG0 (y / you)\n   :ARG1 (a / appeal-01\n            :ARG0 y\n            :ARG2 (a2 / audience\n                     :poss y\n                     :ARG1-of (t / target-01\n                                 :ARG0 y))\n            :manner (a3 / amr-unknown)\n            :purpose (c / convey-01\n                        :ARG0 y\n                        :ARG1 (i / information\n                                 :topic (p / product\n                                           :poss y))\n                        :location (m / market))))",
+    "model_output_linearized": "<AMR> ( (p /present-01:mode imperative:ARG0 (y / you):ARG1 (p2 / product:ARG1-of (u /use-01:ARG0 y:location (m / market):purpose (r /remind-01:ARG0 y:ARG1 (p3 /protest-01:ARG0 y:ARG1 (s /support-01:ARG0 y:ARG1 (p4 / person:name (n / name:op1 \"Mohal\":op2 \"I\"))))",
+    "model_output_penman": "( (p /present-01:mode imperative:ARG0 (y / you):ARG1 (p2 / product:ARG1-of (u /use-01:ARG0 y:location (m / market):purpose (r /remind-01:ARG0 y:ARG1 (p3 /protest-01:ARG0 y:ARG1 (s /support-01:ARG0 y:ARG1 (p4 / person:name (n / name:op1 \"Mohal\":op2 \"I\")))))))))"
+  },
+  {
+    "sentence": "2000 वर्सा, गेट्सान, आपले बायले वांगडा, द बिल अँड मेलिंडा गेट्स फावंडेशनाची थापणूक केली.",
+    "gold_amr": "(f / found-01 :ARG0 (a / and :op1 (p / person :name (n / name :op1 \"Gates\") :wiki \"Bill_Gates\") :op2 (w / wife :poss p)) :ARG1 (o / organization :name (n2 / name :op1 \"The\" :op2 \"Bill\" :op3 \"and\" :op4 \"Melinda\" :op5 \"Gates\" :op6 \"Foundation\") :wiki \"Bill_&_Melinda_Gates_Foundation\") :time (d / date-entity :year 2000))",
+    "model_output_linearized": "<AMR><rel> (e /establish-01:ARG0 (b / bill:name (n / name:op1 \"Bulgaria\"):wiki \"Bulgaria_Bulgaria\"):ARG1 (f / flagship:name (n2 / name:op1 \"Bitrix\"):wiki \"Bitrix_Forest_of_Goverland\"):time (d /date-entity:year 2000):example (a / and:op1 (p / company:name (n3 / name:op1 \"Mapusa\":op2 \"Goverland\"):wiki \"Mapusa_Goverland\"):op2 (p2 / company:name (n4 / name:op1 \"Mapusa\":op2 \"Goverland\"):wiki \"Mapusa_Goverland\")))",
+    "model_output_penman": "(e /establish-01:ARG0 (b / bill:name (n / name:op1 \"Bulgaria\"):wiki \"Bulgaria_Bulgaria\"):ARG1 (f / flagship:name (n2 / name:op1 \"Bitrix\"):wiki \"Bitrix_Forest_of_Goverland\"):time (d /date-entity:year 2000):example (a / and:op1 (p / company:name (n3 / name:op1 \"Mapusa\":op2 \"Goverland\"):wiki \"Mapusa_Goverland\"):op2 (p2 / company:name (n4 / name:op1 \"Mapusa\":op2 \"Goverland\"):wiki \"Mapusa_Goverland\")))"
+  },
+  {
+    "sentence": "आदि शंकर आपल्या गुरू गोविंद भागवतपादाक नर्मदा न्हंयचे देगेर भेटलो.",
+    "gold_amr": "(m / meet-03\n   :ARG0 (p / person\n            :name (n / name :op1 \"Adi\" :op2 \"Shankara\")\n            :wiki \"Adi_Shankara\")\n   :ARG1 (g / guru\n            :name (n2 / name :op1 \"Govinda\" :op2 \"Bhagavatpada\")\n            :wiki \"Govinda_Bhagavatpada\"\n            :poss p)\n   :location (b / bank-03\n                :part-of (r / river\n                            :name (n3 / name :op1 \"Narmada\")\n                            :wiki \"Narmada_River\")))",
+    "model_output_linearized": "<AMR> ( (g /go-02:ARG0 (p / person:name (n / name:op1 \"Aadi\":op2 \"Shankara\"):wiki \"Aadi_Shankara\"):destination (p2 / place:name (n2 / name:op1 \"Nizamabad\"):wiki \"Nizamabad\"):purpose (r /return-01:ARG0 p2:destination (p3 / part:part-of (p4 / person:name (n3 / name:op1 \"Guru\":op2 \"Gobind\":op3 \"Parvati\"):wiki \"Guru_Gobind\")))",
+    "model_output_penman": "( (g /go-02:ARG0 (p / person:name (n / name:op1 \"Aadi\":op2 \"Shankara\"):wiki \"Aadi_Shankara\"):destination (p2 / place:name (n2 / name:op1 \"Nizamabad\"):wiki \"Nizamabad\"):purpose (r /return-01:ARG0 p2:destination (p3 / part:part-of (p4 / person:name (n3 / name:op1 \"Guru\":op2 \"Gobind\":op3 \"Parvati\"):wiki \"Guru_Gobind\")))))"
+  },
+  {
+    "sentence": "मुरगांव पालिका मंडळाची बुधवारा बसका जाली आनी हे बसकेंत अर्थसंकल्प सादर केलो",
+    "gold_amr": "(a / and :op1 (h / hold-04 :ARG0 (c / council :name (n / name :op1 \"Mormugao Municipal Council\")) :ARG1 (m / meet-03) :time (w / wednesday)) :op2 (p / present-01 :ARG1 (b / budget) :location m))",
+    "model_output_linearized": "<AMR> ( (a / and:op1 (b /become-01:ARG1 (m / municipality:name (n / name:op1 \"Mormugao\":op2 \"Provincial\"):wiki \"Mormugao_Provincial\"):ARG2 (m2 / municipality:name (n2 / name:op1 \"Mormugao\":op2 \"Provincial\"):wiki \"Mormuo_Provincial\"):time (d /date-entity:weekday (w / thursday))):op2 (p /present-01:ARG0 (p2 / person):ARG1 (b2 / budget:mod (h / this)):ARG2 m2 / municipality:name (n3 / name:op1 \"Murgaon\"):wiki \"Murgaon\")))",
+    "model_output_penman": "( (a / and:op1 (b /become-01:ARG1 (m / municipality:name (n / name:op1 \"Mormugao\":op2 \"Provincial\"):wiki \"Mormugao_Provincial\"):ARG2 (m2 / municipality:name (n2 / name:op1 \"Mormugao\":op2 \"Provincial\"):wiki \"Mormuo_Provincial\"):time (d /date-entity:weekday (w / thursday))):op2 (p /present-01:ARG0 (p2 / person):ARG1 (b2 / budget:mod (h / this)):ARG2 m2 / municipality:name (n3 / name:op1 \"Murgaon\"):wiki \"Murgaon\")))"
+  },
+  {
+    "sentence": "शिपिंग खर्च बॉक्साच्या आकाराचेर आनी वजनाचेर, नियोजीत देशाचेर आनी डिलिव्हरीचे गतीचेर आदारून आसता.",
+    "gold_amr": "(d / depend-on-01\n   :ARG1 (c / cost\n            :mod (s / ship-01))\n   :ARG2 (a / and\n            :op1 (a2 / and\n                    :op1 (s2 / size\n                           :poss (b / box))\n                    :op2 (w / weight\n                           :poss b))\n            :op2 (c2 / country\n                    :destination-of s)\n            :op3 (s3 / speed\n                    :poss s)))",
+    "model_output_linearized": "<AMR> ( (i /include-01:ARG1 (a / and:op1 (a2 / and:op1 (a3 / and:op1 (b / box:mod (s / sizeable)):op2 (b2 / box:mod (m / weight))):op2 (a4 / and:op1 (c / box:mod (s2 /store-01 )):op2 (c2 / box:mod (d / discontinueous)))))",
+    "model_output_penman": "( (i /include-01:ARG1 (a / and:op1 (a2 / and:op1 (a3 / and:op1 (b / box:mod (s / sizeable)):op2 (b2 / box:mod (m / weight))):op2 (a4 / and:op1 (c / box:mod (s2 /store-01 )):op2 (c2 / box:mod (d / discontinueous)))))))"
+  },
+  {
+    "sentence": "कलाकार जेन्ना केन्ना सर्जनशीलताय दाखयता तेन्ना श्रोते ताळयो मारून पावती दितात.",
+    "gold_amr": "(a / acknowledge-01\n   :ARG0 (a2 / audience)\n   :manner (c / clap-01\n             :ARG0 a2)\n   :time (s / show-01\n            :ARG0 (a3 / artist)\n            :ARG1 (c2 / creativity)))",
+    "model_output_linearized": "<AMR> ( (p /perform-01:ARG0 (p2 / person:name (n / name:op1 \"Jen\":op2 \"Kin\"):wiki \"Jen_Kin\":mod (e / artist)):ARG1 (p3 /perform-01:ARG0 p2:ARG1 (t / thing):manner (s /perform-01:ARG0 p2:ARG1 (p4 / piano))))",
+    "model_output_penman": "( (p /perform-01:ARG0 (p2 / person:name (n / name:op1 \"Jen\":op2 \"Kin\"):wiki \"Jen_Kin\":mod (e / artist)):ARG1 (p3 /perform-01:ARG0 p2:ARG1 (t / thing):manner (s /perform-01:ARG0 p2:ARG1 (p4 / piano)))))"
+  },
+  {
+    "sentence": "कुमुडलाल गांगुलीक आतां अशोक कुमार म्हणटाले, ताणें आपली अभिनय कारकीर्द खोशये भायर सुरू केली.",
+    "gold_amr": "(s / start-01 :ARG0 (p / person :name (n / name :op1 \"Kumudlal\" :op2 \"Ganguly\") :ARG1-of (c / call-01 :ARG0 (p2 / person) :ARG2 (n2 / name :op1 \"Ashok\" :op2 \"Kumar\") :time (n3 / now))) :ARG1 (c2 / career :poss p :mod (a / act-01)) :manner (u / unwillingly))",
+    "model_output_linearized": "<AMR> ( (p /start-01:ARG0 (p2 / person:name (n / name:op1 \"Ashoka\":op2 \"Kumarlal\"):wiki \"Ashoka_Kumarlal\"):ARG1 (p3 / person:name (n2 / name:op1 \"Ashoka\":op2 \"Kumarlal\"):wiki \"Ashoka_Kumarlal\"):ARG2 (p4 / person:name (n3 / name:op1 \"Ashoka\":op2 \"Kumarlal\"):wiki \"Ashoka_Kumarlal\")))",
+    "model_output_penman": "( (p /start-01:ARG0 (p2 / person:name (n / name:op1 \"Ashoka\":op2 \"Kumarlal\"):wiki \"Ashoka_Kumarlal\"):ARG1 (p3 / person:name (n2 / name:op1 \"Ashoka\":op2 \"Kumarlal\"):wiki \"Ashoka_Kumarlal\"):ARG2 (p4 / person:name (n3 / name:op1 \"Ashoka\":op2 \"Kumarlal\"):wiki \"Ashoka_Kumarlal\")))"
+  },
+  {
+    "sentence": "पगार, बोनस, भाडें आनी वेवसायीक उत्पन्ना सयत तुमची सगळी येणावळ जोडात.",
+    "gold_amr": "(a / add-02\n   :mode imperative\n   :ARG0 (y / you)\n   :ARG1 (i / income\n            :quant all\n            :poss y\n            :ARG1-of (i2 / include-01\n                        :ARG2 (a2 / and\n                                 :op1 (s / salary)\n                                 :op2 (b / bonus)\n                                 :op3 (r / rent)\n                                 :op4 (i3 / income\n                                         :source (b2 / business))))))",
+    "model_output_linearized": "<AMR> ( (c /combine-01:mode imperative:ARG0 (y / you):ARG1 (a / and:op1 (p / portfolio):op2 (p2 / bonus):op3 (p3 / portfolio):op4 (a2 / and:op1 (p4 / portfolio):op2 (p5 / portfolio):op3 (p6 / portfolio):op4 (p7 / portfolio:mod (e / electricity)))))",
+    "model_output_penman": "( (c /combine-01:mode imperative:ARG0 (y / you):ARG1 (a / and:op1 (p / portfolio):op2 (p2 / bonus):op3 (p3 / portfolio):op4 (a2 / and:op1 (p4 / portfolio):op2 (p5 / portfolio):op3 (p6 / portfolio):op4 (p7 / portfolio:mod (e / electricity))))))"
+  },
+  {
+    "sentence": "दक्षीण इंडियाना, उत्तर अलाबामा आनी कँटुकी आनी टेनेस्सीच्या कांय वाठारांचेर सगळ्यांत चड परिणाम जालो.",
+    "gold_amr": "(a / affect-01\n   :degree (m / most)\n   :ARG1 (a2 / and\n             :op1 (s / state\n                    :name (n / name :op1 \"Indiana\")\n                    :wiki \"Indiana\"\n                    :mod (s2 / south))\n             :op2 (s3 / state\n                    :name (n2 / name :op1 \"Alabama\")\n                    :wiki \"Alabama\"\n                    :mod (n3 / north))\n             :op3 (r / region\n                    :quant (q / some)\n                    :part-of (a3 / and\n                               :op1 (s4 / state\n                                      :name (n4 / name :op1 \"Kentucky\")\n                                      :wiki \"Kentucky\")\n                               :op2 (s5 / state\n                                      :name (n5 / name :op1 \"Tennessee\")\n                                      :wiki \"Tennessee\")))))",
+    "model_output_linearized": "<AMR> ( (e /affect-01:ARG0 (a / and:op1 (c / country:name (n / name:op1 \"England\"):wiki \"England\"):op2 (c2 / country:name (n2 / name:op1 \"North\":op2 \"Ala\"):wiki \"North_Ala\"):op3 (c3 / country:name (n3 / name:op1 \"Kashmir\"):wiki \"Kashmir\"):op4 (c4 / country:name (n4 / name:op1 \"Texas\":wiki \"Texas\"):wiki \"Texas\"))):degree (m / more:degree (m2 / much)):degree (m3 / more))",
+    "model_output_penman": "( (e /affect-01:ARG0 (a / and:op1 (c / country:name (n / name:op1 \"England\"):wiki \"England\"):op2 (c2 / country:name (n2 / name:op1 \"North\":op2 \"Ala\"):wiki \"North_Ala\"):op3 (c3 / country:name (n3 / name:op1 \"Kashmir\"):wiki \"Kashmir\"):op4 (c4 / country:name (n4 / name:op1 \"Texas\":wiki \"Texas\"):wiki \"Texas\"))):degree (m / more:degree (m2 / much)):degree (m3 / more))"
+  },
+  {
+    "sentence": "बांदकाम खात्या खातीर 299 कोटींची तजवीज भौशीक बांदकाम खात्या खातीर",
+    "gold_amr": "(a / allocation-01\n   :ARG1 (m / monetary-quantity\n            :quant 299\n            :unit (c / crore))\n   :ARG2 (d / department\n            :name (n / name\n                     :op1 \"Public\"\n                     :op2 \"Works\"\n                     :op3 \"Department\")))",
+    "model_output_linearized": "<AMR> ( (p /possible-01:ARG1 (b /buy-01:ARG0 (p2 / person):ARG1 (p3 /monetary-quantity:quant 299:unit (r / rupee)):ARG2 (b2 / banknote:mod (t / this)):purpose (b3 /buy-01:ARG0 p2:ARG1 (t2 / tax):ARG2 p2)))",
+    "model_output_penman": "( (p /possible-01:ARG1 (b /buy-01:ARG0 (p2 / person):ARG1 (p3 /monetary-quantity:quant 299:unit (r / rupee)):ARG2 (b2 / banknote:mod (t / this)):purpose (b3 /buy-01:ARG0 p2:ARG1 (t2 / tax):ARG2 p2))))"
+  },
+  {
+    "sentence": "ताका आपल्या पुस्तकांच्या वेश्टणारय आपलो फोटू नाका आशिल्लो.",
+    "gold_amr": "(w / want-01 :polarity - :ARG0 (p / person) :ARG1 (l / be-located-at-91 :ARG1 (p2 / photo :poss p) :ARG2 (c / cover-01 :part-of (b / book :poss p) :mod (e / even))))",
+    "model_output_linearized": "<AMR> ( (r /regret-01:ARG0 (p / person):ARG1 (p2 / place:name (n / name:op1 \"Bulgaria\"):wiki \"Bulgaria\"):cause (s /see-01:ARG0 p:ARG1 (p3 / place:name (n2 / name:op1 \"Plateau\"):wiki \"Plateau\")))",
+    "model_output_penman": "( (r /regret-01:ARG0 (p / person):ARG1 (p2 / place:name (n / name:op1 \"Bulgaria\"):wiki \"Bulgaria\"):cause (s /see-01:ARG0 p:ARG1 (p3 / place:name (n2 / name:op1 \"Plateau\"):wiki \"Plateau\"))))"
+  },
+  {
+    "sentence": "उपरांत ताणें 26 फेब्रुवारी 1988 मेरेन मानव्हेल नॉरिएगाच्या फुडारपणाखाला अध्यक्ष म्हुणून काम केलें.",
+    "gold_amr": "(w / work-01 :ARG0 (h / he) :ARG1 (p / president) :time (a / afterward) :time (d / date-entity :year 1988 :month 2 :day 26) :condition (l / lead-02 :ARG0 (p2 / person :name (n / name :op1 \"Manuel\" :op2 \"Noriega\")) :ARG1 h))",
+    "model_output_linearized": "<AMR> ( (w /work-01:ARG0 (p / person):ARG1 (p2 / person:name (n / name:op1 \"Pierre\"):ARG0-of (p3 /preside-01:ARG1 (o / organization:name (n2 / name:op1 \"Northern Ireland\":op2 \"Nourished\":op3 \"Nations\"):wiki \"Northern_Nations\"):ARG2 (p4 / president):time (d /date-entity:day 26:month 2:year 1988)):time (a / afterward))",
+    "model_output_penman": "( (w /work-01:ARG0 (p / person):ARG1 (p2 / person:name (n / name:op1 \"Pierre\"):ARG0-of (p3 /preside-01:ARG1 (o / organization:name (n2 / name:op1 \"Northern Ireland\":op2 \"Nourished\":op3 \"Nations\"):wiki \"Northern_Nations\"):ARG2 (p4 / president):time (d /date-entity:day 26:month 2:year 1988)):time (a / afterward))))"
+  },
+  {
+    "sentence": "१२९६ त अलाउद्दीनान देवगिरीचेर आक्रमण केलें, आनी जलालुद्दीना आड यशस्वी बंड करपाखातीर लुटमार ताब्यांत घेतली.",
+    "gold_amr": "(a / and\n   :op1 (a1 / attack-01\n      :ARG0 (p / person :name (n / name :op1 \"Alauddin\"))\n      :ARG1 (c / city :name (n2 / name :op1 \"Devagiri\"))\n      :time (d / date-entity :year 1296))\n   :op2 (s / seize-01\n      :ARG0 p\n      :ARG1 (p2 / plunder-01)\n      :purpose (r / rebel-01\n         :ARG0 p\n         :ARG1 (p3 / person :name (n3 / name :op1 \"Jalaluddin\"))\n         :mod (s2 / successful))))",
+    "model_output_linearized": "<AMR> ( (a / and:op1 (a2 /attack-01:ARG0 (p / person:name (n / name:op1 \"Alauddin\"):wiki \"Alauddin\"):ARG1 (c / city:name (n2 / name:op1 \"Temple\"):wiki \"Temple\":name (n3 / name:op1 \"Temple\")):time (d /date-entity:year 1296)):op2 (p2 / plunder-01:ARG0 p2:destination (c2 / city:name (n4 / name:op1 \"Dharashtra\"):wiki \"Dharashtra\":name (n5 / name:op1 \"Dharashtra\")):time (d2 /date-entity:year 1296))",
+    "model_output_penman": "( (a / and:op1 (a2 /attack-01:ARG0 (p / person:name (n / name:op1 \"Alauddin\"):wiki \"Alauddin\"):ARG1 (c / city:name (n2 / name:op1 \"Temple\"):wiki \"Temple\":name (n3 / name:op1 \"Temple\")):time (d /date-entity:year 1296)):op2 (p2 / plunder-01:ARG0 p2:destination (c2 / city:name (n4 / name:op1 \"Dharashtra\"):wiki \"Dharashtra\":name (n5 / name:op1 \"Dharashtra\")):time (d2 /date-entity:year 1296))))"
+  },
+  {
+    "sentence": "आयज लेगीत सिरुवणी धरणाची भेट चडशी वेगळी ना.",
+    "gold_amr": "(d / different-01\n   :polarity -\n   :ARG1 (v / visit-01\n            :ARG1 (d2 / dam\n                     :name (n / name :op1 \"Siruvani\")))\n   :degree (m / much)\n   :time (t / today))",
+    "model_output_linearized": "<AMR> ( (p /possible-01:polarity -:ARG1 (g /go-01:ARG0 (p2 / person):destination (t / there):purpose (g2 /get-01:ARG0 p2:ARG1 (t2 / trip)):time (t3 / today)))",
+    "model_output_penman": "( (p /possible-01:polarity -:ARG1 (g /go-01:ARG0 (p2 / person):destination (t / there):purpose (g2 /get-01:ARG0 p2:ARG1 (t2 / trip)):time (t3 / today))))"
+  },
+  {
+    "sentence": "राजस्थानाचो सगळ्यांत उदेंतेक आशिल्लो मेवाट प्रदेश, हरियाणा आनी उत्तर प्रदेश शीमेक जोडून आसा.",
+    "gold_amr": "(a / adjacent-to-01 :ARG1 (r / region :name (n / name :op1 \"Mewat\") :wiki \"Mewat\" :part-of (s3 / state :name (n4 / name :op1 \"Rajasthan\") :wiki \"Rajasthan\") :location (e / east :degree (s / superlative))) :ARG2 (c / and :op1 (b1 / border :part-of (s1 / state :name (n2 / name :op1 \"Haryana\") :wiki \"Haryana\")) :op2 (b2 / border :part-of (s2 / state :name (n3 / name :op1 \"Uttar Pradesh\") :wiki \"Uttar_Pradesh\"))))",
+    "model_output_linearized": "<AMR> ( (c /connect-01:ARG1 (p / place:name (n / name:op1 \"Mepal\"):wiki \"Mepal\"):ARG2 (a / and:op1 (p2 / place:name (n2 / name:op1 \"Mepal\"):wiki \"Mepal\"):op2 (p3 / place:name (n3 / name:op1 \"Harhar\"):wiki \"Harhar_Pradesh\"):op3 (p4 / place:name (n4 / name:op1 \"Inland\":op2 \"Pradesh\"):wiki \"Inland_Pradesh\"):op4 (p5 / place:name (n5 / name:op1 \"Inland\":op2 \"Pradesh\"):wiki \"Inland_Pradesh\")))",
+    "model_output_penman": "( (c /connect-01:ARG1 (p / place:name (n / name:op1 \"Mepal\"):wiki \"Mepal\"):ARG2 (a / and:op1 (p2 / place:name (n2 / name:op1 \"Mepal\"):wiki \"Mepal\"):op2 (p3 / place:name (n3 / name:op1 \"Harhar\"):wiki \"Harhar_Pradesh\"):op3 (p4 / place:name (n4 / name:op1 \"Inland\":op2 \"Pradesh\"):wiki \"Inland_Pradesh\"):op4 (p5 / place:name (n5 / name:op1 \"Inland\":op2 \"Pradesh\"):wiki \"Inland_Pradesh\"))))"
+  },
+  {
+    "sentence": "आमी सगळ्यांनी तें इंटरनॅटाचेर पळयलां.",
+    "gold_amr": "(w / watch-01\n   :ARG0 (p / person\n      :person 1\n      :number pl\n      :quant (a / all))\n   :ARG1 (t / thing)\n   :location (i / internet))",
+    "model_output_linearized": "<AMR> ( (p /possible-01:ARG1 (s /see-01:ARG0 (y / you):ARG1 (t / this):source (c / calculator:mod (i / internet)))))",
+    "model_output_penman": "( (p /possible-01:ARG1 (s /see-01:ARG0 (y / you):ARG1 (t / this):source (c / calculator:mod (i / internet)))))"
+  },
+  {
+    "sentence": "संघ ही दक्षिण भारतांतली एक म्हत्वाची संस्था आशिल्ली आनी वेपारी स्वताक संघांनी संघटीत करताले.",
+    "gold_amr": "(a / and\n   :op1 (b / be-02\n           :ARG1 (g / guild)\n           :ARG2 (i / institution\n                     :mod (i2 / important)\n                     :location (c / country-region\n                                   :name (n / name\n                                             :op1 \"South\"\n                                             :op2 \"India\"))))\n   :op2 (o / organize-01\n           :ARG0 (m / merchant)\n           :ARG1 m\n           :ARG2 (g2 / guild)))",
+    "model_output_linearized": "<AMR> ( (o / organization:name (n / name:op1 \"Congress\"):wiki \"Congress\"):ARG0-of (a / and:op1 (o2 /organize-01:ARG1 (c / organization:name (n2 / name:op1 \"South India\"):wiki \"South_India\":name (n3 / name:op1 \"South\":op2 \"India\"):wiki \"South_India\":mod (i / important-01))):op2 (o3 /organize-01:ARG1 c:mod (o4 / only)))",
+    "model_output_penman": "( (o / organization:name (n / name:op1 \"Congress\"):wiki \"Congress\"):ARG0-of (a / and:op1 (o2 /organize-01:ARG1 (c / organization:name (n2 / name:op1 \"South India\"):wiki \"South_India\":name (n3 / name:op1 \"South\":op2 \"India\"):wiki \"South_India\":mod (i / important-01))):op2 (o3 /organize-01:ARG1 c:mod (o4 / only))))"
+  },
+  {
+    "sentence": "थळाव्या वा शारी सरकाराच्या पांवड्यार, थळाव्या वेवसायां विशीं म्हायती एकठांय करपी वेगवेगळ्यो एजन्सी आसात.",
+    "gold_amr": "(e / exist-01\n   :ARG1 (a / agency\n      :mod (v / various)\n      :ARG0-of (c / collect-01\n         :ARG1 (i / information\n            :topic (b / business\n               :mod (l3 / local)))))\n   :location (l / level\n      :poss (g / government\n         :mod (o / or\n            :op1 (l2 / local)\n            :op2 (u / urban)))))",
+    "model_output_linearized": "<AMR> ( (i /include-01:ARG1 (a / and:op1 (p / policy:name (n / name:op1 \"Business\")):op2 (p2 / policy:name (n2 / name:op1 \"Business\")):op3 (p3 / policy:name (n3 / name:op1 \"Business\")):ARG0-of (g /govern-01:ARG1 (o / or:op1 (c / country:name (n4 / name:op1 \"BaltiRegital\")):op2 (c2 / country:name (n5 / name:op1 \"Shakri\"))))):ARG2 (a2 / area:mod (l / local)):mod (a3 / also))",
+    "model_output_penman": "( (i /include-01:ARG1 (a / and:op1 (p / policy:name (n / name:op1 \"Business\")):op2 (p2 / policy:name (n2 / name:op1 \"Business\")):op3 (p3 / policy:name (n3 / name:op1 \"Business\")):ARG0-of (g /govern-01:ARG1 (o / or:op1 (c / country:name (n4 / name:op1 \"BaltiRegital\")):op2 (c2 / country:name (n5 / name:op1 \"Shakri\"))))):ARG2 (a2 / area:mod (l / local)):mod (a3 / also)))"
+  },
+  {
+    "sentence": "थळाव्या मुखेल कारागिरीं मदीं लांकडी नकशीकाम आसा, जें उत्तराखंडांतल्या अलंकृत सजयल्ल्या देवळांनी चड करून दिसता.",
+    "gold_amr": "(c / carve-01 :ARG1 (w / wood) :domain (c2 / craft :mod (m / main) :mod (l / local)) :ARG1-of (s / see-01 :frequency (o / often) :location (t / temple :ARG1-of (d / decorate-01 :manner (o2 / ornate)) :location (s2 / state :name (n / name :op1 \"Uttarakhand\") :wiki \"Uttarakhand\"))))",
+    "model_output_linearized": "<AMR> ( (p / place:name (n / name:op1 \"Ladagiri\"):wiki \"Ladagiri\"):mod (l / local-region:name (n2 / name:op1 \"Ladagiri\"):wiki \"Ladagiri\"):mod (l2 / local-region:name (n3 / name:op1 \"Ladagiri\"):wiki \"Ladagiri\"):ARG0-of (h / have-role-91:ARG1 (p2 / place:name (n4 / name:op1 \"Telangana\"):wiki \"Telangana\":name (n5 / name:op1 \"Telangana\"):wiki \"Telangana\":mod (l3 / local-region:name (n6 / name:op1 \"Uttarakhand\"):wiki \"Uttarakhand\":part-of (s / state:name (n7 / name:op1 \"Uttarakhand\"):wiki \"Uttarakhand\"))))",
+    "model_output_penman": "( (p / place:name (n / name:op1 \"Ladagiri\"):wiki \"Ladagiri\"):mod (l / local-region:name (n2 / name:op1 \"Ladagiri\"):wiki \"Ladagiri\"):mod (l2 / local-region:name (n3 / name:op1 \"Ladagiri\"):wiki \"Ladagiri\"):ARG0-of (h / have-role-91:ARG1 (p2 / place:name (n4 / name:op1 \"Telangana\"):wiki \"Telangana\":name (n5 / name:op1 \"Telangana\"):wiki \"Telangana\":mod (l3 / local-region:name (n6 / name:op1 \"Uttarakhand\"):wiki \"Uttarakhand\":part-of (s / state:name (n7 / name:op1 \"Uttarakhand\"):wiki \"Uttarakhand\")))))"
+  },
+  {
+    "sentence": "तीन दीस विंगडविंगड कार्यावळी जाल्यो",
+    "gold_amr": "(h / happen-01\n   :ARG1 (p / program\n            :mod (v / various))\n   :duration (t / temporal-quantity\n                :quant 3\n                :unit (d / day)))",
+    "model_output_linearized": "<AMR> (a / also:op1 (t /temporal-quantity:quant 3:unit (d / day)):op2 (t2 /temporal-quantity:quant 1:unit (d2 / day)):purpose (o /organize-01:ARG1 (e / event)))",
+    "model_output_penman": "(a / also:op1 (t /temporal-quantity:quant 3:unit (d / day)):op2 (t2 /temporal-quantity:quant 1:unit (d2 / day)):purpose (o /organize-01:ARG1 (e / event)))"
+  },
+  {
+    "sentence": "आदले रातीक \"उरुका\" आसता, तेन्ना लोक होळये भोंवतणी एकठांय जातात, रातचें जेवण रांदतात आनी मजा करतात.",
+    "gold_amr": "(a / and :op1 (g / gather-01 :ARG0 (p / person) :location (b / bonfire)) :op2 (c / cook-01 :ARG0 p :ARG1 (d / dinner)) :op3 (f / have-fun-01 :ARG0 p) :time (n / night :mod (p2 / previous) :name (n2 / name :op1 \"Uruka\")))",
+    "model_output_linearized": "<AMR> ( (a / and:op1 (r / river:name (n / name:op1 \"Uranga\"):wiki \"Uranga\"):op2 (r2 / river:name (n2 / name:op1 \"Uranga\"):wiki \"Uranga\"):op3 (r3 / river:name (n3 / name:op1 \"Uranga\"):wiki \"Uranga\"):op4 (r4 / river:name (n4 / name:op1 \"Uranga\"):wiki \"Uranga\"):op5 (r5 / river:name (n5 / name:op1 \"Uranga\"):wiki \"Uranga\"))",
+    "model_output_penman": "( (a / and:op1 (r / river:name (n / name:op1 \"Uranga\"):wiki \"Uranga\"):op2 (r2 / river:name (n2 / name:op1 \"Uranga\"):wiki \"Uranga\"):op3 (r3 / river:name (n3 / name:op1 \"Uranga\"):wiki \"Uranga\"):op4 (r4 / river:name (n4 / name:op1 \"Uranga\"):wiki \"Uranga\"):op5 (r5 / river:name (n5 / name:op1 \"Uranga\"):wiki \"Uranga\")))"
+  },
+  {
+    "sentence": "फॅक्सॉन, ओक्लहोमा  फॅक्सॉन हें अमेरिकेंतल्या ओक्लहोमाचें एक शार.",
+    "gold_amr": "(c / city\n   :wiki \"Q5438643\"\n   :name (n / name :op1 \"Faxon\")\n   :location (s / state\n               :wiki \"Q1649\"\n               :name (n2 / name :op1 \"Oklahoma\")\n               :part-of (c2 / country\n                          :wiki \"Q30\"\n                          :name (n3 / name :op1 \"America\"))))",
+    "model_output_linearized": "<AMR> ( (o / orchestra:name (n / name:op1 \"Oxoma\":op2 \"Frexion\"):wiki \"Oxoma_Frexion\"):location (c / country:name (n2 / name:op1 \"America\"):wiki \"America\"))",
+    "model_output_penman": "( (o / orchestra:name (n / name:op1 \"Oxoma\":op2 \"Frexion\"):wiki \"Oxoma_Frexion\"):location (c / country:name (n2 / name:op1 \"America\"):wiki \"America\"))"
+  },
+  {
+    "sentence": "म्हणून, जशे नियामकांची संख्या वाडटा, नियमीत तर्काची शक्य संख्या फुटता.",
+    "gold_amr": "(e / explode-01 :ARG1 (n / number :part-of (l / logic :ARG1-of (r / regulate-01) :mod (p / possible-01))) :cause (i / increase-01 :ARG1 (n2 / number :part-of (r2 / regulator))))",
+    "model_output_linearized": "<AMR> ( (a / and:op1 (e /increase-01:ARG1 (r / number:quant-of rant)):op2 (e2 /increase-01:ARG1 (r2 / number:quant-of rant)):op3 (r3 /require-01:ARG1 (s / number:mod (r4 /rule-01 )):polarity -))",
+    "model_output_penman": "( (a / and:op1 (e /increase-01:ARG1 (r / number:quant-of rant)):op2 (e2 /increase-01:ARG1 (r2 / number:quant-of rant)):op3 (r3 /require-01:ARG1 (s / number:mod (r4 /rule-01 )):polarity -)))"
+  },
+  {
+    "sentence": "आणीबाणीच्या काळांत ताणें आपल्या इश्टां वांगडा, खास करून बंसीलाला वांगडा भारत वास्तवीक पणान राज्य चलयलें अशें म्हण्टाले.",
+    "gold_amr": "(s / say-01\n   :ARG0 (p / person)\n   :ARG1 (r / rule-01\n            :ARG0 (h / person)\n            :ARG1 (c / country :name (n / name :op1 \"India\") :wiki \"India\")\n            :manner (a / actual)\n            :time (p2 / period :name (n2 / name :op1 \"Emergency\") :wiki \"The_Emergency_(India)\")\n            :accompanier (a2 / and\n                           :op1 (f / friend :poss h)\n                           :op2 (p3 / person :name (n3 / name :op1 \"Bansi\" :op2 \"Lal\") :wiki \"Bansi_Lal\"\n                                  :mod (e / especially)))))",
+    "model_output_linearized": "<AMR> ( (p /possible-01:ARG1 (r /rule-01:ARG0 (p2 / person):ARG1 (s / state:name (n / name:op1 \"England\":op2 \"England\"):wiki \"England_England_England\"):time (w / war:wiki \"England_England_War_of_India\":name (n2 / name:op1 \"England\":op2 \"War\":op3 \"of\":op4 \"India\"):wiki \"England_War_of_India\"):time (r2 / recent):time (w2 / war:wiki \"England_War_of_India\":name (n3 / name:op1 \"England\":op2 \"War\":op3 \"of\":op4 \"India\"):wiki \"England_War_of_India\"))))",
+    "model_output_penman": "( (p /possible-01:ARG1 (r /rule-01:ARG0 (p2 / person):ARG1 (s / state:name (n / name:op1 \"England\":op2 \"England\"):wiki \"England_England_England\"):time (w / war:wiki \"England_England_War_of_India\":name (n2 / name:op1 \"England\":op2 \"War\":op3 \"of\":op4 \"India\"):wiki \"England_War_of_India\"):time (r2 / recent):time (w2 / war:wiki \"England_War_of_India\":name (n3 / name:op1 \"England\":op2 \"War\":op3 \"of\":op4 \"India\"):wiki \"England_War_of_India\"))))"
+  },
+  {
+    "sentence": "देखीक, तुमच्या व्यायामाची तीव्रता पळोवपा खातीर काळजाची गती निरिक्षण आशिल्लें मॉडेल तुमकां जाय आसतलें.",
+    "gold_amr": "(e2 / example\n   :op1 (n / need-01\n      :ARG0 (y / you)\n      :ARG1 (m / model\n         :ARG0-of (m2 / monitor-01\n            :ARG1 (r / rate\n               :poss (h / heart))))\n      :purpose (c / check-01\n         :ARG0 y\n         :ARG1 (i / intensity\n            :poss (e / exercise-01\n               :ARG0 y)))))",
+    "model_output_linearized": "<AMR> ( (p /possible-01:ARG1 (h /have-03:ARG0 (y / you):ARG1 (m / mudrain):purpose (r /research-01:ARG0 (p2 / physiotherapist):ARG1 (p3 / physiology):ARG2 y):condition (g /go-01:ARG0 y:purpose (u /u2 /u3 /u4 /u5 /u6 /u6 /u6 /u7 /u8 /u9))))",
+    "model_output_penman": "( (p /possible-01:ARG1 (h /have-03:ARG0 (y / you):ARG1 (m / mudrain):purpose (r /research-01:ARG0 (p2 / physiotherapist):ARG1 (p3 / physiology):ARG2 y):condition (g /go-01:ARG0 y:purpose (u /u2 /u3 /u4 /u5 /u6 /u6 /u6 /u7 /u8 /u9)))))"
+  },
+  {
+    "sentence": "1988 सावन ऑलिंपिक खेळ आनी 2002 सावन राष्ट्रकुल खेळां सयत, एकोडे आनी दोट्टी अशे दोनूय खेळ आंतरराश्ट्रीय सर्तिंनी खेळटात.",
+    "gold_amr": "(p / play-01 :ARG1 (a / and :op1 (g / game :mod (s / single)) :op2 (g2 / game :mod (d / double))) :location (c / compete-01 :mod (i / international)) :concession (a2 / and :op1 (p2 / play-01 :ARG1 a :location (g3 / game :name (n / name :op1 \"Olympic\" :op2 \"Games\") :wiki \"Olympic_Games\") :time (s / start-01 :time (d / date-entity :year 1988))) :op2 (p3 / play-01 :ARG1 a :location (g4 / game :name (n2 / name :op1 \"Commonwealth\" :op2 \"Games\") :wiki \"Commonwealth_Games\") :time (s2 / start-01 :time (d2 / date-entity :year 2002)))))",
+    "model_output_linearized": "<AMR> ( (a / and:op1 (g / game:name (n / name:op1 \"Suera\":op2 \"Olympic\":op3 \"Games\"):wiki \"Suera_Olympic_Games\"):op2 (g2 / game:name (n2 / name:op1 \"Suera_Olympic\":op2 \"Games\"):wiki \"Suera_Olympic_Games\"):op3 (g3 / game:name (n3 / name:op1 \"Soli\":op2 \"Games\"):wiki \"Soli_Games\"):op4 (g4 / game:name (n4 / name:op1 \"Soli\":op2 \"Games\"):wiki \"Soli_Games\"):time (d /date-entity:year 1988))",
+    "model_output_penman": "( (a / and:op1 (g / game:name (n / name:op1 \"Suera\":op2 \"Olympic\":op3 \"Games\"):wiki \"Suera_Olympic_Games\"):op2 (g2 / game:name (n2 / name:op1 \"Suera_Olympic\":op2 \"Games\"):wiki \"Suera_Olympic_Games\"):op3 (g3 / game:name (n3 / name:op1 \"Soli\":op2 \"Games\"):wiki \"Soli_Games\"):op4 (g4 / game:name (n4 / name:op1 \"Soli\":op2 \"Games\"):wiki \"Soli_Games\"):time (d /date-entity:year 1988)))"
+  },
+  {
+    "sentence": "दुसरें, खात्यांत चक्रवाड व्याज जमता जाल्यार, मुद्दल आनी परत गुंतवणूक केल्ली व्याज फारीकणी वापरून व्याजाचो हिशोब करतले.",
+    "gold_amr": "(c / calculate-01\n   :ord (o / ordinal-entity :value 2)\n   :ARG1 (i / interest)\n   :instrument (a / and\n      :op1 (p / principal)\n      :op2 (i2 / interest\n         :ARG1-of (i3 / invest-01\n            :mod (a2 / again))))\n   :condition (a3 / accrue-01\n      :ARG1 (i4 / interest\n         :mod (c2 / compound))\n      :location (a4 / account)))",
+    "model_output_linearized": "<AMR> ( (a / and:op1 (p /possible-01:ARG1 (g /grow-01:ARG1 (r / rate:mod (c / चक्र)):location (s / state:name (n / name:op1 \"Uttar\":op2 \"Regitude\"):wiki \"Uttar_Regitude\":part-of (s2 / state:name (n2 / name:op1 \"Uttar\":op2 \"Regitude\"):wiki \"Uttar_Regitude\":part-of (s3 / state:name (n3 / name:op1 \"Uttar\":op2 \"Regitude\"):wiki \"Uttar_Regitude\"))):op2 (g2 /grow-01:ARG1 (r2 / rate:mod (c2 / cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-c-cradle-cradle-c-cradle-c-c / cradle-c / cradle-c / cradle-c / cradle-c / cradle-c-c / cradle-c-c / cradle-c-c-c / cradle-c / cradle-c:name (c2 / cradle-c2 / cradle-c / cradle-c:name (c / cradle-c2 / cradle-c:name (c / cradle-c2 / cradle-c-c-c2 / cradle-c2 / cradle-c:name (c2 / cradle-c2 / cradle-c2 / cradle-c2 / cradle-c",
+    "model_output_penman": "( (a / and:op1 (p /possible-01:ARG1 (g /grow-01:ARG1 (r / rate:mod (c / चक्र)):location (s / state:name (n / name:op1 \"Uttar\":op2 \"Regitude\"):wiki \"Uttar_Regitude\":part-of (s2 / state:name (n2 / name:op1 \"Uttar\":op2 \"Regitude\"):wiki \"Uttar_Regitude\":part-of (s3 / state:name (n3 / name:op1 \"Uttar\":op2 \"Regitude\"):wiki \"Uttar_Regitude\"))):op2 (g2 /grow-01:ARG1 (r2 / rate:mod (c2 / cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-cradle-c-cradle-cradle-c-cradle-c-c / cradle-c / cradle-c / cradle-c / cradle-c / cradle-c-c / cradle-c-c / cradle-c-c-c / cradle-c / cradle-c:name (c2 / cradle-c2 / cradle-c / cradle-c:name (c / cradle-c2 / cradle-c:name (c / cradle-c2 / cradle-c-c-c2 / cradle-c2 / cradle-c:name (c2 / cradle-c2 / cradle-c2 / cradle-c2 / cradle-c)))))))))))"
+  },
+  {
+    "sentence": "तुमचो खर्च तुमच्या खरेदीच्या मर्यादे परस चड आसल्यार तुमकां तो कमी करपाक सुवाती सोदच्यो पडटल्यो.",
+    "gold_amr": "(o / obligate-01\n   :ARG1 (y / you)\n   :ARG2 (f / find-01\n            :ARG0 y\n            :ARG1 (w / way\n                     :purpose (r / reduce-01\n                                 :ARG0 y\n                                 :ARG1 (e / expense-01\n                                          :poss y))))\n   :condition (m / more\n                 :op1 e\n                 :op2 (l / limit-01\n                         :poss y\n                         :mod (s / shop-01))))",
+    "model_output_linearized": "<AMR> ( (p /possible-01:ARG1 (b /buy-01:ARG0 (y / you):ARG1 (p2 / price:quant (m / more-than:op1 (m2 / more-than:op1 (p3 / price:mod (e / retailer))))):condition (b2 /buy-01:ARG0 y:ARG1 (e2 / price:quant (m3 / more-than:op1 (p4 / price:mod (p5 / retailer)))))",
+    "model_output_penman": "( (p /possible-01:ARG1 (b /buy-01:ARG0 (y / you):ARG1 (p2 / price:quant (m / more-than:op1 (m2 / more-than:op1 (p3 / price:mod (e / retailer))))):condition (b2 /buy-01:ARG0 y:ARG1 (e2 / price:quant (m3 / more-than:op1 (p4 / price:mod (p5 / retailer))))))))"
+  },
+  {
+    "sentence": "चड करून एका रागम तनम पल्लवींत ताचो दुसरो भाग म्हूण आस्पाव जाता.",
+    "gold_amr": "(t2 / tend-01\n   :ARG1 (c / constitute-01\n      :ARG1 (t / tanam)\n      :ARG2 (p2 / part\n         :poss (p / pallavi)\n         :ord (o / ordinal-entity\n            :value 2))\n      :location (r / raga)))",
+    "model_output_linearized": "<AMR> ( (p /include-01:ARG1 (p2 / part:quant (m / more-than:op1 2)):ARG2 (p3 / part:quant (m2 / more-than:op1 2):part-of (r / river:name (n / name:op1 \"Ragga\"):wiki \"Ragga_Ragga_Ragga_Ragga\"))):degree (m / most))",
+    "model_output_penman": "( (p /include-01:ARG1 (p2 / part:quant (m / more-than:op1 2)):ARG2 (p3 / part:quant (m2 / more-than:op1 2):part-of (r / river:name (n / name:op1 \"Ragga\"):wiki \"Ragga_Ragga_Ragga_Ragga\"))):degree (m / most))"
+  },
+  {
+    "sentence": "एक कार्यकारी येवजण तुमी कातीची जतनाय घेवपाचीं उत्पादनां कशीं तयार करतले आनी विकतले हाचे येवजणेचो हवालो दिता .",
+    "gold_amr": "(o / outline-01 :ARG0 (p / plan-01 :mod (b / business)) :ARG1 (a / and :op1 (c / create-01 :ARG0 (y / you) :ARG1 (p2 / product :purpose (t / take-care-01 :ARG1 (s / skin))) :manner (u / amr-unknown)) :op2 (s2 / sell-01 :ARG0 y :ARG1 p2 :manner u)))",
+    "model_output_linearized": "<AMR> ( (a / and:op1 (a2 / and:op1 (f /prepare-01:ARG0 (p / person):ARG1 (p2 / product:ARG1-of (f2 /produce-01:ARG0 (p3 / person))))):op2 (p4 /provide-01:ARG0 p:ARG1 (h / heat):ARG2 (p3 / person:ARG0-of (h2 /manage-01:mod (o / executive)))))",
+    "model_output_penman": "( (a / and:op1 (a2 / and:op1 (f /prepare-01:ARG0 (p / person):ARG1 (p2 / product:ARG1-of (f2 /produce-01:ARG0 (p3 / person))))):op2 (p4 /provide-01:ARG0 p:ARG1 (h / heat):ARG2 (p3 / person:ARG0-of (h2 /manage-01:mod (o / executive))))))"
+  },
+  {
+    "sentence": "खतखत्यांत उण्यांत उणे पांच भाज्यो, ताजे नाल्ल, आनी गोंयचे खाशेले मसाले आसतात जे घमधम वाडयता.",
+    "gold_amr": "(c / contain-01 :ARG0 (f / food :name (n / name :op1 \"Khatkhate\")) :ARG1 (a / and :op1 (v / vegetable :quant (q / quantity :value 5 :mod (a2 / at-least))) :op2 (c2 / coconut :mod (f2 / fresh)) :op3 (s / spice :mod (s2 / special) :source (c3 / country :name (n2 / name :op1 \"Goa\")) :ARG0-of (i / increase-01 :ARG1 (a3 / aroma)))))",
+    "model_output_linearized": "<AMR> ( (a / and:op1 (h /have-03:ARG0 (p / place:name (n / name:op1 \"Warangal\")):ARG1 (a2 / and:op1 (h2 / animal:quant 5:name (n2 / name:op1 \"Ratan\":op2 \"Navala\"):mod (a3 / and:op1 (c / cavalry):op2 (c2 / cavalry):op3 (c3 / cavalry:mod (h3 / harshless)):ARG0-of (h4 /have-03:ARG1 (a4 / and:op1 (g / ghost):op2 (g2 / ghost)):mod (a5 / also))):location (r / region:name (n3 / name:op1 \"Warangal\")))",
+    "model_output_penman": "( (a / and:op1 (h /have-03:ARG0 (p / place:name (n / name:op1 \"Warangal\")):ARG1 (a2 / and:op1 (h2 / animal:quant 5:name (n2 / name:op1 \"Ratan\":op2 \"Navala\"):mod (a3 / and:op1 (c / cavalry):op2 (c2 / cavalry):op3 (c3 / cavalry:mod (h3 / harshless)):ARG0-of (h4 /have-03:ARG1 (a4 / and:op1 (g / ghost):op2 (g2 / ghost)):mod (a5 / also))):location (r / region:name (n3 / name:op1 \"Warangal\")))))))"
+  },
+  {
+    "sentence": "देखीक, तुकां जाय आशिल्लो ब्रँड नासलो तरी त्या व्हॅक्यूमाचेर तुकां फायदेशीर सौदो मेळूं येता.",
+    "gold_amr": "(e / exemplify-01\n   :ARG1 (p / possible-01\n      :ARG1 (g / get-01\n         :ARG0 (y / you)\n         :ARG1 (d / deal-01\n            :mod (b / benefit-01))\n         :topic (v / vacuum-cleaner))\n      :concession (a / available-01\n         :polarity -\n         :ARG1 (b2 / brand\n            :ARG1-of (w / want-01\n               :ARG0 y)))))",
+    "model_output_linearized": "<AMR> ( (p /possible-01:ARG1 (h /have-03:ARG0 (y / you):ARG1 (h2 /help-01:ARG0 (p2 / product:mod (b / broadband):ARG1-of (h3 / have-role-91:ARG2 (h4 /benefit-01 )):source (w / w2 / w3 / w4))):location (s /see-01:mod (t / this)))",
+    "model_output_penman": "( (p /possible-01:ARG1 (h /have-03:ARG0 (y / you):ARG1 (h2 /help-01:ARG0 (p2 / product:mod (b / broadband):ARG1-of (h3 / have-role-91:ARG2 (h4 /benefit-01 )):source (w / w2 / w3 / w4))):location (s /see-01:mod (t / this)))))"
+  },
+  {
+    "sentence": "दुसऱ्या  उतरांनी  मर्याद ऑर्डर वेपाराच्या मोलाची वा ताचे परस बरी हमी दिता, पूण वेपार जातलो हाची न्हय.",
+    "gold_amr": "(r / rephrase-01\n   :ARG1 (c / contrast-01\n      :op1 (g / guarantee-01\n         :ARG0 (o / order\n            :mod (l / limit-01))\n         :ARG1 (o2 / or\n            :op1 (p / price\n               :part-of (t / trade-01))\n            :op2 (p2 / price\n               :degree (b / good\n                  :degree (m / more)))))\n      :op2 (g2 / guarantee-01\n         :polarity -\n         :ARG0 o\n         :ARG1 (e / execute-01\n            :ARG1 t))))",
+    "model_output_linearized": "<AMR> ( (o / or:op1 (p /promise-01:ARG0 (p2 / person):ARG1 (o2 / or:op1 (m / money):op2 (m2 / money)):source (o3 / or:op1 (m3 / money):op2 (m4 / money)):purpose (e /invest-01:ARG0 p2:manner (o4 / orchestracy)):time (n / now)):op2 (p3 /offer-01:ARG0 p2:ARG1 (m5 / money):source m2))",
+    "model_output_penman": "( (o / or:op1 (p /promise-01:ARG0 (p2 / person):ARG1 (o2 / or:op1 (m / money):op2 (m2 / money)):source (o3 / or:op1 (m3 / money):op2 (m4 / money)):purpose (e /invest-01:ARG0 p2:manner (o4 / orchestracy)):time (n / now)):op2 (p3 /offer-01:ARG0 p2:ARG1 (m5 / money):source m2)))"
+  },
+  {
+    "sentence": "कसोटींत ताणें केल्ल्या कामगिरीक लागून डग वॉल्टर्स उपरांत त्याच मॅचींत शतक आनी दोट्टी शतक करपी तो दुसरो खेळगडो जालो आनी हो पराक्रम साध्य करपी आयज मेरेन तो एकमेव भारतीय उरला.",
+    "gold_amr": "(a / and\n   :op1 (b / become-01\n         :ARG1 (p / person)\n         :ARG2 (p2 / player\n               :ord (o / ordinal-entity :value 2)\n               :ARG0-of (s / score-01\n                     :ARG1 (a2 / and\n                           :op1 (c / century)\n                           :op2 (c2 / century :quant 2))\n                     :location m)\n               :sequence (a3 / after\n                     :op1 (p4 / person\n                           :name (n / name :op1 \"Doug\" :op2 \"Walters\")\n                           :wiki \"Doug_Walters\")))\n         :cause (p3 / perform-01\n               :ARG0 p\n               :location (m / match\n                     :type (t / test-match))))\n   :op2 (r / remain-01\n         :ARG1 p\n         :ARG3 (p5 / person\n               :mod (o2 / only)\n               :nationality (c3 / country :name (n2 / name :op1 \"India\"))\n               :ARG0-of s)\n         :duration (u / until\n               :op1 (n3 / now))))",
+    "model_output_linearized": "<AMR> ( (a / and:op1 (a2 / and:op1 (p /play-01:ARG0 (p2 / person):ARG1 (t / team:name (n / name:op1 \"Dug\":op2 \"Wordshire\":op3 \"Games\"):wiki \"Dug_Wordshire_Games\"):time (a3 / after:op1 (a4 / and:op1 (t2 / test-match:name (n2 / name:op1 \"Wordshire\":op2 \"Games\"):wiki \"Wordshire_Games\"):op2 (t3 / test-match:name (n3 / name:op1 \"Wordshire\":op2 \"Games\"):wiki \"Wordshire_Games\"):op3 (t4 / test-match:name (n4 / name:op1 \"Wordshire\":op2 \"Games\"):wiki \"Wordshire_Games\"):time (a5 / after:op1 t2 / t3 / t4 / t5))):op2 (p3 / person:mod (c / country:name (n5 / name:op1 \"India\"):wiki \"India\"))))",
+    "model_output_penman": "( (a / and:op1 (a2 / and:op1 (p /play-01:ARG0 (p2 / person):ARG1 (t / team:name (n / name:op1 \"Dug\":op2 \"Wordshire\":op3 \"Games\"):wiki \"Dug_Wordshire_Games\"):time (a3 / after:op1 (a4 / and:op1 (t2 / test-match:name (n2 / name:op1 \"Wordshire\":op2 \"Games\"):wiki \"Wordshire_Games\"):op2 (t3 / test-match:name (n3 / name:op1 \"Wordshire\":op2 \"Games\"):wiki \"Wordshire_Games\"):op3 (t4 / test-match:name (n4 / name:op1 \"Wordshire\":op2 \"Games\"):wiki \"Wordshire_Games\"):time (a5 / after:op1 t2 / t3 / t4 / t5))):op2 (p3 / person:mod (c / country:name (n5 / name:op1 \"India\"):wiki \"India\"))))))"
+  },
+  {
+    "sentence": "गाडी सुटसुटीत गती घेता, आनी तुमकां कसलोच ठणठण वा करकर आवाज आयकूंक येना हाची खात्री करात.",
+    "gold_amr": "(e / ensure-01 :mode imperative :ARG0 (p / person) :ARG1 (a / and :op1 (a2 / accelerate-01 :ARG0 (c / car) :manner (s / smooth)) :op2 (h / hear-01 :polarity - :ARG0 p :ARG1 (s2 / sound :ARG0-of (o / or :op1 (r / rattle-01) :op2 (c2 / creak-01))))))",
+    "model_output_linearized": "<AMR> ( (a / and:op1 (p /possible-01:ARG1 (g /go-01:ARG0 (y / you):destination (p2 / pipeline):purpose (o / or:op1 (g2 /go-01:ARG0 y:destination (c / car)):op2 (g3 /go-01:ARG0 y:destination c:purpose (e /experience-01:ARG0 y:ARG1 (p3 / pipeline))))",
+    "model_output_penman": "( (a / and:op1 (p /possible-01:ARG1 (g /go-01:ARG0 (y / you):destination (p2 / pipeline):purpose (o / or:op1 (g2 /go-01:ARG0 y:destination (c / car)):op2 (g3 /go-01:ARG0 y:destination c:purpose (e /experience-01:ARG0 y:ARG1 (p3 / pipeline))))))))"
+  },
+  {
+    "sentence": "दुसरे वटेन घोडदळाचो भालो चड लांब, लांकडाचो आसतालो आनी विरोधकाचें रगत दांड्यार पातळुंक दिवचें न्हय म्हूण तांबडें लुगट पात्यालागीं जोडटाले.",
+    "gold_amr": "(c / contrast-01 :op2 (a / and :op1 (s / spear :poss (c2 / cavalry) :mod (l / long :degree (v / very)) :material (w / wood)) :op2 (a2 / attach-01 :ARG0 (p / person) :ARG1 (c3 / cloth :color (r / red)) :ARG2 s :location (n / near :op1 (b / blade :part-of s)) :purpose (p2 / prevent-01 :ARG1 (s2 / spread-01 :ARG1 (b2 / blood :poss (o / opponent)) :location (s3 / shaft :part-of s))))))",
+    "model_output_linearized": "<AMR> ( (a / and:op1 (p / place:name (n / name:op1 \"Cambridge\"):part-of (c / country:name (n2 / name:op1 \"Cambridge\"):mod (c2 / country:name (n3 / name:op1 \"Portugal\"):wiki \"Portugal\"):mod (c3 / country:name (n4 / name:op1 \"Portugal\"):wiki \"Portugal\"):mod (a2 / and:op1 (g / large:degree (m / more)):op2 (g2 / high:degree (m2 / more))))):op2 (p2 / place:name (n5 / name:op1 \"Ladague\"):part-of c2):op3 (p3 / place:name (n6 / name:op1 \"Ladague\"):wiki \"Ladague\"):op4 (p4 / place:name (n7 / name:op1 \"Ladague\"):wiki \"Ladague\")))",
+    "model_output_penman": "( (a / and:op1 (p / place:name (n / name:op1 \"Cambridge\"):part-of (c / country:name (n2 / name:op1 \"Cambridge\"):mod (c2 / country:name (n3 / name:op1 \"Portugal\"):wiki \"Portugal\"):mod (c3 / country:name (n4 / name:op1 \"Portugal\"):wiki \"Portugal\"):mod (a2 / and:op1 (g / large:degree (m / more)):op2 (g2 / high:degree (m2 / more))))):op2 (p2 / place:name (n5 / name:op1 \"Ladague\"):part-of c2):op3 (p3 / place:name (n6 / name:op1 \"Ladague\"):wiki \"Ladague\"):op4 (p4 / place:name (n7 / name:op1 \"Ladague\"):wiki \"Ladague\")))"
+  },
+  {
+    "sentence": "1946 वर्सा चॅम्पियनशिपांतल्यान निवृत्त जायमेरेन डॅव्हिसान सगळ्यो पंदरा सर्ती जिखल्यो.",
+    "gold_amr": "(w / win-01 :ARG0 (d / person :name (n / name :op1 \"Davis\")) :ARG1 (c / competition :quant 15) :time (b / before :op1 (r / retire-01 :ARG0 d :ARG1 (c2 / championship) :time (d2 / date-entity :year 1946))))",
+    "model_output_linearized": "<AMR> ( (d /die-01:ARG0 (p / person):ARG1 (p2 / person:name (n / name:op1 \"Dumbledore\":op2 \"Singh\"):wiki \"Dumbledore_Singh\"):location (c / country:name (n2 / name:op1 \"Denmark\":op2 \"States\"):wiki \"Denmark_States\"):time (d2 /date-entity:year 1946))",
+    "model_output_penman": "( (d /die-01:ARG0 (p / person):ARG1 (p2 / person:name (n / name:op1 \"Dumbledore\":op2 \"Singh\"):wiki \"Dumbledore_Singh\"):location (c / country:name (n2 / name:op1 \"Denmark\":op2 \"States\"):wiki \"Denmark_States\"):time (d2 /date-entity:year 1946)))"
+  },
+  {
+    "sentence": "10 नोव्हेंबर 2009 दिसा, पिरायेच्या 51 व्या वर्सा अंधेरी, मुंबयच्या एका हॉस्पिटलांत तिका मरण आयलें.",
+    "gold_amr": "(d / die-01 :ARG1 (p / person :age 51) :time (d2 / date-entity :day 10 :month 11 :year 2009) :location (h / hospital :location (c / city :name (n / name :op1 \"Andheri\") :part-of (c2 / city :name (n2 / name :op1 \"Mumbai\")))))",
+    "model_output_linearized": "<AMR> ( (d /die-01:ARG1 (p / person:name (n / name:op1 \"Piara\"):wiki \"Piara\"):location (h / hospital:name (n2 / name:op1 \"Mumbai\":op2 \"Hepatitis\"):wiki \"Mumbai_Hepatitis\"):time (d2 /date-entity:day 10:month 11:year 2009)):cause (d3 /die-01:ARG1 p:time (d4 /date-entity:day 51:month 11:year 2009)))",
+    "model_output_penman": "( (d /die-01:ARG1 (p / person:name (n / name:op1 \"Piara\"):wiki \"Piara\"):location (h / hospital:name (n2 / name:op1 \"Mumbai\":op2 \"Hepatitis\"):wiki \"Mumbai_Hepatitis\"):time (d2 /date-entity:day 10:month 11:year 2009)):cause (d3 /die-01:ARG1 p:time (d4 /date-entity:day 51:month 11:year 2009)))"
+  },
+  {
+    "sentence": "हिरानगर तालुक्यांतलो धगवाल गांवाक  मकर संक्रांती आनी जन्माष्टमीच्या जात्रे खातीर वळखतात.",
+    "gold_amr": "(k / know-01\n   :ARG1 (v / village\n            :name (n / name :op1 \"Dhagwal\")\n            :location (t / taluka\n                         :name (n2 / name :op1 \"Hiranagar\")))\n   :ARG2 (f / fair\n            :topic (a / and\n                      :op1 (f2 / festival\n                               :name (n3 / name :op1 \"Makar Sankranti\"))\n                      :op2 (f3 / festival\n                               :name (n4 / name :op1 \"Janmashtami\")))))",
+    "model_output_linearized": "<AMR> ( (h /have-03:ARG0 (v / village:name (n / name:op1 \"Warangal\"):location (c / country:name (n2 / name:op1 \"Himaji\"):wiki \"Himaji\")):ARG1 (a / and:op1 (r / rice:source (v2 / village:name (n3 / name:op1 \"Warangal\"):wiki \"Warangal\")):op2 (p / place:name (n4 / name:op1 \"Brahtal\"):wiki \"Brahtal\"):op3 (p2 / place:name (n5 / name:op1 \"Brahtal\"):wiki \"Brahtal\")))",
+    "model_output_penman": "( (h /have-03:ARG0 (v / village:name (n / name:op1 \"Warangal\"):location (c / country:name (n2 / name:op1 \"Himaji\"):wiki \"Himaji\")):ARG1 (a / and:op1 (r / rice:source (v2 / village:name (n3 / name:op1 \"Warangal\"):wiki \"Warangal\")):op2 (p / place:name (n4 / name:op1 \"Brahtal\"):wiki \"Brahtal\"):op3 (p2 / place:name (n5 / name:op1 \"Brahtal\"):wiki \"Brahtal\"))))"
+  },
+  {
+    "sentence": "वाडटे म्हारगाये आड काग्रेसीचें आंदोलन",
+    "gold_amr": "(p / protest-01\n   :ARG0 (c / political-party\n      :name (n / name :op1 \"Congress\"))\n   :ARG1 (r / rise-01\n      :ARG1 (i / inflation)))",
+    "model_output_linearized": "<AMR> ( (a / and:op1 (p /protest-01:ARG0 (p2 / person:name (n / name:op1 \"Mehrheit\"):wiki \"Mehrheit\")):op2 (p3 /protest-01:ARG0 (p4 / person:name (n2 / name:op1 \"Mehrheit\"):wiki \"Mehrheit\"))",
+    "model_output_penman": "( (a / and:op1 (p /protest-01:ARG0 (p2 / person:name (n / name:op1 \"Mehrheit\"):wiki \"Mehrheit\")):op2 (p3 /protest-01:ARG0 (p4 / person:name (n2 / name:op1 \"Mehrheit\"):wiki \"Mehrheit\"))))"
+  },
+  {
+    "sentence": "पोर्टान जामीनाचेर आसतना कोवरी आनी व्हिटवर्थाचो खून केलो.",
+    "gold_amr": "(m / murder-01 :ARG0 (p / person :name (n / name :op1 \"Porta\")) :ARG1 (a / and :op1 (p2 / person :name (n2 / name :op1 \"Cowrie\")) :op2 (p3 / person :name (n3 / name :op1 \"Whitworth\"))) :time (b / be-on-bail-91 :ARG0 p))",
+    "model_output_linearized": "<AMR> ( (b / bloodshed-01:ARG1 (a / and:op1 (p / person:name (n / name:op1 \"Koorno\"):wiki \"Koorno\"):op2 (p2 / person:name (n2 / name:op1 \"Virginia\"):wiki \"Virginia_Virginia\")):location (c / city:name (n3 / name:op1 \"Porta\"):wiki \"Porta\")))",
+    "model_output_penman": "( (b / bloodshed-01:ARG1 (a / and:op1 (p / person:name (n / name:op1 \"Koorno\"):wiki \"Koorno\"):op2 (p2 / person:name (n2 / name:op1 \"Virginia\"):wiki \"Virginia_Virginia\")):location (c / city:name (n3 / name:op1 \"Porta\"):wiki \"Porta\")))"
+  },
+  {
+    "sentence": "हाका लागून इतिहासीक म्हायती खातीर तांचेर अवलंबून रावतना जतनाय घेवप गरजेचें थारता.",
+    "gold_amr": "(c / cause-01 :ARG0 (t / this) :ARG1 (n / necessary-01 :ARG1 (c2 / careful-01 :time (r / rely-01 :ARG1 (p / person :plural +) :purpose (i / information :mod (h / history))))))",
+    "model_output_linearized": "<AMR> ( (p /need-01:ARG0 (p2 / person):ARG1 (h /have-03:ARG0 (p3 / person):ARG1 (h2 / history):purpose (b /inform-01:ARG0 p:ARG1 p2:ARG2 (p4 / person:name (n / name:op1 \"Natan\"):wiki \"Natan_Natan_Natan_Natan\"):location (c / country:name (n2 / name:op1 \"Chalukya\"):wiki \"Chalukya\")))",
+    "model_output_penman": "( (p /need-01:ARG0 (p2 / person):ARG1 (h /have-03:ARG0 (p3 / person):ARG1 (h2 / history):purpose (b /inform-01:ARG0 p:ARG1 p2:ARG2 (p4 / person:name (n / name:op1 \"Natan\"):wiki \"Natan_Natan_Natan_Natan\"):location (c / country:name (n2 / name:op1 \"Chalukya\"):wiki \"Chalukya\")))))"
+  },
+  {
+    "sentence": "ब्रेकावेळार चार शून्य अशी गोलसंख्या जावंक शकताली, पूण 36 मिण्टांनी क्रॅस्पो ऑफसायडींतल्यान यत्न करतालो तें कळ्ळें.",
+    "gold_amr": "(c / contrast-01\n   :op1 (p / possible-01\n           :domain (b / become-01\n                      :ARG1 (s / score-entity)\n                      :ARG2 \"4-0\"\n                      :time (b2 / break-01)))\n   :op2 (r / realize-01\n           :ARG1 (a / attempt-01\n                    :ARG0 (p2 / person :name (n / name :op1 \"Crespo\"))\n                    :source (p3 / position-02\n                               :mod (o / offside)))\n           :time (t / temporal-quantity :quant 36 :unit (m / minute))))",
+    "model_output_linearized": "<AMR> ( (c /contrast-01:op1 (p /possible-01:ARG1 (b /become-01:ARG1 (g / group:quant 4):ARG2 (g2 / group:quant 4):ARG3 (g3 / group:quant 4):time (b2 / before:op1 (s /score-01:ARG0 g4:ARG1 (g4 / goal:quant (m / more-than:op1 3))))):op2 (p2 /possible-01:ARG1 (b3 /become-01:ARG1 g4:ARG2 (g5 / goal:quant (m2 / more-than:op1 3)):location (o / organization:name (n / name:op1 \"cricket\":op2 \"of\":op3 \"hockey\"))))",
+    "model_output_penman": "( (c /contrast-01:op1 (p /possible-01:ARG1 (b /become-01:ARG1 (g / group:quant 4):ARG2 (g2 / group:quant 4):ARG3 (g3 / group:quant 4):time (b2 / before:op1 (s /score-01:ARG0 g4:ARG1 (g4 / goal:quant (m / more-than:op1 3))))):op2 (p2 /possible-01:ARG1 (b3 /become-01:ARG1 g4:ARG2 (g5 / goal:quant (m2 / more-than:op1 3)):location (o / organization:name (n / name:op1 \"cricket\":op2 \"of\":op3 \"hockey\")))))))"
+  },
+  {
+    "sentence": "शोले ह्या सिनेमांत जेलर म्हणून ताणें केल्ल्या भुमिके खातीर आनी १९७२ ते १९९१ ह्या काळांत राजेश खन्नान मुखेल भुमिकेंत घेवन ताणें २५ चित्रपटांनी केल्ल्या पात्रां खातीर ताची चड नामना आसा.",
+    "gold_amr": "(f / famous-01\n    :ARG1 (p / person)\n    :degree (m / more)\n    :cause (a / and\n        :op1 (p2 / play-02\n            :ARG0 p\n            :ARG1 (r / role\n                :ARG1-of (h / have-role-91\n                    :ARG2 (j / jailer)))\n            :location (m2 / movie\n                :name (n / name :op1 \"Sholay\")))\n        :op2 (p3 / play-02\n            :ARG0 p\n            :ARG1 (c / character)\n            :location (f2 / film\n                :quant 25\n                :ARG1-of (s / star-01\n                    :ARG0 (p4 / person\n                        :name (n2 / name :op1 \"Rajesh\" :op2 \"Khanna\"))\n                    :ARG2 (r2 / role\n                        :mod (l / lead-02))))\n            :time (i / date-interval\n                :start-entity (d / date-entity :year 1972)\n                :end-entity (d2 / date-entity :year 1991)))))",
+    "model_output_linearized": "<AMR> ( (a / and:op1 (a2 / and:op1 (p /imprison-01:ARG0 (p2 / person:name (n / name:op1 \"Regina\":op2 \"Kujana\")):ARG1 (p3 / person:name (n2 / name:op1 \"Katya\":op2 \"Kujana\")):location (s / movie:name (n3 / name:op1 \"Shirley\":op2 \"Hindu\"):mod (t / this)):time (a3 / and:op1 (d /date-entity:year 2017):op2 (d2 /date-entity:year 1997:month 9):op3 (d3 /date-entity:year 1986))):op2 (h / have-degree-91:ARG1 p3:ARG2 (h2 / heroine:degree (m / more)):ARG3 (m2 / most):ARG1-of (h3 /make-01:ARG0 p2:ARG1 (f / film:quant 25)))",
+    "model_output_penman": "( (a / and:op1 (a2 / and:op1 (p /imprison-01:ARG0 (p2 / person:name (n / name:op1 \"Regina\":op2 \"Kujana\")):ARG1 (p3 / person:name (n2 / name:op1 \"Katya\":op2 \"Kujana\")):location (s / movie:name (n3 / name:op1 \"Shirley\":op2 \"Hindu\"):mod (t / this)):time (a3 / and:op1 (d /date-entity:year 2017):op2 (d2 /date-entity:year 1997:month 9):op3 (d3 /date-entity:year 1986))):op2 (h / have-degree-91:ARG1 p3:ARG2 (h2 / heroine:degree (m / more)):ARG3 (m2 / most):ARG1-of (h3 /make-01:ARG0 p2:ARG1 (f / film:quant 25))))))"
+  },
+  {
+    "sentence": "अर्थ, आनंद आनी उद्देश दिवपी नोकरी फकत पगार दिवपी नोकरे परस श्रेश्ठ आसता.",
+    "gold_amr": "(b / better-01\n   :ARG1 (j / job\n            :ARG0-of (g / give-01\n                        :ARG1 (a / and\n                                 :op1 (m / mean-01)\n                                 :op2 (j2 / joy)\n                                 :op3 (p / purpose))))\n   :ARG2 (j3 / job\n            :ARG0-of (g2 / give-01\n                        :ARG1 (s / salary)\n                        :mod (o / only-01))))",
+    "model_output_linearized": "<AMR> ( (p / particle:mod (o / other):domain (p2 / person):ARG0-of (h /have-03:ARG1 (a / and:op1 (e / ego):op2 (e2 / energy):op3 (e3 / energy)):purpose (s /share-01:ARG0 p:ARG1 (a2 / and:op1 (a3 / and:op1 (e4 / economy):op2 (i / income))))",
+    "model_output_penman": "( (p / particle:mod (o / other):domain (p2 / person):ARG0-of (h /have-03:ARG1 (a / and:op1 (e / ego):op2 (e2 / energy):op3 (e3 / energy)):purpose (s /share-01:ARG0 p:ARG1 (a2 / and:op1 (a3 / and:op1 (e4 / economy):op2 (i / income)))))))"
+  },
+  {
+    "sentence": "केरळांतलें सगळ्यांत म्हत्वाचें क्रिस्तांव यात्रेकार केंद्रां मदले एक, हें पवित्र देवस्थान फकत केरळांतल्यान न्हय तर शेजारच्या राज्यांतल्यान लेगीत खूब व्हड प्रमाणांत भक्तांक आकर्शीत करता.",
+    "gold_amr": "(a / attract-01 :ARG0 (s / shrine :mod (h / holy) :domain (c / center :mod (p / pilgrimage) :mod (c2 / christian) :location (k / state :name (n / name :op1 \"Kerala\")) :mod (i / important :degree (s2 / superlative)))) :ARG1 (d / devotee :quant (l / large :degree (v / very))) :source (a2 / and :op1 k :op2 (s3 / state :mod (n2 / neighbor-01))))",
+    "model_output_linearized": "<AMR> ( (c /contrast-01:op1 (h /have-03:ARG0 (c2 / center:name (n / name:op1 \"Centre\":op2 \"Hyderkar\"):mod (c3 / christian):ARG0-of (h2 /help-01:ARG1 (p / public):degree (v / very):location (c4 / country:name (n2 / name:op1 \"Krishna\"):wiki \"Krishna\")):ARG1-of (h3 / have-role-91:ARG2 (h4 / high:degree (v2 / very)):location (c5 / country:name (n3 / name:op1 \"Krishna\"):wiki \"Krishna\"))):op2 (h4 /help-01:ARG0 c:ARG1 (p2 / person:name (n4 / name:op1 \"Parishna\"):wiki \"Parishna\"):ARG2 (p3 / place:name (n5 / name:op1 \"Krishna\"):wiki \"Krishna\")))",
+    "model_output_penman": "( (c /contrast-01:op1 (h /have-03:ARG0 (c2 / center:name (n / name:op1 \"Centre\":op2 \"Hyderkar\"):mod (c3 / christian):ARG0-of (h2 /help-01:ARG1 (p / public):degree (v / very):location (c4 / country:name (n2 / name:op1 \"Krishna\"):wiki \"Krishna\")):ARG1-of (h3 / have-role-91:ARG2 (h4 / high:degree (v2 / very)):location (c5 / country:name (n3 / name:op1 \"Krishna\"):wiki \"Krishna\"))):op2 (h4 /help-01:ARG0 c:ARG1 (p2 / person:name (n4 / name:op1 \"Parishna\"):wiki \"Parishna\"):ARG2 (p3 / place:name (n5 / name:op1 \"Krishna\"):wiki \"Krishna\")))))"
+  },
+  {
+    "sentence": "तुमकां प्रमाणपत्राची छापपाक योग्य डिजिटल प्रत धाडटले.",
+    "gold_amr": "(s / send-01 :ARG0 (p / person) :ARG1 (c / copy-01 :ARG1 (c2 / certificate) :mod (d / digital) :ARG1-of (s2 / suit-01 :ARG2 (p3 / print-01 :ARG1 c))) :ARG2 (y / you))",
+    "model_output_linearized": "<AMR> ( (p /possible-01:polarity -:ARG1 (b /buy-01:ARG0 (y / you):ARG1 (p2 / paper:mod (d / digital)):purpose (b2 /label-01:ARG0 y:ARG1 (c / certificate)))",
+    "model_output_penman": "( (p /possible-01:polarity -:ARG1 (b /buy-01:ARG0 (y / you):ARG1 (p2 / paper:mod (d / digital)):purpose (b2 /label-01:ARG0 y:ARG1 (c / certificate)))))"
+  },
+  {
+    "sentence": "पिराये प्रमाणें लोक चड विसरतात हें सभावीक.",
+    "gold_amr": "(n / natural-01\n   :ARG1 (f / forget-01\n      :ARG0 (p / person)\n      :degree (m / more)\n      :cause (a / age-01\n         :ARG1 p)))",
+    "model_output_linearized": "<AMR> ( (p / place:domain this:mod (m / large):location-of (s /sample-01:ARG0 (p2 / person):ARG1 (t / thing:degree (m2 / more:degree (v / very)))))",
+    "model_output_penman": "( (p / place:domain this:mod (m / large):location-of (s /sample-01:ARG0 (p2 / person):ARG1 (t / thing:degree (m2 / more:degree (v / very))))))"
+  },
+  {
+    "sentence": "1978-79 च्या काळांत, बंडखोरांआड मोहिमेंत ऱ्होडेशियेच्या सरकारान गोरवां आनी मनशांआड एंथ्रॅक्साचो उपेग केलो.",
+    "gold_amr": "(u / use-01\n   :ARG0 (g / government\n            :part-of (c / country\n                        :name (n / name :op1 \"Rhodesia\")))\n   :ARG1 (a / anthrax)\n   :ARG2 (a2 / and\n            :op1 (c2 / cattle)\n            :op2 (p / person))\n   :location (c3 / campaign-01\n                :ARG1 (r / rebel))\n   :time (i / interval\n            :start-point (d / date-entity :year 1978)\n            :end-point (d2 / date-entity :year 1979)))",
+    "model_output_linearized": "<AMR> ( (g /govern-01:ARG0 (g2 / government:name (n / name:op1 \"Bulgaria\")):ARG1 (a / and:op1 (g3 / group:name (n2 / name:op1 \"Goa\")):op2 (g4 / group:name (n3 / name:op1 \"Manhattan\")):op3 (g5 / group:name (n4 / name:op1 \"Angela\")):op4 (g6 / group:name (n5 / name:op1 \"Angela\"))):time (d /date-entity:year 1978:year2 1980))",
+    "model_output_penman": "( (g /govern-01:ARG0 (g2 / government:name (n / name:op1 \"Bulgaria\")):ARG1 (a / and:op1 (g3 / group:name (n2 / name:op1 \"Goa\")):op2 (g4 / group:name (n3 / name:op1 \"Manhattan\")):op3 (g5 / group:name (n4 / name:op1 \"Angela\")):op4 (g6 / group:name (n5 / name:op1 \"Angela\"))):time (d /date-entity:year 1978:year2 1980)))"
+  },
+  {
+    "sentence": "ट्विटराचेर, तुमच्या प्रतिस्पर्ध्यांनी पोस्ट केल्ल्या ट्विटांचेर खेळीमेळीची टिप्पणी करप हो तुमच्या कंपनीचें प्रोफायल तयार करपाचो एक सामान्य मार्ग.",
+    "gold_amr": "(w / way\n   :mod (c2 / common)\n   :domain (c / comment-01\n              :ARG0 (y / you)\n              :ARG1 (t / tweet\n                       :ARG1-of (p / post-01\n                                   :ARG0 (c3 / competitor\n                                            :poss y)))\n              :manner (p2 / playful)\n              :location (p3 / platform\n                           :name (n / name :op1 \"Twitter\")))\n   :purpose (b / build-01\n               :ARG0 y\n               :ARG1 (p4 / profile\n                        :poss (c4 / company\n                                 :poss y))))",
+    "model_output_linearized": "<AMR> ( (g / way:domain (t /comment-01:mode imperative:ARG0 (y / you):ARG2 (p / portfolio:poss (c / company)):medium (c2 / platform:name (n / name:op1 \"twitter\")):time (o / or:op1 (p2 /post-01:ARG0 y:location (p3 / portfolio:poss y)):op2 (p4 /post-01:ARG0 y:location (p5 / portfolio:poss y)))):mod (g2 / general):domain (t2 / this))",
+    "model_output_penman": "( (g / way:domain (t /comment-01:mode imperative:ARG0 (y / you):ARG2 (p / portfolio:poss (c / company)):medium (c2 / platform:name (n / name:op1 \"twitter\")):time (o / or:op1 (p2 /post-01:ARG0 y:location (p3 / portfolio:poss y)):op2 (p4 /post-01:ARG0 y:location (p5 / portfolio:poss y)))):mod (g2 / general):domain (t2 / this)))"
+  },
+  {
+    "sentence": "एका कायदेशीर निर्णयांत ताच्या प्रयोगीक बॅलेच्या खंयच्याय भौशीक सादरीकरणाचेर \"यक्षगाण\" अशें बिल दिवपाचेर लेगीत बंदी घाली.",
+    "gold_amr": "(b / ban-01 :ARG1 (b2 / bill-02 :ARG1 (p / perform-01 :ARG1 (b3 / ballet :mod (e / experimental) :poss (h / he)) :mod (p2 / public)) :ARG2 (t / thing :name (n / name :op1 \"Yakshagana\"))) :medium (d / decide-01 :mod (l / legal)) :mod (a / also))",
+    "model_output_linearized": "<AMR> ( (a / and:op1 (d /declare-01:ARG1 (p / bill):ARG2 (p2 / partner:poss (p3 / person)):time (a2 /decide-01:mod (a3 / another))):op2 (d2 /declare-01:ARG1 p2:ARG2 (p3 / partner:poss p2:mod (e / electricity)):time (a4 / after:op1 d)))",
+    "model_output_penman": "( (a / and:op1 (d /declare-01:ARG1 (p / bill):ARG2 (p2 / partner:poss (p3 / person)):time (a2 /decide-01:mod (a3 / another))):op2 (d2 /declare-01:ARG1 p2:ARG2 (p3 / partner:poss p2:mod (e / electricity)):time (a4 / after:op1 d))))"
+  },
+  {
+    "sentence": "घडये तुमी खरेदी करपाक आवडटा अशे प्रकारचे न्हय, वा वर्सभर नाताळाच्यो भेटवस्तू ब्राउझ करपाक तुमकां वेळ ना.",
+    "gold_amr": "(o / or :op1 (p / possible-01 :ARG1 (l / like-01 :ARG0 (y / you) :ARG1 (s / shop-01 :ARG0 y) :polarity -)) :op2 (h / have-03 :ARG0 y :ARG1 (t / time :purpose (b / browse-01 :ARG0 y :ARG1 (g / gift :mod (h2 / holiday :name (n / name :op1 \"Christmas\"))) :mod (y2 / year-round))) :polarity -))",
+    "model_output_linearized": "<AMR> ( (o / or:op1 (p /possible-01:polarity -:ARG1 (p2 /purchase-01:ARG0 (y / you):ARG1 (b / brand:mod (o2 / other):mod (o3 / or:op1 (b2 /buy-01:mode imperative:ARG0 y:ARG1 (t / thing:mod (o4 / other):ARG1-of (b3 /buy-01:mode imperative:ARG0 y))))):op2 (p3 /possible-01:polarity -:ARG1 (b4 /buy-01:mode imperative:ARG0 y:ARG1 t:purpose (b5 /buy-01:mode imperative:ARG0 y:ARG1 t))))",
+    "model_output_penman": "( (o / or:op1 (p /possible-01:polarity -:ARG1 (p2 /purchase-01:ARG0 (y / you):ARG1 (b / brand:mod (o2 / other):mod (o3 / or:op1 (b2 /buy-01:mode imperative:ARG0 y:ARG1 (t / thing:mod (o4 / other):ARG1-of (b3 /buy-01:mode imperative:ARG0 y))))):op2 (p3 /possible-01:polarity -:ARG1 (b4 /buy-01:mode imperative:ARG0 y:ARG1 t:purpose (b5 /buy-01:mode imperative:ARG0 y:ARG1 t)))))))"
+  },
+  {
+    "sentence": "धोल-ताशांच्या गजरांत ही कार्यावळ जाली",
+    "gold_amr": "(h / happen-01\n   :ARG1 (e / event\n      :mod (t / this))\n   :location (s / sound\n      :mod (l / loud)\n      :source (a / and\n         :op1 (i / musical-instrument\n            :name (n / name :op1 \"dhol\"))\n         :op2 (i2 / musical-instrument\n            :name (n2 / name :op1 \"tasha\")))))",
+    "model_output_linearized": "<AMR> ( (p /perform-01:ARG1 (t / thing):location (g / gene:part-of (p2 / virus:name (n / name:op1 \"Bovine\"):wiki \"Bovine\")):mod (a / also))",
+    "model_output_penman": "( (p /perform-01:ARG1 (t / thing):location (g / gene:part-of (p2 / virus:name (n / name:op1 \"Bovine\"):wiki \"Bovine\")):mod (a / also)))"
+  },
+  {
+    "sentence": "जर तूंं स्वता वचून खरेदी करता, तर खरेदी वांगडा डिलिव्हरी आस्पावीत आसा जाल्यार दुकानांत विचार.",
+    "gold_amr": "(a / ask-01 :mode imperative :ARG0 (y / you) :location (s / store) :ARG1 (i / include-01 :polarity ? :ARG1 (d / deliver-01) :ARG2 b) :condition (a2 / and :op1 (g / go-01 :ARG0 y :destination s) :op2 (b / buy-01 :ARG0 y)))",
+    "model_output_linearized": "<AMR> ( (p /consider-01:mode imperative:ARG0 (y / you):location (s / shop):concession (a / and:op1 (p2 /buy-01:ARG0 y:manner (w / whirlpool)):op2 (p3 /purchase-01:ARG0 y:manner (g /go-01:ARG0 y:destination (s2 / shop)))))",
+    "model_output_penman": "( (p /consider-01:mode imperative:ARG0 (y / you):location (s / shop):concession (a / and:op1 (p2 /buy-01:ARG0 y:manner (w / whirlpool)):op2 (p3 /purchase-01:ARG0 y:manner (g /go-01:ARG0 y:destination (s2 / shop))))))"
+  },
+  {
+    "sentence": "देखीक, तुमी दर सप्तकांत 100 डॉलर चेक रोख करतात अशें गृहीत धरात, आनी चेक नगदी सेवा चेकाचे 5% घेता.",
+    "gold_amr": "(e / exemplify-01 :ARG1 (a / and :op1 (a2 / assume-01 :ARG0 (p / person) :ARG1 (c / cash-01 :ARG0 p :ARG1 (c2 / check-01 :cost (m / monetary-quantity :quant 100 :unit (d / dollar))) :frequency (t / temporal-quantity :quant 1 :unit (w / week))) :mode imperative) :op2 (t2 / take-01 :ARG0 (s / check-cashing-service) :ARG1 (p2 / percentage-entity :value 5 :part-of c2))))",
+    "model_output_linearized": "<AMR> ( (a / and:op1 (p /possible-01:ARG1 (o /obtain-01:ARG0 (y / you):ARG1 (c / check:quant (m /monetary-quantity:quant 100000000:unit (d / dollar))):time (n /temporal-quantity:quant 1:unit (y2 / year))):op2 (o2 /obtain-01:ARG0 y:ARG1 (p2 /percentage-entity:value 5:part-of (c2 / check:mod (s / service:mod (p3 / personal):mod (c3 / cash)))))",
+    "model_output_penman": "( (a / and:op1 (p /possible-01:ARG1 (o /obtain-01:ARG0 (y / you):ARG1 (c / check:quant (m /monetary-quantity:quant 100000000:unit (d / dollar))):time (n /temporal-quantity:quant 1:unit (y2 / year))):op2 (o2 /obtain-01:ARG0 y:ARG1 (p2 /percentage-entity:value 5:part-of (c2 / check:mod (s / service:mod (p3 / personal):mod (c3 / cash))))))))"
+  },
+  {
+    "sentence": "ग्रेट हॉलमेरेन उगडपी खूब व्हड गेटी लेगीत आशिल्ल्यो.",
+    "gold_amr": "(e / exist-01\n   :ARG1 (g / gate\n            :mod (b / big\n                    :degree (v / very))\n            :ARG0-of (o / open-01\n                        :destination (h / hall\n                                        :name (n / name\n                                                 :op1 \"Great\"\n                                                 :op2 \"Hall\"))))\n   :mod (a / also))",
+    "model_output_linearized": "<AMR> ( (h / have-01:ARG0 (p / person):ARG1 (p2 / place:name (n / name:op1 \"Grand\":op2 \"Hallman\"):wiki \"Grand_Hallman\"):ARG2 (p3 / place:name (n2 / name:op1 \"West\":op2 \"Bengal\"):wiki \"West_Bengal\"):degree (v / very))",
+    "model_output_penman": "( (h / have-01:ARG0 (p / person):ARG1 (p2 / place:name (n / name:op1 \"Grand\":op2 \"Hallman\"):wiki \"Grand_Hallman\"):ARG2 (p3 / place:name (n2 / name:op1 \"West\":op2 \"Bengal\"):wiki \"West_Bengal\"):degree (v / very)))"
+  },
+  {
+    "sentence": "98 टक्क्यांपरस चड रोलर डर्बी सर्ती डब्ल्यू.ऍफ.टी.डी.ए. नेमांखाला जाल्यो असो दावो मार्च 2010 त डर्बी न्यूज नेटवर्कान केलो.",
+    "gold_amr": "(c / claim-01\n   :ARG0 (o / organization\n            :name (n / name :op1 \"Derby\" :op2 \"News\" :op3 \"Network\"))\n   :ARG1 (h / hold-04\n            :ARG1 (c2 / competition\n                     :mod (r / roller-derby)\n                     :quant (p / percentage-entity\n                               :value 98\n                               :degree (m / more)))\n            :manner (a / accord-02\n                       :ARG1 (r2 / rule\n                                :poss (o2 / organization\n                                         :name (n2 / name :op1 \"WFTDA\")))))\n   :time (d / date-entity\n            :year 2010\n            :month 3))",
+    "model_output_linearized": "<AMR> ( (w /network-01:ARG0 (o / organization:name (n / name:op1 \"W.E.V.D.A.\"):wiki \"W.E.V.A.\"):ARG1 (o2 / organization:name (n2 / name:op1 \"W.W.D.A.\"):wiki \"W.W.D.A.\"):time (d /date-entity:day 10:month 3:year 2010)):cause (w2 /win-01:ARG0 o2:ARG1 (t / software:name (n3 / name:op1 \"WhatsApp\"):wiki \"WhatsApp\":name (n4 / name:op1 \"WhatsApp\")):time (d2 /date-entity:day 9:month 3:year 2010)))",
+    "model_output_penman": "( (w /network-01:ARG0 (o / organization:name (n / name:op1 \"W.E.V.D.A.\"):wiki \"W.E.V.A.\"):ARG1 (o2 / organization:name (n2 / name:op1 \"W.W.D.A.\"):wiki \"W.W.D.A.\"):time (d /date-entity:day 10:month 3:year 2010)):cause (w2 /win-01:ARG0 o2:ARG1 (t / software:name (n3 / name:op1 \"WhatsApp\"):wiki \"WhatsApp\":name (n4 / name:op1 \"WhatsApp\")):time (d2 /date-entity:day 9:month 3:year 2010)))"
+  },
+  {
+    "sentence": "सार्ना हो स्वीडनांतल्या दालर्ना कावंटींतल्या अल्त्सालन नगरपालिकेचो एक वाठार.",
+    "gold_amr": "(l / locality\n   :name (n / name :op1 \"Särna\")\n   :part-of (m / municipality\n      :name (n2 / name :op1 \"Älvdalen\")\n      :part-of (c / county\n         :name (n3 / name :op1 \"Dalarna\")\n         :part-of (c2 / country\n            :name (n4 / name :op1 \"Sweden\")))))",
+    "model_output_linearized": "<AMR> ( (r / region:name (n / name:op1 \"Agra\"):part-of (c / city:name (n2 / name:op1 \"London\"):part-of (c2 / country:name (n3 / name:op1 \"Sydnesday\"):wiki \"Sydnesday\")))",
+    "model_output_penman": "( (r / region:name (n / name:op1 \"Agra\"):part-of (c / city:name (n2 / name:op1 \"London\"):part-of (c2 / country:name (n3 / name:op1 \"Sydnesday\"):wiki \"Sydnesday\"))))"
+  },
+  {
+    "sentence": "म्हापशें: म्हापशें न्हंये वयल्या नव्या तार पुलाचें बांदकाम नेटान चालू आसा",
+    "gold_amr": "(p / proceed-01\n   :ARG1 (c / construct-01\n            :ARG1 (b / bridge\n                     :mod (n / new)\n                     :mod (c2 / cable))\n            :location (o / over\n                         :op1 (r / river\n                                 :name (n2 / name :op1 \"Mapusa\"))))\n   :manner (r2 / rapid))",
+    "model_output_linearized": "<AMR> ( (o /operate-01:ARG1 (p / platform:name (n / name:op1 \"Bangladesh\"):wiki \"Bangladesh\":op2 \"Tell\":op3 \"Park\"):location (c / city:name (n2 / name:op1 \"Minnesota\"):wiki \"Minnesota\")))",
+    "model_output_penman": "( (o /operate-01:ARG1 (p / platform:name (n / name:op1 \"Bangladesh\"):wiki \"Bangladesh\":op2 \"Tell\":op3 \"Park\"):location (c / city:name (n2 / name:op1 \"Minnesota\"):wiki \"Minnesota\")))"
+  },
+  {
+    "sentence": "राज्य संशोधन फावंडेशन स्थापन करपा खातीर 650 कोटी रुपया तजवीज केल्या",
+    "gold_amr": "(p / provision-01\n   :ARG1 (m / monetary-quantity\n            :quant 6500000000\n            :unit (r / rupee))\n   :purpose (e / establish-01\n               :ARG1 (f / foundation\n                        :name (n / name\n                                 :op1 \"State\"\n                                 :op2 \"Research\"\n                                 :op3 \"Foundation\"))))",
+    "model_output_linearized": "<AMR> (m /monetary-quantity:quant 650000000:unit (r / rupee)):purpose (e /establish-01:ARG1 (f / fund:mod (s / state)):purpose (e2 /establish-01:ARG1 (f2 / fund:mod (r2 / revenue))))))",
+    "model_output_penman": "(m /monetary-quantity:quant 650000000:unit (r / rupee)):purpose (e /establish-01:ARG1 (f / fund:mod (s / state)):purpose (e2 /establish-01:ARG1 (f2 / fund:mod (r2 / revenue))))))"
+  },
+  {
+    "sentence": "मुळाव्या स्वरुपाच्या यॉजासारकी कातीची परिस्थिती दाखोवपी संसर्ग हिमोफिलस ड्युक्रेयीक लागून जावंक शकता.",
+    "gold_amr": "(p / possible-01\n   :ARG1 (c / cause-01\n            :ARG0 (o / organism\n                     :name (n / name\n                              :op1 \"Haemophilus\"\n                              :op2 \"ducreyi\"))\n            :ARG1 (i / infect-01\n                     :ARG1-of (p2 / present-02\n                                 :ARG2 (c2 / condition\n                                          :domain (s / skin)\n                                          :mod (p3 / primary-01)\n                                          :ARG1-of (r / resemble-01\n                                                      :ARG2 (u / ulcer)))))))",
+    "model_output_linearized": "<AMR> ( (p /possible-01:ARG1 (d /develop-01:ARG1 (p2 / person:name (n / name:op1 \"Hemophile\":op2 \"Drusion\"):wiki \"Hemophile_Drusion\"):ARG2 (c / condition:mod (e / emergency):location (s / state:name (n2 / name:op1 \"Yorkshire\"):wiki \"Yorkshire\"))):location (s2 / system:mod (e2 / economy):mod (m / region)))",
+    "model_output_penman": "( (p /possible-01:ARG1 (d /develop-01:ARG1 (p2 / person:name (n / name:op1 \"Hemophile\":op2 \"Drusion\"):wiki \"Hemophile_Drusion\"):ARG2 (c / condition:mod (e / emergency):location (s / state:name (n2 / name:op1 \"Yorkshire\"):wiki \"Yorkshire\"))):location (s2 / system:mod (e2 / economy):mod (m / region))))"
+  },
+  {
+    "sentence": "पूण सर्वीस चालू आसल्यार ती कायदेशीर सर्वीस मानतात.",
+    "gold_amr": "(c / consider-01 :ARG1 s :ARG2 (s2 / service :mod (l / legal)) :condition (b / be-02 :ARG1 (s / service) :ARG2 (a / active)))",
+    "model_output_linearized": "<AMR> ( (o /consider-01:ARG0 (p / person):ARG1 (s / shun-01:ARG1 (p2 / policy):ARG2 (s2 / shun-01:ARG1 (p3 / policy)):time (a / already)))",
+    "model_output_penman": "( (o /consider-01:ARG0 (p / person):ARG1 (s / shun-01:ARG1 (p2 / policy):ARG2 (s2 / shun-01:ARG1 (p3 / policy)):time (a / already))))"
+  },
+  {
+    "sentence": "बापायची बदली महाराजाच्या कॉलेज हायस्कुलांत जाली तेन्ना नारायण आपल्या कुटुंबा वांगडा रावपाक म्हैसूरांत गेलो.",
+    "gold_amr": "(g / go-01\n   :ARG0 (n / person :name (n2 / name :op1 \"Narayan\"))\n   :destination (c / city :name (n3 / name :op1 \"Mysore\"))\n   :purpose (l / live-01\n               :ARG0 n\n               :accompanier (f / family :poss n))\n   :time (t / transfer-01\n            :ARG1 (f2 / father :poss n)\n            :ARG3 (s / school\n                     :name (n4 / name :op1 \"Maharaja's College High School\"))))",
+    "model_output_linearized": "<AMR> ( (o / occur-01:ARG1 (p / person:name (n / name:op1 \"Telangana\"):wiki \"Telangana\":name (n2 / name:op1 \"Telangana\")):location (c / city:name (n3 / name:op1 \"Mysore\"):wiki \"Mysore\":name (n4 / name:op1 \"Mysore\")):time (m /marry-01:ARG0 p:ARG1 (p2 / person:name (n5 / name:op1 \"Mahesh\":op2 \"Mahesh\"):wiki \"Mahesh_Mahesh\")))",
+    "model_output_penman": "( (o / occur-01:ARG1 (p / person:name (n / name:op1 \"Telangana\"):wiki \"Telangana\":name (n2 / name:op1 \"Telangana\")):location (c / city:name (n3 / name:op1 \"Mysore\"):wiki \"Mysore\":name (n4 / name:op1 \"Mysore\")):time (m /marry-01:ARG0 p:ARG1 (p2 / person:name (n5 / name:op1 \"Mahesh\":op2 \"Mahesh\"):wiki \"Mahesh_Mahesh\"))))"
+  },
+  {
+    "sentence": "संस्था म्हणल्यार एक थिंक टँक आनी पाखो घेवपी गट.",
+    "gold_amr": "(s / organization :domain (a / and :op1 (t / think-tank) :op2 (g / group :ARG0-of (a2 / advocate-01))))",
+    "model_output_linearized": "<AMR> ( (a / and:op1 (g / group:name (n / name:op1 \"Working\":op2 \"Committee\"):wiki \"Working_Committee\"):op2 (g2 / group:name (n2 / name:op1 \"Working\":op2 \"Committee\"):wiki \"Working_Committee\")))",
+    "model_output_penman": "( (a / and:op1 (g / group:name (n / name:op1 \"Working\":op2 \"Committee\"):wiki \"Working_Committee\"):op2 (g2 / group:name (n2 / name:op1 \"Working\":op2 \"Committee\"):wiki \"Working_Committee\")))"
+  },
+  {
+    "sentence": "वेळ वता तसो काळजाच्या स्नायूंक लुकसाण जावपाचो धोको वाडटा.",
+    "gold_amr": "(i / increase-01\n   :ARG1 (r / risk-01\n             :ARG1 (d / damage-01\n                       :ARG1 (m / muscle\n                                 :part-of (h / heart))))\n   :condition (p / pass-01\n                  :ARG1 (t / time)))",
+    "model_output_linearized": "<AMR> ( (h / have-role-91:ARG0 (p / person):ARG1 (p2 / person:name (n / name:op1 \"Skyubin\")):ARG2 (h2 /highlight-01:ARG0 p:ARG1 (p3 / person:name (n2 / name:op1 \"Skyubin\")):time (n3 / now):time (r /date-entity:season (w / winter)))",
+    "model_output_penman": "( (h / have-role-91:ARG0 (p / person):ARG1 (p2 / person:name (n / name:op1 \"Skyubin\")):ARG2 (h2 /highlight-01:ARG0 p:ARG1 (p3 / person:name (n2 / name:op1 \"Skyubin\")):time (n3 / now):time (r /date-entity:season (w / winter)))))"
+  },
+  {
+    "sentence": "रातीं उसरां दोनूय भुरग्यांच्या कुडीचेर थळाव्या मसुंडेंत निमाणे संस्कार जाले",
+    "gold_amr": "(p / perform-01\n   :ARG1 (r / rite\n      :mod (f / final))\n   :ARG2 (c / child\n      :quant 2)\n   :location (c2 / crematorium\n      :mod (l / local))\n   :time (n / night\n      :mod (l2 / late)))",
+    "model_output_linearized": "<AMR> ( (c / vaccine-01:ARG1 (p / person:quant 2:location (c2 / city:name (n / name:op1 \"Cambridge\"):wiki \"Cambridge\":location (c3 / city:name (n2 / name:op1 \"Duomo\"):wiki \"Duomo\":location (c4 / country:name (n3 / name:op1 \"Central Asia\"):wiki \"Central Asia\")):ARG0-of (r / regroup-01:ARG1 p)):time (n4 / night:mod (n5 / tonight)))",
+    "model_output_penman": "( (c / vaccine-01:ARG1 (p / person:quant 2:location (c2 / city:name (n / name:op1 \"Cambridge\"):wiki \"Cambridge\":location (c3 / city:name (n2 / name:op1 \"Duomo\"):wiki \"Duomo\":location (c4 / country:name (n3 / name:op1 \"Central Asia\"):wiki \"Central Asia\")):ARG0-of (r / regroup-01:ARG1 p)):time (n4 / night:mod (n5 / tonight)))))"
+  },
+  {
+    "sentence": "तेन्ना दोनूय भुरगीं घरांत नाशिल्ल्यान तांणी आपल्या भावाक फोन करून भुरग्यांची चवकशी केली",
+    "gold_amr": "(a / and :op1 (c2 / call-01 :ARG0 (p / person) :ARG1 (b / brother :poss p)) :op2 (i / inquire-01 :ARG0 p :ARG1 (c / child :quant 2)) :time (t / then) :cause (b2 / be-located-at-91 :polarity - :ARG1 c :ARG2 (h / home)))",
+    "model_output_linearized": "<AMR> ( (c /contact-01:ARG0 (p / person):ARG1 (p2 / person:quant 2:mod (a / and:op1 (p3 / friend):op2 (p4 / parent))):location (h / house):manner (g / general))",
+    "model_output_penman": "( (c /contact-01:ARG0 (p / person):ARG1 (p2 / person:quant 2:mod (a / and:op1 (p3 / friend):op2 (p4 / parent))):location (h / house):manner (g / general)))"
+  },
+  {
+    "sentence": "कोव्हिड-19 म्हामारीवांगडा हो अदमास खरो थारलो.",
+    "gold_amr": "(p / prove-01\n   :ARG1 (e / estimate-01)\n   :ARG2 (t / true)\n   :time (p2 / pandemic\n             :name (n / name :op1 \"COVID-19\")))",
+    "model_output_linearized": "<AMR> ( (h /have-03:ARG0 (p / person:name (n / name:op1 \"Kovingt-19\"):wiki \"Kovingt-19\"):ARG1 (p2 / person:name (n2 / name:op1 \"Amelon\"):wiki \"Amelon\")))",
+    "model_output_penman": "( (h /have-03:ARG0 (p / person:name (n / name:op1 \"Kovingt-19\"):wiki \"Kovingt-19\"):ARG1 (p2 / person:name (n2 / name:op1 \"Amelon\"):wiki \"Amelon\")))"
+  },
+  {
+    "sentence": "ब्रिशकेतु देबबर्मा ब्रिशकेतु देबबर्मा हे बाराव्या त्रिपुरा विधानसभेचो वांगडी आसा.",
+    "gold_amr": "(h / have-role-91\n   :ARG0 (p / person\n      :name (n / name :op1 \"Brisketu\" :op2 \"Debbarma\"))\n   :ARG1 (m / member\n      :part-of (a / legislative-assembly\n         :name (n2 / name :op1 \"Tripura\" :op2 \"Legislative\" :op3 \"Assembly\")\n         :wiki \"Tripura_Legislative_Assembly\"\n         :mod (o / ordinal-entity :value 12))))",
+    "model_output_linearized": "<AMR> ( (r /rule-01:ARG0 (c / country:name (n / name:op1 \"Britain\"):wiki \"British\":name (n2 / name:op1 \"British\"):wiki \"British_Empire\"):ARG1 (r2 / region:name (n3 / name:op1 \"Tripura\"):wiki \"Tripura\":part-of (c2 / country:name (n4 / name:op1 \"Champanya\"):wiki \"Champanya\")))",
+    "model_output_penman": "( (r /rule-01:ARG0 (c / country:name (n / name:op1 \"Britain\"):wiki \"British\":name (n2 / name:op1 \"British\"):wiki \"British_Empire\"):ARG1 (r2 / region:name (n3 / name:op1 \"Tripura\"):wiki \"Tripura\":part-of (c2 / country:name (n4 / name:op1 \"Champanya\"):wiki \"Champanya\"))))"
+  },
+  {
+    "sentence": "फ्रीस्टायल कुस्तीगीर विरोधकाची दोनूय स्कापुला शेंदरेक धरून क्षणांतच मॅच जिखूंक शकता.",
+    "gold_amr": "(p / possible-01 :ARG1 (w / win-01 :ARG0 (w2 / wrestler :mod (f / freestyle)) :ARG1 (m / match) :instrument (h / hold-01 :ARG0 w2 :ARG1 (s / scapula :quant 2 :poss (o / opponent)) :destination (m2 / mat)) :time (i / instant)))",
+    "model_output_linearized": "<AMR> ( (p /possible-01:ARG1 (w /win-01:ARG0 (p2 / person:quant 2:mod (c / country:name (n / name:op1 \"Sykes\")):ARG0-of (h /oppose-01:ARG1 (c2 / country:name (n2 / name:op1 \"Liberation\"):wiki \"Liberation\"))):ARG1 p2:time (d / final))",
+    "model_output_penman": "( (p /possible-01:ARG1 (w /win-01:ARG0 (p2 / person:quant 2:mod (c / country:name (n / name:op1 \"Sykes\")):ARG0-of (h /oppose-01:ARG1 (c2 / country:name (n2 / name:op1 \"Liberation\"):wiki \"Liberation\"))):ARG1 p2:time (d / final))))"
+  },
+  {
+    "sentence": "ऑंकटिल सामको वेळार फाटीं उरलो, जायत्या जाणांक ताका कोणूच हारोवंक शकना अशें दिशिल्लें.",
+    "gold_amr": "(c / contrast-01 :op1 (w / withdraw-01 :ARG0 (p / person :name (n / name :op1 \"Anktil\")) :manner (p2 / punctual :degree (j / just))) :op2 (s / seem-01 :ARG1 (p3 / possible-01 :polarity - :ARG1 (d / defeat-01 :ARG0 (a / anyone) :ARG1 p)) :ARG2 (p4 / person :quant (m / many))))",
+    "model_output_linearized": "<AMR> ( (p /possible-01:ARG1 (b /become-01:ARG1 (p2 / person):ARG2 (r / renown-01:ARG1 p2:ARG2 (r2 / renown-01:ARG1 p2:ARG2 (r3 /risk-01:ARG0 p2:ARG1 (r4 /risk-01:ARG0 p2:location (c / country:name (n / name:op1 \"Ontario\"):wiki \"Ontario\")))))",
+    "model_output_penman": "( (p /possible-01:ARG1 (b /become-01:ARG1 (p2 / person):ARG2 (r / renown-01:ARG1 p2:ARG2 (r2 / renown-01:ARG1 p2:ARG2 (r3 /risk-01:ARG0 p2:ARG1 (r4 /risk-01:ARG0 p2:location (c / country:name (n / name:op1 \"Ontario\"):wiki \"Ontario\"))))))))"
+  },
+  {
+    "sentence": "2021 वर्सा भारतांतल्या निवळ शारांमदीं चंडीगढ 66व्या क्रमांकाचेर देंवलो.",
+    "gold_amr": "(d / drop-01\n   :ARG1 (c / city\n            :name (n / name :op1 \"Chandigarh\")\n            :wiki \"Chandigarh\")\n   :ARG4 (r / rank-01\n            :mod (o / ordinal-entity :value 66))\n   :location (c2 / city\n                  :mod (c3 / clean-01)\n                  :part-of (c4 / country\n                                :name (n2 / name :op1 \"India\")\n                                :wiki \"India\"))\n   :time (d2 / date-entity :year 2021))",
+    "model_output_linearized": "<AMR><rel> (r /receive-01:ARG0 (c / country:name (n / name:op1 \"India\"):wiki \"India\"):ARG1 (o / number:value 66:ord (o2 /ordinal-entity:value 1)):source (c2 / city:name (n2 / name:op1 \"Chandigarh\"):wiki \"Chandigarh\"):time (d /date-entity:year 2021))",
+    "model_output_penman": "(r /receive-01:ARG0 (c / country:name (n / name:op1 \"India\"):wiki \"India\"):ARG1 (o / number:value 66:ord (o2 /ordinal-entity:value 1)):source (c2 / city:name (n2 / name:op1 \"Chandigarh\"):wiki \"Chandigarh\"):time (d /date-entity:year 2021))"
+  },
+  {
+    "sentence": "थंय 800 स्टॉल्सआसात आनी बाजार सप्तकांत 1,00,000 वयर लोकांक आकृश्ट करता.",
+    "gold_amr": "(a / and :op1 (e / exist-01 :ARG1 (s / stall :quant 800) :location (t / there)) :op2 (a2 / attract-01 :ARG0 (b / market) :ARG1 (p / person :quant (m / more :op1 100000)) :frequency (t2 / temporal-quantity :unit (w / week) :quant 1)))",
+    "model_output_linearized": "<AMR> ( (a /attract-01:ARG0 (p / person:quant (m / more-than:op1 8)):ARG1 (p2 / person:quant (m2 / more-than:op1 8)):location (a2 / and:op1 (s / store:quant 800:mod (s2 / small)):op2 (s3 / market:quant (m3 / more-than:op1 100000)))",
+    "model_output_penman": "( (a /attract-01:ARG0 (p / person:quant (m / more-than:op1 8)):ARG1 (p2 / person:quant (m2 / more-than:op1 8)):location (a2 / and:op1 (s / store:quant 800:mod (s2 / small)):op2 (s3 / market:quant (m3 / more-than:op1 100000)))))"
+  },
+  {
+    "sentence": "ह्या न्हयकाराक लागून अकबरान एक औपचारीक फर्मान जारी करून शहजादा सलीम हाका प्रस्तावीत मोहिमेच्या हुकुमाचेर नेमणूक करपाक सुरवात केली.",
+    "gold_amr": "(b / begin-01\n   :ARG0 (a / person :name (n / name :op1 \"Akbar\"))\n   :ARG1 (a2 / appoint-01\n            :ARG0 a\n            :ARG1 (s / person\n                     :name (n2 / name :op1 \"Salim\")\n                     :title \"prince\")\n            :ARG2 (c / command\n                     :topic (c2 / campaign\n                               :ARG1-of (p / propose-01))))\n   :cause (r / refuse-01)\n   :manner (i / issue-01\n              :ARG0 a\n              :ARG1 (d / decree\n                       :mod (f / formal))))",
+    "model_output_linearized": "<AMR> ( (f /issue-01:ARG0 (p / person:name (n / name:op1 \"Ahmed\":op2 \"Kazaji\"):wiki \"Ahmed_Kazaji\"):ARG1 (f2 / foam-01:ARG0 (p2 / person:name (n2 / name:op1 \"Ahmed\":op2 \"Kazaji\"):wiki \"Ahmed_Kazaji\"):ARG1 (m / money):ARG2 (c / country:name (n3 / name:op1 \"Muhammad\":op2 \"Sykes\"):wiki \"Muhammad_Sykes\":name (n4 / name:op1 \"Muhammad\":op2 \"Sykes\"):wiki \"Muhammad_Sykes\":ARG1-of (p3 /propose-01:ARG0 p2))))",
+    "model_output_penman": "( (f /issue-01:ARG0 (p / person:name (n / name:op1 \"Ahmed\":op2 \"Kazaji\"):wiki \"Ahmed_Kazaji\"):ARG1 (f2 / foam-01:ARG0 (p2 / person:name (n2 / name:op1 \"Ahmed\":op2 \"Kazaji\"):wiki \"Ahmed_Kazaji\"):ARG1 (m / money):ARG2 (c / country:name (n3 / name:op1 \"Muhammad\":op2 \"Sykes\"):wiki \"Muhammad_Sykes\":name (n4 / name:op1 \"Muhammad\":op2 \"Sykes\"):wiki \"Muhammad_Sykes\":ARG1-of (p3 /propose-01:ARG0 p2)))))"
+  },
+  {
+    "sentence": "एके सामान्य व्यक्तीकडेन लग्न केलें म्हूण जपानी कायद्याप्रमाण तिका राजघराण्यांतल्यान काडून उडयली.",
+    "gold_amr": "(e / expel-01 :ARG1 (s / she) :ARG2 (f / family :mod (r / royal)) :manner (l / law :mod (c / country :name (n / name :op1 \"Japan\"))) :cause (m / marry-01 :ARG0 s :ARG1 (p / person :mod (c2 / common))))",
+    "model_output_linearized": "<AMR> ( (p /possible-01:ARG1 (d / drought-01:ARG0 (p2 / person):ARG1 (p3 / person:name (n / name:op1 \"Jain\")):time (n2 /marry-01:ARG0 p2:ARG1 (p4 / person:mod (c / common))))",
+    "model_output_penman": "( (p /possible-01:ARG1 (d / drought-01:ARG0 (p2 / person):ARG1 (p3 / person:name (n / name:op1 \"Jain\")):time (n2 /marry-01:ARG0 p2:ARG1 (p4 / person:mod (c / common))))))"
+  },
+  {
+    "sentence": "19 व्या शेंकड्यांत मॅजी पुनर्स्थापनेमेरेन जपानी सामान्य लोकांचीं आडनांवां नासतालीं.",
+    "gold_amr": "(h / have-03\n   :polarity -\n   :ARG0 (p / person\n            :mod (c / common)\n            :mod (c2 / country :name (n / name :op1 \"Japan\")))\n   :ARG1 (s / surname)\n   :time (b / before\n            :op1 (r / restoration\n                    :wiki \"Meiji_Restoration\"\n                    :name (n2 / name :op1 \"Meiji\")\n                    :time (d / date-entity\n                             :century 19))))",
+    "model_output_linearized": "<AMR> ( (i /include-01:ARG1 (p / person:mod (c / common):mod (j / jain):location (c2 / country:name (n / name:op1 \"Nepal\"):wiki \"Nepal\"))):ARG2 (p2 / place:name (n2 / name:op1 \"Nepal\"):wiki \"Nepal\":location (c3 / country:name (n3 / name:op1 \"Nepal\"):wiki \"Nepal\":name (n4 / name:op1 \"Nepal\"):wiki \"Nepal\":name (n5 / name:op1 \"Nepal\"):wiki \"Nepal\":mod (c4 / country:name (n6 / name:op1 \"Nepal\"):wiki \"Nepal\":name (n7 / name:op1 \"Nepal\"):wiki \"Nepal\":mod (c5 / country:name (n7 / name:op1 \"Nepal\"):wiki \"Nepal\":name (n8 / name:op1 \"Nepal\"):wiki \"Nepal\")):ARG2 (c6 / country:name (n9 / name:op1 \"Nepal\"):wiki \"Nepal\":name (n10 / name:op1 \"Nepal\"):wiki \"Nepal\")))",
+    "model_output_penman": "( (i /include-01:ARG1 (p / person:mod (c / common):mod (j / jain):location (c2 / country:name (n / name:op1 \"Nepal\"):wiki \"Nepal\"))):ARG2 (p2 / place:name (n2 / name:op1 \"Nepal\"):wiki \"Nepal\":location (c3 / country:name (n3 / name:op1 \"Nepal\"):wiki \"Nepal\":name (n4 / name:op1 \"Nepal\"):wiki \"Nepal\":name (n5 / name:op1 \"Nepal\"):wiki \"Nepal\":mod (c4 / country:name (n6 / name:op1 \"Nepal\"):wiki \"Nepal\":name (n7 / name:op1 \"Nepal\"):wiki \"Nepal\":mod (c5 / country:name (n7 / name:op1 \"Nepal\"):wiki \"Nepal\":name (n8 / name:op1 \"Nepal\"):wiki \"Nepal\")):ARG2 (c6 / country:name (n9 / name:op1 \"Nepal\"):wiki \"Nepal\":name (n10 / name:op1 \"Nepal\"):wiki \"Nepal\"))))"
+  },
+  {
+    "sentence": "पुजारी अथर्ववेदांतलो एक मंत्र म्हणटा.",
+    "gold_amr": "(r / recite-01\n   :ARG0 (p / priest)\n   :ARG1 (m / mantra\n      :source (b / book\n         :name (n / name :op1 \"Atharvaveda\")\n         :wiki \"Atharvaveda\")))",
+    "model_output_linearized": "<AMR> ( (m / मंत्र:ARG1-of (r /receive-01:ARG0 (p / book:name (n / name:op1 \"Paragua\"):wiki \"Paragua\")))",
+    "model_output_penman": "( (m / मंत्र:ARG1-of (r /receive-01:ARG0 (p / book:name (n / name:op1 \"Paragua\"):wiki \"Paragua\"))))"
+  },
+  {
+    "sentence": "ह्या कबलातींत सात वर्सांचें 7 टक्के समर्पण शुल्क आसा (जें शून्या मेरेन पावसर वर्सुकी 1 टक्क्यान देंवता).",
+    "gold_amr": "(i / include-01 :ARG1 (c / contract :mod (t / this)) :ARG2 (c2 / charge :topic (s / surrender-01) :quant (p / percentage-entity :value 7) :duration (d / temporal-quantity :quant 7 :unit (y / year)) :ARG1-of (d2 / decrease-01 :ARG2 (p2 / percentage-entity :value 1) :frequency (a / annual) :time (r / reach-01 :ARG0 c2 :ARG1 (z / zero)))))",
+    "model_output_linearized": "<AMR> ( (a / and:op1 (p /pay-01:ARG1 (m /monetary-quantity:quant 7:unit (r / rupee)):ARG2 (c / currency:name (n / name:op1 \"Portugal\":op2 \"Portugal\":op3 \"Force\")):ARG3 (m2 /monetary-quantity:quant 1:unit (t / tax)):location (c2 / country:name (n2 / name:op1 \"America\"):mod (t2 / this))):op2 (p2 /provide-01:ARG1 (t3 / tax:quant 1:unit (t4 / tax)):ARG2 m2))",
+    "model_output_penman": "( (a / and:op1 (p /pay-01:ARG1 (m /monetary-quantity:quant 7:unit (r / rupee)):ARG2 (c / currency:name (n / name:op1 \"Portugal\":op2 \"Portugal\":op3 \"Force\")):ARG3 (m2 /monetary-quantity:quant 1:unit (t / tax)):location (c2 / country:name (n2 / name:op1 \"America\"):mod (t2 / this))):op2 (p2 /provide-01:ARG1 (t3 / tax:quant 1:unit (t4 / tax)):ARG2 m2)))"
+  },
+  {
+    "sentence": "कोयर उडोवप्यांचेर पंचायतीन खर कारवाय करची, अशी थळाव्या लोकांचें म्हणणें आसा",
+    "gold_amr": "(d / demand-01\n   :ARG0 (p / person\n            :mod (l / local))\n   :ARG1 (o / obligate-01\n            :ARG2 (a / act-02\n                     :ARG0 (p2 / panchayat)\n                     :ARG1 (p3 / person\n                              :ARG0-of (d2 / dump-01\n                                          :ARG1 (g / garbage)))\n                     :manner (s / strict))))",
+    "model_output_linearized": "<AMR> ( (a / and:op1 (p /provide-01:ARG0 (p2 / person):ARG1 (g / grant):ARG2 (p3 / parliament:ARG0-of (g2 /govern-01:ARG1 (c / council)))):op2 (p4 /provide-01:ARG0 p:ARG1 g:ARG2 (p5 / person:mod (l / local)):manner (g3 / general)))",
+    "model_output_penman": "( (a / and:op1 (p /provide-01:ARG0 (p2 / person):ARG1 (g / grant):ARG2 (p3 / parliament:ARG0-of (g2 /govern-01:ARG1 (c / council)))):op2 (p4 /provide-01:ARG0 p:ARG1 g:ARG2 (p5 / person:mod (l / local)):manner (g3 / general))))"
+  },
+  {
+    "sentence": "केंद्र सरकाराच्या आदेशा प्रमाण गोंयांत येरादारी नेमांची अंमलबजावणी करचीच पडटली",
+    "gold_amr": "(o / obligate-01\n   :ARG1 (i / implement-01\n            :ARG1 (r / rule\n                     :mod (t / traffic))\n            :location (s / state\n                         :name (n / name :op1 \"Goa\")))\n   :cause (o2 / order-01\n             :ARG0 (g / government\n                      :mod (c / center))))",
+    "model_output_linearized": "<AMR> (r /require-01:mode imperative:ARG0 (y / you):ARG1 (i / information:topic (o /acquire-01:ARG1 (i2 / identity:poss y))):ARG2 (g / government:mod (c / center)):manner (o2 /order-01:ARG0 g))",
+    "model_output_penman": "(r /require-01:mode imperative:ARG0 (y / you):ARG1 (i / information:topic (o /acquire-01:ARG1 (i2 / identity:poss y))):ARG2 (g / government:mod (c / center)):manner (o2 /order-01:ARG0 g))"
+  },
+  {
+    "sentence": "गांधीन दांडी मीठ मार्चांक सुरवात करतना, पटेलाक रास गांवांत अटक करून ताचेर साक्षीदार नासतना खटलो चलोवपाक लागले, खंयच्याच वकीलाक वा पत्रकारांक हाजीर रावपाक मेळनाशिल्लें.",
+    "gold_amr": "(c / and :op1 (a / arrest-01 :ARG1 (p / person :wiki \"Vallabhbhai_Patel\" :name (n / name :op1 \"Patel\")) :location (v / village :name (n2 / name :op1 \"Ras\"))) :op2 (t / try-01 :ARG1 p :accompanier (w / witness :polarity -)) :op3 (p2 / permit-01 :polarity - :ARG1 (p3 / present-01 :ARG0 (p4 / person :role (o / or :op1 (l / lawyer) :op2 (j / journalist))))) :time (s / start-01 :ARG0 (g / person :wiki \"Mahatma_Gandhi\" :name (n3 / name :op1 \"Gandhi\")) :ARG1 (m / march-01 :wiki \"Salt_March\" :name (n4 / name :op1 \"Dandi\" :op2 \"Salt\" :op3 \"March\"))))",
+    "model_output_linearized": "<AMR> ( (a / and:op1 (s /start-01:ARG0 (p / person:name (n / name:op1 \"Bahadur\":op2 \"Gandhi\"):wiki \"Bahadur_Gandhi\"):ARG1 (d / festival:name (n2 / name:op1 \"Girgaon\"):wiki \"Girgaon\"):time (d2 /date-entity:name (n3 / name:op1 \"Girgaon\"):wiki \"Girgaon\")):op2 (s2 /send-01:ARG0 p:ARG1 (p2 / person:name (n4 / name:op1 \"Bahadur\":op2 \"Gandhi\"):wiki \"Bahadur_Gandhi\"):ARG2 (o / or:op1 (p3 / lawyer):op2 (p4 / person:mod (o2 / other))):purpose (r /report-01:ARG0 p:ARG1 p))",
+    "model_output_penman": "( (a / and:op1 (s /start-01:ARG0 (p / person:name (n / name:op1 \"Bahadur\":op2 \"Gandhi\"):wiki \"Bahadur_Gandhi\"):ARG1 (d / festival:name (n2 / name:op1 \"Girgaon\"):wiki \"Girgaon\"):time (d2 /date-entity:name (n3 / name:op1 \"Girgaon\"):wiki \"Girgaon\")):op2 (s2 /send-01:ARG0 p:ARG1 (p2 / person:name (n4 / name:op1 \"Bahadur\":op2 \"Gandhi\"):wiki \"Bahadur_Gandhi\"):ARG2 (o / or:op1 (p3 / lawyer):op2 (p4 / person:mod (o2 / other))):purpose (r /report-01:ARG0 p:ARG1 p))))"
+  },
+  {
+    "sentence": "2008 वर्सा घेतकीर तो क्लब संवसारांतलो  सगळ्यांत गिरेस्त जालो.",
+    "gold_amr": "(b / become-01\n   :ARG1 (c / club)\n   :ARG2 (r / rich\n            :degree (s / superlative\n                       :domain (w / world)))\n   :time (a / after\n            :op1 (t / take-over-01\n                     :ARG1 c\n                     :time (d / date-entity :year 2008))))",
+    "model_output_linearized": "<AMR> ( (g /become-01:ARG1 (c / club):ARG2 (g2 /grow-01:ARG1 c):location (c2 / committee:part-of (c3 / club)):time (d /date-entity:year 2008))",
+    "model_output_penman": "( (g /become-01:ARG1 (c / club):ARG2 (g2 /grow-01:ARG1 c):location (c2 / committee:part-of (c3 / club)):time (d /date-entity:year 2008)))"
+  },
+  {
+    "sentence": "एक धंय वडो सुबेज मागतालो तो भुरगो रातच्या जेवणाक, पूण दिलें ना त्या बाबड्याक.",
+    "gold_amr": "(c / contrast-01 :op1 (r / request-01 :ARG0 (b / boy :mod (p / poor)) :ARG1 (d / dahi-vada :quant 1) :purpose (d2 / dinner) :degree (a / a-lot)) :op2 (g / give-01 :polarity - :ARG1 d :ARG2 b))",
+    "model_output_linearized": "<AMR> ( (c /contrast-01:op1 (h /help-01:ARG0 (p / person:name (n / name:op1 \"Bachchan\"):wiki \"Bachchan\"):ARG1 (p2 / person:name (n2 / name:op1 \"Bachchan\"):wiki \"Bachchan\"):time (n3 / tonight)):op2 (p3 /protect-01:ARG0 p:ARG1 (p4 / person:name (n / name:op1 \"Bachchan\"):wiki \"Bachchan\")))",
+    "model_output_penman": "( (c /contrast-01:op1 (h /help-01:ARG0 (p / person:name (n / name:op1 \"Bachchan\"):wiki \"Bachchan\"):ARG1 (p2 / person:name (n2 / name:op1 \"Bachchan\"):wiki \"Bachchan\"):time (n3 / tonight)):op2 (p3 /protect-01:ARG0 p:ARG1 (p4 / person:name (n / name:op1 \"Bachchan\"):wiki \"Bachchan\"))))"
+  },
+  {
+    "sentence": "आदीं, भुरग्यांचे सुरक्षेविशीं खूब जागृत आसात हें दाखोवपाखातीर वाहन चालकांनी दीसभर गाडयेच्यो लायटी पेटोवन दवरच्यो असो आवंडो आसतालो.",
+    "gold_amr": "(r / recommend-01\n   :time (p / past)\n   :ARG1 (o / obligate-01\n            :ARG1 (d / driver\n                     :mod (v / vehicle))\n            :ARG2 (k / keep-01\n                     :ARG0 d\n                     :ARG1 (l / light\n                              :poss v)\n                     :ARG2 (o2 / on)\n                     :duration (d2 / day))\n            :purpose (s / show-01\n                        :ARG0 d\n                        :ARG1 (a / aware-01\n                                 :ARG0 d\n                                 :ARG1 (s2 / safe-01\n                                          :ARG1 (c / child))\n                                 :degree (v2 / very)))))",
+    "model_output_linearized": "<AMR> ( (c /convince-01:ARG1 (p / person:ARG0-of (p2 / conductor-01:ARG1 (v / vehicle))):ARG2 (b / battery:mod (s / smart-01):ARG0-of (b2 / battery:mod (s2 / sunshine))):degree (v2 / very):location (c2 / city:name (n / name:op1 \"Champaign\":op2 \"Champaign\"):wiki \"Champaign_Champaign\":name (n2 / name:op1 \"Champaign\":op2 \"Champaign\"):wiki \"Champaign_Champaign_Champaign\")))",
+    "model_output_penman": "( (c /convince-01:ARG1 (p / person:ARG0-of (p2 / conductor-01:ARG1 (v / vehicle))):ARG2 (b / battery:mod (s / smart-01):ARG0-of (b2 / battery:mod (s2 / sunshine))):degree (v2 / very):location (c2 / city:name (n / name:op1 \"Champaign\":op2 \"Champaign\"):wiki \"Champaign_Champaign\":name (n2 / name:op1 \"Champaign\":op2 \"Champaign\"):wiki \"Champaign_Champaign_Champaign\")))"
+  },
+  {
+    "sentence": "पुनर्रचणूक 31 ऑक्टोबर 2019 सावन लागू जाली.",
+    "gold_amr": "(t / take-effect-01 :ARG1 (r / reorganize-01) :time (d / date-entity :day 31 :month 10 :year 2019))",
+    "model_output_linearized": "<AMR> (r /rule-01:ARG1 (r2 / reincorporate-01):time (d /date-entity:day 31:month 10:year 2019))",
+    "model_output_penman": "(r /rule-01:ARG1 (r2 / reincorporate-01):time (d /date-entity:day 31:month 10:year 2019))"
+  },
+  {
+    "sentence": "एकुणिसाव्या शेंकड्याच्या पयल्या अर्दांत ऑस्ट्रेलियांतल्या वेगवेगळ्या वाठारांनी ‘फुट-बॉल’ खेळ खेळटाले हाचे अभिलेखीय पुरावे मेळ्ळ्यात.",
+    "gold_amr": "(f / find-01\n      :ARG1 (e / evidence\n            :mod (a / archive-01)\n            :topic (p / play-01\n                  :ARG0 (p2 / person)\n                  :ARG1 (g / game\n                        :name (n / name :op1 \"foot-ball\"))\n                  :location (r / region\n                        :mod (v / vary-01)\n                        :part-of (c / country\n                              :name (n2 / name :op1 \"Australia\")))\n                  :time (h / half\n                        :mod (o / order-01\n                              :value 1)\n                        :part-of (c2 / century\n                              :value 19)))))",
+    "model_output_linearized": "<AMR> ( (g / game:name (n / name:op1 \"football\"):wiki \"football\":mod (r / recreational):ARG1-of (r2 / recreate-01:location (c / country:name (n2 / name:op1 \"Australia\"):wiki \"Australia\"):time (a / after:op1 (w / war:name (n3 / name:op1 \"World\":op2 \"War\":op3 \"II\"):wiki \"World_War_II\"):location (c2 / country:name (n4 / name:op1 \"England\"):wiki \"England\")))",
+    "model_output_penman": "( (g / game:name (n / name:op1 \"football\"):wiki \"football\":mod (r / recreational):ARG1-of (r2 / recreate-01:location (c / country:name (n2 / name:op1 \"Australia\"):wiki \"Australia\"):time (a / after:op1 (w / war:name (n3 / name:op1 \"World\":op2 \"War\":op3 \"II\"):wiki \"World_War_II\"):location (c2 / country:name (n4 / name:op1 \"England\"):wiki \"England\")))))"
+  },
+  {
+    "sentence": "मरणाचें कारण अजून निश्चीत ना, पूण आयज जाता तितले बेगीन शवचिकित्सा जावं येता अशें अधिकाऱ्यांनी सांगलें.",
+    "gold_amr": "(c3 / contrast-01\n   :op1 (d2 / determine-01\n           :polarity -\n           :ARG1 (c / cause-01\n                    :ARG1 (d / die-01))\n           :time (y / yet))\n   :op2 (s / say-01\n           :ARG0 (o / official)\n           :ARG1 (p / possible-01\n                    :ARG1 (p2 / perform-01\n                             :ARG1 (a / autopsy)\n                             :time (t / today)\n                             :manner (s2 / soon\n                                        :degree (s3 / superlative))))))",
+    "model_output_linearized": "<AMR> ( (a / and:op1 (p /possible-01:polarity -:ARG1 (c /cause-01:ARG0 (p2 / person:name (n / name:op1 \"Mughal\")):ARG1 (c2 / crematorium)):polarity -):op2 (p3 /possible-01:ARG1 (d /die-01:ARG1 p2:manner (a2 / and:op1 (p4 / voluntary):op2 (p5 / voluntary)))))",
+    "model_output_penman": "( (a / and:op1 (p /possible-01:polarity -:ARG1 (c /cause-01:ARG0 (p2 / person:name (n / name:op1 \"Mughal\")):ARG1 (c2 / crematorium)):polarity -):op2 (p3 /possible-01:ARG1 (d /die-01:ARG1 p2:manner (a2 / and:op1 (p4 / voluntary):op2 (p5 / voluntary))))))"
+  },
+  {
+    "sentence": "अमेरिकेच्या पुराय इतिहासांत फाशी दिवपाच्या वेगवेगळ्या पद्दतींचो उपेग जाला.",
+    "gold_amr": "(u / use-01 :ARG1 (m / method :mod (d / different) :purpose (e / execute-01)) :location (h / history :mod (e2 / entire) :poss (c / country :name (n / name :op1 \"United States\") :wiki \"United_States\")))",
+    "model_output_linearized": "<AMR> ( (b / be-01:ARG1 (p / person:name (n / name:op1 \"Pierre\"):ARG0-of (d / father-01:ARG1 (p2 / person:name (n2 / name:op1 \"Fasci\"))))):ARG2 (a / history:mod (c / पुराal):location (c2 / country:name (n3 / name:op1 \"America\"):wiki \"America\")))",
+    "model_output_penman": "( (b / be-01:ARG1 (p / person:name (n / name:op1 \"Pierre\"):ARG0-of (d / father-01:ARG1 (p2 / person:name (n2 / name:op1 \"Fasci\"))))):ARG2 (a / history:mod (c / पुराal):location (c2 / country:name (n3 / name:op1 \"America\"):wiki \"America\")))"
+  },
+  {
+    "sentence": "त्याच वर्सा पयलीं प्रदर्शीत जाल्ल्या येन्नवळे ह्या सिनेमांतल्यान तिणें तमिळ चित्रपटांत पदार्पण केलें, थंय तिणें आर. माधवनाची जोडिदार म्हूण अभिनय केलो.",
+    "gold_amr": "(d / debut-01\n   :ARG0 (s / she)\n   :ARG1 (c / cinema\n             :mod (t / thing\n                      :name (n / name :op1 \"Tamil\")))\n   :time (y / year\n             :mod (s2 / same))\n   :medium (f / film\n               :name (n2 / name :op1 \"Yennavale\")\n               :ARG1-of (r / release-01\n                          :time (b / before :op1 d))\n               :location-of (a / act-01\n                              :ARG0 s\n                              :ARG1 (p2 / partner\n                                        :poss (p / person\n                                                  :name (n3 / name :op1 \"R.\" :op2 \"Madhavan\"))))))",
+    "model_output_linearized": "<AMR> ( (a / and:op1 (p /perform-01:ARG0 (p2 / person):ARG1 (p3 / role):location (f / film:name (n / name:op1 \"Tamil\":op2 \"Film\"):ARG1-of (p4 /publish-01:time (p5 / period:name (n2 / name:op1 \"October\":op2 \"Panchami\")):time (p5 / period:name (n3 / name:op1 \"October\":op2 \"Panchami\")):time (p6 / period:name (n4 / name:op1 \"Prime\":op2 \"Panchami\"))))):op2 (a2 /act-01:ARG0 p2:ARG1 (a3 / and:op1 (p3 / person:name (n5 / name:op1 \"R. माधव\")):op2 (p4 / person:name (n6 / name:op1 \"R.\":op2 \"Pakan\")):op3 (p5 / producer:name (n7 / name:op1 \"R.\":op2 \"Pakan\")))))",
+    "model_output_penman": "( (a / and:op1 (p /perform-01:ARG0 (p2 / person):ARG1 (p3 / role):location (f / film:name (n / name:op1 \"Tamil\":op2 \"Film\"):ARG1-of (p4 /publish-01:time (p5 / period:name (n2 / name:op1 \"October\":op2 \"Panchami\")):time (p5 / period:name (n3 / name:op1 \"October\":op2 \"Panchami\")):time (p6 / period:name (n4 / name:op1 \"Prime\":op2 \"Panchami\"))))):op2 (a2 /act-01:ARG0 p2:ARG1 (a3 / and:op1 (p3 / person:name (n5 / name:op1 \"R. माधव\")):op2 (p4 / person:name (n6 / name:op1 \"R.\":op2 \"Pakan\")):op3 (p5 / producer:name (n7 / name:op1 \"R.\":op2 \"Pakan\"))))))"
+  },
+  {
+    "sentence": "बॅर्न  बॅर्न ही उत्तर फ्रान्साच्या नॉर्डांतली  एक गांवसंस्था.",
+    "gold_amr": "(c / commune\n   :name (n / name :op1 \"Bairn Bairn\")\n   :location (d / department\n                 :name (n2 / name :op1 \"Nord\")\n                 :part-of (r / region\n                              :name (n3 / name :op1 \"North France\"))))",
+    "model_output_linearized": "<AMR> ( (c / municipality:name (n / name:op1 \"Berronbon\"):wiki \"Berronbon\"):location (r / region:name (n2 / name:op1 \"Northern\":op2 \"Pradesh\"):wiki \"Northern_Pradesh\":part-of (c2 / country-region:name (n3 / name:op1 \"Northern\":op2 \"Pradesh\"))))",
+    "model_output_penman": "( (c / municipality:name (n / name:op1 \"Berronbon\"):wiki \"Berronbon\"):location (r / region:name (n2 / name:op1 \"Northern\":op2 \"Pradesh\"):wiki \"Northern_Pradesh\":part-of (c2 / country-region:name (n3 / name:op1 \"Northern\":op2 \"Pradesh\"))))"
+  },
+  {
+    "sentence": "वेवस्थापन विधानांचे पुनरिक्षण स्वतंत्र सी.पी.ए. कडल्यान जायना.",
+    "gold_amr": "(r / review-01\n   :polarity -\n   :ARG0 (c / cpa\n      :mod (i / independent))\n   :ARG1 (s / statement\n      :mod (m / manage-01)))",
+    "model_output_linearized": "<AMR> ( (p /possible-01:ARG1 (r /release-01:ARG0 (c / country:name (n / name:op1 \"C.P.A.\"):wiki \"C.P.A.\":location (r2 /rule-01:ARG1 (e /elect-01 )))))",
+    "model_output_penman": "( (p /possible-01:ARG1 (r /release-01:ARG0 (c / country:name (n / name:op1 \"C.P.A.\"):wiki \"C.P.A.\":location (r2 /rule-01:ARG1 (e /elect-01 ))))))"
+  },
+  {
+    "sentence": "ह्या विमानाचो वापर हवाई तळांतल्यान वा विमानवाहक  झुजा-तारवांतल्यान करूंक मेळटा.",
+    "gold_amr": "(p / possible-01\n   :ARG1 (u / use-01\n      :ARG1 (a / airplane\n         :mod (t / this))\n      :source (o / or\n         :op1 (a2 / airport)\n         :op2 (c / aircraft-carrier))))",
+    "model_output_linearized": "<AMR> ( (p /possible-01:ARG1 (o / or:op1 (u /use-01:ARG0 (p2 / passenger:mod (t / this)):ARG1 (p3 / plane:mod (t2 / this))):op2 (u2 /use-01:ARG0 p:ARG1 (p4 / plane:mod (t3 / this)):purpose (o2 /use-01:ARG0 p:ARG1 p2)))",
+    "model_output_penman": "( (p /possible-01:ARG1 (o / or:op1 (u /use-01:ARG0 (p2 / passenger:mod (t / this)):ARG1 (p3 / plane:mod (t2 / this))):op2 (u2 /use-01:ARG0 p:ARG1 (p4 / plane:mod (t3 / this)):purpose (o2 /use-01:ARG0 p:ARG1 p2)))))"
+  },
+  {
+    "sentence": "रिणा दिवपी तुकां पयशे दिता आनी तुमी ते फारीक करपाचे तारखे मेरेन वा व्याजा वांगडा फारीक करपाची अपेक्षा दवरता, जी एक जोड टक्केवारी आसता, हेंच रीण अशें स्पश्ट कर.",
+    "gold_amr": "(c / clarify-01\n   :mode imperative\n   :ARG0 (y / you)\n   :ARG1 (a / and\n      :op1 (g / give-01\n         :ARG0 (l / lender)\n         :ARG1 (m / money)\n         :ARG2 (p / person))\n      :op2 (e / expect-01\n         :ARG0 l\n         :ARG1 (r / repay-01\n            :ARG0 p\n            :ARG1 m\n            :time (t / before\n               :op1 (d / date-entity\n                  :name (n / name\n                     :op1 \"repayment\"\n                     :op2 \"date\")))\n            :accompanier (i / interest\n               :ARG1-of (b / be-01\n                  :ARG2 (p2 / percentage-entity\n                     :mod (a / add-02)))))))\n   :ARG2 (l2 / loan))",
+    "model_output_linearized": "<AMR> ( (a / and:op1 (a2 / and:op1 (p /provide-01:ARG0 (y / you):ARG1 (i / information:mod (f / fast)):ARG2 y):op2 (p2 /possible-01:ARG1 (i2 /increase-01:ARG0 y:ARG1 (o / or:op1 (p3 / portfolio:poss y):op2 (p4 / portfolio:poss y)):purpose (o2 / or:op1 (r /research-01:ARG0 y:ARG1 (t / this)):op2 (p5 /possible-01:ARG1 (r2 /rise-01:ARG0 y:ARG1 (t2 / this))))):op2 (p6 /possible-01:ARG1 (s /score-01:ARG0 y:ARG1 t3 / thing:quant (m / multiple):degree (m2 / more-than:op1 1)))))",
+    "model_output_penman": "( (a / and:op1 (a2 / and:op1 (p /provide-01:ARG0 (y / you):ARG1 (i / information:mod (f / fast)):ARG2 y):op2 (p2 /possible-01:ARG1 (i2 /increase-01:ARG0 y:ARG1 (o / or:op1 (p3 / portfolio:poss y):op2 (p4 / portfolio:poss y)):purpose (o2 / or:op1 (r /research-01:ARG0 y:ARG1 (t / this)):op2 (p5 /possible-01:ARG1 (r2 /rise-01:ARG0 y:ARG1 (t2 / this))))):op2 (p6 /possible-01:ARG1 (s /score-01:ARG0 y:ARG1 t3 / thing:quant (m / multiple):degree (m2 / more-than:op1 1)))))))"
+  },
+  {
+    "sentence": "सादारणपणान हें घडटा कारण ही रचणूक अजूनय वाडत आसा आनी तयार जायत आसा अशें मानतात.",
+    "gold_amr": "(h / happen-01\n   :ARG1 (t / this)\n   :manner (g / general)\n   :cause (b / believe-01\n             :ARG1 (a / and\n                      :time (s2 / still)\n                      :op1 (g2 / grow-01\n                              :ARG1 (s / structure))\n                      :op2 (f / form-01\n                              :ARG1 s))))",
+    "model_output_linearized": "<AMR> ( (p /believe-01:ARG0 (p2 / person):ARG1 (p3 /possible-01:ARG1 (a / and:op1 (r /receive-01:ARG0 (p / person):ARG1 (a2 / and:op1 (w / wind):op2 (w2 / water)):manner (c /cause-01:ARG0 (t / this):ARG1 (c2 /collapse-01:ARG1 (r2 / storm)))))",
+    "model_output_penman": "( (p /believe-01:ARG0 (p2 / person):ARG1 (p3 /possible-01:ARG1 (a / and:op1 (r /receive-01:ARG0 (p / person):ARG1 (a2 / and:op1 (w / wind):op2 (w2 / water)):manner (c /cause-01:ARG0 (t / this):ARG1 (c2 /collapse-01:ARG1 (r2 / storm))))))))"
+  },
+  {
+    "sentence": "आदीं थंड हवामान आसून लेगीत ऑस्ट्रेलियांतल्या न्यू सावथ वेल्सांत उश्ण ल्हारांची परिस्थिती परतून सुरू जावपाची शक्यताय आसा.",
+    "gold_amr": "(p / possible-01\n   :ARG1 (s / start-01\n             :ARG1 (s2 / situation\n                         :mod (w / wave\n                                  :mod (h / heat-01)))\n             :mod (a / again)\n             :location (s3 / state :wiki \"New_South_Wales\"\n                           :name (n / name :op1 \"New\" :op2 \"South\" :op3 \"Wales\")\n                           :part-of (c / country :wiki \"Australia\"\n                                        :name (n2 / name :op1 \"Australia\"))))\n   :concession (e / exist-01\n                   :ARG1 (w2 / weather\n                               :mod (c2 / cold-01))\n                   :time (b / before\n                             :op1 (n3 / now))))",
+    "model_output_linearized": "<AMR> ( (p /possible-01:ARG1 (p2 /start-01:ARG1 (s / storm):location (s2 / state:wiki \"New South Wales\":name (n / name:op1 \"New\":op2 \"South\":op3 \" Wales\"):part-of (c / country:wiki \"Australia\":name (n2 / name:op1 \"Australia\")):location (s3 / state:wiki \"New South Wales\":name (n3 / name:op1 \"New\":op2 \"South\":op3 \" Wales\")))))",
+    "model_output_penman": "( (p /possible-01:ARG1 (p2 /start-01:ARG1 (s / storm):location (s2 / state:wiki \"New South Wales\":name (n / name:op1 \"New\":op2 \"South\":op3 \" Wales\"):part-of (c / country:wiki \"Australia\":name (n2 / name:op1 \"Australia\")):location (s3 / state:wiki \"New South Wales\":name (n3 / name:op1 \"New\":op2 \"South\":op3 \" Wales\"))))))"
+  },
+  {
+    "sentence": "एम्ट्रॅक एम्ट्रॅक ही अमेरिकेंतली एक प्रवासी रेल्वे कंपनी आसा.",
+    "gold_amr": "(c / company :name (n / name :op1 \"Amtrak\") :wiki \"Amtrak\" :location (c2 / country :name (n2 / name :op1 \"America\") :wiki \"United_States\") :ARG0-of (t / transport-01 :ARG1 (p / passenger) :medium (r / railway)))",
+    "model_output_linearized": "<AMR> (a / airport:name (n / name:op1 \"Airline\":op2 \"Amarau\"):wiki \"Airline_Amarau\"):location (r / region:name (n2 / name:op1 \"America\"):wiki \"America\"):mod (r2 / region):domain a)",
+    "model_output_penman": "(a / airport:name (n / name:op1 \"Airline\":op2 \"Amarau\"):wiki \"Airline_Amarau\"):location (r / region:name (n2 / name:op1 \"America\"):wiki \"America\"):mod (r2 / region):domain a)"
+  },
+  {
+    "sentence": "ह्या समुदायाचे नांव फ्रेंच जनरल फ्रँकोइस अचिले बाझाईन हांच्या नांवा वेल्यान दवरिल्ले.",
+    "gold_amr": "(d / derive-01 :ARG1 (n / name :poss (c / community :mod (t / this))) :ARG2 (n2 / name :poss (p / person :wiki \"François_Achille_Bazaine\" :name (n3 / name :op1 \"François\" :op2 \"Achille\" :op3 \"Bazaine\") :title (g / general) :mod (f / french))))",
+    "model_output_linearized": "<AMR> ( (p / person:name (n / name:op1 \"Bradlin\"):wiki \"Bradlin\":op2 \"Bradlin\":op3 \"Bradlin\"):ARG0-of (h /have-org-role-91:ARG1 (c / community:mod (t / this)):ARG2 (g / general:mod (c2 / country:name (n2 / name:op1 \"France\"))))",
+    "model_output_penman": "( (p / person:name (n / name:op1 \"Bradlin\"):wiki \"Bradlin\":op2 \"Bradlin\":op3 \"Bradlin\"):ARG0-of (h /have-org-role-91:ARG1 (c / community:mod (t / this)):ARG2 (g / general:mod (c2 / country:name (n2 / name:op1 \"France\")))))"
+  },
+  {
+    "sentence": "वास्तव जिणेंत मरण आडावपी मनशाक पड्ड्याचेर मारप अयोग्य आसतलें अशें देसायक दिसलें.",
+    "gold_amr": "(t / think-01\n   :ARG0 (p / person :name (n / name :op1 \"Desai\"))\n   :ARG1 (i / inappropriate-01\n            :mode hypothetical\n            :ARG1 (k / kill-01\n                     :ARG1 (p2 / person\n                               :ARG0-of (p3 / prevent-01\n                                          :ARG1 (d / death)\n                                          :location (l / life\n                                                       :mod (r / real-01))))\n                     :location (s / screen))))",
+    "model_output_linearized": "<AMR> ( (d / day:time-of (d2 /die-01:ARG1 (p / person:name (n / name:op1 \"Maratha\"):wiki \"Maratha\"):location (p2 / place:name (n2 / name:op1 \"Parliament\"):wiki \"Parliament_of_the_United_States\"))):mod (a / approximate-01:ARG2 (p3 / place:name (n3 / name:op1 \"Maratha\"):wiki \"Maratha_of_the_United_States\")))",
+    "model_output_penman": "( (d / day:time-of (d2 /die-01:ARG1 (p / person:name (n / name:op1 \"Maratha\"):wiki \"Maratha\"):location (p2 / place:name (n2 / name:op1 \"Parliament\"):wiki \"Parliament_of_the_United_States\"))):mod (a / approximate-01:ARG2 (p3 / place:name (n3 / name:op1 \"Maratha\"):wiki \"Maratha_of_the_United_States\")))"
+  },
+  {
+    "sentence": "पावसाक लागून रस्तो आनी कुशींच्यो वंयो दोनूय एरिस न्हंयेंत कोसळ्ळीं.",
+    "gold_amr": "(c / collapse-01 :ARG1 (a / and :op1 (r / road) :op2 (w / wall :mod (s / side))) :cause (r2 / rain-01) :destination (r3 / river :name (n / name :op1 \"Eris\")))",
+    "model_output_linearized": "<AMR> ( (s /say-01:ARG0 (p / person):ARG1 (s2 /see-01:ARG0 p:ARG1 (a / and:op1 (r / rubbish):op2 (r2 / rubbish)):location (s3 / state:name (n / name:op1 \"Kashmir\"):wiki \"Kashmir\")))",
+    "model_output_penman": "( (s /say-01:ARG0 (p / person):ARG1 (s2 /see-01:ARG0 p:ARG1 (a / and:op1 (r / rubbish):op2 (r2 / rubbish)):location (s3 / state:name (n / name:op1 \"Kashmir\"):wiki \"Kashmir\"))))"
+  },
+  {
+    "sentence": "ताका वैजकी पर्यटनाचो एक प्रकार म्हूण मानूं येता.",
+    "gold_amr": "(p / possible-01\n   :ARG1 (c / consider-01\n            :ARG1 (t / thing)\n            :ARG2 (t2 / type\n                     :quant 1\n                     :part-of (t3 / tourism\n                                 :mod (m / medicine)))))",
+    "model_output_linearized": "<AMR> ( (p /possible-01:ARG1 (o /accept-01:ARG0 (p2 / person):ARG1 (t / this):ARG2 (p3 / type:domain (p4 /tourismtourismtourism):mod (v / various)):polarity -))",
+    "model_output_penman": "( (p /possible-01:ARG1 (o /accept-01:ARG0 (p2 / person):ARG1 (t / this):ARG2 (p3 / type:domain (p4 /tourismtourismtourism):mod (v / various)):polarity -)))"
+  },
+  {
+    "sentence": "ताचे फुडें वचून, तूं तुजीं अर्थीक कागदां तपास  आनी तुजो निश्चीत स्वरुपाचो खर्च, वा गरजेचो आशिल्लो आनी म्हयन्या म्हयन्याक चडसो बदलना त्या खर्चाची नोंद कर.",
+    "gold_amr": "(a / and :time (a2 / after :op1 (t / that)) :op1 (r / review-01 :ARG0 (y / you) :ARG1 (d / document :poss y :mod (f / financial)) :mode imperative) :op2 (r2 / record-01 :ARG0 y :ARG1 (e / expense :poss y :ARG1-of (o / or :op1 (f2 / fix-01) :op2 (a3 / and :op1 (n / necessary) :op2 (c / change-01 :polarity - :degree (m / most) :frequency (m2 / month))))) :mode imperative))",
+    "model_output_linearized": "<AMR> ( (a / and:op1 (p /possible-01:mode imperative:ARG0 (y / you):ARG1 (a2 / and:op1 (f /find-01:ARG0 y:ARG1 (b / bank)):op2 (p2 /possible-01:ARG1 (a3 / and:op1 (f2 /find-01:ARG0 y:ARG1 (a4 / and:op1 (c / cash:mod (s / solid)):op2 (p3 / point:mod (i / inflation)):op3 (p4 / point:mod (i2 / inflation)):mod (o / or:op1 (i3 / important-01:degree (m / more)):op2 (i4 / important-01:degree (m2 / more))))):time (a4 / after:op1 (e /end-01:ARG1 (t / this)))",
+    "model_output_penman": "( (a / and:op1 (p /possible-01:mode imperative:ARG0 (y / you):ARG1 (a2 / and:op1 (f /find-01:ARG0 y:ARG1 (b / bank)):op2 (p2 /possible-01:ARG1 (a3 / and:op1 (f2 /find-01:ARG0 y:ARG1 (a4 / and:op1 (c / cash:mod (s / solid)):op2 (p3 / point:mod (i / inflation)):op3 (p4 / point:mod (i2 / inflation)):mod (o / or:op1 (i3 / important-01:degree (m / more)):op2 (i4 / important-01:degree (m2 / more))))):time (a4 / after:op1 (e /end-01:ARG1 (t / this)))))))))"
+  },
+  {
+    "sentence": "तशें आसल्यार, हे तुजे खरेदीचे भावनीक कळ आसूं येतात.",
+    "gold_amr": "(p / possible-01 :ARG1 (i / be-03 :ARG1 (t / this) :ARG2 (t2 / trigger-01 :mod (e / emotional) :ARG0-of (c / cause-01 :ARG1 (p2 / purchase-01 :ARG0 (y / you))))) :condition (b / be-02 :ARG1 (t3 / that)))",
+    "model_output_linearized": "<AMR> ( (p /possible-01:ARG1 (i /include-01:ARG0 (y / you):ARG1 (m / money:mod (m2 / money)):ARG2 (t / thing:ARG1-of (b /buy-01:ARG0 y)))))",
+    "model_output_penman": "( (p /possible-01:ARG1 (i /include-01:ARG0 (y / you):ARG1 (m / money:mod (m2 / money)):ARG2 (t / thing:ARG1-of (b /buy-01:ARG0 y)))))"
+  },
+  {
+    "sentence": "आंध्र प्रदेश राज्यांतल्यान ही न्हंय बेल्लारी जिल्ल्यांत भीतर सरता.",
+    "gold_amr": "(e / enter-01\n   :ARG0 (r / river)\n   :ARG1 (d / district\n             :name (n / name :op1 \"Bellary\"))\n   :source (s / state\n             :name (n2 / name :op1 \"Andhra\" :op2 \"Pradesh\")))",
+    "model_output_linearized": "<AMR> ( (r /remain-01:ARG1 (p / person):location (d / district:name (n / name:op1 \"Bengaluri\"):wiki \"Bengaluri_district\":part-of (d2 / district:name (n2 / name:op1 \"Bengaluri\"):wiki \"Bengaluri_district\":part-of (s / state:wiki \" आंध्र_Pradesh\":name (n3 / name:op1 \" आंध्र\":op2 \"Pradesh\"):wiki \"Bengal_Pradesh\")))",
+    "model_output_penman": "( (r /remain-01:ARG1 (p / person):location (d / district:name (n / name:op1 \"Bengaluri\"):wiki \"Bengaluri_district\":part-of (d2 / district:name (n2 / name:op1 \"Bengaluri\"):wiki \"Bengaluri_district\":part-of (s / state:wiki \" आंध्र_Pradesh\":name (n3 / name:op1 \" आंध्र\":op2 \"Pradesh\"):wiki \"Bengal_Pradesh\")))))"
+  },
+  {
+    "sentence": "उदकाची पातळी 40 सेंटीमीटरांसकयल आशिल्ल्या खाजनाचे भोंवतणीं फ्लेमिंगोंची गर्दी  चड आसता.",
+    "gold_amr": "(c / crowd-01 :ARG0 (f / flamingo) :degree (m / more) :location (a / around :op1 (w / wetland :part (w2 / water :poss (l / level :ARG1-of (c2 / compare-01 :ARG2 (q / quantity :quant 40 :unit (c3 / centimeter)) :degree (l2 / less-than)))))))",
+    "model_output_linearized": "<AMR> ( (h / have-role-91:ARG0 (p / person):ARG1 (f / frequency-quantity:quant 40:unit (s / superintendent)):domain (f2 / frequency-quantity:mod (g / big:degree (m / more)):domain (f3 / frequency-quantity:name (n / name:op1 \"f4 / frequency-quantity:name (n2 / name:op1 \"f5\":op2 \"f6\")):domain (f4 / frequency-quantity:name (n3 / name:op1 \"f5\":op2 \"f6\")))))",
+    "model_output_penman": "( (h / have-role-91:ARG0 (p / person):ARG1 (f / frequency-quantity:quant 40:unit (s / superintendent)):domain (f2 / frequency-quantity:mod (g / big:degree (m / more)):domain (f3 / frequency-quantity:name (n / name:op1 \"f4 / frequency-quantity:name (n2 / name:op1 \"f5\":op2 \"f6\")):domain (f4 / frequency-quantity:name (n3 / name:op1 \"f5\":op2 \"f6\"))))))"
+  },
+  {
+    "sentence": "35 खात्यांतल्यान 5 खात्यां खातीर  निम्मे परस चड तजवीज आसा",
+    "gold_amr": "(p / provision\n   :value (m / more\n             :op1 (h / half))\n   :beneficiary (d / department\n                   :quant 5\n                   :part-of (d2 / department\n                               :quant 35)))",
+    "model_output_linearized": "<AMR> ( (d / divide-01:ARG1 (p / person:quant 35):ARG2 (m / more-than:op1 5)))",
+    "model_output_penman": "( (d / divide-01:ARG1 (p / person:quant 35):ARG2 (m / more-than:op1 5)))"
+  },
+  {
+    "sentence": "वेगवेगळ्या संस्कृतायांनी धनुर्धराचे उजवे वा उजवे वटेनच्यान बाण सोडटात आनी हाचो परिणाम धनुष्याच्या हाताच्या धरपाचेर आनी स्थितीचेर जाता.",
+    "gold_amr": "(a / and :op1 (r / release-01 :ARG0 (c / culture :mod (d / different)) :ARG1 (a2 / arrow) :source (s / side :mod (r2 / right) :part-of (a3 / archer))) :op2 (a4 / affect-01 :ARG0 r :ARG1 (a5 / and :op1 (g / grip-01 :ARG0 (h / hand :ARG0-of (h2 / hold-01 :ARG1 (b / bow)))) :op2 (p / position :domain h))))",
+    "model_output_linearized": "<AMR> ( (a / and:op1 (d / deficient-01:ARG1 (a2 / and:op1 (p / place:name (n / name:op1 \"Hyves\")):op2 (p2 / place:name (n2 / name:op1 \"Hyves\")):location (r / river:name (n3 / name:op1 \"Bangalore\")):ARG2 (a3 / and:op1 (p3 / place:name (n4 / name:op1 \"Bangalore\")):op2 (p4 / place:name (n5 / name:op1 \"Nizamore\")):op3 (p5 / place:name (n6 / name:op1 \"Nizamore\")):ARG2-of (r2 /result-01:ARG1 (a4 / and:op1 (p6 / place:name (n7 / name:op1 \"Nizamore\")):op2 (p7 / place:name (n8 / name:op1 \"Nizamore\"))))))",
+    "model_output_penman": "( (a / and:op1 (d / deficient-01:ARG1 (a2 / and:op1 (p / place:name (n / name:op1 \"Hyves\")):op2 (p2 / place:name (n2 / name:op1 \"Hyves\")):location (r / river:name (n3 / name:op1 \"Bangalore\")):ARG2 (a3 / and:op1 (p3 / place:name (n4 / name:op1 \"Bangalore\")):op2 (p4 / place:name (n5 / name:op1 \"Nizamore\")):op3 (p5 / place:name (n6 / name:op1 \"Nizamore\")):ARG2-of (r2 /result-01:ARG1 (a4 / and:op1 (p6 / place:name (n7 / name:op1 \"Nizamore\")):op2 (p7 / place:name (n8 / name:op1 \"Nizamore\")))))))))"
+  },
+  {
+    "sentence": "ते खरेंच अर्थाचें आसल्यार, त्या खर्चापासत तजवीज कर पूण हेर गजालींचेर मोडपाचें टाळ.",
+    "gold_amr": "(c / contrast-01\n   :op1 (a / arrange-01\n           :ARG0 (y / you)\n           :ARG1 (e / expense)\n           :mode imperative)\n   :op2 (a2 / avoid-01\n           :ARG0 y\n           :ARG1 (s / spend-01\n                    :ARG0 y\n                    :ARG2 (t / thing\n                             :mod (o / other)))\n           :mode imperative)\n   :condition (w / worthwhile-01\n                 :ARG1 e\n                 :degree (t2 / true-01)))",
+    "model_output_linearized": "<AMR> ( (p /possible-01:ARG1 (s /select-01:ARG0 (p2 / person):ARG1 (p3 / price:mod (t / that)):purpose (s2 /spend-01:ARG0 p2:ARG1 (t2 / trip)):manner (o /obtain-01:ARG0 p2:ARG1 (p4 / point:mod (o2 / other):topic (e / economy:mod (t3 / this)))))",
+    "model_output_penman": "( (p /possible-01:ARG1 (s /select-01:ARG0 (p2 / person):ARG1 (p3 / price:mod (t / that)):purpose (s2 /spend-01:ARG0 p2:ARG1 (t2 / trip)):manner (o /obtain-01:ARG0 p2:ARG1 (p4 / point:mod (o2 / other):topic (e / economy:mod (t3 / this)))))))"
+  },
+  {
+    "sentence": "सप्टेंबर 2014 वर्सा हो चित्रपट प्रदर्शीत जावपाचो आशिल्लो.",
+    "gold_amr": "(s / schedule-01\n   :ARG1 (r / release-01\n      :ARG1 (f / film)\n      :time (d / date-entity\n         :month 9\n         :year 2014)))",
+    "model_output_linearized": "<AMR> ( (p /perform-01:ARG1 (f / film):time (d /date-entity:year 2014):month 9:day 9)))",
+    "model_output_penman": "( (p /perform-01:ARG1 (f / film):time (d /date-entity:year 2014):month 9:day 9)))"
+  },
+  {
+    "sentence": "करिनासतना ती घरपट्टीत नितळसाण कराच्या रुपान घेवपा विशीं चर्चा केली",
+    "gold_amr": "(d / discuss-01\n   :ARG0 (s / she)\n   :ARG2 (p / person :name (n / name :op1 \"Karina\"))\n   :ARG1 (c / clean-01\n            :ARG1 (h / house)))",
+    "model_output_linearized": "<AMR> ( (d /discuss-01:ARG1 (r /relate-01:ARG1 (t / thing):ARG2 (b /repair-01:ARG1 (p / property:poss (p2 / person)):location (h / house:part-of h)):degree (v / very)))",
+    "model_output_penman": "( (d /discuss-01:ARG1 (r /relate-01:ARG1 (t / thing):ARG2 (b /repair-01:ARG1 (p / property:poss (p2 / person)):location (h / house:part-of h)):degree (v / very))))"
+  },
+  {
+    "sentence": "तुजें लायब्ररी कार्ड घे आनी पयशें फारीक करिनासतना पुस्तकां आनी डी.व्ही.डी. वापरून पळय.",
+    "gold_amr": "(a / and :op1 (g / get-01 :ARG0 (y / you) :ARG1 (c / card :mod (l / library) :poss y)) :op2 (t / try-01 :ARG0 y :ARG1 (u / use-01 :ARG0 y :ARG1 (a2 / and :op1 (b / book) :op2 (d / dvd)) :accompanier (p / pay-01 :ARG0 y :ARG1 (m / money) :polarity -))) :mode imperative)",
+    "model_output_linearized": "<AMR> ( (p /possible-01:ARG1 (u /use-01:ARG0 (y / you):ARG1 (a / and:op1 (b / book):op2 (d / software:name (n / name:op1 \"D.V.डी.\"))):instrument (a2 / and:op1 (c / card:name (n2 / name:op1 \"Lavalbourne\":op2 \"Card\")):op2 (b2 / card:name (n3 / name:op1 \"Lavalbourne\":op2 \"Card\")):op3 (b3 / card:name (n4 / name:op1 \"Borderney\":op2 \"Card\")))))",
+    "model_output_penman": "( (p /possible-01:ARG1 (u /use-01:ARG0 (y / you):ARG1 (a / and:op1 (b / book):op2 (d / software:name (n / name:op1 \"D.V.डी.\"))):instrument (a2 / and:op1 (c / card:name (n2 / name:op1 \"Lavalbourne\":op2 \"Card\")):op2 (b2 / card:name (n3 / name:op1 \"Lavalbourne\":op2 \"Card\")):op3 (b3 / card:name (n4 / name:op1 \"Borderney\":op2 \"Card\"))))))"
+  },
+  {
+    "sentence": "एक इराणी, खास करून शक, मुळाकय विद्वानांनी कांय प्रमाणांत तेंको दिला.",
+    "gold_amr": "(s / support-01\n   :ARG0 (s2 / scholar)\n   :ARG1 (p / person\n             :mod (i / Iranian)\n             :mod (s3 / Saka))\n   :degree (e / extent\n               :mod (s4 / some))\n   :manner (e2 / especial)\n   :time (o / original)\n   :mod (a / also))",
+    "model_output_linearized": "<AMR> ( (p /possible-01:ARG1 (c /confirm-01:ARG0 (p2 / person:quant (m / many):ARG0-of (h /have-03:ARG1 (c2 / certificate:quant (s / some)):source (p3 / person:quant (m2 / many):ARG0-of (h2 / have-01:ARG1 c3:ARG2 (c4 / philosophy):degree (s2 / special))))",
+    "model_output_penman": "( (p /possible-01:ARG1 (c /confirm-01:ARG0 (p2 / person:quant (m / many):ARG0-of (h /have-03:ARG1 (c2 / certificate:quant (s / some)):source (p3 / person:quant (m2 / many):ARG0-of (h2 / have-01:ARG1 c3:ARG2 (c4 / philosophy):degree (s2 / special))))))))"
+  },
+  {
+    "sentence": "कितलिशींच वरां उटंगाराचो पावस पडलो, ताका लागून उदक भरलें आनी येरादारेची कोयंडी जाली, पूण हालिंच्या खर आनी उश्ण हवामानांतल्यानय सुटका मेळ्ळी.",
+    "gold_amr": "(c / contrast-01\n   :op1 (c2 / cause-01\n           :ARG0 (r / rain-01\n                     :manner (h / heavy)\n                     :duration (h2 / hour\n                                 :quant (s / several)))\n           :ARG1 (a / and\n                     :op1 (f / fill-01\n                              :ARG1 (w / water))\n                     :op2 (c3 / congest-01\n                              :ARG1 (t / traffic))))\n   :op2 (r2 / relieve-01\n           :ARG0 r\n           :ARG2 (w2 / weather\n                     :mod (r3 / recent)\n                     :mod (a2 / and\n                               :op1 (h3 / harsh)\n                               :op2 (h4 / hot)))\n           :mod (a3 / also)))",
+    "model_output_linearized": "<AMR> ( (c /cause-01:ARG0 (a / and:op1 (c2 /collapse-01:ARG1 (p / place:name (n / name:op1 \"Kapilki\"):wiki \"Kapilki\"):time (a2 / after:op1 (c3 /collapse-01:ARG1 (p2 / place:name (n2 / name:op1 \"Kapilki\"):wiki \"Kapilki\"):location (r / region:name (n3 / name:op1 \"Kapilki\"):wiki \"Kapilki\"))):op2 (c4 /collapse-01:ARG1 (a3 / and:op1 (p3 / place:name (n4 / name:op1 \"Uraq\"):wiki \"Uraq\"):op2 (p4 / place:name (n5 / name:op1 \"Kolkata\"):wiki \"Kolkata\"))):op3 (p5 / place:name (n6 / name:op1 \"Uraq\"):wiki \"Uraq\"):op4 (p6 / place:name (n7 / name:op1 \"Uraq\"):wiki \"Uraq\"):op5 (p7 / place:name (n8 / name:op1 \"Uraq\"):wiki \"Uraq\"))",
+    "model_output_penman": "( (c /cause-01:ARG0 (a / and:op1 (c2 /collapse-01:ARG1 (p / place:name (n / name:op1 \"Kapilki\"):wiki \"Kapilki\"):time (a2 / after:op1 (c3 /collapse-01:ARG1 (p2 / place:name (n2 / name:op1 \"Kapilki\"):wiki \"Kapilki\"):location (r / region:name (n3 / name:op1 \"Kapilki\"):wiki \"Kapilki\"))):op2 (c4 /collapse-01:ARG1 (a3 / and:op1 (p3 / place:name (n4 / name:op1 \"Uraq\"):wiki \"Uraq\"):op2 (p4 / place:name (n5 / name:op1 \"Kolkata\"):wiki \"Kolkata\"))):op3 (p5 / place:name (n6 / name:op1 \"Uraq\"):wiki \"Uraq\"):op4 (p6 / place:name (n7 / name:op1 \"Uraq\"):wiki \"Uraq\"):op5 (p7 / place:name (n8 / name:op1 \"Uraq\"):wiki \"Uraq\")))))"
+  },
+  {
+    "sentence": "ह्या उपक्रमाक व्हड फरकान समर्थन मेळटालें अशें मतदानांतल्यान कळ्ळें.",
+    "gold_amr": "(k / know-01\n   :source (v / vote-01)\n   :ARG1 (r / receive-01\n            :ARG0 (i / initiative\n                     :mod (t / this))\n            :ARG1 (s / support-01)\n            :manner (m / margin\n                       :mod (l / large))))",
+    "model_output_linearized": "<AMR> ( (a / and:op1 (p /support-01:ARG0 (p2 / person):ARG1 (p3 /plan-01:mod (t / this)):degree (v / very)):op2 (p4 /pass-01:ARG0 p2:location (d / district)))",
+    "model_output_penman": "( (a / and:op1 (p /support-01:ARG0 (p2 / person):ARG1 (p3 /plan-01:mod (t / this)):degree (v / very)):op2 (p4 /pass-01:ARG0 p2:location (d / district))))"
+  },
+  {
+    "sentence": "हे विशीं नियाळ बसका घेतिल्ल्याचे राजन सातार्डकार हांणी सांगलें",
+    "gold_amr": "(s / say-01 :ARG0 (p / person :name (n / name :op1 \"Rajan\" :op2 \"Satardekar\")) :ARG1 (h / hold-04 :ARG1 (m / meeting :purpose (r / review-01 :ARG1 (t / this)))))",
+    "model_output_linearized": "<AMR> ( (h /have-03:ARG0 (p / person):ARG1 (p2 / person:name (n / name:op1 \"Pattarkar\")):location (c / country:name (n2 / name:op1 \"England\"):wiki \"England\":name (n3 / name:op1 \"England\"):wiki \"England\")))",
+    "model_output_penman": "( (h /have-03:ARG0 (p / person):ARG1 (p2 / person:name (n / name:op1 \"Pattarkar\")):location (c / country:name (n2 / name:op1 \"England\"):wiki \"England\":name (n3 / name:op1 \"England\"):wiki \"England\")))"
+  },
+  {
+    "sentence": "मलाबार बंडांत मलाबारच्या मोपला मुसलमानांनी ब्रिटीश शासना आड बंड केलें.",
+    "gold_amr": "(r / rebel-01 :name (n / name :op1 \"Malabar\" :op2 \"Rebellion\") :ARG0 (p / person :mod (m / Muslim) :mod (m2 / Moplah) :location (l / location :name (n2 / name :op1 \"Malabar\"))) :ARG1 (r2 / rule-01 :ARG0 (g / government :mod (c / country :wiki \"United_Kingdom\" :name (n3 / name :op1 \"British\")))))",
+    "model_output_linearized": "<AMR> ( (a / and:op1 (d /decrease-01:ARG1 (w / power:poss (c / country:name (n / name:op1 \"Britain\"):wiki \"Britain\")):op2 (d2 /decrease-01:ARG1 (c2 / country:name (n2 / name:op1 \"Malawi\"):wiki \"Malawi\"):location (c3 / country:name (n3 / name:op1 \"Malawi\"):wiki \"Malawi\")))",
+    "model_output_penman": "( (a / and:op1 (d /decrease-01:ARG1 (w / power:poss (c / country:name (n / name:op1 \"Britain\"):wiki \"Britain\")):op2 (d2 /decrease-01:ARG1 (c2 / country:name (n2 / name:op1 \"Malawi\"):wiki \"Malawi\"):location (c3 / country:name (n3 / name:op1 \"Malawi\"):wiki \"Malawi\")))))"
+  },
+  {
+    "sentence": "आजीविका नास्तिक आशिल्ले आनी तांणी वेदांचो अधिकार तशेंच बौध्द कल्पना न्हयकारल्यो.",
+    "gold_amr": "(a / and\n   :op1 (a2 / atheist\n         :name (n / name :op1 \"Ajivika\")\n         :wiki \"Ājīvika\")\n   :op2 (r / reject-01\n         :ARG0 a2\n         :ARG1 (a3 / and\n               :op1 (a4 / authority\n                     :poss (b / book\n                           :name (n2 / name :op1 \"Vedas\")\n                           :wiki \"Vedas\"))\n               :op2 (c / concept\n                     :mod (r2 / religion\n                           :name (n3 / name :op1 \"Buddhist\")\n                           :wiki \"Buddhism\")))))",
+    "model_output_linearized": "<AMR> ( (a / and:op1 (a2 / and:op1 (p / person:mod (n / nagavism):mod (n2 / navism)):op2 (p2 / person:mod (c / christian):mod (n3 / navism)))):op2 (p3 /possible-01:ARG1 (r / reign-01:ARG0 p:ARG1 (r2 / reign-01:ARG0 p:ARG1 (v / power:poss (g / god)))))",
+    "model_output_penman": "( (a / and:op1 (a2 / and:op1 (p / person:mod (n / nagavism):mod (n2 / navism)):op2 (p2 / person:mod (c / christian):mod (n3 / navism)))):op2 (p3 /possible-01:ARG1 (r / reign-01:ARG0 p:ARG1 (r2 / reign-01:ARG0 p:ARG1 (v / power:poss (g / god))))))"
+  },
+  {
+    "sentence": "हे खातीर तो तर्कवादाचो पुरस्कर्तो जालो, आनी जातीवेवस्था, धर्म आनी अंधश्रध्देआड ताणें प्रचार केलो.",
+    "gold_amr": "(c / and\n   :op1 (b / become-01\n           :ARG1 (p / person)\n           :ARG2 (p2 / proponent\n                     :ARG1-of (a / advocate-01\n                                 :ARG1 (r / rationalism))))\n   :op2 (o / oppose-01\n           :ARG0 p\n           :ARG1 (a2 / and\n                     :op1 (s / system\n                             :mod (c2 / caste))\n                     :op2 (r2 / religion)\n                     :op3 (s2 / superstition))\n           :manner (c3 / campaign-01))\n   :cause (t / thing))",
+    "model_output_linearized": "<AMR> ( (p /propagate-01:ARG0 (p2 / person):ARG1 (a / and:op1 (a2 / and:op1 (l / logic):op2 (p3 / politics):op3 (h / religion):op4 (b / hinduism)):purpose (t / this))",
+    "model_output_penman": "( (p /propagate-01:ARG0 (p2 / person):ARG1 (a / and:op1 (a2 / and:op1 (l / logic):op2 (p3 / politics):op3 (h / religion):op4 (b / hinduism)):purpose (t / this))))"
+  },
+  {
+    "sentence": "हांवें ह्यो तिकेटी ब्लॅकान मोलाच्या तीन पटीन विकत्यो घेतल्यो देखून हांव सामको बेजार जालां.",
+    "gold_amr": "(u / upset-01\n   :ARG0 (i / i)\n   :degree (v / very)\n   :cause (b / buy-01\n      :ARG0 i\n      :ARG1 (t / ticket\n         :mod (d / this))\n      :source (m / market\n         :mod (b2 / black))\n      :ARG3 (m2 / multiply-01\n         :ARG1 3\n         :ARG2 (p / price\n            :poss t))))",
+    "model_output_linearized": "<AMR> ( (h /have-03:ARG0 (p / person:name (n / name:op1 \"Blackhawk\"):wiki \"Blackhawk\"):ARG1 (b / barrel:quant 3:poss (p2 / person:name (n2 / name:op1 \"Blackhawk\"):wiki \"Blackhawk\"):location (b2 / beach:name (n3 / name:op1 \"Mola\"):wiki \"Mola\"):ARG0-of (h2 /look-01:ARG1 (h3 /have-03:ARG0 p2:ARG1 (b3 / banana):degree (s / superlative)):location (b4 / beach:name (n4 / name:op1 \"Beverage\"):wiki \"Beverage\"))",
+    "model_output_penman": "( (h /have-03:ARG0 (p / person:name (n / name:op1 \"Blackhawk\"):wiki \"Blackhawk\"):ARG1 (b / barrel:quant 3:poss (p2 / person:name (n2 / name:op1 \"Blackhawk\"):wiki \"Blackhawk\"):location (b2 / beach:name (n3 / name:op1 \"Mola\"):wiki \"Mola\"):ARG0-of (h2 /look-01:ARG1 (h3 /have-03:ARG0 p2:ARG1 (b3 / banana):degree (s / superlative)):location (b4 / beach:name (n4 / name:op1 \"Beverage\"):wiki \"Beverage\")))))"
+  },
+  {
+    "sentence": "फेब्रुवारी 2005 त पश्चीमी तुफानाक लागून राज्यांतल्या कांय वाठारांनी 2 मिटर मेरेन बर्फ पडलो आनी चार दिसांनी 200 परस चड लोक सोंपलें.",
+    "gold_amr": "(a / and :op1 (f / fall-01 :ARG1 (s / snow) :time (d / date-entity :year 2005 :month 2) :cause (s2 / storm :mod (w / west)) :location (a2 / area :quant (s3 / some) :part-of (s4 / state)) :extent (q / quantity :quant 2 :unit (m / meter) :mod (u / up-to-91))) :op2 (d2 / die-01 :ARG1 (p / person :quant (m2 / more-than :op1 200)) :duration (t / temporal-quantity :quant 4 :unit (d3 / day))))",
+    "model_output_linearized": "<AMR> ( (a / and:op1 (d / dam:location (r / river:name (n / name:op1 \"Periyar\"):wiki \"Periyar\"):quant (m / more-than:op1 (d2 / distance-quantity:quant 2:unit (m2 / meter))):location (s / state)):op2 (d3 /deep-02:ARG1 (p / person:quant (m3 / more-than:op1 200)):location s:time (d4 / day:quant 4))):time (d5 /date-entity:year 2005:month 2:day 4))",
+    "model_output_penman": "( (a / and:op1 (d / dam:location (r / river:name (n / name:op1 \"Periyar\"):wiki \"Periyar\"):quant (m / more-than:op1 (d2 / distance-quantity:quant 2:unit (m2 / meter))):location (s / state)):op2 (d3 /deep-02:ARG1 (p / person:quant (m3 / more-than:op1 200)):location s:time (d4 / day:quant 4))):time (d5 /date-entity:year 2005:month 2:day 4))"
+  },
+  {
+    "sentence": "मुख्य सचीव पुनीत गोयल हांणी हे विशींचो आदेश जारी केलो",
+    "gold_amr": "(i / issue-01\n   :ARG0 (p / person\n            :name (n / name :op1 \"Puneet\" :op2 \"Goyal\")\n            :title (s / secretary\n                      :mod (c / chief)))\n   :ARG1 (o / order-01\n            :topic (m / matter)))",
+    "model_output_linearized": "<AMR> ( (o /issue-01:ARG0 (p / person:name (n / name:op1 \"Goel\"):wiki \"Goel\"):ARG1 (o2 /order-01:ARG0 (o3 / organization:name (n2 / name:op1 \"Central\":op2 \"Spitch\"):wiki \"Central_Spitch\"):ARG2 (p2 / person:name (n3 / name:op1 \"Goel\"):wiki \"Goel\")))",
+    "model_output_penman": "( (o /issue-01:ARG0 (p / person:name (n / name:op1 \"Goel\"):wiki \"Goel\"):ARG1 (o2 /order-01:ARG0 (o3 / organization:name (n2 / name:op1 \"Central\":op2 \"Spitch\"):wiki \"Central_Spitch\"):ARG2 (p2 / person:name (n3 / name:op1 \"Goel\"):wiki \"Goel\"))))"
+  },
+  {
+    "sentence": "हें अदभूत प्रकारचें देवूळ आशिल्ल्यान, एकंदर अणभव रोमांचक आनी साहसी आसूं येता.",
+    "gold_amr": "(p / possible-01\n   :ARG1 (e / experience\n      :mod (o / overall)\n      :mod (a / and\n         :op1 (t / thrilling)\n         :op2 (a2 / adventurous))\n      :cause (b / be-03\n         :ARG1 (t2 / temple)\n         :ARG2 (w / wonderful))))",
+    "model_output_linearized": "<AMR> ( (h / have-role-91:ARG0 (t / type:mod (t2 / this):mod (a / army):mod (a2 / army):mod (a3 / also):ARG1-of (h2 / have-role-91:ARG2 (a4 / and:op1 (l / lion):op2 (h3 / hero)):ARG3 (m / most))",
+    "model_output_penman": "( (h / have-role-91:ARG0 (t / type:mod (t2 / this):mod (a / army):mod (a2 / army):mod (a3 / also):ARG1-of (h2 / have-role-91:ARG2 (a4 / and:op1 (l / lion):op2 (h3 / hero)):ARG3 (m / most)))))"
+  },
+  {
+    "sentence": "उदयपूरचो आनी मेवाडचो महाराणा फतेह सिंगाच्या नांवान हें एक कृत्रीम तळें, उदयपूरचे वायव्येक, पिचोला तळ्याचे उत्तरेक १६८० त बांदिल्लें.",
+    "gold_amr": "(l / lake\n   :mod (a / artificial)\n   :ARG1-of (b / build-01\n               :time (d / date-entity :year 1680))\n   :ARG1-of (n / name-01\n               :ARG2 (p / person\n                          :name (n2 / name :op1 \"Fateh\" :op2 \"Singh\")\n                          :title \"Maharana\"\n                          :poss (a2 / and\n                                     :op1 (c / city\n                                             :name (n3 / name :op1 \"Udaipur\"))\n                                     :op2 (r / region\n                                             :name (n4 / name :op1 \"Mewad\")))))\n   :location (l2 / location\n                  :direction northwest\n                  :op1 (c2 / city\n                           :name (n5 / name :op1 \"Udaipur\")))\n   :location (l3 / location\n                  :direction north\n                  :op1 (l4 / lake\n                           :name (n6 / name :op1 \"Pichola\"))))",
+    "model_output_linearized": "<AMR> ( (a / and:op1 (a2 / and:op1 (a3 / and:op1 (a4 / and:op1 (c / city:name (n / name:op1 \"Udayapur\")):op2 (c2 / city:name (n2 / name:op1 \"Mewadde\"))):op2 (c3 / city:name (n3 / name:op1 \"Udayapur\")):op3 (c4 / city:name (n4 / name:op1 \"Phillalam\")):op4 (c5 / city:name (n5 / name:op1 \"Phillalam\")):op5 (c6 / city:name (n6 / name:op1 \"Phillalam\")) :op6 (c7 / city:name (n7 / name:op1 \"Uttarakhand\")) :op7 (c8 / city:name (n8 / name:op1 \"Uttarakhand\")))",
+    "model_output_penman": "( (a / and:op1 (a2 / and:op1 (a3 / and:op1 (a4 / and:op1 (c / city:name (n / name:op1 \"Udayapur\")):op2 (c2 / city:name (n2 / name:op1 \"Mewadde\"))):op2 (c3 / city:name (n3 / name:op1 \"Udayapur\")):op3 (c4 / city:name (n4 / name:op1 \"Phillalam\")):op4 (c5 / city:name (n5 / name:op1 \"Phillalam\")):op5 (c6 / city:name (n6 / name:op1 \"Phillalam\")) :op6 (c7 / city:name (n7 / name:op1 \"Uttarakhand\")) :op7 (c8 / city:name (n8 / name:op1 \"Uttarakhand\"))))))"
+  },
+  {
+    "sentence": "अरुण जेटली स्टेडियम (सादारणपणान कोटला ह्या नांवान वळखतात) हें भारतांतलें एक पोरणें क्रिकेट मैदान आनी आंतरराश्ट्रीय क्रिकेट मॅचीचें थळ.",
+    "gold_amr": "(i / be-01 :ARG1 (s / stadium :name (n / name :op1 \"Arun\" :op2 \"Jaitley\" :op3 \"Stadium\") :wiki \"Arun_Jaitley_Stadium\" :ARG1-of (k / know-01 :manner (c / common) :ARG2 (n2 / name :op1 \"Kotla\"))) :ARG2 (a / and :op1 (g / ground :mod (cr / cricket) :mod (o / old) :location (co / country :name (n3 / name :op1 \"India\") :wiki \"India\")) :op2 (v / venue :purpose (m / match :mod (cr2 / cricket) :mod (in / international)))))",
+    "model_output_linearized": "<AMR> ( (s / stadium:wiki \"Amara जेटली_Stadium\":name (n / name:op1 \"Amara\":op2 \"Delhi\"):location (c / country:wiki \"India\":name (n2 / name:op1 \"India\")):mod (a / and:op1 (c2 / sport):op2 (c3 / cricket):op3 (s2 / stadium:mod (c4 / country:name (n3 / name:op1 \"Ananda\":op2 \"Delhi\":op3 \"Bengal\"):wiki \"Ananda_Delhi\":mod (c5 / cricket)))))",
+    "model_output_penman": "( (s / stadium:wiki \"Amara जेटली_Stadium\":name (n / name:op1 \"Amara\":op2 \"Delhi\"):location (c / country:wiki \"India\":name (n2 / name:op1 \"India\")):mod (a / and:op1 (c2 / sport):op2 (c3 / cricket):op3 (s2 / stadium:mod (c4 / country:name (n3 / name:op1 \"Ananda\":op2 \"Delhi\":op3 \"Bengal\"):wiki \"Ananda_Delhi\":mod (c5 / cricket))))))"
+  },
+  {
+    "sentence": "आपणाक रस ना अशें तुवें म्हाल विकपी मनशाक सांगलें, तरीकय तुका फोन येत रावले, जाल्यार आपणाक 'फोन करनाका वळेरेंत' घाल म्हूण सांगप.",
+    "gold_amr": "(s / say-01\n   :mode imperative\n   :ARG0 (y / you)\n   :ARG1 (p / put-01\n      :ARG0 (p2 / person\n         :ARG0-of (s2 / sell-01\n            :ARG1 (g / goods)))\n      :ARG1 y\n      :destination (l / list\n         :name (c / call-01\n            :polarity -)))\n   :condition (c2 / continue-01\n      :ARG1 (r / receive-01\n         :ARG0 y\n         :ARG1 (c3 / call-01))\n      :concession (s3 / say-01\n         :ARG0 y\n         :ARG1 (i / interest-01\n            :polarity -\n            :ARG0 y)\n         :ARG2 p2)))",
+    "model_output_linearized": "<AMR> ( (g /give-01:mode imperative:ARG0 (y / you):ARG1 (p /converse-01:ARG0 y:ARG1 (p2 / person:name (n / name:op1 \"Sambhaji\"):wiki \"Sambhaji\"):manner (g2 / general):time (n2 / now)):cause (g3 /get-01:ARG0 y:ARG1 (p3 / phone):manner (g4 /go-01:ARG0 y:ARG1 p2:purpose (g5 /get-01:ARG0 y:ARG1 (r / rice)):time (n3 / now)):mod (a / also))",
+    "model_output_penman": "( (g /give-01:mode imperative:ARG0 (y / you):ARG1 (p /converse-01:ARG0 y:ARG1 (p2 / person:name (n / name:op1 \"Sambhaji\"):wiki \"Sambhaji\"):manner (g2 / general):time (n2 / now)):cause (g3 /get-01:ARG0 y:ARG1 (p3 / phone):manner (g4 /go-01:ARG0 y:ARG1 p2:purpose (g5 /get-01:ARG0 y:ARG1 (r / rice)):time (n3 / now)):mod (a / also))))"
+  },
+  {
+    "sentence": "2022 वर्सा प्रदर्शीत जावपाचें आशिल्ल्या त्रिशा स्टारर फिल्म ‘रांगी’ ह्या सिनेमान अनसवारान तमिळ चित्रपट उद्देगांत प्रवेश केलो.",
+    "gold_amr": "(e / enter-01 :ARG0 (p / person :name (n / name :op1 \"Anaswara\")) :ARG1 (i / industry :name (n2 / name :op1 \"Tamil\" :op2 \"film\" :op3 \"industry\")) :instrument (f / film :name (n3 / name :op1 \"Raangi\") :ARG0-of (s / star-01 :ARG0 (p2 / person :name (n4 / name :op1 \"Trisha\"))) :ARG1-of (r / release-01 :ARG1-of (s2 / schedule-01) :time (d / date-entity :year 2022))))",
+    "model_output_linearized": "<AMR> ( (a /enter-01:ARG0 (p / person:name (n / name:op1 \"Anand\")):ARG1 (m / movie:name (n2 / name:op1 \"Rahnu\"):mod (t / this):ARG1-of (p2 /publish-01:time (d /date-entity:year 2023)):mod (f / film):ARG1-of (p3 /perform-01:time (d2 /date-entity:year 2023))):ARG1 (p4 / producer:name (n3 / name:op1 \"Panchami\":op2 \"Film\"):wiki \"Panchami_Film\":name (n4 / name:op1 \"Panchami\":op2 \"Film\"):wiki \"Panchami_Film\":name (n5 / name:op1 \"Panchami\":op2 \"Film\")))",
+    "model_output_penman": "( (a /enter-01:ARG0 (p / person:name (n / name:op1 \"Anand\")):ARG1 (m / movie:name (n2 / name:op1 \"Rahnu\"):mod (t / this):ARG1-of (p2 /publish-01:time (d /date-entity:year 2023)):mod (f / film):ARG1-of (p3 /perform-01:time (d2 /date-entity:year 2023))):ARG1 (p4 / producer:name (n3 / name:op1 \"Panchami\":op2 \"Film\"):wiki \"Panchami_Film\":name (n4 / name:op1 \"Panchami\":op2 \"Film\"):wiki \"Panchami_Film\":name (n5 / name:op1 \"Panchami\":op2 \"Film\"))))"
+  },
+  {
+    "sentence": "तें मदुरै शारासावन सुमार 7 किलोमीटर पयस आसा आनी ग्रेटर मदुरै शाराच्या दक्षीण पश्चीम वाठाराचो एक भाग.",
+    "gold_amr": "(a / and :op1 (h / have-distance-91 :ARG1 (t / thing) :ARG2 (d / distance-quantity :quant 7 :unit (k / kilometer) :mod (a2 / approximate-01)) :source (c / city :name (n / name :op1 \"Madurai\"))) :op2 (t :part-of (r / region :direction (s / south-west) :part-of (c2 / city :name (n2 / name :op1 \"Greater\" :op2 \"Madurai\")))))",
+    "model_output_linearized": "<AMR> ( (a / and:op1 (h / have-distance-91:ARG1 (t / thing):ARG2 (d / distance-quantity:quant 7:unit (k / kilometer):mod (a2 / approximate-01))):op2 (h2 / have-distance-91:ARG1 t:ARG2 (d2 / distance-quantity:quant 7:unit (k2 / kilometer):mod (a3 / approximate-01))))",
+    "model_output_penman": "( (a / and:op1 (h / have-distance-91:ARG1 (t / thing):ARG2 (d / distance-quantity:quant 7:unit (k / kilometer):mod (a2 / approximate-01))):op2 (h2 / have-distance-91:ARG1 t:ARG2 (d2 / distance-quantity:quant 7:unit (k2 / kilometer):mod (a3 / approximate-01)))))"
+  },
+  {
+    "sentence": "क्युबाचे लागींलागीं पुराय कावंटीक तें बादिल्ल्यान इकेन 7 जाणांक मारले.",
+    "gold_amr": "(k / kill-01\n   :ARG0 (h / hurricane :name (n / name :op1 \"Ike\"))\n   :ARG1 (p / person :quant 7)\n   :cause (a / affect-01\n      :ARG0 h\n      :ARG1 (c / county\n         :part-of (c2 / country :name (n2 / name :op1 \"Cuba\"))\n         :mod (e / entire\n            :degree (a2 / approximate-01)))))",
+    "model_output_linearized": "<AMR> ( (p /possible-01:ARG1 (s /score-01:ARG0 (p2 / person):ARG1 (e / end:quant 7))):location (c / country:name (n / name:op1 \"England\"):wiki \"England\":name (n2 / name:op1 \"England\")))",
+    "model_output_penman": "( (p /possible-01:ARG1 (s /score-01:ARG0 (p2 / person):ARG1 (e / end:quant 7))):location (c / country:name (n / name:op1 \"England\"):wiki \"England\":name (n2 / name:op1 \"England\")))"
+  },
+  {
+    "sentence": "जैन धर्माचो 23वो तीर्थंकार पार्श्वनाथान केवल ज्ञान प्राप्त केलें अशें अहिच्छत्रांत मानतात.",
+    "gold_amr": "(b / believe-01\n   :ARG0 (p / person)\n   :ARG1 (a / attain-01\n            :ARG0 (p2 / person\n                     :name (n / name :op1 \"Parshvanatha\")\n                     :wiki \"Parshvanatha\"\n                     :domain (t / tirthankara\n                                :ord (o / ordinal-entity :value 23)\n                                :domain (j / jainism\n                                           :name (n2 / name :op1 \"Jainism\")\n                                           :wiki \"Jainism\")))\n            :ARG1 (k / knowledge\n                     :name (n3 / name :op1 \"Kevala\" :op2 \"Jnana\")\n                     :wiki \"Kevala_Jnana\"))\n   :location (c / city\n                :name (n4 / name :op1 \"Ahichhatra\")\n                :wiki \"Ahichhatra\"))",
+    "model_output_linearized": "<AMR> ( (p /believe-01:ARG0 (p2 / person:name (n / name:op1 \"Bahadur\"):wiki \"Bahadur\"):ARG1 (p3 / person:name (n2 / name:op1 \"Bahadur\"):wiki \"Bahadur\"):ARG2 (p4 / person:name (n3 / name:op1 \"Bahadur\"):wiki \"Bahadur\"):cause (r /receive-01:ARG0 p:ARG1 (g / knowledge):mod (a / only)):location (r2 / religion:name (n4 / name:op1 \"Jainism\"):wiki \"Jainism\")))",
+    "model_output_penman": "( (p /believe-01:ARG0 (p2 / person:name (n / name:op1 \"Bahadur\"):wiki \"Bahadur\"):ARG1 (p3 / person:name (n2 / name:op1 \"Bahadur\"):wiki \"Bahadur\"):ARG2 (p4 / person:name (n3 / name:op1 \"Bahadur\"):wiki \"Bahadur\"):cause (r /receive-01:ARG0 p:ARG1 (g / knowledge):mod (a / only)):location (r2 / religion:name (n4 / name:op1 \"Jainism\"):wiki \"Jainism\")))"
+  },
+  {
+    "sentence": "कॅरिबियन स्पिनरांचेर भारतीयांनी वळोवपी ट्रॅकाचेर प्रभुत्व मेळयिल्ल्यान अस्तंत भारतीय कर्णधार क्लायव्ह लॉयडानान फुडल्या कसोटी सर्तींत फकत गतीचेर आदारून रावपाची प्रतिज्ञा केली अशें सांगतात.",
+    "gold_amr": "(s / say-01 :ARG1 (v / vow-01 :ARG0 (p / person :name (n / name :op1 \"Clive\" :op2 \"Lloyd\") :wiki \"Clive_Lloyd\" :ARG0-of (c / captain :ARG1 (t / team :name (n2 / name :op1 \"West\" :op2 \"Indies\") :wiki \"West_Indies_cricket_team\"))) :ARG1 (r / rely-on-01 :ARG0 p :ARG1 (p2 / pace) :mod (o / only-01)) :time (m / match :mod (t2 / test-01) :mod (n3 / next)) :cause (d / dominate-01 :ARG0 (p3 / Indian) :ARG1 (s2 / spinner :mod (c2 / Caribbean)) :location (t3 / track :mod (t4 / turn-01)))))",
+    "model_output_linearized": "<AMR> ( (r /reject-01:ARG0 (p / person:mod (c / country:name (n / name:op1 \"India\")):mod (c2 / country:name (n2 / name:op1 \"Canada\")):ARG0-of (r2 /reach-01:ARG1 (t / territory:name (n3 / name:op1 \"Rajasthan\":op2 \"Rajasthan\":op3 \"Rajasthan\"))):ARG1 (p2 / person:name (n4 / name:op1 \"Lloyd\":op2 \"Lloyd\"):mod (c3 / country:name (n5 / name:op1 \"India\")):ARG0-of (l /lead-01:ARG1 (t2 / territory:name (n6 / name:op1 \"Rajasthan\":op2 \"Rajasthan\")):location (s / state:name (n7 / name:op1 \"Rajasthan\":op2 \"Rajasthan\")):time (s2 / season:mod (s3 / test):mod (s4 / series)):time (a / after:op1 (e /end-01:ARG1 (l2 / race:name (n8 / name:op1 \"Lloyd\":op2 \"Lloyd\"))))",
+    "model_output_penman": "( (r /reject-01:ARG0 (p / person:mod (c / country:name (n / name:op1 \"India\")):mod (c2 / country:name (n2 / name:op1 \"Canada\")):ARG0-of (r2 /reach-01:ARG1 (t / territory:name (n3 / name:op1 \"Rajasthan\":op2 \"Rajasthan\":op3 \"Rajasthan\"))):ARG1 (p2 / person:name (n4 / name:op1 \"Lloyd\":op2 \"Lloyd\"):mod (c3 / country:name (n5 / name:op1 \"India\")):ARG0-of (l /lead-01:ARG1 (t2 / territory:name (n6 / name:op1 \"Rajasthan\":op2 \"Rajasthan\")):location (s / state:name (n7 / name:op1 \"Rajasthan\":op2 \"Rajasthan\")):time (s2 / season:mod (s3 / test):mod (s4 / series)):time (a / after:op1 (e /end-01:ARG1 (l2 / race:name (n8 / name:op1 \"Lloyd\":op2 \"Lloyd\")))))))))"
+  },
+  {
+    "sentence": "नूर्दिन आनी पिकॉकाक 1996 च्या नोव्हेंबरांत बुकर ग्रुपान हाडलें.",
+    "gold_amr": "(b / bring-01 :ARG0 (o / organization :name (n / name :op1 \"Booker\" :op2 \"Group\")) :ARG1 (a / and :op1 (p / person :name (n2 / name :op1 \"Nurdin\")) :op2 (p2 / person :name (n3 / name :op1 \"Picock\"))) :time (d / date-entity :year 1996 :month 11))",
+    "model_output_linearized": "<AMR> ( (h / have-role-91:ARG0 (g / group:name (n / name:op1 \"Bukar\")):ARG1 (p / group:name (n2 / name:op1 \"Bukar\")):time (d /date-entity:year 1996:month 11:day 10):location (a / and:op1 (c / city:name (n3 / name:op1 \"नूadin\")):op2 (c2 / company:name (n4 / name:op1 \"Patch\"))))",
+    "model_output_penman": "( (h / have-role-91:ARG0 (g / group:name (n / name:op1 \"Bukar\")):ARG1 (p / group:name (n2 / name:op1 \"Bukar\")):time (d /date-entity:year 1996:month 11:day 10):location (a / and:op1 (c / city:name (n3 / name:op1 \"नूadin\")):op2 (c2 / company:name (n4 / name:op1 \"Patch\")))))"
+  },
+  {
+    "sentence": "ऑगस्ट 2016 त अस्तंत बंगाल विधानसभेन अस्तंत बंगालाचें नांव इंग्लीशींत \"बंगाल\" आनी बंगालींत \"बांग्ला\" अशें बदलपाचो आनीक एक प्रस्ताव संमत केलो.",
+    "gold_amr": "(p / pass-01\n   :ARG0 (a / assembly\n            :name (n / name :op1 \"West\" :op2 \"Bengal\" :op3 \"Legislative\" :op4 \"Assembly\")\n            :wiki \"West_Bengal_Legislative_Assembly\")\n   :ARG1 (p2 / proposal\n            :mod (a2 / another)\n            :purpose (c / change-01\n                         :ARG1 (n2 / name\n                                  :poss (s / state\n                                           :name (n3 / name :op1 \"West\" :op2 \"Bengal\")\n                                           :wiki \"West_Bengal\"))\n                         :ARG2 (a3 / and\n                                  :op1 (n4 / name\n                                          :op1 \"Bengal\"\n                                          :medium (l / language\n                                                     :name (n5 / name :op1 \"English\")\n                                                     :wiki \"English_language\"))\n                                  :op2 (n6 / name\n                                          :op1 \"Bangla\"\n                                          :medium (l2 / language\n                                                      :name (n7 / name :op1 \"Bengali\")\n                                                      :wiki \"Bengali_language\")))))\n   :time (d / date-entity\n            :year 2016\n            :month 8))",
+    "model_output_linearized": "<AMR> ( (a / and:op1 (p /propose-01:ARG0 (p2 / legislative-assembly:name (n / name:op1 \"Bangalore\":op2 \"Regiament\"):wiki \"Bangalore_Regital_Assembly\"):ARG1 (a2 / and:op1 (a3 / and:op1 (r /relocate-01:ARG0 (s / state:name (n2 / name:op1 \"West\":op2 \"Bengal\"):wiki \"West_Bengal\":part-of (c / country:name (n3 / name:op1 \"England\")))):op2 (r2 /relocate-01:ARG0 s:ARG1 (a4 / and:op1 (p3 / person:name (n4 / name:op1 \"Bangalore\"):wiki \"Bangalore\"):op2 (p4 / person:name (n5 / name:op1 \"Bangalore\"):wiki \"Bangalore\"):op3 (p5 / person:name (n6 / name:op1 \"Bangalore\"):wiki \"Bangalore\"))):time (d /date-entity:year 2016:month 8:day 10)))",
+    "model_output_penman": "( (a / and:op1 (p /propose-01:ARG0 (p2 / legislative-assembly:name (n / name:op1 \"Bangalore\":op2 \"Regiament\"):wiki \"Bangalore_Regital_Assembly\"):ARG1 (a2 / and:op1 (a3 / and:op1 (r /relocate-01:ARG0 (s / state:name (n2 / name:op1 \"West\":op2 \"Bengal\"):wiki \"West_Bengal\":part-of (c / country:name (n3 / name:op1 \"England\")))):op2 (r2 /relocate-01:ARG0 s:ARG1 (a4 / and:op1 (p3 / person:name (n4 / name:op1 \"Bangalore\"):wiki \"Bangalore\"):op2 (p4 / person:name (n5 / name:op1 \"Bangalore\"):wiki \"Bangalore\"):op3 (p5 / person:name (n6 / name:op1 \"Bangalore\"):wiki \"Bangalore\"))):time (d /date-entity:year 2016:month 8:day 10))))))"
+  },
+  {
+    "sentence": "पूण वर्साक 7,200 अमेरिकी डॉलर खर्च केल्यार तुमची बचत 144 अमेरिकी डॉलर आसा.",
+    "gold_amr": "(c / contrast-01\n   :op2 (s / save-01\n          :ARG0 (y / you)\n          :ARG1 (m / monetary-quantity\n                  :quant 144\n                  :unit (d / dollar\n                          :name (n / name :op1 \"US\")))\n          :condition (s2 / spend-01\n                       :ARG0 y\n                       :ARG1 (m2 / monetary-quantity\n                               :quant 7200\n                               :unit (d2 / dollar\n                                       :name (n2 / name :op1 \"US\")))\n                       :frequency (t / temporal-quantity\n                                    :quant 1\n                                    :unit (y2 / year)))))",
+    "model_output_linearized": "<AMR> ( (a / and:op1 (p /pay-01:ARG1 (d /monetary-quantity:quant 7200:unit (c / dollar:mod (i / country:name (n / name:op1 \"United\":op2 \"States\"):wiki \"America\"))):ARG2 (c2 /save-01:ARG1 (d2 /monetary-quantity:quant 144:unit (c3 / dollar:mod (i2 / country:name (n2 / name:op1 \"United\":op2 \"States\"):wiki \"United_States\")):mod (a2 / American)):time (e / initial)):op2 (r /r2 /r3 /r4 /r5 /r6 /r:value \"a3 / and:op1 (p2 /spend-01:ARG1d3 /monetary-quantity:quant 7200:unit (c4 / dollar:mod (i / country:name (n3 / name:op1 \"United\":op2 \"States\"):wiki \"America\"))))",
+    "model_output_penman": "( (a / and:op1 (p /pay-01:ARG1 (d /monetary-quantity:quant 7200:unit (c / dollar:mod (i / country:name (n / name:op1 \"United\":op2 \"States\"):wiki \"America\"))):ARG2 (c2 /save-01:ARG1 (d2 /monetary-quantity:quant 144:unit (c3 / dollar:mod (i2 / country:name (n2 / name:op1 \"United\":op2 \"States\"):wiki \"United_States\")):mod (a2 / American)):time (e / initial)):op2 (r /r2 /r3 /r4 /r5 /r6 /r:value \"a3 / and:op1 (p2 /spend-01:ARG1d3 /monetary-quantity:quant 7200:unit (c4 / dollar:mod (i / country:name (n3 / name:op1 \"United\":op2 \"States\"):wiki \"America\")))))))"
+  },
+  {
+    "sentence": "रतन सेना पद्मावतीचो कितलो मोग करता हाची परिक्षा घेवपाचें लच्छमीन थारायलें.",
+    "gold_amr": "(d / decide-01\n   :ARG0 (p / person :name (n / name :op1 \"Lakshmi\"))\n   :ARG1 (t / test-01\n            :ARG0 p\n            :ARG1 (l / love-01\n                     :ARG0 (p2 / person :name (n2 / name :op1 \"Ratan\" :op2 \"Sen\"))\n                     :ARG1 (p3 / person :name (n3 / name :op1 \"Padmavati\"))\n                     :degree (a / amr-unknown))))",
+    "model_output_linearized": "<AMR> ( (p /provide-01:ARG0 (p2 / person:name (n / name:op1 \"Ladakh\"):wiki \"Ladakh\"):ARG1 (p3 / place:name (n2 / name:op1 \"Ladakh\"):wiki \"Ladakh\"):ARG2 (p4 / person:name (n3 / name:op1 \"Ratan\":op2 \"Army\"):wiki \"Ratan_Army\")))",
+    "model_output_penman": "( (p /provide-01:ARG0 (p2 / person:name (n / name:op1 \"Ladakh\"):wiki \"Ladakh\"):ARG1 (p3 / place:name (n2 / name:op1 \"Ladakh\"):wiki \"Ladakh\"):ARG2 (p4 / person:name (n3 / name:op1 \"Ratan\":op2 \"Army\"):wiki \"Ratan_Army\")))"
+  },
+  {
+    "sentence": "संधूच्या घरांतल्यान भायर सरतनाच बिल्लू जस्सीक मारून उडयतलो.",
+    "gold_amr": "(k / kill-01\n   :ARG0 (b / person\n      :name (n / name :op1 \"Billu\"))\n   :ARG1 (j / person\n      :name (n2 / name :op1 \"Jassi\"))\n   :time (e / exit-01\n      :ARG0 j\n      :source (h / house\n         :poss (s / person\n            :name (n3 / name :op1 \"Sandhu\")))))",
+    "model_output_linearized": "<AMR> ( (d /die-01:ARG1 (p / person:name (n / name:op1 \"Patrika\"):ARG0-of (h /have-03:ARG1 (r / roof):location (h2 / house:poss (p2 / person:name (n2 / name:op1 \"Sanvi\":op2 \"Chauhan\"):wiki \"Sanvi_Chauhan\")))))",
+    "model_output_penman": "( (d /die-01:ARG1 (p / person:name (n / name:op1 \"Patrika\"):ARG0-of (h /have-03:ARG1 (r / roof):location (h2 / house:poss (p2 / person:name (n2 / name:op1 \"Sanvi\":op2 \"Chauhan\"):wiki \"Sanvi_Chauhan\"))))))"
+  },
+  {
+    "sentence": "ताका लागून मंत्रीपद मेळ्ळे उपरांत हे खातें मेळचें, अशें दरेकल्याक दिसता",
+    "gold_amr": "(t / think-01 :ARG0 (p / person :quant all) :ARG1 (o / obligate-01 :ARG1 (r / receive-01 :ARG0 (p2 / person) :ARG1 (p3 / portfolio :mod (t2 / this)) :time (a / after :op1 (r2 / receive-01 :ARG0 p2 :ARG1 (p4 / post :mod (m / minister)))))) :cause (t3 / thing))",
+    "model_output_linearized": "<AMR> ( (c /contrast-01:op1 (a / and:op1 (d /decide-01:ARG0 (p / person):ARG1 (p2 / post:name (n / name:op1 \"Mangalore\":op2 \"minister\")):time (a2 / after:op1 d)):op2 (p3 /post-01:ARG0 p:ARG1 (t / thing):time (a3 / after:op1 d)))",
+    "model_output_penman": "( (c /contrast-01:op1 (a / and:op1 (d /decide-01:ARG0 (p / person):ARG1 (p2 / post:name (n / name:op1 \"Mangalore\":op2 \"minister\")):time (a2 / after:op1 d)):op2 (p3 /post-01:ARG0 p:ARG1 (t / thing):time (a3 / after:op1 d)))))"
+  },
+  {
+    "sentence": "तुमकां अतिथींची अपेक्षा आसा ते दरेक मुखेल सुटये खातीर कार्यावळी नियोजीत करपाचो यत्न करा, आनी तुमच्या संकेतथळार तांचो प्रचार करा.",
+    "gold_amr": "(a / and\n   :op1 (t / try-01\n          :ARG0 (y / you)\n          :ARG1 (p / plan-01\n                   :ARG0 y\n                   :ARG1 (e / event))\n          :mode imperative)\n   :op2 (p2 / promote-01\n           :ARG0 y\n           :ARG1 e\n           :location (w / website\n                        :poss y)\n           :mode imperative)\n   :purpose (h / holiday\n               :quant (e2 / every)\n               :mod (m / major)\n               :time-of (e3 / expect-01\n                           :ARG0 y\n                           :ARG1 (g / guest))))",
+    "model_output_linearized": "<AMR> ( (a / and:op1 (a2 / and:op1 (t /try-01:mode imperative:ARG0 (y / you):ARG1 (c /convey-01:ARG0 y:ARG1 (a3 / and:op1 (p /promise-01:ARG0 y:ARG1 (p2 / public)):op2 (p3 /promise-01:ARG0 y:ARG1 p2))):op2 (p4 /promise-01:mode imperative:ARG0 y:ARG1 p2:purpose (r /reject-01:ARG0 y:ARG1 (p5 / public)))))",
+    "model_output_penman": "( (a / and:op1 (a2 / and:op1 (t /try-01:mode imperative:ARG0 (y / you):ARG1 (c /convey-01:ARG0 y:ARG1 (a3 / and:op1 (p /promise-01:ARG0 y:ARG1 (p2 / public)):op2 (p3 /promise-01:ARG0 y:ARG1 p2))):op2 (p4 /promise-01:mode imperative:ARG0 y:ARG1 p2:purpose (r /reject-01:ARG0 y:ARG1 (p5 / public)))))))"
+  },
+  {
+    "sentence": "उरिल्ल्या उत्तर आयर्लंडांत आनीक 45 टपालाचीं शारां आसात.",
+    "gold_amr": "(e / exist-01\n   :ARG1 (t / town\n            :quant 45\n            :mod (a / additional)\n            :mod (p / post-01))\n   :location (r / rest-02\n                :ARG1 (c / country\n                         :name (n / name\n                              :op1 \"Northern\"\n                              :op2 \"Ireland\")\n                         :wiki \"Northern_Ireland\")))",
+    "model_output_linearized": "<AMR> ( (h /have-03:ARG0 (c / country:name (n / name:op1 \"Northern Ireland\"):wiki \"Northern_Island\":ARG1-of (r /remain-01:location (r2 / region:name (n2 / name:op1 \"Northern Ireland\"):wiki \"Northern_Island\"))):ARG1 (t / tree:quant (h2 / tall):quant (h3 / distance-quantity:quant 45:unit (t2 / kilometer)))))",
+    "model_output_penman": "( (h /have-03:ARG0 (c / country:name (n / name:op1 \"Northern Ireland\"):wiki \"Northern_Island\":ARG1-of (r /remain-01:location (r2 / region:name (n2 / name:op1 \"Northern Ireland\"):wiki \"Northern_Island\"))):ARG1 (t / tree:quant (h2 / tall):quant (h3 / distance-quantity:quant 45:unit (t2 / kilometer)))))"
+  },
+  {
+    "sentence": "मरणा उपरांत 1983 वर्सा भारत रत्न हो पुरस्कार दिवन ताका सन्मानीत केलो.",
+    "gold_amr": "(a / award-01\n   :ARG0 (c / country :wiki \"India\"\n      :name (n / name :op1 \"India\"))\n   :ARG1 (p / award :wiki \"Bharat_Ratna\"\n      :name (n2 / name :op1 \"Bharat\" :op2 \"Ratna\"))\n   :ARG2 (p2 / person)\n   :time (d / date-entity :year 1983)\n   :mod (p3 / posthumous))",
+    "model_output_linearized": "<AMR> ( (d /give-01:ARG0 (p / person):ARG1 (a / award:wiki \"India रत्न हो पुरस्कार\":name (n / name:op1 \"India\":op2 \"Gold\":op3 \"Award\")):time (a2 / after:op1 (d2 /die-01:ARG1 p):time (d3 /date-entity:year 1983)))",
+    "model_output_penman": "( (d /give-01:ARG0 (p / person):ARG1 (a / award:wiki \"India रत्न हो पुरस्कार\":name (n / name:op1 \"India\":op2 \"Gold\":op3 \"Award\")):time (a2 / after:op1 (d2 /die-01:ARG1 p):time (d3 /date-entity:year 1983))))"
+  },
+  {
+    "sentence": "कांय सुवातींनी, ते धान्य आनी गोडासारकिले जिनस एकठांय करून विकतात आनी विक्रेची येणावळ गटांनीं वांटून घेतात.",
+    "gold_amr": "(a / and\n   :op1 (s / sell-01\n      :ARG0 (p / person)\n      :ARG1 (a2 / and\n         :op1 (g / grain)\n         :op2 (i / item\n            :mod (s2 / sweet)))\n      :manner (c / collectively))\n   :op2 (d / divide-01\n      :ARG0 p\n      :ARG1 (r / revenue\n         :source s)\n      :ARG2 (g2 / group))\n   :location (p2 / place\n      :quant (s3 / some)))",
+    "model_output_linearized": "<AMR> ( (a / and:op1 (p /possible-01:ARG1 (w /win-01:ARG0 (a2 / and:op1 (p2 / person):op2 (p3 / person:name (n / name:op1 \"Hindu\")):ARG0-of (g / group-01:ARG1 (a3 / and:op1 (t / thing):op2 (p4 / person:name (n2 / name:op1 \"Goavari\")):op3 (p5 / person:name (n3 / name:op1 \"Gadavari\"):ARG0-of (g2 / group-01:ARG1 t))))):op2 (p6 /possible-01:ARG1 (w2 /win-01:ARG0 a3:ARG1 (r / retailer))))",
+    "model_output_penman": "( (a / and:op1 (p /possible-01:ARG1 (w /win-01:ARG0 (a2 / and:op1 (p2 / person):op2 (p3 / person:name (n / name:op1 \"Hindu\")):ARG0-of (g / group-01:ARG1 (a3 / and:op1 (t / thing):op2 (p4 / person:name (n2 / name:op1 \"Goavari\")):op3 (p5 / person:name (n3 / name:op1 \"Gadavari\"):ARG0-of (g2 / group-01:ARG1 t))))):op2 (p6 /possible-01:ARG1 (w2 /win-01:ARG0 a3:ARG1 (r / retailer)))))))"
+  },
+  {
+    "sentence": "ध्रुपद संगीत विशय आनी आशयांत मुखेलपणांत भक्ती स्वरुपाचें आसता.",
+    "gold_amr": "(b / be-01\n   :ARG1 (m / music\n             :name (n / name :op1 \"Dhrupad\"))\n   :ARG2 (d / devotional)\n   :degree (p / predominant)\n   :domain (a / and\n               :op1 (s / subject)\n               :op2 (c / content)))",
+    "model_output_linearized": "<AMR> ( (h / have-01:ARG0 (p / person):ARG1 (p2 / person):ARG2 (v / devotion-01:ARG0 p2:ARG1 (m / music:mod (m2 / music-key:wiki \"Bhimpuri\":name (n / name:op1 \"Bhimpuri\":op2 \"Machine\":op3 \"Machine\":op4 \"Machine\"))))",
+    "model_output_penman": "( (h / have-01:ARG0 (p / person):ARG1 (p2 / person):ARG2 (v / devotion-01:ARG0 p2:ARG1 (m / music:mod (m2 / music-key:wiki \"Bhimpuri\":name (n / name:op1 \"Bhimpuri\":op2 \"Machine\":op3 \"Machine\":op4 \"Machine\"))))))"
+  },
+  {
+    "sentence": "जॉन हुशार आनी कश्ट करपी आशिल्लो आनी ताका लोहार म्हूण सहज काम मेळ्ळें.",
+    "gold_amr": "(a2 / and\n   :op1 (b / be-01\n      :ARG1 (p / person\n         :name (n / name :op1 \"John\"))\n      :ARG2 (a / and\n         :op1 (s / smart)\n         :op2 (h / hard-working)))\n   :op2 (g / get-01\n      :ARG0 p\n      :ARG1 (w / work-01\n         :role (b2 / blacksmith))\n      :manner (e / easy)))",
+    "model_output_linearized": "<AMR> ( (a / and:op1 (a2 / and:op1 (p / person:name (n / name:op1 \"John\":op2 \"Hewitt\"):wiki \"John_Hewitt\"):op2 (p2 / person:ARG0-of (k / knock-out-03:ARG1 (a3 / and:op1 (p3 / person:name (n2 / name:op1 \"John\":op2 \"Hewitt\"):wiki \"John_Hewitt\"):op2 (p4 / person:name (n3 / name:op1 \"John\":op2 \"Hewitt\"):wiki \"John_Hewitt\")):op3 (p5 / person:name (n4 / name:op1 \"Lob\"):wiki \"Lob\"))):op2 (p6 / person:name (n5 / name:op1 \"John\":op2 \"Hewitt\"):wiki \"Lob\")))",
+    "model_output_penman": "( (a / and:op1 (a2 / and:op1 (p / person:name (n / name:op1 \"John\":op2 \"Hewitt\"):wiki \"John_Hewitt\"):op2 (p2 / person:ARG0-of (k / knock-out-03:ARG1 (a3 / and:op1 (p3 / person:name (n2 / name:op1 \"John\":op2 \"Hewitt\"):wiki \"John_Hewitt\"):op2 (p4 / person:name (n3 / name:op1 \"John\":op2 \"Hewitt\"):wiki \"John_Hewitt\")):op3 (p5 / person:name (n4 / name:op1 \"Lob\"):wiki \"Lob\"))):op2 (p6 / person:name (n5 / name:op1 \"John\":op2 \"Hewitt\"):wiki \"Lob\"))))"
+  },
+  {
+    "sentence": "ताणें जायत्यो इमारती उबारल्यो, तातूंत मशिदी, खानकाह (मठ), दरगाह (प्रभावशाली लोकांचीं तीर्थां वा थडग्यो) आनी तीर्थयात्रिकां खातीर जलाशय (हवज) उबारले.",
+    "gold_amr": "(b / build-01\n   :ARG0 (h / he)\n   :ARG1 (a / and\n            :quant (m / many)\n            :op1 (m2 / mosque)\n            :op2 (k / khanqah\n                   :mod (m3 / monastery))\n            :op3 (d / dargah\n                   :mod (o / or\n                          :op1 (s / shrine\n                                 :poss (p / person\n                                         :mod (i / influential)))\n                          :op2 (t / tomb\n                                 :poss p)))\n            :op4 (r / reservoir\n                   :beneficiary (p2 / pilgrim)\n                   :mod (h2 / hauz))))",
+    "model_output_linearized": "<AMR> ( (a / and:op1 (c /construct-01:ARG0 (p / person):ARG1 (m / building:quant (m2 / many):mod (a2 / and:op1 (m3 / mosque):op2 (m4 / mosque):op3 (m5 / mosque):op4 (m5 / mosque):op5 (m6 / mosque) :op6 (m7 / mosque) :op7 (m8 / mosque) :op8 (m9 / mosque) :op9 (m10 / mosque) :op10 (m11 / mosque) :op11 (m12 / mosque) :op12 (m / mosque) :op13 (m / mosque))",
+    "model_output_penman": "( (a / and:op1 (c /construct-01:ARG0 (p / person):ARG1 (m / building:quant (m2 / many):mod (a2 / and:op1 (m3 / mosque):op2 (m4 / mosque):op3 (m5 / mosque):op4 (m5 / mosque):op5 (m6 / mosque) :op6 (m7 / mosque) :op7 (m8 / mosque) :op8 (m9 / mosque) :op9 (m10 / mosque) :op10 (m11 / mosque) :op11 (m12 / mosque) :op12 (m / mosque) :op13 (m / mosque))))))"
+  },
+  {
+    "sentence": "पूण तुर्कस्तानांत उंटाचो बळी दिवप सामकें चुक्कून, आनी ही प्रचलीत चाल न्हय.",
+    "gold_amr": "(a / and :op1 (w / wrong-02 :ARG1 (s / sacrifice-01 :ARG1 (c / camel) :location (c2 / country :name (n / name :op1 \"Turkey\") :wiki \"Turkey\")) :degree (c3 / complete-01)) :op2 (p / practice-02 :polarity - :ARG1 s :mod (c4 / common-01)))",
+    "model_output_linearized": "<AMR> ( (a / and:op1 (b /balance-01:ARG0 (p / person):ARG1 (p2 / pipeline):location (c / country:name (n / name:op1 \"Turkey\"):wiki \"Turkey\":name (n2 / name:op1 \"Turkey\"))):op2 (c2 /compromise-01:ARG0 p:ARG1 (l / चाल:mod (p3 / popular)):ARG2 p2))",
+    "model_output_penman": "( (a / and:op1 (b /balance-01:ARG0 (p / person):ARG1 (p2 / pipeline):location (c / country:name (n / name:op1 \"Turkey\"):wiki \"Turkey\":name (n2 / name:op1 \"Turkey\"))):op2 (c2 /compromise-01:ARG0 p:ARG1 (l / चाल:mod (p3 / popular)):ARG2 p2)))"
+  },
+  {
+    "sentence": "भारताचो चडसो भाग एकवटीत करपी पयल्या राज्याची बुन्याद घालपी चंद्रगुप्त मौर्य हो भारताच्या इतिहासांतलो म्हत्वाचो व्यक्ती आशिल्लो.",
+    "gold_amr": "(i / important-01\n   :ARG1 (p / person\n      :name (n / name\n         :op1 \"Chandragupta\"\n         :op2 \"Maurya\")\n      :wiki \"Chandragupta_Maurya\"\n      :ARG0-of (f / found-01\n         :ARG1 (e / empire\n            :ord (o / ordinal-entity\n               :value 1)\n            :ARG0-of (u / unify-01\n               :ARG1 (p2 / part\n                  :degree (m / most)\n                  :part-of (c / country\n                     :name (n2 / name\n                        :op1 \"India\")\n                     :wiki \"India\"))))))\n   :location (h / history\n      :poss c))",
+    "model_output_linearized": "<AMR> ( (h / have-role-91:ARG0 (p / person:name (n / name:op1 \"Krishnaglaglaglaglagla\"):wiki \"Krishnagla_Maurya\"):ARG1 (p2 / person:name (n2 / name:op1 \"Krishnagla\"):wiki \"Krishnagla_Maurya\"):ARG2 (h2 / important-01:ARG1 p2:ARG2 (h3 / have-role-91:ARG0 p:ARG1 (p3 / part:part-of (c / country:wiki \"India\":name (n3 / name:op1 \"India\"))):ARG2 (h4 / have-role-91:ARG0 p:ARG1 (p4 / person:name (n4 / name:op1 \"Krishna\":op2 \"Maurya\"):wiki \"Krishna_Maurya\"):ARG2 (h5 / kingdom:name (n5 / name:op1 \"Krishna\":op2 \"Maurya\"):wiki \"Krishna_Maurya_Krishna_Krishna_Krishna_Krishna_Krishna_Krishna\"):ARG0-of (h5 / have-role-91:ARG1 p:ARG2 (h5 / kingdom:name (n6 / name:op1 \"Hindu\"):wiki \"Hindu_Hindu\":op2 \"Hindu\"):ARG3 (m / most:ord (o /ordinal-entity:value 7)))))",
+    "model_output_penman": "( (h / have-role-91:ARG0 (p / person:name (n / name:op1 \"Krishnaglaglaglaglagla\"):wiki \"Krishnagla_Maurya\"):ARG1 (p2 / person:name (n2 / name:op1 \"Krishnagla\"):wiki \"Krishnagla_Maurya\"):ARG2 (h2 / important-01:ARG1 p2:ARG2 (h3 / have-role-91:ARG0 p:ARG1 (p3 / part:part-of (c / country:wiki \"India\":name (n3 / name:op1 \"India\"))):ARG2 (h4 / have-role-91:ARG0 p:ARG1 (p4 / person:name (n4 / name:op1 \"Krishna\":op2 \"Maurya\"):wiki \"Krishna_Maurya\"):ARG2 (h5 / kingdom:name (n5 / name:op1 \"Krishna\":op2 \"Maurya\"):wiki \"Krishna_Maurya_Krishna_Krishna_Krishna_Krishna_Krishna_Krishna\"):ARG0-of (h5 / have-role-91:ARG1 p:ARG2 (h5 / kingdom:name (n6 / name:op1 \"Hindu\"):wiki \"Hindu_Hindu\":op2 \"Hindu\"):ARG3 (m / most:ord (o /ordinal-entity:value 7))))))))"
+  },
+  {
+    "sentence": "ह्या अर्थसंकल्पांत 15 व्या वित्त",
+    "gold_amr": "(f / finance\n   :ord (o / ordinal-entity :value 15)\n   :location (b / budget\n                :mod (t / this)))",
+    "model_output_linearized": "<AMR> ( (d / debt:quant 15:mod (c / currency)):location (e / budget:mod (t / this)))",
+    "model_output_penman": "( (d / debt:quant 15:mod (c / currency)):location (e / budget:mod (t / this)))"
+  },
+  {
+    "sentence": "कॅमेरामॅनाक ऍबटाची खबर दिवप हें एकुच काम आशिल्लें.",
+    "gold_amr": "(j / job\n   :poss (c / cameraman)\n   :quant 1\n   :mod (o / only-01)\n   :ARG1 (g / give-01\n            :ARG0 c\n            :ARG1 (n / news\n                     :topic (a / abbot))))",
+    "model_output_linearized": "<AMR> ( (w /work-01:ARG0 (p / person):ARG1 (p2 /publish-01:ARG1 (w2 / news:topic (e / event:mod (o / other)))))",
+    "model_output_penman": "( (w /work-01:ARG0 (p / person):ARG1 (p2 /publish-01:ARG1 (w2 / news:topic (e / event:mod (o / other))))))"
+  },
+  {
+    "sentence": "अमिसाचो जल्म 17 जून 1922 दिसा इंग्लंडांत लंडनांतल्या  डुल्विच हांगा  जालो.",
+    "gold_amr": "(b / bear-01 :ARG1 (p / person :name (n / name :op1 \"Amis\")) :time (d / date-entity :day 17 :month 6 :year 1922) :location (c / city :name (n2 / name :op1 \"Dulwich\") :part-of (c2 / city :name (n3 / name :op1 \"London\") :part-of (c3 / country :name (n4 / name :op1 \"England\")))))",
+    "model_output_linearized": "<AMR> ( (d /die-01:ARG1 (p / person:name (n / name:op1 \"Dhulls\"):wiki \"Dhulls\"):location (p2 / place:name (n2 / name:op1 \"Dhulls\"):wiki \"Dhulls\"):time (d2 /date-entity:day 17:month 6:year 1922):location (c / city:name (n3 / name:op1 \"London\"):wiki \"London\"))",
+    "model_output_penman": "( (d /die-01:ARG1 (p / person:name (n / name:op1 \"Dhulls\"):wiki \"Dhulls\"):location (p2 / place:name (n2 / name:op1 \"Dhulls\"):wiki \"Dhulls\"):time (d2 /date-entity:day 17:month 6:year 1922):location (c / city:name (n3 / name:op1 \"London\"):wiki \"London\")))"
+  },
+  {
+    "sentence": "ला ब्रिया टार पिट्स आतां नोंदणीकृत राश्ट्रीय सैमीक भूंयखूण जाल्या.",
+    "gold_amr": "(b / become-01\n   :ARG1 (p / place\n            :name (n / name\n                     :op1 \"La\"\n                     :op2 \"Brea\"\n                     :op3 \"Tar\"\n                     :op4 \"Pits\")\n            :wiki \"La_Brea_Tar_Pits\")\n   :ARG2 (l / landmark\n            :ARG1-of (r / register-01)\n            :mod (n2 / national)\n            :mod (n3 / natural))\n   :time (n4 / now))",
+    "model_output_linearized": "<AMR> ( (p / place:name (n / name:op1 \"Lady\":op2 \"Plateau\"):wiki \"Lady_Plateau\"):location (s / state:name (n2 / name:op1 \"Lady\":op2 \"Plateau\"):wiki \"Lady_Plateau\":mod (r / region:name (n3 / name:op1 \"Southeast Asia\"):wiki \"Southeast_Asia\":mod (r2 / region)))",
+    "model_output_penman": "( (p / place:name (n / name:op1 \"Lady\":op2 \"Plateau\"):wiki \"Lady_Plateau\"):location (s / state:name (n2 / name:op1 \"Lady\":op2 \"Plateau\"):wiki \"Lady_Plateau\":mod (r / region:name (n3 / name:op1 \"Southeast Asia\"):wiki \"Southeast_Asia\":mod (r2 / region))))"
+  },
+  {
+    "sentence": "तें घडये अशें दिसतलें: \"तुमचें नांव, रस्त्याचो पत्तो, शार, पिन कोड, राज्य, बदलपी चिन्न\"",
+    "gold_amr": "(p / possible-01\n   :ARG1 (l / look-02\n      :ARG0 (t / thing)\n      :ARG1 (a / and\n         :op1 (n / name\n            :poss (y / you))\n         :op2 (a2 / address\n            :mod (s / street))\n         :op3 (c / city)\n         :op4 (p2 / pin-code)\n         :op5 (s2 / state)\n         :op6 (s3 / symbol\n            :mod (v / variable-01)))))",
+    "model_output_linearized": "<AMR> ( (s /see-01:ARG0 (p / person):ARG1 (s2 /see-01:ARG0 p:ARG1 (a / and:op1 (s3 /see-01:ARG0 (y / you):ARG1 (s4 / sun)):op2 (s5 /see-01:ARG0 y:ARG1 (s6 / sun)):op3 (s7 /see-01:ARG0 y:ARG1 (s8 / code:name (n / name:op1 \"Pin\":op2 \"Code\")):op4 (s7 / state):op5 (s8 / state) :op6 (s9 / state) :op7 (s9 / state) :op8 (s10 / state)):time (w / now)):time (w2 / now))",
+    "model_output_penman": "( (s /see-01:ARG0 (p / person):ARG1 (s2 /see-01:ARG0 p:ARG1 (a / and:op1 (s3 /see-01:ARG0 (y / you):ARG1 (s4 / sun)):op2 (s5 /see-01:ARG0 y:ARG1 (s6 / sun)):op3 (s7 /see-01:ARG0 y:ARG1 (s8 / code:name (n / name:op1 \"Pin\":op2 \"Code\")):op4 (s7 / state):op5 (s8 / state) :op6 (s9 / state) :op7 (s9 / state) :op8 (s10 / state)):time (w / now)):time (w2 / now))))"
+  },
+  {
+    "sentence": "खरेदीदारांनी सेगीत साबार बॅच न्हयकारिल्ले इंस्टाकार्टाक आवडना.",
+    "gold_amr": "(l / like-01 :polarity - :ARG0 (c / company :name (n / name :op1 \"Instacart\")) :ARG1 (r / reject-01 :ARG0 (s / shopper) :ARG1 (b / batch :quant (m / multiple)) :manner (c2 / consecutive)))",
+    "model_output_linearized": "<AMR> ( (b /buy-01:ARG0 (p / person):ARG1 (p2 / product:name (n / name:op1 \"Instacart\")):time (b2 / before:op1 (b3 /buy-01:ARG0 p2:ARG1 p2))))",
+    "model_output_penman": "( (b /buy-01:ARG0 (p / person):ARG1 (p2 / product:name (n / name:op1 \"Instacart\")):time (b2 / before:op1 (b3 /buy-01:ARG0 p2:ARG1 p2))))"
+  },
+  {
+    "sentence": "तातूंत उल्लेख करपा सारको वरंगल किल्लो आसा, जी काकतीय राजवंशाची राजधानी आशिल्ली.",
+    "gold_amr": "(i / include-01 :ARG0 (t / thing) :ARG1 (f / fort :name (n / name :op1 \"Warangal\" :op2 \"Fort\") :wiki \"Warangal_Fort\" :ARG1-of (w / worthy-01 :ARG2 (m / mention-01)) :ARG0-of (h / have-role-91 :ARG1 (c / capital :poss (d / dynasty :name (n2 / name :op1 \"Kakatiya\") :wiki \"Kakatiya_dynasty\")))))",
+    "model_output_linearized": "<AMR> ( (a / and:op1 (c /mention-01:ARG1 (c2 / city:name (n / name:op1 \"Bazar\":op2 \"Killo\"):wiki \"Bazar_Killo\"):location (r / region:name (n2 / name:op1 \"Bazar\":op2 \"Killo\"):wiki \"Bazar_Killo\":location (r2 / region:name (n3 / name:op1 \"Bazar\":op2 \"Killo\"):wiki \"Bazar_Killo\"))):op2 (h / have-role-91:ARG1 c:ARG2 (h2 / capital:part-of (r3 / reign-01:ARG0 (p / person:name (n4 / name:op1 \"Gandhi\"):wiki \"Gandhi\")))",
+    "model_output_penman": "( (a / and:op1 (c /mention-01:ARG1 (c2 / city:name (n / name:op1 \"Bazar\":op2 \"Killo\"):wiki \"Bazar_Killo\"):location (r / region:name (n2 / name:op1 \"Bazar\":op2 \"Killo\"):wiki \"Bazar_Killo\":location (r2 / region:name (n3 / name:op1 \"Bazar\":op2 \"Killo\"):wiki \"Bazar_Killo\"))):op2 (h / have-role-91:ARG1 c:ARG2 (h2 / capital:part-of (r3 / reign-01:ARG0 (p / person:name (n4 / name:op1 \"Gandhi\"):wiki \"Gandhi\"))))))"
+  }
+]
