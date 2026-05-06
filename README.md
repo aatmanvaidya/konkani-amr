@@ -1,6 +1,6 @@
 # Konkani AMR Parsing
 
-Abstract Meaning Representation (AMR) parsing for Konkani, a low-resource Indian language. We fine-tune [BramVanroy/mbart-large-cc25-ft-amr30-en](https://huggingface.co/BramVanroy/mbart-large-cc25-ft-amr30-en) — a multilingual mBART model already trained on English AMR — on a Gemini-annotated Konkani dataset.
+Abstract Meaning Representation (AMR) parsing for Konkani, a low-resource Indian language. We fine-tune [BramVanroy/mbart-large-cc25-ft-amr30-en](https://huggingface.co/BramVanroy/mbart-large-cc25-ft-amr30-en) — a multilingual mBART model already trained on English AMR, on a Konkani AMR dataset.
 
 ## Repository Structure
 
